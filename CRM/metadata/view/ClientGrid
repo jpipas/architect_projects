@@ -1,0 +1,298 @@
+{
+    "id": "ExtBox1-ext-gen19779",
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 250,
+        "itemId": "clientgrid",
+        "width": 868,
+        "autoScroll": false,
+        "title": "List: Clients",
+        "forceFit": true,
+        "scroll": "none",
+        "scrollDelta": 150,
+        "store": "ClientStore",
+        "columnLines": true,
+        "designer|userClassName": "ClientGrid",
+        "designer|userAlias": "clientgrid"
+    },
+    "customConfigs": [],
+    "designerId": "342c2439-4433-4ebf-9f68-1eb5af16f9a6",
+    "$viewOrder": 4,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen26762",
+            "type": "actioncolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "draggable": false,
+                "id": "actions",
+                "layout": "fit",
+                "sortable": false,
+                "align": "center",
+                "flex": 1,
+                "hideable": false,
+                "locked": false,
+                "menuDisabled": true,
+                "altText": "Actions",
+                "designer|userClassName": "MyActionColumn"
+            },
+            "customConfigs": [],
+            "expanded": false,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen26769",
+                    "type": "actioncolumnitem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "altText": "Edit",
+                        "disabled": false,
+                        "icon": "resources/icons/user_edit.png",
+                        "iconCls": null,
+                        "tooltip": "Edit",
+                        "designer|userClassName": "MyActionColumnItem"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen27357",
+                    "type": "actioncolumnitem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "altText": "View",
+                        "icon": "resources/icons/user.png",
+                        "iconCls": null,
+                        "tooltip": "View",
+                        "designer|userClassName": "MyActionColumnItem1"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen19796",
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "id",
+                "flex": 1,
+                "text": "ID",
+                "format": "0",
+                "designer|userClassName": "MyNumberColumn"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen19787",
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "name",
+                "flex": 3,
+                "text": "Name",
+                "designer|userClassName": "MyColumn"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen22126",
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "address1",
+                "flex": 3,
+                "text": "Address",
+                "designer|userClassName": "MyColumn1"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen22272",
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "address2",
+                "flex": 1,
+                "text": "Address2",
+                "designer|userClassName": "MyColumn2"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen22416",
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "city",
+                "flex": 1,
+                "text": "City",
+                "designer|userClassName": "MyColumn3"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen22559",
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "state",
+                "flex": 1,
+                "text": "State",
+                "designer|userClassName": "MyColumn4"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen26072",
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "zip",
+                "flex": 1,
+                "text": "Zip",
+                "designer|userClassName": "MyColumn5"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen27122",
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "text": "Territory",
+                "designer|userClassName": "MyColumn6"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen19823",
+            "type": "gridview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "ClientGridView",
+                "maintainFlex": true,
+                "designer|userClassName": "MyGridView"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen39163",
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onClientgridBeforeShow",
+                "implHandler": [
+                    "abstractcomponent.getStore().load();"
+                ],
+                "name": "beforeshow",
+                "scope": "me",
+                "designer|userClassName": "onClientgridBeforeShow"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen42095",
+            "type": "pagingtoolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "ClientPagingToolbar",
+                "width": null,
+                "displayInfo": true,
+                "store": "ClientStore",
+                "designer|userClassName": "MyPagingToolbar",
+                "dock": "bottom"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen42608",
+            "type": "tool",
+            "reference": {
+                "name": "tools",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "printTool",
+                "type": "print",
+                "designer|userClassName": "MyTool"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

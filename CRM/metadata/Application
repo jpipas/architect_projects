@@ -1,0 +1,41 @@
+{
+    "id": "ExtBox1-ext-gen15782",
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Client",
+            "Territory",
+            "State"
+        ],
+        "stores": [
+            "ClientStore",
+            "TerritoryStore"
+        ],
+        "views": [
+            "AppViewport",
+            "NavBar",
+            "ContentCards",
+            "Activities",
+            "RecordNavigation",
+            "ClientGrid",
+            "TerritoryGrid"
+        ],
+        "autoCreateViewport": true,
+        "name": "NCPublishers",
+        "controllers": [
+            "AppController",
+            "MainNavController",
+            "RecordNavController"
+        ]
+    },
+    "customConfigs": [],
+    "designerId": "application",
+    "$viewOrder": 0,
+    "iconCls": "icon-application",
+    "expanded": true
+}

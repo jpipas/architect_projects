@@ -1,0 +1,101 @@
+{
+    "id": "ExtBox1-ext-gen17530",
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainNavController",
+        "designer|userAlias": null
+    },
+    "customConfigs": [],
+    "designerId": "668141e1-a7c7-44bb-b837-faddb3cfcde8",
+    "$viewOrder": 1,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen37250",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onNavigationClick",
+                "implHandler": [
+                    "this.application.fireEvent('navigationChange',button.itemId);"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "navbar button",
+                "designer|userClassName": "onNavigationClick"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen39387",
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    ""
+                ],
+                "designer|userClassName": "init"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-basic-function",
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen13369",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMenuitemClick",
+                "implHandler": [
+                    "this.application.fireEvent('navigationChange',item.itemId);"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.menu.Item",
+                "designer|controlQuery": "navbar menuitem",
+                "designer|userClassName": "onMenuitemClick"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen20551",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainNav",
+                "selector": "navbar",
+                "designer|userClassName": "mainNav"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

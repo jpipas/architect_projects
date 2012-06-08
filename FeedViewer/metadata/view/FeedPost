@@ -1,0 +1,41 @@
+{
+    "id": "ExtBox1-ext-gen6355",
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "border": null,
+        "cls": "preview",
+        "height": null,
+        "width": null,
+        "autoScroll": true,
+        "title": null,
+        "designer|userClassName": "FeedPost",
+        "designer|userAlias": "feedpost"
+    },
+    "customConfigs": [],
+    "designerId": "7067e8e9-8049-4d34-b6d9-8ed2bb34dd81",
+    "$viewOrder": 5,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen51534",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "createToolbar",
+                "implHandler": "var items = [],\n    config = {};\n\nif (!this.inTab) {\n    items.push({\n        itemId: 'viewintab',\n        text: 'View in new tab',\n        iconCls: 'tab-new'\n    }, '-');\n} else {\n    config.cls = 'x-docked-noborder-top';\n}\n\nitems.push({\n    itemId: 'gotopost',\n    text: 'Go to post',\n    iconCls: 'post-go'\n});\n\nconfig.items = items;\n\nreturn Ext.create('widget.toolbar', config);",
+                "designer|userClassName": "createToolbar"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "id": "ExtBox1-ext-gen11518",
+    "type": "toolbar",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "RecordNavigation",
+        "designer|userAlias": "recordnav"
+    },
+    "customConfigs": [],
+    "designerId": "4659fb21-6ce9-4607-8352-836fc979683f",
+    "$viewOrder": 6,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen13232",
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "back-arrow",
+                "iconCls": "ui-silk ui-silk-control-rewind",
+                "text": null,
+                "tooltip": "Prev. Record",
+                "designer|userClassName": "MyButton4",
+                "layout|flex": null
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen13968",
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "next-arrow",
+                "iconCls": "ui-silk ui-silk-control-fastforward",
+                "text": null,
+                "tooltip": "Next Record",
+                "designer|userClassName": "MyButton4",
+                "layout|flex": null
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen11745",
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "text": "Edit",
+                "designer|userClassName": "MyButton1",
+                "layout|flex": null
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen12124",
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "text": "Back",
+                "designer|userClassName": "MyButton2",
+                "layout|flex": null
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen12481",
+            "type": "tbseparator",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MySeparator4",
+                "layout|flex": null
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen12771",
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "text": "New",
+                "designer|userClassName": "MyButton3",
+                "layout|flex": null
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}
