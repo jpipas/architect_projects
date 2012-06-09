@@ -14,7 +14,7 @@
     "customConfigs": [],
     "designerId": "f5655e65-b0a6-4623-b5f2-282d11ae832d",
     "$viewOrder": 0,
-    "expanded": true,
+    "expanded": false,
     "cn": [
         {
             "id": "ExtBox1-ext-gen11416",
@@ -132,7 +132,7 @@
             "expanded": true
         },
         {
-            "id": "ExtBox1-ext-gen15896",
+            "id": "ExtBox1-ext-gen36552",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -140,9 +140,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "territory_id",
-                "type": "int",
-                "designer|userClassName": "MyField10"
+                "name": "territory",
+                "designer|userClassName": "MyField7"
             },
             "customConfigs": [],
             "expanded": true
@@ -183,17 +182,17 @@
             ]
         },
         {
-            "id": "ExtBox1-ext-gen11708",
-            "type": "belongstoassociation",
+            "id": "ExtBox1-ext-gen36222",
+            "type": "hasmanyassociation",
             "reference": {
-                "name": "belongsTo",
+                "name": "hasMany",
                 "type": "object"
             },
             "codeClass": null,
             "userConfig": {
-                "associationKey": "",
+                "associationKey": "territory",
                 "model": "Territory",
-                "designer|userClassName": "MyBelongsToAssociation1"
+                "designer|userClassName": "MyHasManyAssociation"
             },
             "customConfigs": [],
             "expanded": true

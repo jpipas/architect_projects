@@ -82,9 +82,10 @@ Ext.define('NCPublishers.view.ClientGrid', {
                 },
                 {
                     xtype: 'gridcolumn',
+                    hidden: true,
                     dataIndex: 'address2',
                     flex: 1,
-                    text: 'Address2'
+                    text: 'Address Line 2'
                 },
                 {
                     xtype: 'gridcolumn',
@@ -106,6 +107,15 @@ Ext.define('NCPublishers.view.ClientGrid', {
                 },
                 {
                     xtype: 'gridcolumn',
+                    getter: function(record) {
+                        var obj = record.get('territory');
+                        console.log(obj);
+                        return Ext.isObject( obj )  ? obj.name : '';
+                    },
+                    setter: function(record, value) {
+                        var obj = record.get('obj') || {};
+                        record.set('territory', Ext.apply(obj,{name: value}));
+                    },
                     text: 'Territory'
                 }
             ],

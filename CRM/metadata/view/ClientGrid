@@ -23,7 +23,7 @@
     "customConfigs": [],
     "designerId": "342c2439-4433-4ebf-9f68-1eb5af16f9a6",
     "$viewOrder": 4,
-    "expanded": true,
+    "expanded": false,
     "cn": [
         {
             "id": "ExtBox1-ext-gen26762",
@@ -149,9 +149,10 @@
             },
             "codeClass": null,
             "userConfig": {
+                "hidden": true,
                 "dataIndex": "address2",
                 "flex": 1,
-                "text": "Address2",
+                "text": "Address Line 2",
                 "designer|userClassName": "MyColumn2"
             },
             "customConfigs": [],
@@ -221,7 +222,55 @@
                 "designer|userClassName": "MyColumn6"
             },
             "customConfigs": [],
-            "expanded": true
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen32234",
+                    "type": "basicfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "getter",
+                        "designer|params": [
+                            "record"
+                        ],
+                        "implHandler": [
+                            "var obj = record.get('territory');",
+                            "console.log(obj);",
+                            "return Ext.isObject( obj )  ? obj.name : '';"
+                        ],
+                        "designer|userClassName": "getter"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen32961",
+                    "type": "basicfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "setter",
+                        "designer|params": [
+                            "record",
+                            "value"
+                        ],
+                        "implHandler": [
+                            "var obj = record.get('obj') || {};",
+                            "record.set('territory', Ext.apply(obj,{name: value}));"
+                        ],
+                        "designer|userClassName": "setter"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
         },
         {
             "id": "ExtBox1-ext-gen19823",

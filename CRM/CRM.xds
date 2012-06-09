@@ -106,12 +106,6 @@
             ],
             "className": "Territory"
         },
-        "848ca93a-57e2-459f-98ef-a7d857b7f69a": {
-            "paths": [
-                "metadata/resource/js"
-            ],
-            "className": "js"
-        },
         "342c2439-4433-4ebf-9f68-1eb5af16f9a6": {
             "paths": [
                 "metadata/view/ClientGrid",
@@ -151,13 +145,21 @@
                 "app/view/TerritoryGrid.js"
             ],
             "className": "TerritoryGrid"
+        },
+        "d4e4c957-4a2b-442c-b62c-8d97c9aa5b0f": {
+            "paths": [
+                "metadata/view/ClientRecord",
+                "app/view/override/ClientRecord.js",
+                "app/view/ClientRecord.js"
+            ],
+            "className": "ClientRecord"
         }
     },
     "expandedState": {
         "data": true,
         "model": true,
         "component": true,
-        "controller": true,
+        "controller": false,
         "resource": true
     }
 }

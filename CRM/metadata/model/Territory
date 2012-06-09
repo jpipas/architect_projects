@@ -49,38 +49,6 @@
             "expanded": true
         },
         {
-            "id": "ExtBox1-ext-gen15109",
-            "type": "datafield",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "name": "state_id",
-                "type": "string",
-                "designer|userClassName": "MyField9"
-            },
-            "customConfigs": [],
-            "expanded": true
-        },
-        {
-            "id": "ExtBox1-ext-gen24153",
-            "type": "datafield",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "name": "manager_id",
-                "type": "int",
-                "designer|userClassName": "MyField11"
-            },
-            "customConfigs": [],
-            "expanded": true
-        },
-        {
             "id": "ExtBox1-ext-gen10337",
             "type": "ajaxproxy",
             "reference": {
@@ -113,6 +81,22 @@
                     "expanded": true
                 }
             ]
+        },
+        {
+            "id": "ExtBox1-ext-gen37620",
+            "type": "hasmanyassociation",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "associationKey": "states",
+                "model": "State",
+                "designer|userClassName": "MyHasManyAssociation1"
+            },
+            "customConfigs": [],
+            "expanded": true
         }
     ]
 }

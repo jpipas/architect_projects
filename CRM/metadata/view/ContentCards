@@ -89,6 +89,22 @@
             "iconCls": "icon-linkedinstance",
             "expanded": true,
             "masterInstanceId": "ExtBox1-ext-gen19436"
+        },
+        {
+            "id": "ExtBox1-ext-gen39387",
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "ClientRecord"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-linkedinstance",
+            "expanded": true,
+            "masterInstanceId": "ExtBox1-ext-gen38987"
         }
     ]
 }

@@ -1,0 +1,280 @@
+{
+    "id": "ExtBox1-ext-gen38987",
+    "type": "form",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "defaults": "{anchor: '100%'}",
+        "bodyPadding": 5,
+        "title": "Client Record",
+        "designer|userClassName": "ClientRecord",
+        "designer|userAlias": "clientrecord"
+    },
+    "customConfigs": [],
+    "designerId": "d4e4c957-4a2b-442c-b62c-8d97c9aa5b0f",
+    "$viewOrder": 6,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen47218",
+            "type": "linkedinstance",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "RecordNavigation",
+                "dock": "top"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-linkedinstance",
+            "expanded": true,
+            "masterInstanceId": "ExtBox1-ext-gen11518"
+        },
+        {
+            "id": "ExtBox1-ext-gen42534",
+            "type": "container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "RecordHeader",
+                "defaultType": null,
+                "layout": "hbox",
+                "designer|userClassName": "MyContainer2",
+                "container|align": null,
+                "container|padding": "0 0 25 0"
+            },
+            "customConfigs": [],
+            "expanded": false,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen44036",
+                    "type": "container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": "false",
+                        "itemId": "Column1",
+                        "defaultType": "textfield",
+                        "layout": "anchor",
+                        "designer|userClassName": "MyContainer3",
+                        "layout|flex": 1,
+                        "formBind": null
+                    },
+                    "customConfigs": [],
+                    "expanded": false,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen44372",
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Client Name",
+                                "designer|userClassName": "MyTextField",
+                                "layout|anchor": "95%"
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen44763",
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Territory",
+                                "designer|userClassName": "MyTextField1",
+                                "layout|anchor": "95%"
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        }
+                    ]
+                },
+                {
+                    "id": "ExtBox1-ext-gen45034",
+                    "type": "container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": "false",
+                        "itemId": "Column2",
+                        "layout": "anchor",
+                        "designer|userClassName": "MyContainer4",
+                        "layout|flex": 1
+                    },
+                    "customConfigs": [],
+                    "expanded": false,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen45767",
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Address Line 1",
+                                "designer|userClassName": "MyTextField2",
+                                "layout|anchor": "100%"
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen45992",
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "City",
+                                "designer|userClassName": "MyTextField3",
+                                "layout|anchor": "100%"
+                            },
+                            "customConfigs": [],
+                            "expanded": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen48731",
+            "type": "tabpanel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "ClientSublists",
+                "activeTab": 0,
+                "designer|userClassName": "MyTabPanel"
+            },
+            "customConfigs": [],
+            "expanded": false,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen48745",
+                    "type": "panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Contracts",
+                        "designer|userClassName": "MyPanel5"
+                    },
+                    "customConfigs": [],
+                    "expanded": false,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen48758",
+                            "type": "tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "TabConfig"
+                            },
+                            "customConfigs": [],
+                            "iconCls": "icon-tab-bar",
+                            "expanded": true
+                        }
+                    ]
+                },
+                {
+                    "id": "ExtBox1-ext-gen48763",
+                    "type": "panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Sales Reps",
+                        "designer|userClassName": "MyPanel6"
+                    },
+                    "customConfigs": [],
+                    "expanded": false,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen48776",
+                            "type": "tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "TabConfig1"
+                            },
+                            "customConfigs": [],
+                            "iconCls": "icon-tab-bar",
+                            "expanded": true
+                        }
+                    ]
+                },
+                {
+                    "id": "ExtBox1-ext-gen48781",
+                    "type": "panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Financial",
+                        "designer|userClassName": "MyPanel7"
+                    },
+                    "customConfigs": [],
+                    "expanded": false,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen48794",
+                            "type": "tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "TabConfig2"
+                            },
+                            "customConfigs": [],
+                            "iconCls": "icon-tab-bar",
+                            "expanded": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

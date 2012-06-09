@@ -55,8 +55,7 @@ Ext.define('NCPublishers.model.Client', {
             type: 'string'
         },
         {
-            name: 'territory_id',
-            type: 'int'
+            name: 'territory'
         }
     ],
 
@@ -71,8 +70,8 @@ Ext.define('NCPublishers.model.Client', {
         }
     },
 
-    belongsTo: {
-        associationKey: '',
+    hasMany: {
+        associationKey: 'territory',
         model: 'NCPublishers.model.Territory'
     }
 });
