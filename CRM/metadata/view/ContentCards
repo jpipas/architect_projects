@@ -1,0 +1,110 @@
+{
+    "id": "ExtBox1-ext-gen10571",
+    "type": "container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "activeItem": 0,
+        "layout": "card",
+        "designer|userClassName": "ContentCards",
+        "designer|userAlias": "contentCards"
+    },
+    "customConfigs": [],
+    "designerId": "6f87cb11-abbb-4fda-b382-8de430e74ead",
+    "$viewOrder": 2,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen63497",
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoRender": null,
+                "autoShow": null,
+                "border": 0,
+                "id": null,
+                "itemId": "Dashboard",
+                "activeItem": 0,
+                "layout": "fit",
+                "preventHeader": false,
+                "title": "NCPublisher Dashboard",
+                "titleCollapse": false,
+                "designer|userClassName": "ContentPanel",
+                "designer|userAlias": "content"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen33022",
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "ActivityPanel"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-linkedinstance",
+            "expanded": true,
+            "masterInstanceId": "ExtBox1-ext-gen10809"
+        },
+        {
+            "id": "ExtBox1-ext-gen29856",
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "ClientGrid"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-linkedinstance",
+            "expanded": true,
+            "masterInstanceId": "ExtBox1-ext-gen19779"
+        },
+        {
+            "id": "ExtBox1-ext-gen21712",
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "TerritoryGrid"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-linkedinstance",
+            "expanded": true,
+            "masterInstanceId": "ExtBox1-ext-gen19436"
+        },
+        {
+            "id": "ExtBox1-ext-gen39387",
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "ClientRecord"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-linkedinstance",
+            "expanded": true,
+            "masterInstanceId": "ExtBox1-ext-gen38987"
+        }
+    ]
+}

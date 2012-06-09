@@ -1,0 +1,18 @@
+{
+    "id": "ExtBox1-ext-gen9062",
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "storeId": "MyJsonStore1",
+        "model": "Territory",
+        "designer|userClassName": "TerritoryStore"
+    },
+    "customConfigs": [],
+    "designerId": "dbb7fd66-bdc8-4b79-befd-b2d51fb01e01",
+    "$viewOrder": 1,
+    "expanded": true
+}

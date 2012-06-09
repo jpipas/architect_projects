@@ -1,0 +1,114 @@
+{
+    "id": "ExtBox1-ext-gen6166",
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AppController"
+    },
+    "customConfigs": [],
+    "designerId": "e424c48f-6ef8-4b4d-bae4-bfe70fa1ae19",
+    "$viewOrder": 0,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen7166",
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    "",
+                    "//Listen for application wide event(s)",
+                    "this.application.on({",
+                    "    navigationChange: this.navigationClick,",
+                    "    scope: this",
+                    "});"
+                ],
+                "designer|userClassName": "init"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-basic-function",
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen41640",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "navigationClick",
+                "designer|params": [
+                    "itemId"
+                ],
+                "implHandler": [
+                    "this.getContentCards().getLayout().setActiveItem(itemId);"
+                ],
+                "designer|userClassName": "navigationClick"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen7736",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "activitiesPanel",
+                "selector": "activities",
+                "designer|userClassName": "activitiesPanel"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen32157",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "clientGrid",
+                "selector": "clientgrid",
+                "designer|userClassName": "clientGrid"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen8196",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "contentCards",
+                "selector": "contentCards",
+                "designer|userClassName": "contentCards"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

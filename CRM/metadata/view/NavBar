@@ -1,0 +1,688 @@
+{
+    "id": "ExtBox1-ext-gen20051",
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "maxHeight": 28,
+        "layout": "vbox",
+        "title": null,
+        "designer|userClassName": "NavBar",
+        "designer|userAlias": "navbar",
+        "container|align": "stretch"
+    },
+    "customConfigs": [],
+    "designerId": "cc0d44dd-45b1-4cad-8147-eb8ba2aa0ee7",
+    "$viewOrder": 1,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen21356",
+            "type": "toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "nav-toolbar",
+                "designer|userClassName": "MyToolbar",
+                "layout|flex": 1,
+                "dock": "top"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen55168",
+                    "type": "splitbutton",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "ui-silk ui-silk-clock",
+                        "text": null,
+                        "tooltip": "Recent Records",
+                        "designer|userClassName": "MySplitButton4",
+                        "layout|flex": null
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen55908",
+                    "type": "splitbutton",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "ui-silk ui-silk-star",
+                        "text": null,
+                        "tooltip": "Favorite Records",
+                        "designer|userClassName": "MySplitButton4",
+                        "layout|flex": null
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen22172",
+                    "type": "splitbutton",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "Dashboard",
+                        "text": "Home",
+                        "designer|userClassName": "MySplitButton",
+                        "layout|flex": null
+                    },
+                    "customConfigs": [],
+                    "expanded": false,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen40721",
+                            "type": "menu",
+                            "reference": {
+                                "name": "menu",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 120,
+                                "preventHeader": true,
+                                "title": "HomeMenu",
+                                "designer|userClassName": "MyMenu"
+                            },
+                            "customConfigs": [],
+                            "expanded": false,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen40729",
+                                    "type": "menuitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemId": "Dashboard",
+                                        "iconCls": "ui-silk ui-silk-application-home",
+                                        "text": "Dashboard",
+                                        "designer|userClassName": "MyMenuItem"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen40741",
+                                    "type": "menuitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "iconCls": "ui-silk ui-silk-application-edit",
+                                        "text": "Preferences",
+                                        "designer|userClassName": "MyMenuItem1"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ExtBox1-ext-gen50687",
+                    "type": "tbseparator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MySeparator",
+                        "layout|flex": null
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen22507",
+                    "type": "splitbutton",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "Activities",
+                        "text": "Activities",
+                        "designer|userClassName": "MySplitButton1",
+                        "layout|flex": null
+                    },
+                    "customConfigs": [],
+                    "expanded": false,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen28826",
+                            "type": "menu",
+                            "reference": {
+                                "name": "menu",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 120,
+                                "preventHeader": true,
+                                "title": "ActivitiesMenu",
+                                "designer|userClassName": "MyMenu1"
+                            },
+                            "customConfigs": [],
+                            "expanded": false,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen28834",
+                                    "type": "menuitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "iconCls": "ui-silk ui-silk-calendar",
+                                        "text": "Calendar",
+                                        "designer|userClassName": "MyMenuItem2"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": false,
+                                    "cn": [
+                                        {
+                                            "id": "ExtBox1-ext-gen36422",
+                                            "type": "menu",
+                                            "reference": {
+                                                "name": "menu",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "width": 120,
+                                                "designer|userClassName": "MyMenu7"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true,
+                                            "cn": [
+                                                {
+                                                    "id": "ExtBox1-ext-gen36430",
+                                                    "type": "menuitem",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "iconCls": "ui-silk ui-silk-date-add",
+                                                        "text": "New Event",
+                                                        "designer|userClassName": "MyMenuItem19"
+                                                    },
+                                                    "customConfigs": [],
+                                                    "expanded": true
+                                                },
+                                                {
+                                                    "id": "ExtBox1-ext-gen36442",
+                                                    "type": "menuitem",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "iconCls": "ui-silk ui-silk-date-magnify",
+                                                        "text": "Search",
+                                                        "designer|userClassName": "MyMenuItem20"
+                                                    },
+                                                    "customConfigs": [],
+                                                    "expanded": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen28846",
+                                    "type": "menuitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "iconCls": "ui-silk ui-silk-note",
+                                        "text": "Tasks",
+                                        "designer|userClassName": "MyMenuItem3"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": false,
+                                    "cn": [
+                                        {
+                                            "id": "ExtBox1-ext-gen32892",
+                                            "type": "menu",
+                                            "reference": {
+                                                "name": "menu",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "width": 120,
+                                                "designer|userClassName": "MyMenu5"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true,
+                                            "cn": [
+                                                {
+                                                    "id": "ExtBox1-ext-gen32900",
+                                                    "type": "menuitem",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "iconCls": "ui-silk ui-silk-note-add",
+                                                        "text": "New",
+                                                        "designer|userClassName": "MyMenuItem15"
+                                                    },
+                                                    "customConfigs": [],
+                                                    "expanded": true
+                                                },
+                                                {
+                                                    "id": "ExtBox1-ext-gen32912",
+                                                    "type": "menuitem",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "iconCls": "ui-silk ui-silk-page-white-magnify",
+                                                        "text": "Search",
+                                                        "designer|userClassName": "MyMenuItem16"
+                                                    },
+                                                    "customConfigs": [],
+                                                    "expanded": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen32548",
+                                    "type": "menuitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "iconCls": "ui-silk ui-silk-telephone",
+                                        "text": "Phone Calls",
+                                        "designer|userClassName": "MyMenuItem14"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": false,
+                                    "cn": [
+                                        {
+                                            "id": "ExtBox1-ext-gen35004",
+                                            "type": "menu",
+                                            "reference": {
+                                                "name": "menu",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "width": 120,
+                                                "designer|userClassName": "MyMenu6"
+                                            },
+                                            "customConfigs": [],
+                                            "expanded": true,
+                                            "cn": [
+                                                {
+                                                    "id": "ExtBox1-ext-gen35012",
+                                                    "type": "menuitem",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "iconCls": "ui-silk ui-silk-telephone-add",
+                                                        "text": "New",
+                                                        "designer|userClassName": "MyMenuItem17"
+                                                    },
+                                                    "customConfigs": [],
+                                                    "expanded": true
+                                                },
+                                                {
+                                                    "id": "ExtBox1-ext-gen35024",
+                                                    "type": "menuitem",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "iconCls": "ui-silk ui-silk-magnifier",
+                                                        "text": "Search",
+                                                        "designer|userClassName": "MyMenuItem18"
+                                                    },
+                                                    "customConfigs": [],
+                                                    "expanded": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ExtBox1-ext-gen49934",
+                    "type": "tbseparator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MySeparator",
+                        "layout|flex": null
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen23293",
+                    "type": "splitbutton",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Lists",
+                        "designer|userClassName": "MySplitButton3",
+                        "layout|flex": null
+                    },
+                    "customConfigs": [],
+                    "expanded": true,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen29566",
+                            "type": "menu",
+                            "reference": {
+                                "name": "menu",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 120,
+                                "preventHeader": true,
+                                "title": "ListMenu",
+                                "designer|userClassName": "MyMenu2"
+                            },
+                            "customConfigs": [],
+                            "expanded": false,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen14126",
+                                    "type": "menuitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemId": "SalesRepGrid",
+                                        "iconCls": "ui-silk ui-silk-user-gray",
+                                        "text": "Sales Reps",
+                                        "designer|userClassName": "MyMenuItem22"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen29574",
+                                    "type": "menuitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemId": "ClientGrid",
+                                        "iconCls": "ui-silk ui-silk-group",
+                                        "text": "Clients",
+                                        "designer|userClassName": "MyMenuItem5"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen29586",
+                                    "type": "menuitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemId": "PublicationGrid",
+                                        "iconCls": "ui-silk ui-silk-newspaper",
+                                        "text": "Publications",
+                                        "designer|userClassName": "MyMenuItem6"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen29598",
+                                    "type": "menuitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemId": "AdvertisementGrid",
+                                        "iconCls": "ui-silk ui-silk-page-white-picture",
+                                        "text": "Advertisements",
+                                        "designer|userClassName": "MyMenuItem7"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen47508",
+                                    "type": "menuitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemId": "ContractGrid",
+                                        "iconCls": "ui-silk ui-silk-folder-table",
+                                        "text": "Contracts",
+                                        "designer|userClassName": "MyMenuItem23"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen47783",
+                                    "type": "menuitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemId": "TerritoryGrid",
+                                        "iconCls": "ui-silk ui-silk-map",
+                                        "text": "Territories",
+                                        "designer|userClassName": "MyMenuItem24"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ExtBox1-ext-gen51201",
+                    "type": "tbseparator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MySeparator",
+                        "layout|flex": null
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen22919",
+                    "type": "splitbutton",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Reports",
+                        "designer|userClassName": "MySplitButton2",
+                        "layout|flex": null
+                    },
+                    "customConfigs": [],
+                    "expanded": false,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen30316",
+                            "type": "menu",
+                            "reference": {
+                                "name": "menu",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 120,
+                                "preventHeader": true,
+                                "title": "ReportsMenu",
+                                "designer|userClassName": "MyMenu3"
+                            },
+                            "customConfigs": [],
+                            "expanded": true,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen30324",
+                                    "type": "menuitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "iconCls": "ui-silk ui-silk-money",
+                                        "text": "Sales Report",
+                                        "designer|userClassName": "MyMenuItem8"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen30336",
+                                    "type": "menuitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "iconCls": "ui-silk ui-silk-application-view-list",
+                                        "text": "Ad List",
+                                        "designer|userClassName": "MyMenuItem9"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen30348",
+                                    "type": "menuitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "iconCls": "ui-silk ui-silk-calculator",
+                                        "text": "Commissions",
+                                        "designer|userClassName": "MyMenuItem10"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ExtBox1-ext-gen51677",
+                    "type": "tbseparator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MySeparator",
+                        "layout|flex": null
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen53259",
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Support",
+                        "designer|userClassName": "MyButton",
+                        "layout|flex": null
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        }
+    ]
+}

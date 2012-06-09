@@ -1,0 +1,149 @@
+{
+    "id": "ExtBox1-ext-gen19436",
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 250,
+        "itemId": "clientgrid",
+        "width": 868,
+        "autoScroll": false,
+        "title": "List: Clients",
+        "forceFit": true,
+        "scroll": "none",
+        "scrollDelta": 150,
+        "store": "TerritoryStore",
+        "columnLines": true,
+        "designer|userClassName": "TerritoryGrid",
+        "designer|userAlias": "territorygrid"
+    },
+    "customConfigs": [],
+    "designerId": "baf37ff2-4d2a-4a53-87cf-808e86a2781e",
+    "$viewOrder": 5,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen19478",
+            "type": "gridview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "TerritoryGridView",
+                "maintainFlex": true,
+                "designer|userClassName": "MyGridView"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen19482",
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onTerritorygridBeforeShow",
+                "implHandler": [
+                    "abstractcomponent.getStore().load();"
+                ],
+                "name": "beforeshow",
+                "scope": "me",
+                "designer|userClassName": "onTerritorygridBeforeShow"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen19487",
+            "type": "pagingtoolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "TerritoryPagingToolbar",
+                "width": null,
+                "displayInfo": true,
+                "store": "TerritoryStore",
+                "designer|userClassName": "MyPagingToolbar",
+                "dock": "bottom"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen19494",
+            "type": "tool",
+            "reference": {
+                "name": "tools",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "printTool",
+                "type": "print",
+                "designer|userClassName": "MyTool"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen20456",
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "id",
+                "text": "ID",
+                "format": "0",
+                "designer|userClassName": "MyNumberColumn2"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen20467",
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "name",
+                "text": "Name",
+                "designer|userClassName": "MyColumn12"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen20478",
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "state",
+                "text": "State",
+                "designer|userClassName": "MyColumn13"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}
