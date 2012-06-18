@@ -52,7 +52,7 @@
                 "container|padding": "0 0 25 0"
             },
             "customConfigs": [],
-            "expanded": false,
+            "expanded": true,
             "cn": [
                 {
                     "id": "ExtBox1-ext-gen44036",
@@ -176,7 +176,7 @@
                 "designer|userClassName": "MyTabPanel"
             },
             "customConfigs": [],
-            "expanded": false,
+            "expanded": true,
             "cn": [
                 {
                     "id": "ExtBox1-ext-gen48745",
