@@ -12,7 +12,7 @@
     "customConfigs": [],
     "designerId": "e4f5c676-6a36-4f1c-9c92-aa1296a7b78b",
     "$viewOrder": 3,
-    "expanded": false,
+    "expanded": true,
     "cn": [
         {
             "id": "ExtBox1-ext-gen7056",
@@ -63,16 +63,32 @@
             "userConfig": {
                 "fn": "onActionColumnClick",
                 "designer|params": [
-                    "actioncolumn"
+                    "grid, col, row"
                 ],
                 "implHandler": [
-                    ""
+                    "console.log(\"HELLO!\");"
                 ],
                 "name": "click",
                 "scope": "me",
-                "designer|targetType": "Ext.grid.column.Action",
-                "designer|controlQuery": "clientgrid action2",
+                "designer|targetType": null,
+                "designer|controlQuery": "clientGrid actions",
                 "designer|userClassName": "onActionColumnClick"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen20193",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "actions",
+                "selector": "clientgrid actions",
+                "designer|userClassName": "actions"
             },
             "customConfigs": [],
             "expanded": true

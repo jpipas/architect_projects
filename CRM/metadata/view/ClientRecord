@@ -673,7 +673,7 @@
                         "container|align": "stretch"
                     },
                     "customConfigs": [],
-                    "expanded": true,
+                    "expanded": false,
                     "cn": [
                         {
                             "id": "ExtBox1-ext-gen48794",

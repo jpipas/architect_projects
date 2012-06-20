@@ -23,7 +23,7 @@
     "customConfigs": [],
     "designerId": "342c2439-4433-4ebf-9f68-1eb5af16f9a6",
     "$viewOrder": 4,
-    "expanded": false,
+    "expanded": true,
     "cn": [
         {
             "id": "ExtBox1-ext-gen26762",
@@ -35,7 +35,8 @@
             "codeClass": null,
             "userConfig": {
                 "draggable": false,
-                "id": "actions",
+                "id": null,
+                "itemId": "actions",
                 "layout": "fit",
                 "sortable": false,
                 "align": "center",
@@ -66,37 +67,7 @@
                         "designer|userClassName": "MyActionColumnItem"
                     },
                     "customConfigs": [],
-                    "expanded": true,
-                    "cn": [
-                        {
-                            "id": "ExtBox1-ext-gen8904",
-                            "type": "fixedfunction",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "fn": "handler",
-                                "designer|params": [
-                                    "view",
-                                    "rowIndex",
-                                    "colIndex",
-                                    "item",
-                                    "e"
-                                ],
-                                "implHandler": [
-                                    "console.log(view);",
-                                    "console.log(rowIndex);",
-                                    "console.log(item);"
-                                ],
-                                "designer|userClassName": "handler"
-                            },
-                            "customConfigs": [],
-                            "iconCls": "icon-basic-function",
-                            "expanded": true
-                        }
-                    ]
+                    "expanded": true
                 },
                 {
                     "id": "ExtBox1-ext-gen27357",

@@ -36,7 +36,7 @@ Ext.define('NCPublishers.view.ClientGrid', {
                 {
                     xtype: 'actioncolumn',
                     draggable: false,
-                    id: 'actions',
+                    itemId: 'actions',
                     layout: {
                         type: 'fit'
                     },
@@ -49,11 +49,6 @@ Ext.define('NCPublishers.view.ClientGrid', {
                     altText: 'Actions',
                     items: [
                         {
-                            handler: function(view, rowIndex, colIndex, item, e) {
-                                console.log(view);
-                                console.log(rowIndex);
-                                console.log(item);
-                            },
                             altText: 'Edit',
                             disabled: false,
                             icon: 'resources/icons/user_edit.png',

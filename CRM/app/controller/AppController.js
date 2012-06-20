@@ -32,11 +32,11 @@ Ext.define('NCPublishers.controller.AppController', {
     ],
 
     init: function(application) {
-
+        me = this;
         //Listen for application wide event(s)
         this.application.on({
-            navigationChange: this.navigationClick,
-            scope: this
+            navigationChange: me.navigationClick,
+            scope: me
         });
     },
 

@@ -12,7 +12,7 @@
     "customConfigs": [],
     "designerId": "e424c48f-6ef8-4b4d-bae4-bfe70fa1ae19",
     "$viewOrder": 0,
-    "expanded": false,
+    "expanded": true,
     "cn": [
         {
             "id": "ExtBox1-ext-gen7166",
@@ -28,11 +28,11 @@
                     "application"
                 ],
                 "implHandler": [
-                    "",
+                    "me = this;",
                     "//Listen for application wide event(s)",
                     "this.application.on({",
-                    "    navigationChange: this.navigationClick,",
-                    "    scope: this",
+                    "    navigationChange: me.navigationClick,",
+                    "    scope: me",
                     "});"
                 ],
                 "designer|userClassName": "init"

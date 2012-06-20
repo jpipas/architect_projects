@@ -20,16 +20,20 @@ Ext.define('NCPublishers.controller.ClientGridController', {
         {
             ref: 'clientGrid',
             selector: 'clientgrid'
+        },
+        {
+            ref: 'actions',
+            selector: 'clientgrid actions'
         }
     ],
 
-    onActionColumnClick: function(actioncolumn) {
-
+    onActionColumnClick: function(grid, col, row) {
+        console.log("HELLO!");
     },
 
     init: function(application) {
         this.control({
-            "clientgrid action2": {
+            "clientGrid actions": {
                 click: this.onActionColumnClick
             }
         });
