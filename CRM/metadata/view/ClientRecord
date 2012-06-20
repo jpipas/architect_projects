@@ -173,8 +173,9 @@
             "userConfig": {
                 "height": 350,
                 "itemId": "ClientSublists",
-                "activeTab": 2,
-                "plain": true,
+                "activeTab": 0,
+                "maxTabWidth": null,
+                "plain": false,
                 "designer|userClassName": "MyTabPanel"
             },
             "customConfigs": [],
@@ -195,7 +196,7 @@
                         "designer|userClassName": "MyPanel6"
                     },
                     "customConfigs": [],
-                    "expanded": true,
+                    "expanded": false,
                     "cn": [
                         {
                             "id": "ExtBox1-ext-gen48776",
@@ -377,11 +378,11 @@
                         "bodyPadding": 5,
                         "title": "Sales",
                         "designer|userClassName": "MyPanel5",
-                        "container|align": "stretch",
+                        "container|align": null,
                         "container|padding": null
                     },
                     "customConfigs": [],
-                    "expanded": true,
+                    "expanded": false,
                     "cn": [
                         {
                             "id": "ExtBox1-ext-gen48758",
@@ -394,7 +395,8 @@
                             "userConfig": {
                                 "autoRender": null,
                                 "autoShow": null,
-                                "designer|userClassName": "TabConfig"
+                                "designer|userClassName": "TabConfig",
+                                "layout|flex": 1
                             },
                             "customConfigs": [],
                             "iconCls": "icon-tab-bar",
@@ -414,8 +416,8 @@
                                 "maxHeight": 80,
                                 "layout": "hbox",
                                 "designer|userClassName": "MyContainer7",
-                                "layout|flex": 1,
-                                "container|align": null
+                                "container|align": null,
+                                "layout|flex": 1
                             },
                             "customConfigs": [],
                             "expanded": false,
@@ -553,7 +555,7 @@
                                 "dock": null
                             },
                             "customConfigs": [],
-                            "expanded": true,
+                            "expanded": false,
                             "cn": [
                                 {
                                     "id": "ExtBox1-ext-gen21706",
@@ -682,7 +684,9 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "TabConfig2"
+                                "autoWidth": false,
+                                "designer|userClassName": "TabConfig2",
+                                "layout|flex": 1
                             },
                             "customConfigs": [],
                             "iconCls": "icon-tab-bar",
@@ -703,7 +707,8 @@
                                 "layout": "hbox",
                                 "designer|userClassName": "MyContainer8",
                                 "container|align": "stretch",
-                                "container|padding": ""
+                                "container|padding": "",
+                                "layout|flex": 1
                             },
                             "customConfigs": [],
                             "expanded": false,
@@ -868,6 +873,7 @@
                                 "preventHeader": true,
                                 "title": "PaymentsGrid",
                                 "titleCollapse": true,
+                                "store": "PaymentStore",
                                 "designer|userClassName": "MyGridPanel4",
                                 "layout|flex": 1
                             },

@@ -1,0 +1,16 @@
+{
+    "id": "ExtBox1-ext-gen10269",
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Payment"
+    },
+    "customConfigs": [],
+    "designerId": "619627fa-f4e8-4e5a-a09a-fb47949da159",
+    "$viewOrder": 3,
+    "expanded": true
+}

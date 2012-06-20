@@ -21,11 +21,13 @@ Ext.application({
     models: [
         'Client',
         'Territory',
-        'State'
+        'State',
+        'Payment'
     ],
     stores: [
         'ClientStore',
-        'TerritoryStore'
+        'TerritoryStore',
+        'PaymentStore'
     ],
     views: [
         'AppViewport',
@@ -42,6 +44,7 @@ Ext.application({
     controllers: [
         'AppController',
         'MainNavController',
-        'RecordNavController'
+        'RecordNavController',
+        'ClientGridController'
     ]
 });

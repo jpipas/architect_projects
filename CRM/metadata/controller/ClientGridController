@@ -1,5 +1,5 @@
 {
-    "id": "ExtBox1-ext-gen23143",
+    "id": "ExtBox1-ext-gen6749",
     "type": "controller",
     "reference": {
         "name": "items",
@@ -7,15 +7,31 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "RecordNavController"
+        "designer|userClassName": "ClientGridController"
     },
     "customConfigs": [],
-    "designerId": "0eb6c736-e4ce-4a98-a689-09a51d0b11b2",
-    "$viewOrder": 2,
-    "expanded": true,
+    "designerId": "e4f5c676-6a36-4f1c-9c92-aa1296a7b78b",
+    "$viewOrder": 3,
+    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen23348",
+            "id": "ExtBox1-ext-gen7056",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "clientGrid",
+                "selector": "clientgrid",
+                "designer|userClassName": "clientGrid"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen7765",
             "type": "fixedfunction",
             "reference": {
                 "name": "items",
@@ -37,23 +53,7 @@
             "expanded": true
         },
         {
-            "id": "ExtBox1-ext-gen23649",
-            "type": "controllerref",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "ref": "recordNav",
-                "selector": "recordnav",
-                "designer|userClassName": "recordNav"
-            },
-            "customConfigs": [],
-            "expanded": true
-        },
-        {
-            "id": "ExtBox1-ext-gen23924",
+            "id": "ExtBox1-ext-gen8102",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -61,16 +61,18 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "onRecordNavBtnClick",
+                "fn": "onActionColumnClick",
+                "designer|params": [
+                    "actioncolumn"
+                ],
                 "implHandler": [
-                    "console.log(\"DO something!!\");",
                     ""
                 ],
                 "name": "click",
                 "scope": "me",
-                "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "recordnav button",
-                "designer|userClassName": "onRecordNavBtnClick"
+                "designer|targetType": "Ext.grid.column.Action",
+                "designer|controlQuery": "clientgrid action2",
+                "designer|userClassName": "onActionColumnClick"
             },
             "customConfigs": [],
             "expanded": true
