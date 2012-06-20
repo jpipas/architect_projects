@@ -93,20 +93,233 @@ Ext.define('NCPublishers.view.ClientRecord', {
                 },
                 {
                     xtype: 'tabpanel',
+                    height: 350,
                     itemId: 'ClientSublists',
-                    activeTab: 0,
+                    activeTab: 2,
+                    plain: true,
                     items: [
                         {
                             xtype: 'panel',
-                            title: 'Contracts'
+                            layout: {
+                                type: 'fit'
+                            },
+                            bodyPadding: 5,
+                            title: 'General',
+                            items: [
+                                {
+                                    xtype: 'tabpanel',
+                                    itemId: 'General-Sublists',
+                                    activeTab: 3,
+                                    items: [
+                                        {
+                                            xtype: 'panel',
+                                            title: 'Contacts'
+                                        },
+                                        {
+                                            xtype: 'panel',
+                                            title: 'Activities'
+                                        },
+                                        {
+                                            xtype: 'panel',
+                                            title: 'User Notes'
+                                        },
+                                        {
+                                            xtype: 'panel',
+                                            title: 'Files'
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             xtype: 'panel',
-                            title: 'Sales Reps'
+                            autoScroll: false,
+                            layout: {
+                                align: 'stretch',
+                                type: 'vbox'
+                            },
+                            bodyPadding: 5,
+                            title: 'Sales',
+                            items: [
+                                {
+                                    xtype: 'container',
+                                    height: 50,
+                                    itemId: 'SalesSublistHeader',
+                                    maxHeight: 80,
+                                    layout: {
+                                        type: 'hbox'
+                                    },
+                                    flex: 1,
+                                    items: [
+                                        {
+                                            xtype: 'container',
+                                            height: 94,
+                                            itemId: 'Column1',
+                                            width: 150,
+                                            defaults: '{anchor: 95%}',
+                                            layout: {
+                                                type: 'anchor'
+                                            },
+                                            flex: 1,
+                                            items: [
+                                                {
+                                                    xtype: 'textfield',
+                                                    fieldLabel: 'Label',
+                                                    anchor: '95%'
+                                                },
+                                                {
+                                                    xtype: 'textfield',
+                                                    fieldLabel: 'Label',
+                                                    anchor: '95%'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            xtype: 'container',
+                                            height: 72,
+                                            itemId: 'Column2',
+                                            width: 150,
+                                            layout: {
+                                                type: 'anchor'
+                                            },
+                                            flex: 1,
+                                            items: [
+                                                {
+                                                    xtype: 'textfield',
+                                                    fieldLabel: 'Label',
+                                                    anchor: '95%'
+                                                },
+                                                {
+                                                    xtype: 'textfield',
+                                                    fieldLabel: 'Label',
+                                                    anchor: '95%'
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    xtype: 'tabpanel',
+                                    itemId: 'SalesSublistTabs',
+                                    width: 100,
+                                    activeTab: 0,
+                                    items: [
+                                        {
+                                            xtype: 'panel',
+                                            title: 'Publications'
+                                        },
+                                        {
+                                            xtype: 'panel',
+                                            title: 'Contracts'
+                                        },
+                                        {
+                                            xtype: 'panel',
+                                            title: 'Advertisements'
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             xtype: 'panel',
-                            title: 'Financial'
+                            layout: {
+                                align: 'stretch',
+                                type: 'vbox'
+                            },
+                            bodyPadding: 5,
+                            title: 'Financial',
+                            items: [
+                                {
+                                    xtype: 'container',
+                                    height: 50,
+                                    itemId: 'FinancialSublistHeader',
+                                    layout: {
+                                        align: 'stretch',
+                                        padding: '',
+                                        type: 'hbox'
+                                    },
+                                    items: [
+                                        {
+                                            xtype: 'container',
+                                            flex: 1,
+                                            items: [
+                                                {
+                                                    xtype: 'textfield',
+                                                    fieldLabel: 'Label'
+                                                },
+                                                {
+                                                    xtype: 'textfield',
+                                                    fieldLabel: 'Label'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            xtype: 'container',
+                                            flex: 1,
+                                            items: [
+                                                {
+                                                    xtype: 'textfield',
+                                                    fieldLabel: 'Label'
+                                                },
+                                                {
+                                                    xtype: 'textfield',
+                                                    fieldLabel: 'Label'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            xtype: 'container',
+                                            flex: 1,
+                                            items: [
+                                                {
+                                                    xtype: 'textfield',
+                                                    fieldLabel: 'Label'
+                                                },
+                                                {
+                                                    xtype: 'checkboxfield',
+                                                    fieldLabel: 'Label',
+                                                    boxLabel: 'Box Label'
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    xtype: 'gridpanel',
+                                    padding: '10 0',
+                                    autoScroll: true,
+                                    bodyBorder: false,
+                                    preventHeader: true,
+                                    title: 'PaymentsGrid',
+                                    titleCollapse: true,
+                                    flex: 1,
+                                    columns: [
+                                        {
+                                            xtype: 'gridcolumn',
+                                            dataIndex: 'string',
+                                            text: 'String'
+                                        },
+                                        {
+                                            xtype: 'numbercolumn',
+                                            dataIndex: 'number',
+                                            text: 'Number'
+                                        },
+                                        {
+                                            xtype: 'datecolumn',
+                                            dataIndex: 'date',
+                                            text: 'Date'
+                                        },
+                                        {
+                                            xtype: 'booleancolumn',
+                                            dataIndex: 'bool',
+                                            text: 'Boolean'
+                                        }
+                                    ],
+                                    viewConfig: {
+
+                                    }
+                                }
+                            ]
                         }
                     ]
                 }
