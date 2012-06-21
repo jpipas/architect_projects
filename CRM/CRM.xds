@@ -1,10 +1,10 @@
 {
     "name": "CRM",
     "settings": {
-        "urlPrefix": "http://ncpub.sencha.dev:8000",
+        "urlPrefix": "http://localhost:8001",
         "spacesToIndent": 4,
         "codeGenFormat": "Class",
-        "exportPath": "/Users/jpipas/Projects/Sites/CRM",
+        "exportPath": "C:/Users/jpipas/Documents/GitHub/javis",
         "extPath": "http://extjs.cachefly.net/ext-4.0.7-commercial/",
         "senchaIoKey": "",
         "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
@@ -153,13 +153,37 @@
                 "app/view/ClientRecord.js"
             ],
             "className": "ClientRecord"
+        },
+        "e4f5c676-6a36-4f1c-9c92-aa1296a7b78b": {
+            "paths": [
+                "metadata/controller/ClientGridController",
+                "app/controller/override/ClientGridController.js",
+                "app/controller/ClientGridController.js"
+            ],
+            "className": "ClientGridController"
+        },
+        "606f2c32-9319-4444-aae7-f80244f8e869": {
+            "paths": [
+                "metadata/store/PaymentStore",
+                "app/store/override/PaymentStore.js",
+                "app/store/PaymentStore.js"
+            ],
+            "className": "PaymentStore"
+        },
+        "619627fa-f4e8-4e5a-a09a-fb47949da159": {
+            "paths": [
+                "metadata/model/Payment",
+                "app/model/override/Payment.js",
+                "app/model/Payment.js"
+            ],
+            "className": "Payment"
         }
     },
     "expandedState": {
         "data": true,
         "model": true,
         "component": true,
-        "controller": false,
-        "resource": true
+        "controller": true,
+        "resource": false
     }
 }
