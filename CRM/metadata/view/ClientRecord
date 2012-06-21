@@ -8,10 +8,12 @@
     "codeClass": null,
     "userConfig": {
         "defaults": "{anchor: '100%'}",
+        "layout": "vbox",
         "bodyPadding": 5,
         "title": "Client Record",
         "designer|userClassName": "ClientRecord",
-        "designer|userAlias": "clientrecord"
+        "designer|userAlias": "clientrecord",
+        "container|align": "stretch"
     },
     "customConfigs": [],
     "designerId": "d4e4c957-4a2b-442c-b62c-8d97c9aa5b0f",
@@ -44,7 +46,9 @@
             },
             "codeClass": null,
             "userConfig": {
+                "height": 80,
                 "itemId": "RecordHeader",
+                "maxHeight": 80,
                 "defaultType": null,
                 "layout": "hbox",
                 "designer|userClassName": "MyContainer2",
@@ -178,7 +182,8 @@
                 "maxTabWidth": null,
                 "plain": false,
                 "tabPosition": null,
-                "designer|userClassName": "MyTabPanel"
+                "designer|userClassName": "MyTabPanel",
+                "layout|flex": 1
             },
             "customConfigs": [],
             "expanded": false,

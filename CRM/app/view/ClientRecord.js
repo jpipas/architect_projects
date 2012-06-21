@@ -20,6 +20,10 @@ Ext.define('NCPublishers.view.ClientRecord', {
         'NCPublishers.view.RecordNavigation'
     ],
 
+    layout: {
+        align: 'stretch',
+        type: 'vbox'
+    },
     bodyPadding: 5,
     title: 'Client Record',
 
@@ -40,7 +44,9 @@ Ext.define('NCPublishers.view.ClientRecord', {
             items: [
                 {
                     xtype: 'container',
+                    height: 80,
                     itemId: 'RecordHeader',
+                    maxHeight: 80,
                     layout: {
                         padding: '0 0 25 0',
                         type: 'hbox'
@@ -97,6 +103,7 @@ Ext.define('NCPublishers.view.ClientRecord', {
                     itemId: 'ClientSublists',
                     activeTab: 1,
                     plain: false,
+                    flex: 1,
                     items: [
                         {
                             xtype: 'panel',
