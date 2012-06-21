@@ -95,7 +95,7 @@ Ext.define('NCPublishers.view.ClientRecord', {
                     xtype: 'tabpanel',
                     height: 350,
                     itemId: 'ClientSublists',
-                    activeTab: 0,
+                    activeTab: 1,
                     plain: false,
                     items: [
                         {
@@ -135,14 +135,11 @@ Ext.define('NCPublishers.view.ClientRecord', {
                             xtype: 'panel',
                             autoScroll: false,
                             layout: {
+                                align: 'stretch',
                                 type: 'vbox'
                             },
                             bodyPadding: 5,
                             title: 'Sales',
-                            tabConfig: {
-                                xtype: 'tab',
-                                flex: 1
-                            },
                             items: [
                                 {
                                     xtype: 'container',
@@ -206,6 +203,7 @@ Ext.define('NCPublishers.view.ClientRecord', {
                                     itemId: 'SalesSublistTabs',
                                     width: 100,
                                     activeTab: 0,
+                                    plain: false,
                                     items: [
                                         {
                                             xtype: 'panel',
@@ -233,8 +231,7 @@ Ext.define('NCPublishers.view.ClientRecord', {
                             title: 'Financial',
                             tabConfig: {
                                 xtype: 'tab',
-                                autoWidth: false,
-                                flex: 1
+                                autoWidth: false
                             },
                             items: [
                                 {

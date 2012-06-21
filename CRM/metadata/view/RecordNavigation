@@ -70,7 +70,7 @@
             "expanded": true
         },
         {
-            "id": "ExtBox1-ext-gen12124",
+            "id": "ExtBox1-ext-gen12771",
             "type": "button",
             "reference": {
                 "name": "items",
@@ -78,8 +78,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "text": "Back",
-                "designer|userClassName": "MyButton2",
+                "text": "New",
+                "designer|userClassName": "MyButton3",
                 "layout|flex": null
             },
             "customConfigs": [],
@@ -101,7 +101,7 @@
             "expanded": true
         },
         {
-            "id": "ExtBox1-ext-gen12771",
+            "id": "ExtBox1-ext-gen12124",
             "type": "button",
             "reference": {
                 "name": "items",
@@ -109,8 +109,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "text": "New",
-                "designer|userClassName": "MyButton3",
+                "text": "List View",
+                "designer|userClassName": "MyButton2",
                 "layout|flex": null
             },
             "customConfigs": [],

@@ -15,22 +15,6 @@
     "expanded": true,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen7056",
-            "type": "controllerref",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "ref": "clientGrid",
-                "selector": "clientgrid",
-                "designer|userClassName": "clientGrid"
-            },
-            "customConfigs": [],
-            "expanded": true
-        },
-        {
             "id": "ExtBox1-ext-gen7765",
             "type": "fixedfunction",
             "reference": {
@@ -44,7 +28,11 @@
                     "application"
                 ],
                 "implHandler": [
-                    ""
+                    "me = this;",
+                    "me.application.on({",
+                    "    clientRecordChange: me.changeClientRecord,",
+                    "    scope: me",
+                    "});"
                 ],
                 "designer|userClassName": "init"
             },
@@ -66,19 +54,41 @@
                     "grid, col, row"
                 ],
                 "implHandler": [
-                    "console.log(\"HELLO!\");"
+                    "this.application.fireEvent('clientRecordChange',row);"
                 ],
                 "name": "click",
                 "scope": "me",
                 "designer|targetType": null,
-                "designer|controlQuery": "clientGrid actions",
+                "designer|controlQuery": "clientgrid #actions",
                 "designer|userClassName": "onActionColumnClick"
             },
             "customConfigs": [],
             "expanded": true
         },
         {
-            "id": "ExtBox1-ext-gen20193",
+            "id": "ExtBox1-ext-gen22004",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "changeClientRecord",
+                "designer|params": [
+                    "recordId"
+                ],
+                "implHandler": [
+                    "console.log(recordId);",
+                    "this.getContentCards().getLayout().setActiveItem('ClientRecord');"
+                ],
+                "designer|userClassName": "changeClientRecord"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen7056",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -86,9 +96,25 @@
             },
             "codeClass": null,
             "userConfig": {
-                "ref": "actions",
-                "selector": "clientgrid actions",
-                "designer|userClassName": "actions"
+                "ref": "clientGrid",
+                "selector": "clientgrid",
+                "designer|userClassName": "clientGrid"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen24794",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "contentCards",
+                "selector": "contentCards",
+                "designer|userClassName": "contentCards"
             },
             "customConfigs": [],
             "expanded": true

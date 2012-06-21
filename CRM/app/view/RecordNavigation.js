@@ -41,14 +41,14 @@ Ext.define('NCPublishers.view.RecordNavigation', {
                 },
                 {
                     xtype: 'button',
-                    text: 'Back'
+                    text: 'New'
                 },
                 {
                     xtype: 'tbseparator'
                 },
                 {
                     xtype: 'button',
-                    text: 'New'
+                    text: 'List View'
                 }
             ]
         });

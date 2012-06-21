@@ -52,7 +52,7 @@
                 "container|padding": "0 0 25 0"
             },
             "customConfigs": [],
-            "expanded": true,
+            "expanded": false,
             "cn": [
                 {
                     "id": "ExtBox1-ext-gen44036",
@@ -173,13 +173,15 @@
             "userConfig": {
                 "height": 350,
                 "itemId": "ClientSublists",
-                "activeTab": 0,
+                "activeTab": 1,
+                "minTabWidth": null,
                 "maxTabWidth": null,
                 "plain": false,
+                "tabPosition": null,
                 "designer|userClassName": "MyTabPanel"
             },
             "customConfigs": [],
-            "expanded": true,
+            "expanded": false,
             "cn": [
                 {
                     "id": "ExtBox1-ext-gen48763",
@@ -378,11 +380,11 @@
                         "bodyPadding": 5,
                         "title": "Sales",
                         "designer|userClassName": "MyPanel5",
-                        "container|align": null,
+                        "container|align": "stretch",
                         "container|padding": null
                     },
                     "customConfigs": [],
-                    "expanded": false,
+                    "expanded": true,
                     "cn": [
                         {
                             "id": "ExtBox1-ext-gen48758",
@@ -396,7 +398,7 @@
                                 "autoRender": null,
                                 "autoShow": null,
                                 "designer|userClassName": "TabConfig",
-                                "layout|flex": 1
+                                "layout|flex": null
                             },
                             "customConfigs": [],
                             "iconCls": "icon-tab-bar",
@@ -550,6 +552,7 @@
                                 "itemId": "SalesSublistTabs",
                                 "width": 100,
                                 "activeTab": 0,
+                                "plain": false,
                                 "designer|userClassName": "MyTabPanel2",
                                 "layout|flex": null,
                                 "dock": null
@@ -686,7 +689,7 @@
                             "userConfig": {
                                 "autoWidth": false,
                                 "designer|userClassName": "TabConfig2",
-                                "layout|flex": 1
+                                "layout|flex": null
                             },
                             "customConfigs": [],
                             "iconCls": "icon-tab-bar",

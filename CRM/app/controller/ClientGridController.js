@@ -22,22 +22,31 @@ Ext.define('NCPublishers.controller.ClientGridController', {
             selector: 'clientgrid'
         },
         {
-            ref: 'actions',
-            selector: 'clientgrid actions'
+            ref: 'contentCards',
+            selector: 'contentCards'
         }
     ],
 
     onActionColumnClick: function(grid, col, row) {
-        console.log("HELLO!");
+        this.application.fireEvent('clientRecordChange',row);
     },
 
     init: function(application) {
         this.control({
-            "clientGrid actions": {
+            "clientgrid #actions": {
                 click: this.onActionColumnClick
             }
         });
+        me = this;
+        me.application.on({
+            clientRecordChange: me.changeClientRecord,
+            scope: me
+        });
+    },
 
+    changeClientRecord: function(recordId) {
+        console.log(recordId);
+        this.getContentCards().getLayout().setActiveItem('ClientRecord');
     }
 
 });

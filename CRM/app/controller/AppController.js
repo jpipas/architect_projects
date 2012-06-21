@@ -41,6 +41,7 @@ Ext.define('NCPublishers.controller.AppController', {
     },
 
     navigationClick: function(itemId) {
+        console.log(itemId);
         this.getContentCards().getLayout().setActiveItem(itemId);
     }
 
