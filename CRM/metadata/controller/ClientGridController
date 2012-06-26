@@ -54,7 +54,7 @@
                     "grid, col, row"
                 ],
                 "implHandler": [
-                    "this.application.fireEvent('clientRecordChange',row);"
+                    "this.application.fireEvent('clientRecordChange',grid, row);"
                 ],
                 "name": "click",
                 "scope": "me",
@@ -76,10 +76,10 @@
             "userConfig": {
                 "fn": "changeClientRecord",
                 "designer|params": [
-                    "recordId"
+                    "grid, row"
                 ],
                 "implHandler": [
-                    "console.log(recordId);",
+                    "console.log(grid.store.getAt(row));",
                     "this.getContentCards().getLayout().setActiveItem('ClientRecord');"
                 ],
                 "designer|userClassName": "changeClientRecord"

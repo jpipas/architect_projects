@@ -55,7 +55,6 @@
                     "itemId"
                 ],
                 "implHandler": [
-                    "console.log(itemId);",
                     "this.getContentCards().getLayout().setActiveItem(itemId);"
                 ],
                 "designer|userClassName": "navigationClick"

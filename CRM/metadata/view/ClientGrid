@@ -240,7 +240,6 @@
                         ],
                         "implHandler": [
                             "var obj = record.get('territory');",
-                            "console.log(obj);",
                             "return Ext.isObject( obj )  ? obj.name : '';"
                         ],
                         "designer|userClassName": "getter"

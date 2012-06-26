@@ -28,7 +28,7 @@ Ext.define('NCPublishers.controller.ClientGridController', {
     ],
 
     onActionColumnClick: function(grid, col, row) {
-        this.application.fireEvent('clientRecordChange',row);
+        this.application.fireEvent('clientRecordChange',grid, row);
     },
 
     init: function(application) {
@@ -44,8 +44,8 @@ Ext.define('NCPublishers.controller.ClientGridController', {
         });
     },
 
-    changeClientRecord: function(recordId) {
-        console.log(recordId);
+    changeClientRecord: function(grid, row) {
+        console.log(grid.store.getAt(row));
         this.getContentCards().getLayout().setActiveItem('ClientRecord');
     }
 

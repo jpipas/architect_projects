@@ -109,7 +109,6 @@ Ext.define('NCPublishers.view.ClientGrid', {
                     xtype: 'gridcolumn',
                     getter: function(record) {
                         var obj = record.get('territory');
-                        console.log(obj);
                         return Ext.isObject( obj )  ? obj.name : '';
                     },
                     setter: function(record, value) {

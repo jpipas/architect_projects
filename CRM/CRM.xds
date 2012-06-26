@@ -1,10 +1,10 @@
 {
     "name": "CRM",
     "settings": {
-        "urlPrefix": "http://localhost:8001",
+        "urlPrefix": "http://ncpub.sencha.dev:8000",
         "spacesToIndent": 4,
         "codeGenFormat": "Class",
-        "exportPath": "C:/Users/jpipas/Documents/GitHub/javis",
+        "exportPath": "/Users/jpipas/Projects/Sites/CRM",
         "extPath": "http://extjs.cachefly.net/ext-4.0.7-commercial/",
         "senchaIoKey": "",
         "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",

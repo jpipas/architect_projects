@@ -38,6 +38,7 @@ Ext.define('NCPublishers.view.ClientRecord', {
                 {
                     xtype: 'recordnav',
                     itemId: 'RecordNavigation',
+                    flex: 1,
                     dock: 'top'
                 }
             ],
@@ -51,6 +52,7 @@ Ext.define('NCPublishers.view.ClientRecord', {
                         padding: '0 0 25 0',
                         type: 'hbox'
                     },
+                    flex: 1,
                     items: [
                         {
                             xtype: 'container',
