@@ -18,7 +18,7 @@
     "customConfigs": [],
     "designerId": "d4e4c957-4a2b-442c-b62c-8d97c9aa5b0f",
     "$viewOrder": 6,
-    "expanded": false,
+    "expanded": true,
     "cn": [
         {
             "id": "ExtBox1-ext-gen47218",
@@ -179,7 +179,7 @@
             "userConfig": {
                 "height": 350,
                 "itemId": "ClientSublists",
-                "activeTab": 1,
+                "activeTab": 2,
                 "minTabWidth": null,
                 "maxTabWidth": null,
                 "plain": false,
@@ -188,7 +188,7 @@
                 "layout|flex": 1
             },
             "customConfigs": [],
-            "expanded": false,
+            "expanded": true,
             "cn": [
                 {
                     "id": "ExtBox1-ext-gen48763",
@@ -235,7 +235,7 @@
                                 "itemId": "General-Sublists",
                                 "padding": null,
                                 "bodyPadding": null,
-                                "activeTab": 3,
+                                "activeTab": 0,
                                 "designer|userClassName": "MyTabPanel1"
                             },
                             "customConfigs": [],
@@ -466,7 +466,8 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "fieldLabel": "Label",
+                                                "fieldLabel": "Assigned Sales Rep",
+                                                "labelWidth": 150,
                                                 "designer|userClassName": "MyTextField4",
                                                 "layout|anchor": "95%"
                                             },
@@ -483,6 +484,7 @@
                                             "codeClass": null,
                                             "userConfig": {
                                                 "fieldLabel": "Label",
+                                                "labelWidth": 150,
                                                 "designer|userClassName": "MyTextField5",
                                                 "layout|anchor": "95%"
                                             },
@@ -519,7 +521,7 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "fieldLabel": "Label",
+                                                "fieldLabel": "Overdue Balance",
                                                 "designer|userClassName": "MyTextField6",
                                                 "layout|anchor": "95%"
                                             },
@@ -683,7 +685,7 @@
                         "container|align": "stretch"
                     },
                     "customConfigs": [],
-                    "expanded": false,
+                    "expanded": true,
                     "cn": [
                         {
                             "id": "ExtBox1-ext-gen48794",
@@ -721,7 +723,7 @@
                                 "layout|flex": 1
                             },
                             "customConfigs": [],
-                            "expanded": false,
+                            "expanded": true,
                             "cn": [
                                 {
                                     "id": "ExtBox1-ext-gen29798",
@@ -830,7 +832,7 @@
                                         "layout|flex": 1
                                     },
                                     "customConfigs": [],
-                                    "expanded": false,
+                                    "expanded": true,
                                     "cn": [
                                         {
                                             "id": "ExtBox1-ext-gen32051",
@@ -856,8 +858,9 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "fieldLabel": "Label",
+                                                "fieldLabel": null,
                                                 "boxLabel": "Box Label",
+                                                "boxLabelAlign": "before",
                                                 "designer|userClassName": "MyCheckbox"
                                             },
                                             "customConfigs": [],

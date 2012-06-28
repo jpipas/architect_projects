@@ -103,7 +103,7 @@ Ext.define('NCPublishers.view.ClientRecord', {
                     xtype: 'tabpanel',
                     height: 350,
                     itemId: 'ClientSublists',
-                    activeTab: 1,
+                    activeTab: 2,
                     plain: false,
                     flex: 1,
                     items: [
@@ -118,7 +118,7 @@ Ext.define('NCPublishers.view.ClientRecord', {
                                 {
                                     xtype: 'tabpanel',
                                     itemId: 'General-Sublists',
-                                    activeTab: 3,
+                                    activeTab: 0,
                                     items: [
                                         {
                                             xtype: 'panel',
@@ -173,12 +173,14 @@ Ext.define('NCPublishers.view.ClientRecord', {
                                             items: [
                                                 {
                                                     xtype: 'textfield',
-                                                    fieldLabel: 'Label',
+                                                    fieldLabel: 'Assigned Sales Rep',
+                                                    labelWidth: 150,
                                                     anchor: '95%'
                                                 },
                                                 {
                                                     xtype: 'textfield',
                                                     fieldLabel: 'Label',
+                                                    labelWidth: 150,
                                                     anchor: '95%'
                                                 }
                                             ]
@@ -195,7 +197,7 @@ Ext.define('NCPublishers.view.ClientRecord', {
                                             items: [
                                                 {
                                                     xtype: 'textfield',
-                                                    fieldLabel: 'Label',
+                                                    fieldLabel: 'Overdue Balance',
                                                     anchor: '95%'
                                                 },
                                                 {
@@ -292,8 +294,8 @@ Ext.define('NCPublishers.view.ClientRecord', {
                                                 },
                                                 {
                                                     xtype: 'checkboxfield',
-                                                    fieldLabel: 'Label',
-                                                    boxLabel: 'Box Label'
+                                                    boxLabel: 'Box Label',
+                                                    boxLabelAlign: 'before'
                                                 }
                                             ]
                                         }
