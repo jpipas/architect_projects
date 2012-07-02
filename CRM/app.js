@@ -22,7 +22,8 @@ Ext.application({
         'Client',
         'Territory',
         'State',
-        'Payment'
+        'Payment',
+        'Contact'
     ],
     stores: [
         'ClientStore',

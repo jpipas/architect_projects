@@ -177,6 +177,14 @@
                 "app/model/Payment.js"
             ],
             "className": "Payment"
+        },
+        "cb51cd2a-1101-4286-9579-102f4098acaa": {
+            "paths": [
+                "metadata/model/Contact",
+                "app/model/override/Contact.js",
+                "app/model/Contact.js"
+            ],
+            "className": "Contact"
         }
     },
     "expandedState": {

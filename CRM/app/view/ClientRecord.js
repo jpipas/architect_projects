@@ -32,7 +32,8 @@ Ext.define('NCPublishers.view.ClientRecord', {
 
         Ext.applyIf(me, {
             defaults: {
-                anchor: '100%'
+                anchor: '100%',
+                labelAlign: 'right'
             },
             dockedItems: [
                 {
@@ -44,10 +45,13 @@ Ext.define('NCPublishers.view.ClientRecord', {
             ],
             items: [
                 {
-                    xtype: 'container',
-                    height: 80,
+                    xtype: 'fieldcontainer',
                     itemId: 'RecordHeader',
-                    maxHeight: 80,
+                    minHeight: 100,
+                    maintainFlex: false,
+                    defaults: {
+                        labelAlign: 'right'
+                    },
                     layout: {
                         padding: '0 0 25 0',
                         type: 'hbox'
@@ -55,44 +59,85 @@ Ext.define('NCPublishers.view.ClientRecord', {
                     flex: 1,
                     items: [
                         {
-                            xtype: 'container',
+                            xtype: 'fieldcontainer',
                             border: 'false',
                             itemId: 'Column1',
                             defaultType: 'textfield',
+                            defaults: {
+                                labelAlign: 'right',
+                                anchor: '95%'
+                            },
                             layout: {
                                 type: 'anchor'
                             },
                             flex: 1,
                             items: [
                                 {
-                                    xtype: 'textfield',
-                                    fieldLabel: 'Client Name',
+                                    xtype: 'displayfield',
+                                    fieldLabel: 'Company Name',
                                     anchor: '95%'
                                 },
                                 {
-                                    xtype: 'textfield',
+                                    xtype: 'displayfield',
                                     fieldLabel: 'Territory',
+                                    anchor: '95%'
+                                },
+                                {
+                                    xtype: 'displayfield',
+                                    fieldLabel: 'Email Address',
+                                    anchor: '95%'
+                                },
+                                {
+                                    xtype: 'displayfield',
+                                    fieldLabel: 'Phone',
+                                    anchor: '95%'
+                                },
+                                {
+                                    xtype: 'displayfield',
+                                    fieldLabel: 'Fax',
                                     anchor: '95%'
                                 }
                             ]
                         },
                         {
-                            xtype: 'container',
+                            xtype: 'fieldcontainer',
                             border: 'false',
+                            height: 222,
                             itemId: 'Column2',
+                            width: 337,
+                            autoScroll: true,
+                            defaults: {
+                                labelAlign: 'right',
+                                anchor: '95%'
+                            },
                             layout: {
                                 type: 'anchor'
                             },
                             flex: 1,
                             items: [
                                 {
-                                    xtype: 'textfield',
+                                    xtype: 'displayfield',
                                     fieldLabel: 'Address Line 1',
                                     anchor: '100%'
                                 },
                                 {
-                                    xtype: 'textfield',
+                                    xtype: 'displayfield',
+                                    fieldLabel: 'Address Line 2',
+                                    anchor: '100%'
+                                },
+                                {
+                                    xtype: 'displayfield',
                                     fieldLabel: 'City',
+                                    anchor: '100%'
+                                },
+                                {
+                                    xtype: 'displayfield',
+                                    fieldLabel: 'State',
+                                    anchor: '100%'
+                                },
+                                {
+                                    xtype: 'displayfield',
+                                    fieldLabel: 'Zip',
                                     anchor: '100%'
                                 }
                             ]
@@ -103,9 +148,12 @@ Ext.define('NCPublishers.view.ClientRecord', {
                     xtype: 'tabpanel',
                     height: 350,
                     itemId: 'ClientSublists',
-                    activeTab: 2,
+                    defaults: {
+                        labelAlign: 'right'
+                    },
+                    activeTab: 0,
                     plain: false,
-                    flex: 1,
+                    flex: 3,
                     items: [
                         {
                             xtype: 'panel',
@@ -143,6 +191,9 @@ Ext.define('NCPublishers.view.ClientRecord', {
                         {
                             xtype: 'panel',
                             autoScroll: false,
+                            defaults: {
+                                labelAlign: 'right'
+                            },
                             layout: {
                                 align: 'stretch',
                                 type: 'vbox'
@@ -161,11 +212,14 @@ Ext.define('NCPublishers.view.ClientRecord', {
                                     flex: 1,
                                     items: [
                                         {
-                                            xtype: 'container',
+                                            xtype: 'fieldcontainer',
                                             height: 94,
                                             itemId: 'Column1',
                                             width: 150,
-                                            defaults: '{anchor: 95%}',
+                                            defaults: {
+                                                labelAlign: 'right',
+                                                anchor: '95%'
+                                            },
                                             layout: {
                                                 type: 'anchor'
                                             },
@@ -186,10 +240,14 @@ Ext.define('NCPublishers.view.ClientRecord', {
                                             ]
                                         },
                                         {
-                                            xtype: 'container',
+                                            xtype: 'fieldcontainer',
                                             height: 72,
                                             itemId: 'Column2',
                                             width: 150,
+                                            defaults: {
+                                                labelAlign: 'right',
+                                                anchor: '100%'
+                                            },
                                             layout: {
                                                 type: 'anchor'
                                             },
@@ -249,6 +307,7 @@ Ext.define('NCPublishers.view.ClientRecord', {
                                     xtype: 'container',
                                     height: 50,
                                     itemId: 'FinancialSublistHeader',
+                                    maxHeight: 50,
                                     layout: {
                                         align: 'stretch',
                                         padding: '',
