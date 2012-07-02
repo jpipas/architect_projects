@@ -170,7 +170,57 @@ Ext.define('NCPublishers.view.ClientRecord', {
                                     items: [
                                         {
                                             xtype: 'panel',
-                                            title: 'Contacts'
+                                            title: 'Contacts',
+                                            items: [
+                                                {
+                                                    xtype: 'gridpanel',
+                                                    border: 0,
+                                                    preventHeader: true,
+                                                    title: 'My Grid Panel',
+                                                    forceFit: true,
+                                                    store: 'ContactStore',
+                                                    columnLines: false,
+                                                    viewConfig: {
+
+                                                    },
+                                                    columns: [
+                                                        {
+                                                            xtype: 'actioncolumn',
+                                                            items: [
+                                                                {
+                                                                    icon: 'resources/icons/user.png',
+                                                                    tooltip: 'View'
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            xtype: 'gridcolumn',
+                                                            dataIndex: 'id',
+                                                            text: 'ID'
+                                                        },
+                                                        {
+                                                            xtype: 'gridcolumn',
+                                                            dataIndex: 'name',
+                                                            text: 'Name'
+                                                        },
+                                                        {
+                                                            xtype: 'gridcolumn',
+                                                            dataIndex: 'email_address',
+                                                            text: 'Email Address'
+                                                        },
+                                                        {
+                                                            xtype: 'gridcolumn',
+                                                            dataIndex: 'cell_phone',
+                                                            text: 'Cell Phone'
+                                                        },
+                                                        {
+                                                            xtype: 'gridcolumn',
+                                                            dataIndex: 'role',
+                                                            text: 'Role'
+                                                        }
+                                                    ]
+                                                }
+                                            ]
                                         },
                                         {
                                             xtype: 'panel',

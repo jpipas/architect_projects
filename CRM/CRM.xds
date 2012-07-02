@@ -185,6 +185,14 @@
                 "app/model/Contact.js"
             ],
             "className": "Contact"
+        },
+        "78a0add9-b5d9-4bcb-950a-7314049de2e3": {
+            "paths": [
+                "metadata/store/ContactStore",
+                "app/store/override/ContactStore.js",
+                "app/store/ContactStore.js"
+            ],
+            "className": "ContactStore"
         }
     },
     "expandedState": {

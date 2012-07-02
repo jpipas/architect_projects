@@ -28,7 +28,8 @@ Ext.application({
     stores: [
         'ClientStore',
         'TerritoryStore',
-        'PaymentStore'
+        'PaymentStore',
+        'ContactStore'
     ],
     views: [
         'AppViewport',
