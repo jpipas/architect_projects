@@ -28,10 +28,14 @@
             "RecordNavigation",
             "ClientGrid",
             "TerritoryGrid",
-            "ClientRecord"
+            "ClientRecord",
+            "ContentPanel",
+            "Portlet",
+            "PortalPanel",
+            "PortalColumn"
         ],
         "autoCreateViewport": true,
-        "name": "NCPublishers",
+        "name": "JavisERP",
         "controllers": [
             "AppController",
             "MainNavController",

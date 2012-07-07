@@ -23,7 +23,7 @@
     "customConfigs": [],
     "designerId": "342c2439-4433-4ebf-9f68-1eb5af16f9a6",
     "$viewOrder": 4,
-    "expanded": true,
+    "expanded": false,
     "cn": [
         {
             "id": "ExtBox1-ext-gen26762",
@@ -223,7 +223,7 @@
                 "designer|userClassName": "MyColumn6"
             },
             "customConfigs": [],
-            "expanded": true,
+            "expanded": false,
             "cn": [
                 {
                     "id": "ExtBox1-ext-gen32234",

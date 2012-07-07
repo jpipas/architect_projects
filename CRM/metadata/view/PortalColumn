@@ -1,0 +1,22 @@
+{
+    "id": "ExtBox1-ext-gen15408",
+    "type": "container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": "x-portal-column",
+        "height": 250,
+        "width": 400,
+        "defaultType": "portlet",
+        "layout": "anchor",
+        "designer|userClassName": "PortalColumn",
+        "designer|userAlias": "portalcolumn"
+    },
+    "customConfigs": [],
+    "designerId": "d0cae4e8-c092-49dd-b560-e100ce4f1983",
+    "$viewOrder": 11,
+    "expanded": true
+}

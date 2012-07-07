@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('NCPublishers.model.Contact', {
+Ext.define('JavisERP.model.Contact', {
     extend: 'Ext.data.Model',
 
     fields: [

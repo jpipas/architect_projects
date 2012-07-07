@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('NCPublishers.controller.ClientGridController', {
+Ext.define('JavisERP.controller.ClientGridController', {
     extend: 'Ext.app.Controller',
 
     refs: [

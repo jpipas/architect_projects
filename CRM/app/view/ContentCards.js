@@ -13,14 +13,15 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('NCPublishers.view.ContentCards', {
+Ext.define('JavisERP.view.ContentCards', {
     extend: 'Ext.container.Container',
     alias: 'widget.contentCards',
     requires: [
-        'NCPublishers.view.Activities',
-        'NCPublishers.view.ClientGrid',
-        'NCPublishers.view.TerritoryGrid',
-        'NCPublishers.view.ClientRecord'
+        'JavisERP.view.ContentPanel',
+        'JavisERP.view.Activities',
+        'JavisERP.view.ClientGrid',
+        'JavisERP.view.TerritoryGrid',
+        'JavisERP.view.ClientRecord'
     ],
 
     activeItem: 0,
@@ -34,16 +35,8 @@ Ext.define('NCPublishers.view.ContentCards', {
         Ext.applyIf(me, {
             items: [
                 {
-                    xtype: 'panel',
-                    border: 0,
-                    itemId: 'Dashboard',
-                    activeItem: 0,
-                    layout: {
-                        type: 'fit'
-                    },
-                    preventHeader: false,
-                    title: 'NCPublisher Dashboard',
-                    titleCollapse: false
+                    xtype: 'portletpanel',
+                    itemId: 'PortalPanel'
                 },
                 {
                     xtype: 'activities',

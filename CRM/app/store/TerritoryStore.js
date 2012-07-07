@@ -13,10 +13,10 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('NCPublishers.store.TerritoryStore', {
+Ext.define('JavisERP.store.TerritoryStore', {
     extend: 'Ext.data.Store',
     requires: [
-        'NCPublishers.model.Territory'
+        'JavisERP.model.Territory'
     ],
 
     constructor: function(cfg) {
@@ -24,7 +24,7 @@ Ext.define('NCPublishers.store.TerritoryStore', {
         cfg = cfg || {};
         me.callParent([Ext.apply({
             storeId: 'TerritoryStore',
-            model: 'NCPublishers.model.Territory'
+            model: 'JavisERP.model.Territory'
         }, cfg)]);
     }
 });

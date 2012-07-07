@@ -18,6 +18,11 @@ Ext.Loader.setConfig({
 });
 
 Ext.application({
+    requires: [
+        'JavisERP.view.override.PortalPanel',
+        'JavisERP.view.override.PortalColumn'
+    ],
+
     models: [
         'Client',
         'Territory',
@@ -39,10 +44,14 @@ Ext.application({
         'RecordNavigation',
         'ClientGrid',
         'TerritoryGrid',
-        'ClientRecord'
+        'ClientRecord',
+        'ContentPanel',
+        'Portlet',
+        'PortalPanel',
+        'PortalColumn'
     ],
     autoCreateViewport: true,
-    name: 'NCPublishers',
+    name: 'JavisERP',
     controllers: [
         'AppController',
         'MainNavController',

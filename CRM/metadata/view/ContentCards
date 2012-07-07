@@ -18,29 +18,20 @@
     "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen63497",
-            "type": "panel",
+            "id": "ExtBox1-ext-gen7546",
+            "type": "linkedinstance",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "autoRender": null,
-                "autoShow": null,
-                "border": 0,
-                "id": null,
-                "itemId": "Dashboard",
-                "activeItem": 0,
-                "layout": "fit",
-                "preventHeader": false,
-                "title": "NCPublisher Dashboard",
-                "titleCollapse": false,
-                "designer|userClassName": "ContentPanel",
-                "designer|userAlias": "content"
+                "itemId": "PortalPanel"
             },
             "customConfigs": [],
-            "expanded": true
+            "iconCls": "icon-linkedinstance",
+            "expanded": true,
+            "masterInstanceId": "ExtBox1-ext-gen63497"
         },
         {
             "id": "ExtBox1-ext-gen33022",

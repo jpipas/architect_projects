@@ -1,0 +1,57 @@
+{
+    "id": "ExtBox1-ext-gen9644",
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": "x-portlet",
+        "draggable": true,
+        "frame": true,
+        "height": null,
+        "width": null,
+        "layout": "fit",
+        "closable": true,
+        "collapsible": true,
+        "title": "My Panel",
+        "designer|userClassName": "Portlet",
+        "designer|userAlias": "portlet"
+    },
+    "customConfigs": [],
+    "designerId": "e1c76b77-7439-4a96-ae08-46cc49b8e2b1",
+    "$viewOrder": 9,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen10998",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "doClose",
+                "implHandler": [
+                    "if (!this.closing) {",
+                    "    this.closing = true;",
+                    "    this.el.animate({",
+                    "        opacity: 0,",
+                    "        callback: function(){",
+                    "            this.fireEvent('close', this);",
+                    "            this[this.closeAction]();",
+                    "        },",
+                    "        scope: this",
+                    "    });",
+                    "}",
+                    ""
+                ],
+                "designer|userClassName": "doClose"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

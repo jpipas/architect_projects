@@ -13,6 +13,6 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('NCPublishers.model.Payment', {
+Ext.define('JavisERP.model.Payment', {
     extend: 'Ext.data.Model'
 });

@@ -1,10 +1,10 @@
 {
     "name": "CRM",
     "settings": {
-        "urlPrefix": "http://localhost:8001",
+        "urlPrefix": "http://ncpub.sencha.dev:8000",
         "spacesToIndent": 4,
         "codeGenFormat": "Class",
-        "exportPath": "C:/Users/jpipas/Documents/GitHub/javis",
+        "exportPath": "/Users/jpipas/Projects/Sites/CRM",
         "extPath": "http://extjs.cachefly.net/ext-4.0.7-commercial/",
         "senchaIoKey": "",
         "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
@@ -193,13 +193,51 @@
                 "app/store/ContactStore.js"
             ],
             "className": "ContactStore"
+        },
+        "88697d41-4203-4896-974f-2d172d0dd7b9": {
+            "paths": [
+                "metadata/resource/js"
+            ],
+            "className": "js"
+        },
+        "6d8a9363-f987-4060-ad3b-026c844039d4": {
+            "paths": [
+                "metadata/view/ContentPanel",
+                "app/view/override/ContentPanel.js",
+                "app/view/ContentPanel.js"
+            ],
+            "className": "ContentPanel"
+        },
+        "e1c76b77-7439-4a96-ae08-46cc49b8e2b1": {
+            "paths": [
+                "metadata/view/Portlet",
+                "app/view/override/Portlet.js",
+                "app/view/Portlet.js"
+            ],
+            "className": "Portlet"
+        },
+        "5bd74abd-0d33-4928-b7f9-11eeb811b12f": {
+            "paths": [
+                "metadata/view/PortalPanel",
+                "app/view/override/PortalPanel.js",
+                "app/view/PortalPanel.js"
+            ],
+            "className": "PortalPanel"
+        },
+        "d0cae4e8-c092-49dd-b560-e100ce4f1983": {
+            "paths": [
+                "metadata/view/PortalColumn",
+                "app/view/override/PortalColumn.js",
+                "app/view/PortalColumn.js"
+            ],
+            "className": "PortalColumn"
         }
     },
     "expandedState": {
-        "data": true,
+        "data": false,
         "model": true,
         "component": true,
         "controller": true,
-        "resource": false
+        "resource": true
     }
 }

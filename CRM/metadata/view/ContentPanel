@@ -1,0 +1,27 @@
+{
+    "id": "ExtBox1-ext-gen63497",
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoRender": null,
+        "autoShow": null,
+        "border": 0,
+        "id": null,
+        "itemId": "Dashboard",
+        "activeItem": 0,
+        "layout": "fit",
+        "preventHeader": false,
+        "title": "NCPublisher Dashboard",
+        "titleCollapse": false,
+        "designer|userClassName": "ContentPanel",
+        "designer|userAlias": "portletpanel"
+    },
+    "customConfigs": [],
+    "designerId": "6d8a9363-f987-4060-ad3b-026c844039d4",
+    "$viewOrder": 8,
+    "expanded": true
+}

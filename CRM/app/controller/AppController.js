@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('NCPublishers.controller.AppController', {
+Ext.define('JavisERP.controller.AppController', {
     extend: 'Ext.app.Controller',
 
     refs: [

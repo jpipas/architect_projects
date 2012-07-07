@@ -109,6 +109,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "itemId": "ClientGrid",
                 "text": "List View",
                 "designer|userClassName": "MyButton2",
                 "layout|flex": null

@@ -13,11 +13,13 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('NCPublishers.view.Viewport', {
-    extend: 'NCPublishers.view.AppViewport',
+Ext.define('JavisERP.view.Viewport', {
+    extend: 'JavisERP.view.AppViewport',
     renderTo: Ext.getBody(),
     requires: [
-        'NCPublishers.view.AppViewport',
-        'NCPublishers.view.ClientRecord'
+        'JavisERP.view.AppViewport',
+        'JavisERP.view.Portlet',
+        'JavisERP.view.PortalPanel',
+        'JavisERP.view.PortalColumn'
     ]
 });

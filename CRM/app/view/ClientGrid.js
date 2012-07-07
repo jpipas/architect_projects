@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('NCPublishers.view.ClientGrid', {
+Ext.define('JavisERP.view.ClientGrid', {
     extend: 'Ext.grid.Panel',
     alias: 'widget.clientgrid',
 

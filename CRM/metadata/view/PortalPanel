@@ -1,0 +1,97 @@
+{
+    "id": "ExtBox1-ext-gen11578",
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": "x-portal",
+        "height": 250,
+        "width": 400,
+        "activeItem": 0,
+        "defaultType": "portalcolumn",
+        "layout": "column",
+        "bodyCls": "x-portal-body",
+        "title": "My Panel",
+        "designer|userClassName": "PortalPanel",
+        "designer|userAlias": "portalpanel"
+    },
+    "customConfigs": [],
+    "designerId": "5bd74abd-0d33-4928-b7f9-11eeb811b12f",
+    "$viewOrder": 10,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen13531",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "beforeLayout",
+                "implHandler": [
+                    "var items = this.layout.getLayoutItems(),",
+                    "    len = items.length,",
+                    "    i = 0,",
+                    "    item;",
+                    "",
+                    "for (; i < len; i++) {",
+                    "    item = items[i];",
+                    "    item.columnWidth = 1 / len;",
+                    "    item.removeCls(['x-portal-column-first', 'x-portal-column-last']);",
+                    "}",
+                    "items[0].addCls('x-portal-column-first');",
+                    "items[len - 1].addCls('x-portal-column-last');",
+                    "return this.callParent(arguments);"
+                ],
+                "designer|userClassName": "beforeLayout"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen13932",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "initEvents",
+                "implHandler": [
+                    "this.callParent();",
+                    "this.dd = Ext.create('JavisERP.view.PortalDropZone', this, this.dropConfig);"
+                ],
+                "designer|userClassName": "initEvents"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen14450",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "beforeDestroy",
+                "implHandler": [
+                    "if (this.dd) {",
+                    "    this.dd.unreg();",
+                    "}",
+                    "this.callParent();"
+                ],
+                "designer|userClassName": "beforeDestroy"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

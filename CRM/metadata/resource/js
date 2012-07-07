@@ -1,0 +1,16 @@
+{
+    "id": "ExtBox1-ext-gen5895",
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "app/view/PortalColumn.js"
+    },
+    "customConfigs": [],
+    "designerId": "88697d41-4203-4896-974f-2d172d0dd7b9",
+    "$viewOrder": 1,
+    "expanded": true
+}

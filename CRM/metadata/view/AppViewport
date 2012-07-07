@@ -66,6 +66,22 @@
                     },
                     "customConfigs": [],
                     "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen5044",
+                    "type": "container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "HeaderMenu",
+                        "designer|userClassName": "MyContainer7",
+                        "layout|flex": 1
+                    },
+                    "customConfigs": [],
+                    "expanded": true
                 }
             ]
         },
@@ -98,6 +114,7 @@
             "codeClass": null,
             "userConfig": {
                 "id": null,
+                "itemId": "AppBody",
                 "layout|flex": 1
             },
             "customConfigs": [],
@@ -114,6 +131,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "contentEl": "footer",
                 "height": 50,
                 "maxHeight": 50,
                 "layout": "vbox",
