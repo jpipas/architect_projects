@@ -7,7 +7,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "url": "app/view/PortalColumn.js"
+        "url": "app/view/PortalDropZone.js"
     },
     "customConfigs": [],
     "designerId": "88697d41-4203-4896-974f-2d172d0dd7b9",
