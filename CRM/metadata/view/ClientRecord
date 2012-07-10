@@ -82,7 +82,7 @@
                         "formBind": null
                     },
                     "customConfigs": [],
-                    "expanded": false,
+                    "expanded": true,
                     "cn": [
                         {
                             "id": "ExtBox1-ext-gen44372",
@@ -110,7 +110,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "name": "territory",
+                                "name": "territory.name",
                                 "fieldLabel": "Territory",
                                 "designer|userClassName": "MyDisplayField1",
                                 "layout|anchor": "95%"

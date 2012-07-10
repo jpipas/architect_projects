@@ -85,6 +85,7 @@
                     "console.log(\"Grid: \"+grid);",
                     "console.log(\"Col: \"+col);",
                     "console.log(\"Row: \"+row);",
+                    "this.getClientRecord().getForm().loadRecord(this.getClientGrid().getStore().getAt(row));",
                     "this.getContentCards().getLayout().setActiveItem('ClientRecord');"
                 ],
                 "designer|userClassName": "changeClientRecord"
@@ -120,6 +121,22 @@
                 "ref": "contentCards",
                 "selector": "contentCards",
                 "designer|userClassName": "contentCards"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen3555",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "clientRecord",
+                "selector": "clientrecord",
+                "designer|userClassName": "clientRecord"
             },
             "customConfigs": [],
             "expanded": true

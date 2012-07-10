@@ -24,6 +24,10 @@ Ext.define('JavisERP.controller.ClientGridController', {
         {
             ref: 'contentCards',
             selector: 'contentCards'
+        },
+        {
+            ref: 'clientRecord',
+            selector: 'clientrecord'
         }
     ],
 
@@ -48,6 +52,7 @@ Ext.define('JavisERP.controller.ClientGridController', {
         console.log("Grid: "+grid);
         console.log("Col: "+col);
         console.log("Row: "+row);
+        this.getClientRecord().getForm().loadRecord(this.getClientGrid().getStore().getAt(row));
         this.getContentCards().getLayout().setActiveItem('ClientRecord');
     }
 
