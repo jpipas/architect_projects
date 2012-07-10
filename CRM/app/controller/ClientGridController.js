@@ -28,7 +28,7 @@ Ext.define('JavisERP.controller.ClientGridController', {
     ],
 
     onActionColumnClick: function(grid, col, row) {
-        this.application.fireEvent('clientRecordChange',grid, row);
+        this.application.fireEvent('clientRecordChange',grid,col,row);
     },
 
     init: function(application) {
@@ -44,8 +44,10 @@ Ext.define('JavisERP.controller.ClientGridController', {
         });
     },
 
-    changeClientRecord: function(grid, row) {
-        console.log(grid.store.getAt(row));
+    changeClientRecord: function(grid, col, row, record) {
+        console.log("Grid: "+grid);
+        console.log("Col: "+col);
+        console.log("Row: "+row);
         this.getContentCards().getLayout().setActiveItem('ClientRecord');
     }
 

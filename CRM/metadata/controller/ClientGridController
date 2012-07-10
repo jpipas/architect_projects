@@ -12,7 +12,7 @@
     "customConfigs": [],
     "designerId": "e4f5c676-6a36-4f1c-9c92-aa1296a7b78b",
     "$viewOrder": 3,
-    "expanded": false,
+    "expanded": true,
     "cn": [
         {
             "id": "ExtBox1-ext-gen7765",
@@ -54,7 +54,7 @@
                     "grid, col, row"
                 ],
                 "implHandler": [
-                    "this.application.fireEvent('clientRecordChange',grid, row);"
+                    "this.application.fireEvent('clientRecordChange',grid,col,row);"
                 ],
                 "name": "click",
                 "scope": "me",
@@ -76,10 +76,15 @@
             "userConfig": {
                 "fn": "changeClientRecord",
                 "designer|params": [
-                    "grid, row"
+                    "grid",
+                    "col",
+                    "row",
+                    "record"
                 ],
                 "implHandler": [
-                    "console.log(grid.store.getAt(row));",
+                    "console.log(\"Grid: \"+grid);",
+                    "console.log(\"Col: \"+col);",
+                    "console.log(\"Row: \"+row);",
                     "this.getContentCards().getLayout().setActiveItem('ClientRecord');"
                 ],
                 "designer|userClassName": "changeClientRecord"

@@ -18,7 +18,7 @@
     "customConfigs": [],
     "designerId": "d4e4c957-4a2b-442c-b62c-8d97c9aa5b0f",
     "$viewOrder": 6,
-    "expanded": false,
+    "expanded": true,
     "cn": [
         {
             "id": "ExtBox1-ext-gen47218",
@@ -93,6 +93,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "name": "name",
                                 "fieldLabel": "Company Name",
                                 "designer|userClassName": "MyDisplayField",
                                 "layout|anchor": "95%"
@@ -109,6 +110,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "name": "territory",
                                 "fieldLabel": "Territory",
                                 "designer|userClassName": "MyDisplayField1",
                                 "layout|anchor": "95%"
@@ -125,6 +127,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "name": "email_address",
                                 "fieldLabel": "Email Address",
                                 "designer|userClassName": "MyDisplayField1",
                                 "layout|anchor": "95%"
@@ -197,6 +200,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "name": "address1",
                                 "fieldLabel": "Address Line 1",
                                 "designer|userClassName": "MyDisplayField2",
                                 "layout|anchor": "100%"
@@ -213,6 +217,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "name": "address2",
                                 "fieldLabel": "Address Line 2",
                                 "designer|userClassName": "MyDisplayField2",
                                 "layout|anchor": "100%"
@@ -229,6 +234,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "name": "city",
                                 "fieldLabel": "City",
                                 "designer|userClassName": "MyDisplayField3",
                                 "layout|anchor": "100%"
@@ -245,6 +251,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "name": "state",
                                 "fieldLabel": "State",
                                 "designer|userClassName": "MyDisplayField3",
                                 "layout|anchor": "100%"
@@ -261,6 +268,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "name": "zip",
                                 "fieldLabel": "Zip",
                                 "designer|userClassName": "MyDisplayField3",
                                 "layout|anchor": "100%"
