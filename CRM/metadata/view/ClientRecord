@@ -110,7 +110,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "name": "territory.name",
+                                "name": "territory",
                                 "fieldLabel": "Territory",
                                 "designer|userClassName": "MyDisplayField1",
                                 "layout|anchor": "95%"
@@ -144,6 +144,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "name": "phone",
                                 "fieldLabel": "Phone",
                                 "designer|userClassName": "MyDisplayField1",
                                 "layout|anchor": "95%"
@@ -160,6 +161,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "name": "fax",
                                 "fieldLabel": "Fax",
                                 "designer|userClassName": "MyDisplayField1",
                                 "layout|anchor": "95%"

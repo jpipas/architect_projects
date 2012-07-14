@@ -49,10 +49,11 @@ Ext.define('JavisERP.controller.ClientGridController', {
     },
 
     changeClientRecord: function(grid, col, row, record) {
-        console.log("Grid: "+grid);
-        console.log("Col: "+col);
-        console.log("Row: "+row);
-        this.getClientRecord().getForm().loadRecord(this.getClientGrid().getStore().getAt(row));
+        console.log(this.getClientGrid().getStore().getAt(row));
+        var form = this.getClientRecord().getForm();
+        var territory_name = this.getClientGrid().getStore().getAt(row).data.territory.name;
+        form.loadRecord(this.getClientGrid().getStore().getAt(row));
+        //form.setValues({"territory":territory_name});
         this.getContentCards().getLayout().setActiveItem('ClientRecord');
     }
 
