@@ -231,6 +231,14 @@
                 "app/view/PortalColumn.js"
             ],
             "className": "PortalColumn"
+        },
+        "2f153940-6b99-47aa-b001-7b2a320bbee5": {
+            "paths": [
+                "metadata/view/ContactGrid",
+                "app/view/override/ContactGrid.js",
+                "app/view/ContactGrid.js"
+            ],
+            "className": "ContactGrid"
         }
     },
     "expandedState": {

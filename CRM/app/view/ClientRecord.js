@@ -17,9 +17,11 @@ Ext.define('JavisERP.view.ClientRecord', {
     extend: 'Ext.form.Panel',
     alias: 'widget.clientrecord',
     requires: [
-        'JavisERP.view.RecordNavigation'
+        'JavisERP.view.RecordNavigation',
+        'JavisERP.view.ContactGrid'
     ],
 
+    id: 'clientrecord',
     layout: {
         align: 'stretch',
         type: 'vbox'
@@ -176,57 +178,25 @@ Ext.define('JavisERP.view.ClientRecord', {
                                 {
                                     xtype: 'tabpanel',
                                     itemId: 'General-Sublists',
-                                    activeTab: 0,
+                                    activeTab: 1,
                                     items: [
                                         {
                                             xtype: 'panel',
                                             title: 'Contacts',
                                             items: [
                                                 {
-                                                    xtype: 'gridpanel',
-                                                    border: 0,
-                                                    preventHeader: true,
-                                                    title: 'My Grid Panel',
-                                                    forceFit: true,
-                                                    store: 'ContactStore',
-                                                    columnLines: false,
-                                                    viewConfig: {
-
-                                                    },
-                                                    columns: [
+                                                    xtype: 'contactgrid',
+                                                    itemId: 'ContectGrid'
+                                                }
+                                            ],
+                                            dockedItems: [
+                                                {
+                                                    xtype: 'toolbar',
+                                                    dock: 'top',
+                                                    items: [
                                                         {
-                                                            xtype: 'actioncolumn',
-                                                            items: [
-                                                                {
-                                                                    icon: 'resources/icons/user.png',
-                                                                    tooltip: 'View'
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            xtype: 'gridcolumn',
-                                                            dataIndex: 'id',
-                                                            text: 'ID'
-                                                        },
-                                                        {
-                                                            xtype: 'gridcolumn',
-                                                            dataIndex: 'name',
-                                                            text: 'Name'
-                                                        },
-                                                        {
-                                                            xtype: 'gridcolumn',
-                                                            dataIndex: 'email_address',
-                                                            text: 'Email Address'
-                                                        },
-                                                        {
-                                                            xtype: 'gridcolumn',
-                                                            dataIndex: 'cell_phone',
-                                                            text: 'Cell Phone'
-                                                        },
-                                                        {
-                                                            xtype: 'gridcolumn',
-                                                            dataIndex: 'role',
-                                                            text: 'Role'
+                                                            xtype: 'button',
+                                                            text: 'New Contact'
                                                         }
                                                     ]
                                                 }
@@ -234,7 +204,41 @@ Ext.define('JavisERP.view.ClientRecord', {
                                         },
                                         {
                                             xtype: 'panel',
-                                            title: 'Activities'
+                                            title: 'Activities',
+                                            items: [
+                                                {
+                                                    xtype: 'gridpanel',
+                                                    itemId: 'ActivitiesGrid',
+                                                    preventHeader: true,
+                                                    title: 'My Grid Panel',
+                                                    forceFit: true,
+                                                    columns: [
+                                                        {
+                                                            xtype: 'gridcolumn',
+                                                            dataIndex: 'string',
+                                                            text: 'String'
+                                                        },
+                                                        {
+                                                            xtype: 'numbercolumn',
+                                                            dataIndex: 'number',
+                                                            text: 'Number'
+                                                        },
+                                                        {
+                                                            xtype: 'datecolumn',
+                                                            dataIndex: 'date',
+                                                            text: 'Date'
+                                                        },
+                                                        {
+                                                            xtype: 'booleancolumn',
+                                                            dataIndex: 'bool',
+                                                            text: 'Boolean'
+                                                        }
+                                                    ],
+                                                    viewConfig: {
+
+                                                    }
+                                                }
+                                            ]
                                         },
                                         {
                                             xtype: 'panel',
