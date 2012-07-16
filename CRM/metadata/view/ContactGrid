@@ -19,7 +19,7 @@
     "customConfigs": [],
     "designerId": "2f153940-6b99-47aa-b001-7b2a320bbee5",
     "$viewOrder": 12,
-    "expanded": true,
+    "expanded": false,
     "cn": [
         {
             "id": "ExtBox1-ext-gen23656",
@@ -58,7 +58,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "icon": "resources/icons/user.png",
+                        "icon": "resources/icons/vcard.png",
                         "iconCls": null,
                         "tooltip": "View",
                         "designer|userClassName": "MyActionColumnItem2"

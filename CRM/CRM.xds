@@ -239,10 +239,42 @@
                 "app/view/ContactGrid.js"
             ],
             "className": "ContactGrid"
+        },
+        "e5a1badf-d740-4129-95a8-61a051fc7c0a": {
+            "paths": [
+                "metadata/store/ActivityStore",
+                "app/store/override/ActivityStore.js",
+                "app/store/ActivityStore.js"
+            ],
+            "className": "ActivityStore"
+        },
+        "419c63ad-5c12-43f1-83bf-7a03e83bd5be": {
+            "paths": [
+                "metadata/model/Activity",
+                "app/model/override/Activity.js",
+                "app/model/Activity.js"
+            ],
+            "className": "Activity"
+        },
+        "7ffcbb3d-13ec-4292-8a22-3bf819ddf31a": {
+            "paths": [
+                "metadata/store/UserNoteStore",
+                "app/store/override/UserNoteStore.js",
+                "app/store/UserNoteStore.js"
+            ],
+            "className": "UserNoteStore"
+        },
+        "c356f244-d188-433a-a5e0-b4f852725170": {
+            "paths": [
+                "metadata/model/UserNote",
+                "app/model/override/UserNote.js",
+                "app/model/UserNote.js"
+            ],
+            "className": "UserNote"
         }
     },
     "expandedState": {
-        "data": false,
+        "data": true,
         "model": true,
         "component": true,
         "controller": true,

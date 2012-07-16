@@ -36,7 +36,7 @@ Ext.define('JavisERP.view.ContactGrid', {
                     xtype: 'actioncolumn',
                     items: [
                         {
-                            icon: 'resources/icons/user.png',
+                            icon: 'resources/icons/vcard.png',
                             tooltip: 'View'
                         }
                     ]

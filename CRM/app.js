@@ -28,13 +28,17 @@ Ext.application({
         'Territory',
         'State',
         'Payment',
-        'Contact'
+        'Contact',
+        'Activity',
+        'UserNote'
     ],
     stores: [
         'ClientStore',
         'TerritoryStore',
         'PaymentStore',
-        'ContactStore'
+        'ContactStore',
+        'ActivityStore',
+        'UserNoteStore'
     ],
     views: [
         'AppViewport',
