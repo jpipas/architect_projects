@@ -1,0 +1,19 @@
+{
+    "id": "ExtBox1-ext-gen7548",
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "storeId": "MyJsonStore4",
+        "model": "Activity",
+        "designer|userClassName": "ActivityStore",
+        "designer|userAlias": "activitystore"
+    },
+    "customConfigs": [],
+    "designerId": "e5a1badf-d740-4129-95a8-61a051fc7c0a",
+    "$viewOrder": 4,
+    "expanded": true
+}
