@@ -7,12 +7,55 @@
     },
     "codeClass": null,
     "userConfig": {
-        "storeId": "MyJsonStore3",
+        "storeId": "ContactStore",
         "model": "Contact",
         "designer|userClassName": "ContactStore"
     },
     "customConfigs": [],
     "designerId": "78a0add9-b5d9-4bcb-950a-7314049de2e3",
     "$viewOrder": 3,
-    "expanded": true
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen51546",
+            "type": "sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MySorter"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen51659",
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "sorterFn",
+                        "designer|params": [
+                            "first",
+                            "second"
+                        ],
+                        "implHandler": [
+                            "var vals = [first,second];",
+                            "vals.sort();",
+                            ""
+                        ],
+                        "designer|userClassName": "sorterFn"
+                    },
+                    "customConfigs": [],
+                    "iconCls": "icon-basic-function",
+                    "expanded": true
+                }
+            ]
+        }
+    ]
 }

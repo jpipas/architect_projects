@@ -12,7 +12,7 @@
     "customConfigs": [],
     "designerId": "e4f5c676-6a36-4f1c-9c92-aa1296a7b78b",
     "$viewOrder": 3,
-    "expanded": false,
+    "expanded": true,
     "cn": [
         {
             "id": "ExtBox1-ext-gen7765",
@@ -82,12 +82,10 @@
                     "record"
                 ],
                 "implHandler": [
-                    "console.log(this.getClientGrid().getStore().getAt(row));",
+                    "this.getContentCards().getLayout().setActiveItem('ClientRecord');",
                     "var form = this.getClientRecord().getForm();",
-                    "var territory_name = this.getClientGrid().getStore().getAt(row).data.territory.name;",
                     "form.loadRecord(this.getClientGrid().getStore().getAt(row));",
-                    "//form.setValues({\"territory\":territory_name});",
-                    "this.getContentCards().getLayout().setActiveItem('ClientRecord');"
+                    "var contacts = this.getContactGrid().getStore().load();"
                 ],
                 "designer|userClassName": "changeClientRecord"
             },
@@ -138,6 +136,22 @@
                 "ref": "clientRecord",
                 "selector": "clientrecord",
                 "designer|userClassName": "clientRecord"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen48177",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "contactGrid",
+                "selector": "contactgrid",
+                "designer|userClassName": "contactGrid"
             },
             "customConfigs": [],
             "expanded": true

@@ -83,8 +83,60 @@
             },
             "codeClass": null,
             "userConfig": {
+                "mapping": "role.description",
                 "name": "role",
+                "sortType": "asText",
                 "designer|userClassName": "MyField16"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen39281",
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "resources/js/contact.json",
+                "designer|userClassName": "MyAjaxProxy4"
+            },
+            "customConfigs": [],
+            "expanded": false,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen39567",
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "contact",
+                        "totalProperty": "totalCount",
+                        "designer|userClassName": "MyJsonReader4"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen42810",
+            "type": "hasmanyassociation",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "associationKey": "role",
+                "model": "Role",
+                "name": "role",
+                "designer|userClassName": "MyHasManyAssociation3"
             },
             "customConfigs": [],
             "expanded": true

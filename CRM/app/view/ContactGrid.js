@@ -19,7 +19,7 @@ Ext.define('JavisERP.view.ContactGrid', {
 
     border: 0,
     preventHeader: true,
-    title: 'My Grid Panel',
+    title: 'Contact List',
     forceFit: true,
     store: 'ContactStore',
     columnLines: false,
@@ -34,6 +34,9 @@ Ext.define('JavisERP.view.ContactGrid', {
             columns: [
                 {
                     xtype: 'actioncolumn',
+                    maxWidth: 50,
+                    defaultWidth: 50,
+                    align: 'center',
                     items: [
                         {
                             icon: 'resources/icons/vcard.png',
@@ -43,7 +46,9 @@ Ext.define('JavisERP.view.ContactGrid', {
                 },
                 {
                     xtype: 'gridcolumn',
+                    hidden: true,
                     dataIndex: 'id',
+                    hideable: false,
                     text: 'ID'
                 },
                 {
@@ -63,6 +68,15 @@ Ext.define('JavisERP.view.ContactGrid', {
                 },
                 {
                     xtype: 'gridcolumn',
+                    getter: function(record) {
+                        var obj = record.get('role');
+                        console.log(obj);
+                        return Ext.isObject( obj )  ? obj.description : obj;
+                    },
+                    setter: function(record, value) {
+                        var obj = record.get('obj') || {};
+                        record.set('role', Ext.apply(obj,{description: value}));
+                    },
                     dataIndex: 'role',
                     text: 'Role'
                 }

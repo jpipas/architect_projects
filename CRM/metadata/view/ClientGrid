@@ -23,7 +23,7 @@
     "customConfigs": [],
     "designerId": "342c2439-4433-4ebf-9f68-1eb5af16f9a6",
     "$viewOrder": 4,
-    "expanded": false,
+    "expanded": true,
     "cn": [
         {
             "id": "ExtBox1-ext-gen26762",
@@ -35,9 +35,12 @@
             "codeClass": null,
             "userConfig": {
                 "draggable": false,
+                "frame": false,
                 "id": null,
                 "itemId": "actions",
+                "maxWidth": 50,
                 "layout": "fit",
+                "defaultWidth": 50,
                 "sortable": false,
                 "align": "center",
                 "flex": 1,
@@ -48,7 +51,7 @@
                 "designer|userClassName": "MyActionColumn"
             },
             "customConfigs": [],
-            "expanded": false,
+            "expanded": true,
             "cn": [
                 {
                     "id": "ExtBox1-ext-gen26769",
@@ -98,6 +101,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "hidden": true,
                 "dataIndex": "id",
                 "flex": 1,
                 "text": "ID",

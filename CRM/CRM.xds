@@ -271,6 +271,14 @@
                 "app/model/UserNote.js"
             ],
             "className": "UserNote"
+        },
+        "7dd9b4b1-62d4-491d-8dfb-8e6907c4ea47": {
+            "paths": [
+                "metadata/model/Role",
+                "app/model/override/Role.js",
+                "app/model/Role.js"
+            ],
+            "className": "Role"
         }
     },
     "expandedState": {

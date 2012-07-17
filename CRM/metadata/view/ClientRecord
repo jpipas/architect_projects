@@ -62,7 +62,7 @@
                 "layout|flex": 1
             },
             "customConfigs": [],
-            "expanded": true,
+            "expanded": false,
             "cn": [
                 {
                     "id": "ExtBox1-ext-gen44036",
@@ -83,7 +83,7 @@
                         "formBind": null
                     },
                     "customConfigs": [],
-                    "expanded": false,
+                    "expanded": true,
                     "cn": [
                         {
                             "id": "ExtBox1-ext-gen44372",
@@ -304,7 +304,7 @@
                 "layout|flex": 3
             },
             "customConfigs": [],
-            "expanded": true,
+            "expanded": false,
             "cn": [
                 {
                     "id": "ExtBox1-ext-gen48763",
@@ -351,7 +351,7 @@
                                 "itemId": "General-Sublists",
                                 "padding": null,
                                 "bodyPadding": null,
-                                "activeTab": 2,
+                                "activeTab": 0,
                                 "designer|userClassName": "MyTabPanel1"
                             },
                             "customConfigs": [],
@@ -396,7 +396,7 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "itemId": "ContectGrid"
+                                                "itemId": "ContactGrid"
                                             },
                                             "customConfigs": [],
                                             "iconCls": "icon-linkedinstance",
