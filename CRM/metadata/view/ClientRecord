@@ -19,7 +19,7 @@
     "customConfigs": [],
     "designerId": "d4e4c957-4a2b-442c-b62c-8d97c9aa5b0f",
     "$viewOrder": 6,
-    "expanded": true,
+    "expanded": false,
     "cn": [
         {
             "id": "ExtBox1-ext-gen47218",
@@ -62,7 +62,7 @@
                 "layout|flex": 1
             },
             "customConfigs": [],
-            "expanded": false,
+            "expanded": true,
             "cn": [
                 {
                     "id": "ExtBox1-ext-gen44036",
@@ -83,7 +83,7 @@
                         "formBind": null
                     },
                     "customConfigs": [],
-                    "expanded": true,
+                    "expanded": false,
                     "cn": [
                         {
                             "id": "ExtBox1-ext-gen44372",
@@ -416,7 +416,7 @@
                                                 "dock": "top"
                                             },
                                             "customConfigs": [],
-                                            "expanded": false,
+                                            "expanded": true,
                                             "cn": [
                                                 {
                                                     "id": "ExtBox1-ext-gen6774",
@@ -453,7 +453,7 @@
                                         "designer|userClassName": "MyPanel9"
                                     },
                                     "customConfigs": [],
-                                    "expanded": true,
+                                    "expanded": false,
                                     "cn": [
                                         {
                                             "id": "ExtBox1-ext-gen5046",

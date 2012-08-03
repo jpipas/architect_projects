@@ -1,7 +1,7 @@
 {
     "name": "CRM",
     "settings": {
-        "urlPrefix": "http://ncpub.sencha.dev:8000",
+        "urlPrefix": "http://ncpub.sencha.dev",
         "spacesToIndent": 4,
         "codeGenFormat": "Class",
         "exportPath": "/Users/jpipas/Projects/Sites/CRM",
@@ -156,11 +156,11 @@
         },
         "e4f5c676-6a36-4f1c-9c92-aa1296a7b78b": {
             "paths": [
-                "metadata/controller/ClientGridController",
-                "app/controller/override/ClientGridController.js",
-                "app/controller/ClientGridController.js"
+                "metadata/controller/ClientController",
+                "app/controller/override/ClientController.js",
+                "app/controller/ClientController.js"
             ],
-            "className": "ClientGridController"
+            "className": "ClientController"
         },
         "606f2c32-9319-4444-aae7-f80244f8e869": {
             "paths": [
@@ -279,6 +279,22 @@
                 "app/model/Role.js"
             ],
             "className": "Role"
+        },
+        "18a2b983-cf8e-4f1f-a843-99adba604087": {
+            "paths": [
+                "metadata/view/ContactWindow",
+                "app/view/override/ContactWindow.js",
+                "app/view/ContactWindow.js"
+            ],
+            "className": "ContactWindow"
+        },
+        "20e2d311-53d0-4785-b293-dcac6c21b282": {
+            "paths": [
+                "metadata/store/ContactRoleStore",
+                "app/store/override/ContactRoleStore.js",
+                "app/store/ContactRoleStore.js"
+            ],
+            "className": "ContactRoleStore"
         }
     },
     "expandedState": {
@@ -286,6 +302,6 @@
         "model": true,
         "component": true,
         "controller": true,
-        "resource": true
+        "resource": false
     }
 }

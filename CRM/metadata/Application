@@ -23,7 +23,8 @@
             "PaymentStore",
             "ContactStore",
             "ActivityStore",
-            "UserNoteStore"
+            "UserNoteStore",
+            "ContactRoleStore"
         ],
         "views": [
             "AppViewport",
@@ -38,7 +39,8 @@
             "Portlet",
             "PortalPanel",
             "PortalColumn",
-            "ContactGrid"
+            "ContactGrid",
+            "ContactWindow"
         ],
         "autoCreateViewport": true,
         "name": "JavisERP",
@@ -46,7 +48,7 @@
             "AppController",
             "MainNavController",
             "RecordNavController",
-            "ClientGridController"
+            "ClientController"
         ]
     },
     "customConfigs": [],

@@ -50,7 +50,7 @@
                 "designer|userClassName": "MyActionColumn1"
             },
             "customConfigs": [],
-            "expanded": true,
+            "expanded": false,
             "cn": [
                 {
                     "id": "ExtBox1-ext-gen26907",
@@ -168,7 +168,7 @@
                         ],
                         "implHandler": [
                             "var obj = record.get('role');",
-                            "console.log(obj);",
+                            "//console.log(obj);",
                             "return Ext.isObject( obj )  ? obj.description : obj;"
                         ],
                         "designer|userClassName": "getter"

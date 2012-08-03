@@ -7,13 +7,37 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "ClientGridController"
+        "designer|userClassName": "ClientController"
     },
     "customConfigs": [],
     "designerId": "e4f5c676-6a36-4f1c-9c92-aa1296a7b78b",
     "$viewOrder": 3,
     "expanded": true,
     "cn": [
+        {
+            "id": "ExtBox1-ext-gen3841",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onNewContactClick",
+                "designer|params": [
+                    "target"
+                ],
+                "implHandler": [
+                    "this.application.fireEvent(\"addContact\",target);"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|controlQuery": "clientrecord toolbar button[itemId=newcontact]",
+                "designer|userClassName": "onNewContactClick"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
         {
             "id": "ExtBox1-ext-gen7765",
             "type": "fixedfunction",
@@ -29,10 +53,17 @@
                 ],
                 "implHandler": [
                     "me = this;",
+                    "",
                     "me.application.on({",
-                    "    clientRecordChange: me.changeClientRecord,",
-                    "    scope: me",
-                    "});"
+                    "        clientRecordChange: me.changeClientRecord,",
+                    "        scope: me",
+                    "});",
+                    "",
+                    "me.application.on({",
+                    "        addContact: me.addContact,",
+                    "        scope:me",
+                    "});",
+                    ""
                 ],
                 "designer|userClassName": "init"
             },
@@ -61,6 +92,27 @@
                 "designer|targetType": null,
                 "designer|controlQuery": "clientgrid #actions",
                 "designer|userClassName": "onActionColumnClick"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen13905",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "addContact",
+                "implHandler": [
+                    "console.log(this.getContactGrid());",
+                    "console.log(this.getClientRecord());",
+                    "var contactWindow = new JavisERP.view.ContactWindow();",
+                    "contactWindow.show();"
+                ],
+                "designer|userClassName": "addContact"
             },
             "customConfigs": [],
             "expanded": true
@@ -136,6 +188,22 @@
                 "ref": "clientRecord",
                 "selector": "clientrecord",
                 "designer|userClassName": "clientRecord"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen12511",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "contactWindow",
+                "selector": "contactwindow",
+                "designer|userClassName": "contactWindow"
             },
             "customConfigs": [],
             "expanded": true
