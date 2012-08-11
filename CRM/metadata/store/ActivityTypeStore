@@ -1,0 +1,84 @@
+{
+    "id": "ExtBox1-ext-gen17792",
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "storeId": "activityTypeStore",
+        "designer|userClassName": "ActivityTypeStore"
+    },
+    "customConfigs": [],
+    "designerId": "2358c001-d1b1-4c73-98aa-6c621e739d8a",
+    "$viewOrder": 7,
+    "expanded": false,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen17799",
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "resources/js/activityType.json",
+                "designer|userClassName": "MyAjaxProxy6"
+            },
+            "customConfigs": [],
+            "expanded": false,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen17807",
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "idProperty": "id",
+                        "root": "type",
+                        "totalProperty": "totalCount",
+                        "record": null,
+                        "designer|userClassName": "MyJsonReader6"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen18516",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "designer|userClassName": "MyField35"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen18692",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "description",
+                "designer|userClassName": "MyField36"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}

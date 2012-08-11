@@ -5,10 +5,10 @@
         "spacesToIndent": 4,
         "codeGenFormat": "Class",
         "exportPath": "/Users/jpipas/Projects/Sites/CRM",
-        "extPath": "http://extjs.cachefly.net/ext-4.0.7-commercial/",
+        "extPath": "/",
         "senchaIoKey": "",
         "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
-        "lineEnding": "LF",
+        "lineEnding": "",
         "instantiateStore": true,
         "genTimestamps": false,
         "saveOnDeploy": false,
@@ -295,6 +295,14 @@
                 "app/store/ContactRoleStore.js"
             ],
             "className": "ContactRoleStore"
+        },
+        "2358c001-d1b1-4c73-98aa-6c621e739d8a": {
+            "paths": [
+                "metadata/store/ActivityTypeStore",
+                "app/store/override/ActivityTypeStore.js",
+                "app/store/ActivityTypeStore.js"
+            ],
+            "className": "ActivityTypeStore"
         }
     },
     "expandedState": {
