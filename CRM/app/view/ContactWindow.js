@@ -39,28 +39,53 @@ Ext.define('JavisERP.view.ContactWindow', {
                     dockedItems: [
                         {
                             xtype: 'toolbar',
-                            dock: 'top'
+                            dock: 'top',
+                            items: [
+                                {
+                                    xtype: 'button',
+                                    iconCls: 'ui-silk ui-silk-disk',
+                                    text: 'Save'
+                                },
+                                {
+                                    xtype: 'button',
+                                    text: 'Cancel',
+                                    listeners: {
+                                        click: {
+                                            fn: me.onButtonClick,
+                                            scope: me
+                                        }
+                                    }
+                                }
+                            ]
                         }
                     ],
                     items: [
                         {
                             xtype: 'textfield',
-                            fieldLabel: 'Label',
+                            itemId: 'name',
+                            name: 'name',
+                            fieldLabel: 'Name',
                             anchor: '100%'
                         },
                         {
                             xtype: 'textfield',
-                            fieldLabel: 'Label',
+                            itemId: 'email_address',
+                            name: 'email_address',
+                            fieldLabel: 'Email Address',
                             anchor: '100%'
                         },
                         {
                             xtype: 'textfield',
-                            fieldLabel: 'Label',
+                            itemId: 'cell_phone',
+                            name: 'cell_phone',
+                            fieldLabel: 'Phone Number',
                             anchor: '100%'
                         },
                         {
                             xtype: 'combobox',
-                            fieldLabel: 'Label',
+                            itemId: 'role',
+                            name: 'role',
+                            fieldLabel: 'Role',
                             displayField: 'description',
                             store: 'ContactRoleStore',
                             anchor: '100%'
@@ -71,6 +96,10 @@ Ext.define('JavisERP.view.ContactWindow', {
         });
 
         me.callParent(arguments);
+    },
+
+    onButtonClick: function(button, e, options) {
+        console.log(button);
     }
 
 });

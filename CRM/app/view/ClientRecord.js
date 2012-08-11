@@ -175,7 +175,7 @@ Ext.define('JavisERP.view.ClientRecord', {
                                 {
                                     xtype: 'tabpanel',
                                     itemId: 'General-Sublists',
-                                    activeTab: 0,
+                                    activeTab: 1,
                                     items: [
                                         {
                                             xtype: 'panel',
