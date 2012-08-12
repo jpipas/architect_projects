@@ -20,6 +20,7 @@ Ext.define('JavisERP.store.ActivityTypeStore', {
         var me = this;
         cfg = cfg || {};
         me.callParent([Ext.apply({
+            autoLoad: true,
             storeId: 'activityTypeStore',
             proxy: {
                 type: 'ajax',
@@ -27,7 +28,7 @@ Ext.define('JavisERP.store.ActivityTypeStore', {
                 reader: {
                     type: 'json',
                     idProperty: 'id',
-                    root: 'type',
+                    root: 'activityType',
                     totalProperty: 'totalCount'
                 }
             },

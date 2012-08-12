@@ -19,7 +19,7 @@
     "customConfigs": [],
     "designerId": "d4e4c957-4a2b-442c-b62c-8d97c9aa5b0f",
     "$viewOrder": 6,
-    "expanded": false,
+    "expanded": true,
     "cn": [
         {
             "id": "ExtBox1-ext-gen47218",
@@ -304,7 +304,7 @@
                 "layout|flex": 3
             },
             "customConfigs": [],
-            "expanded": false,
+            "expanded": true,
             "cn": [
                 {
                     "id": "ExtBox1-ext-gen48763",
@@ -351,7 +351,7 @@
                                 "itemId": "General-Sublists",
                                 "padding": null,
                                 "bodyPadding": null,
-                                "activeTab": 0,
+                                "activeTab": 1,
                                 "designer|userClassName": "MyTabPanel1"
                             },
                             "customConfigs": [],
@@ -789,6 +789,9 @@
                                                         "fieldLabel": null,
                                                         "hideLabel": true,
                                                         "emptyText": "Filter Activity Type...",
+                                                        "displayField": "description",
+                                                        "queryMode": "local",
+                                                        "store": "ActivityTypeStore",
                                                         "designer|userClassName": "MyComboBox1",
                                                         "layout|flex": null
                                                     },

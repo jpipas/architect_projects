@@ -7,6 +7,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoLoad": true,
         "storeId": "activityTypeStore",
         "designer|userClassName": "ActivityTypeStore"
     },
@@ -28,7 +29,7 @@
                 "designer|userClassName": "MyAjaxProxy6"
             },
             "customConfigs": [],
-            "expanded": false,
+            "expanded": true,
             "cn": [
                 {
                     "id": "ExtBox1-ext-gen17807",
@@ -40,7 +41,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "idProperty": "id",
-                        "root": "type",
+                        "root": "activityType",
                         "totalProperty": "totalCount",
                         "record": null,
                         "designer|userClassName": "MyJsonReader6"

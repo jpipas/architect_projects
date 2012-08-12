@@ -175,7 +175,7 @@ Ext.define('JavisERP.view.ClientRecord', {
                                 {
                                     xtype: 'tabpanel',
                                     itemId: 'General-Sublists',
-                                    activeTab: 0,
+                                    activeTab: 1,
                                     items: [
                                         {
                                             xtype: 'panel',
@@ -302,7 +302,10 @@ Ext.define('JavisERP.view.ClientRecord', {
                                                             xtype: 'combobox',
                                                             itemId: 'typeFilter',
                                                             hideLabel: true,
-                                                            emptyText: 'Filter Activity Type...'
+                                                            emptyText: 'Filter Activity Type...',
+                                                            displayField: 'description',
+                                                            queryMode: 'local',
+                                                            store: 'ActivityTypeStore'
                                                         }
                                                     ]
                                                 }
