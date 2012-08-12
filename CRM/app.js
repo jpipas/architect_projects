@@ -31,7 +31,8 @@ Ext.application({
         'Contact',
         'Activity',
         'UserNote',
-        'Role'
+        'Role',
+        'Publication'
     ],
     stores: [
         'ClientStore',
@@ -41,7 +42,8 @@ Ext.application({
         'ActivityStore',
         'UserNoteStore',
         'ContactRoleStore',
-        'ActivityTypeStore'
+        'ActivityTypeStore',
+        'PublicatoinStore'
     ],
     views: [
         'AppViewport',
@@ -57,7 +59,8 @@ Ext.application({
         'PortalPanel',
         'PortalColumn',
         'ContactGrid',
-        'ContactWindow'
+        'ContactWindow',
+        'PublicationGrid'
     ],
     autoCreateViewport: true,
     name: 'JavisERP',

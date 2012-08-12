@@ -295,7 +295,7 @@
                 "height": 350,
                 "itemId": "ClientSublists",
                 "defaults": "{labelAlign:'right'}",
-                "activeTab": 0,
+                "activeTab": 1,
                 "minTabWidth": null,
                 "maxTabWidth": null,
                 "plain": false,
@@ -370,7 +370,7 @@
                                         "designer|userClassName": "MyPanel8"
                                     },
                                     "customConfigs": [],
-                                    "expanded": true,
+                                    "expanded": false,
                                     "cn": [
                                         {
                                             "id": "ExtBox1-ext-gen5028",
@@ -453,7 +453,7 @@
                                         "designer|userClassName": "MyPanel9"
                                     },
                                     "customConfigs": [],
-                                    "expanded": true,
+                                    "expanded": false,
                                     "cn": [
                                         {
                                             "id": "ExtBox1-ext-gen5046",
@@ -488,7 +488,7 @@
                                                 "designer|userClassName": "MyGridPanel8"
                                             },
                                             "customConfigs": [],
-                                            "expanded": true,
+                                            "expanded": false,
                                             "cn": [
                                                 {
                                                     "id": "ExtBox1-ext-gen7782",
@@ -1071,7 +1071,7 @@
                         "container|padding": null
                     },
                     "customConfigs": [],
-                    "expanded": false,
+                    "expanded": true,
                     "cn": [
                         {
                             "id": "ExtBox1-ext-gen48758",
@@ -1251,7 +1251,7 @@
                                 "dock": null
                             },
                             "customConfigs": [],
-                            "expanded": false,
+                            "expanded": true,
                             "cn": [
                                 {
                                     "id": "ExtBox1-ext-gen21706",
@@ -1282,6 +1282,22 @@
                                             "customConfigs": [],
                                             "iconCls": "icon-tab-bar",
                                             "expanded": true
+                                        },
+                                        {
+                                            "id": "ExtBox1-ext-gen7354",
+                                            "type": "linkedinstance",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "itemId": "PublicationGrid"
+                                            },
+                                            "customConfigs": [],
+                                            "iconCls": "icon-linkedinstance",
+                                            "expanded": true,
+                                            "masterInstanceId": "ExtBox1-ext-gen4311"
                                         }
                                     ]
                                 },

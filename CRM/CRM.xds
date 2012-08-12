@@ -303,6 +303,30 @@
                 "app/store/ActivityTypeStore.js"
             ],
             "className": "ActivityTypeStore"
+        },
+        "fb37bd9a-0d80-4f8a-bef6-38b3b6b7c8a0": {
+            "paths": [
+                "metadata/view/PublicationGrid",
+                "app/view/override/PublicationGrid.js",
+                "app/view/PublicationGrid.js"
+            ],
+            "className": "PublicationGrid"
+        },
+        "327f467f-1c73-417b-944e-bf359d1f907a": {
+            "paths": [
+                "metadata/store/PublicatoinStore",
+                "app/store/override/PublicatoinStore.js",
+                "app/store/PublicatoinStore.js"
+            ],
+            "className": "PublicatoinStore"
+        },
+        "a02d5a2a-33fa-46e1-86d1-9d2f503f9f7c": {
+            "paths": [
+                "metadata/model/Publication",
+                "app/model/override/Publication.js",
+                "app/model/Publication.js"
+            ],
+            "className": "Publication"
         }
     },
     "expandedState": {

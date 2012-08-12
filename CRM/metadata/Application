@@ -15,7 +15,8 @@
             "Contact",
             "Activity",
             "UserNote",
-            "Role"
+            "Role",
+            "Publication"
         ],
         "stores": [
             "ClientStore",
@@ -25,7 +26,8 @@
             "ActivityStore",
             "UserNoteStore",
             "ContactRoleStore",
-            "ActivityTypeStore"
+            "ActivityTypeStore",
+            "PublicatoinStore"
         ],
         "views": [
             "AppViewport",
@@ -41,7 +43,8 @@
             "PortalPanel",
             "PortalColumn",
             "ContactGrid",
-            "ContactWindow"
+            "ContactWindow",
+            "PublicationGrid"
         ],
         "autoCreateViewport": true,
         "name": "JavisERP",

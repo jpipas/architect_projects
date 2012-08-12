@@ -18,7 +18,8 @@ Ext.define('JavisERP.view.ClientRecord', {
     alias: 'widget.clientrecord',
     requires: [
         'JavisERP.view.RecordNavigation',
-        'JavisERP.view.ContactGrid'
+        'JavisERP.view.ContactGrid',
+        'JavisERP.view.PublicationGrid'
     ],
 
     id: 'clientrecord',
@@ -160,7 +161,7 @@ Ext.define('JavisERP.view.ClientRecord', {
                     defaults: {
                         labelAlign: 'right'
                     },
-                    activeTab: 0,
+                    activeTab: 1,
                     plain: false,
                     flex: 3,
                     items: [
@@ -471,7 +472,13 @@ Ext.define('JavisERP.view.ClientRecord', {
                                     items: [
                                         {
                                             xtype: 'panel',
-                                            title: 'Publications'
+                                            title: 'Publications',
+                                            items: [
+                                                {
+                                                    xtype: 'publicationgrid',
+                                                    itemId: 'PublicationGrid'
+                                                }
+                                            ]
                                         },
                                         {
                                             xtype: 'panel',
