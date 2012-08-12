@@ -23,6 +23,7 @@ Ext.define('JavisERP.view.ContactWindow', {
     layout: {
         type: 'fit'
     },
+    closeAction: 'hide',
     title: 'New Contact',
 
     initComponent: function() {

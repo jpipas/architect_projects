@@ -12,6 +12,7 @@
         "itemId": null,
         "width": 400,
         "layout": "fit",
+        "closeAction": "hide",
         "title": "New Contact",
         "designer|userClassName": "ContactWindow",
         "designer|userAlias": "contactwindow"

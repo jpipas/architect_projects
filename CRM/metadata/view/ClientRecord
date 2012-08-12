@@ -370,7 +370,7 @@
                                         "designer|userClassName": "MyPanel8"
                                     },
                                     "customConfigs": [],
-                                    "expanded": false,
+                                    "expanded": true,
                                     "cn": [
                                         {
                                             "id": "ExtBox1-ext-gen5028",
@@ -488,7 +488,7 @@
                                                 "designer|userClassName": "MyGridPanel8"
                                             },
                                             "customConfigs": [],
-                                            "expanded": false,
+                                            "expanded": true,
                                             "cn": [
                                                 {
                                                     "id": "ExtBox1-ext-gen7782",
@@ -513,6 +513,8 @@
                                                     },
                                                     "codeClass": null,
                                                     "userConfig": {
+                                                        "maxWidth": 50,
+                                                        "defaultWidth": 50,
                                                         "designer|userClassName": "MyActionColumn2"
                                                     },
                                                     "customConfigs": [],
@@ -678,7 +680,7 @@
                                                 "dock": "top"
                                             },
                                             "customConfigs": [],
-                                            "expanded": true,
+                                            "expanded": false,
                                             "cn": [
                                                 {
                                                     "id": "ExtBox1-ext-gen17070",

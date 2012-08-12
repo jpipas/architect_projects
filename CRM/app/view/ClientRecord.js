@@ -219,6 +219,8 @@ Ext.define('JavisERP.view.ClientRecord', {
                                                     columns: [
                                                         {
                                                             xtype: 'actioncolumn',
+                                                            maxWidth: 50,
+                                                            defaultWidth: 50,
                                                             items: [
                                                                 {
 

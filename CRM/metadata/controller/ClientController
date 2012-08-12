@@ -12,7 +12,7 @@
     "customConfigs": [],
     "designerId": "e4f5c676-6a36-4f1c-9c92-aa1296a7b78b",
     "$viewOrder": 3,
-    "expanded": false,
+    "expanded": true,
     "cn": [
         {
             "id": "ExtBox1-ext-gen3841",
@@ -53,15 +53,15 @@
                 ],
                 "implHandler": [
                     "me = this;",
-                    "",
+                    "me.contactWindow = null;",
                     "me.application.on({",
-                    "        clientRecordChange: me.changeClientRecord,",
-                    "        scope: me",
+                    "    clientRecordChange: me.changeClientRecord,",
+                    "    scope: me",
                     "});",
                     "",
                     "me.application.on({",
-                    "        addContact: me.addContact,",
-                    "        scope:me",
+                    "    addContact: me.addContact,",
+                    "    scope:me",
                     "});",
                     ""
                 ],
@@ -107,10 +107,14 @@
             "userConfig": {
                 "fn": "addContact",
                 "implHandler": [
-                    "console.log(this.getContactGrid());",
-                    "console.log(this.getClientRecord());",
-                    "var contactWindow = new JavisERP.view.ContactWindow();",
-                    "contactWindow.show();"
+                    "if(!me.contactWindow){",
+                    "    me.contactWindow = new JavisERP.view.ContactWindow();",
+                    "}",
+                    "    if(me.contactWindow.isVisible()){",
+                    "        me.contactWindow.hide();",
+                    "    } else {",
+                    "        me.contactWindow.show();",
+                    "    }"
                 ],
                 "designer|userClassName": "addContact"
             },
