@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen23604",
     "type": "gridpanel",
     "reference": {
         "name": "items",
@@ -7,22 +6,19 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "ContactGrid",
+        "designer|userAlias": "contactgrid",
         "border": 0,
         "preventHeader": true,
         "title": "Contact List",
         "forceFit": true,
         "store": "ContactStore",
-        "columnLines": false,
-        "designer|userClassName": "ContactGrid",
-        "designer|userAlias": "contactgrid"
+        "columnLines": false
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen23604",
     "designerId": "2f153940-6b99-47aa-b001-7b2a320bbee5",
-    "$viewOrder": 12,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen23656",
             "type": "gridview",
             "reference": {
                 "name": "viewConfig",
@@ -32,11 +28,9 @@
             "userConfig": {
                 "designer|userClassName": "MyGridView3"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "34371bc5-bfd7-4012-b494-74c78715b067"
         },
         {
-            "id": "ExtBox1-ext-gen26899",
             "type": "actioncolumn",
             "reference": {
                 "name": "columns",
@@ -44,16 +38,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyActionColumn1",
                 "maxWidth": 50,
                 "defaultWidth": 50,
-                "align": "center",
-                "designer|userClassName": "MyActionColumn1"
+                "align": "center"
             },
-            "customConfigs": [],
-            "expanded": false,
+            "designerId": "40a844d8-403a-437f-8977-30feede248ea",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen26907",
                     "type": "actioncolumnitem",
                     "reference": {
                         "name": "items",
@@ -61,18 +53,16 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "MyActionColumnItem2",
                         "icon": "resources/icons/vcard.png",
                         "iconCls": null,
-                        "tooltip": "View",
-                        "designer|userClassName": "MyActionColumnItem2"
+                        "tooltip": "View"
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "37e61e75-6895-4f3b-afcb-2c197dd71129"
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen24914",
             "type": "gridcolumn",
             "reference": {
                 "name": "columns",
@@ -80,17 +70,15 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyColumn11",
                 "hidden": true,
                 "dataIndex": "id",
                 "hideable": false,
-                "text": "ID",
-                "designer|userClassName": "MyColumn11"
+                "text": "ID"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "c25e1f29-0e7c-4e57-8ffe-74d8a7ba2aa0"
         },
         {
-            "id": "ExtBox1-ext-gen24926",
             "type": "gridcolumn",
             "reference": {
                 "name": "columns",
@@ -98,15 +86,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyColumn12",
                 "dataIndex": "name",
-                "text": "Name",
-                "designer|userClassName": "MyColumn12"
+                "text": "Name"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "f24ceeb1-577f-4bad-8fa8-6ae75bbb7121"
         },
         {
-            "id": "ExtBox1-ext-gen24938",
             "type": "gridcolumn",
             "reference": {
                 "name": "columns",
@@ -114,15 +100,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyColumn13",
                 "dataIndex": "email_address",
-                "text": "Email Address",
-                "designer|userClassName": "MyColumn13"
+                "text": "Email Address"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "498f6310-aaa6-4fd6-9712-faab99e3ab4f"
         },
         {
-            "id": "ExtBox1-ext-gen24950",
             "type": "gridcolumn",
             "reference": {
                 "name": "columns",
@@ -130,15 +114,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyColumn14",
                 "dataIndex": "cell_phone",
-                "text": "Cell Phone",
-                "designer|userClassName": "MyColumn14"
+                "text": "Cell Phone"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "4366424b-e1a0-4f7a-946a-238d8ad1382a"
         },
         {
-            "id": "ExtBox1-ext-gen24962",
             "type": "gridcolumn",
             "reference": {
                 "name": "columns",
@@ -146,15 +128,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyColumn15",
                 "dataIndex": "role",
-                "text": "Role",
-                "designer|userClassName": "MyColumn15"
+                "text": "Role"
             },
-            "customConfigs": [],
-            "expanded": false,
+            "designerId": "4543b0cc-6ad6-4fb1-87e1-5b711c1f0d86",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen40354",
                     "type": "basicfunction",
                     "reference": {
                         "name": "items",
@@ -162,6 +142,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "getter",
                         "fn": "getter",
                         "designer|params": [
                             "record"
@@ -170,14 +151,11 @@
                             "var obj = record.get('role');",
                             "//console.log(obj);",
                             "return Ext.isObject( obj )  ? obj.description : obj;"
-                        ],
-                        "designer|userClassName": "getter"
+                        ]
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "42a944d6-c79f-4cae-a971-c7c5d5f58a59"
                 },
                 {
-                    "id": "ExtBox1-ext-gen40639",
                     "type": "basicfunction",
                     "reference": {
                         "name": "items",
@@ -185,6 +163,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "setter",
                         "fn": "setter",
                         "designer|params": [
                             "record",
@@ -193,11 +172,9 @@
                         "implHandler": [
                             "var obj = record.get('obj') || {};",
                             "record.set('role', Ext.apply(obj,{description: value}));"
-                        ],
-                        "designer|userClassName": "setter"
+                        ]
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "c971768f-1b22-4fd2-ba9b-35d95249a7fb"
                 }
             ]
         }

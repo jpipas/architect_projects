@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen11518",
     "type": "toolbar",
     "reference": {
         "name": "items",
@@ -10,13 +9,10 @@
         "designer|userClassName": "RecordNavigation",
         "designer|userAlias": "recordnav"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen11518",
     "designerId": "4659fb21-6ce9-4607-8352-836fc979683f",
-    "$viewOrder": 7,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen13232",
             "type": "button",
             "reference": {
                 "name": "items",
@@ -24,18 +20,18 @@
             },
             "codeClass": null,
             "userConfig": {
+                "layout|flex": null,
+                "designer|userClassName": "MyButton4",
                 "id": "back-arrow",
                 "iconCls": "ui-silk ui-silk-control-rewind",
                 "text": null,
-                "tooltip": "Prev. Record",
-                "designer|userClassName": "MyButton4",
-                "layout|flex": null
+                "tooltip": [
+                    "Prev. Record"
+                ]
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "3d12f0f3-c98d-483f-b20a-161c108a005d"
         },
         {
-            "id": "ExtBox1-ext-gen13968",
             "type": "button",
             "reference": {
                 "name": "items",
@@ -43,18 +39,18 @@
             },
             "codeClass": null,
             "userConfig": {
+                "layout|flex": null,
+                "designer|userClassName": "MyButton4",
                 "id": "next-arrow",
                 "iconCls": "ui-silk ui-silk-control-fastforward",
                 "text": null,
-                "tooltip": "Next Record",
-                "designer|userClassName": "MyButton4",
-                "layout|flex": null
+                "tooltip": [
+                    "Next Record"
+                ]
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "4128d9c4-5746-4f8d-b1c1-075027b290a7"
         },
         {
-            "id": "ExtBox1-ext-gen11745",
             "type": "button",
             "reference": {
                 "name": "items",
@@ -62,15 +58,13 @@
             },
             "codeClass": null,
             "userConfig": {
-                "text": "Edit",
+                "layout|flex": null,
                 "designer|userClassName": "MyButton1",
-                "layout|flex": null
+                "text": "Edit"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "87d58f6f-2e95-40a8-965e-185805af44d0"
         },
         {
-            "id": "ExtBox1-ext-gen12771",
             "type": "button",
             "reference": {
                 "name": "items",
@@ -78,15 +72,13 @@
             },
             "codeClass": null,
             "userConfig": {
-                "text": "New",
+                "layout|flex": null,
                 "designer|userClassName": "MyButton3",
-                "layout|flex": null
+                "text": "New"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "4bc74d73-32da-41b3-81af-3bcaed2e5474"
         },
         {
-            "id": "ExtBox1-ext-gen12481",
             "type": "tbseparator",
             "reference": {
                 "name": "items",
@@ -94,14 +86,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MySeparator4",
-                "layout|flex": null
+                "layout|flex": null,
+                "designer|userClassName": "MySeparator4"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "738da3e7-56a3-4750-8b80-9ce3186271e8"
         },
         {
-            "id": "ExtBox1-ext-gen12124",
             "type": "button",
             "reference": {
                 "name": "items",
@@ -109,13 +99,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "itemId": "ClientGrid",
-                "text": "List View",
+                "layout|flex": null,
                 "designer|userClassName": "MyButton2",
-                "layout|flex": null
+                "itemId": "ClientGrid",
+                "text": "List View"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "d053a68b-1a62-4470-9a09-263cd154efd3"
         }
     ]
 }

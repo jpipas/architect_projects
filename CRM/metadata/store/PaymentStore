@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen9616",
     "type": "jsonstore",
     "reference": {
         "name": "items",
@@ -7,12 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "PaymentStore",
         "storeId": "PaymentStore",
-        "model": "Payment",
-        "designer|userClassName": "PaymentStore"
+        "model": "Payment"
     },
-    "customConfigs": [],
-    "designerId": "606f2c32-9319-4444-aae7-f80244f8e869",
-    "$viewOrder": 2,
-    "expanded": true
+    "id": "ExtBox1-ext-gen9616",
+    "designerId": "606f2c32-9319-4444-aae7-f80244f8e869"
 }

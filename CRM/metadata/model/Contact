@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen20132",
     "type": "datamodel",
     "reference": {
         "name": "items",
@@ -9,13 +8,10 @@
     "userConfig": {
         "designer|userClassName": "Contact"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen20132",
     "designerId": "cb51cd2a-1101-4286-9579-102f4098acaa",
-    "$viewOrder": 4,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen20312",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -23,14 +19,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "id",
-                "designer|userClassName": "MyField12"
+                "designer|userClassName": "MyField12",
+                "name": "id"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "6ededda7-1750-44e1-84d9-3bd6d4a5d369"
         },
         {
-            "id": "ExtBox1-ext-gen20480",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -38,14 +32,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "name",
-                "designer|userClassName": "MyField13"
+                "designer|userClassName": "MyField13",
+                "name": "name"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "78019be6-10d6-4580-ac48-caa9b875dd99"
         },
         {
-            "id": "ExtBox1-ext-gen20652",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -53,14 +45,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "email_address",
-                "designer|userClassName": "MyField14"
+                "designer|userClassName": "MyField14",
+                "name": "email_address"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "bb158a47-4d07-4597-b8d7-46cc101e3e8c"
         },
         {
-            "id": "ExtBox1-ext-gen20828",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -68,14 +58,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "cell_phone",
-                "designer|userClassName": "MyField15"
+                "designer|userClassName": "MyField15",
+                "name": "cell_phone"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "e1ca0b47-924e-43a6-b6d1-6199bf2f0f0f"
         },
         {
-            "id": "ExtBox1-ext-gen21292",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -83,16 +71,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField16",
                 "mapping": "role.description",
                 "name": "role",
-                "sortType": "asText",
-                "designer|userClassName": "MyField16"
+                "sortType": "asText"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "13c44e3d-159f-49bb-9735-295aabb2a623"
         },
         {
-            "id": "ExtBox1-ext-gen39281",
             "type": "ajaxproxy",
             "reference": {
                 "name": "proxy",
@@ -100,14 +86,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "resources/js/contact.json",
-                "designer|userClassName": "MyAjaxProxy4"
+                "designer|userClassName": "MyAjaxProxy4",
+                "url": "resources/js/contact.json"
             },
-            "customConfigs": [],
-            "expanded": false,
+            "designerId": "358beb4c-bc84-4a6b-b7bb-80dd41ce7b3d",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen39567",
                     "type": "jsonreader",
                     "reference": {
                         "name": "reader",
@@ -115,17 +99,15 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "MyJsonReader4",
                         "root": "contact",
-                        "totalProperty": "totalCount",
-                        "designer|userClassName": "MyJsonReader4"
+                        "totalProperty": "totalCount"
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "cb1aa131-06ba-4adc-9e74-ae85cb52e312"
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen42810",
             "type": "hasmanyassociation",
             "reference": {
                 "name": "hasMany",
@@ -133,13 +115,12 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyHasManyAssociation3",
                 "associationKey": "role",
                 "model": "Role",
-                "name": "role",
-                "designer|userClassName": "MyHasManyAssociation3"
+                "name": "role"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "ddbc0577-d7b4-4f04-9af6-c9562459f745"
         }
     ]
 }

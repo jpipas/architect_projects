@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen9706",
     "type": "jsonstore",
     "reference": {
         "name": "items",
@@ -7,12 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "PublicatoinStore",
         "storeId": "PublicationStore",
-        "model": "Publication",
-        "designer|userClassName": "PublicatoinStore"
+        "model": "Publication"
     },
-    "customConfigs": [],
-    "designerId": "327f467f-1c73-417b-944e-bf359d1f907a",
-    "$viewOrder": 8,
-    "expanded": true
+    "id": "ExtBox1-ext-gen9706",
+    "designerId": "327f467f-1c73-417b-944e-bf359d1f907a"
 }

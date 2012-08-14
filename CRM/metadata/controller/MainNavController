@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen17530",
     "type": "controller",
     "reference": {
         "name": "items",
@@ -10,13 +9,10 @@
         "designer|userClassName": "MainNavController",
         "designer|userAlias": null
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen17530",
     "designerId": "668141e1-a7c7-44bb-b837-faddb3cfcde8",
-    "$viewOrder": 1,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen37250",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -24,6 +20,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onNavigationClick",
                 "fn": "onNavigationClick",
                 "implHandler": [
                     "this.application.fireEvent('navigationChange',button.itemId);"
@@ -31,14 +28,11 @@
                 "name": "click",
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "navbar button",
-                "designer|userClassName": "onNavigationClick"
+                "designer|controlQuery": "navbar button"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "550cb9b9-b1d4-420e-aee7-fa9ea4d36ab3"
         },
         {
-            "id": "ExtBox1-ext-gen39387",
             "type": "fixedfunction",
             "reference": {
                 "name": "items",
@@ -46,21 +40,18 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "init",
                 "fn": "init",
                 "designer|params": [
                     "application"
                 ],
                 "implHandler": [
                     ""
-                ],
-                "designer|userClassName": "init"
+                ]
             },
-            "customConfigs": [],
-            "iconCls": "icon-basic-function",
-            "expanded": true
+            "designerId": "35342ab1-e811-4bfd-ae33-662ae98436fa"
         },
         {
-            "id": "ExtBox1-ext-gen13369",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -68,6 +59,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onMenuitemClick",
                 "fn": "onMenuitemClick",
                 "implHandler": [
                     "this.application.fireEvent('navigationChange',item.itemId);"
@@ -75,14 +67,11 @@
                 "name": "click",
                 "scope": "me",
                 "designer|targetType": "Ext.menu.Item",
-                "designer|controlQuery": "navbar menuitem",
-                "designer|userClassName": "onMenuitemClick"
+                "designer|controlQuery": "navbar menuitem"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "09afa0f5-17d3-459b-bc3b-59335bb62b53"
         },
         {
-            "id": "ExtBox1-ext-gen20551",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -90,12 +79,11 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "mainNav",
                 "ref": "mainNav",
-                "selector": "navbar",
-                "designer|userClassName": "mainNav"
+                "selector": "navbar"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "b4d36add-f5a5-4bcf-9968-45fde9c600f0"
         }
     ]
 }

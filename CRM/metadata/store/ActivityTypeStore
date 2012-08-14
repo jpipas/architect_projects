@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen17792",
     "type": "jsonstore",
     "reference": {
         "name": "items",
@@ -7,17 +6,14 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "ActivityTypeStore",
         "autoLoad": true,
-        "storeId": "activityTypeStore",
-        "designer|userClassName": "ActivityTypeStore"
+        "storeId": "activityTypeStore"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen17792",
     "designerId": "2358c001-d1b1-4c73-98aa-6c621e739d8a",
-    "$viewOrder": 7,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen17799",
             "type": "ajaxproxy",
             "reference": {
                 "name": "proxy",
@@ -25,14 +21,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "resources/js/activityType.json",
-                "designer|userClassName": "MyAjaxProxy6"
+                "designer|userClassName": "MyAjaxProxy6",
+                "url": "resources/js/activityType.json"
             },
-            "customConfigs": [],
-            "expanded": true,
+            "designerId": "d48e3839-ef38-4934-ae91-a065d869fdad",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen17807",
                     "type": "jsonreader",
                     "reference": {
                         "name": "reader",
@@ -40,19 +34,17 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "MyJsonReader6",
                         "idProperty": "id",
                         "root": "activityType",
                         "totalProperty": "totalCount",
-                        "record": null,
-                        "designer|userClassName": "MyJsonReader6"
+                        "record": null
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "aaa228ff-236c-482f-b0b5-7644c22d6c67"
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen18516",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -60,14 +52,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "id",
-                "designer|userClassName": "MyField35"
+                "designer|userClassName": "MyField35",
+                "name": "id"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "5f521126-0adb-4e8e-abe5-2908e992bea8"
         },
         {
-            "id": "ExtBox1-ext-gen18692",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -75,11 +65,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "description",
-                "designer|userClassName": "MyField36"
+                "designer|userClassName": "MyField36",
+                "name": "description"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "3c0d1805-35fb-4aef-bd29-c0a901fe8b77"
         }
     ]
 }

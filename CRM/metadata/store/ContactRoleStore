@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen9710",
     "type": "jsonstore",
     "reference": {
         "name": "items",
@@ -7,17 +6,14 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "ContactRoleStore",
         "storeId": "MyJsonStore6",
-        "model": "Role",
-        "designer|userClassName": "ContactRoleStore"
+        "model": "Role"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen9710",
     "designerId": "20e2d311-53d0-4785-b293-dcac6c21b282",
-    "$viewOrder": 6,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen10433",
             "type": "ajaxproxy",
             "reference": {
                 "name": "proxy",
@@ -25,14 +21,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "resources/js/role.json",
-                "designer|userClassName": "MyAjaxProxy5"
+                "designer|userClassName": "MyAjaxProxy5",
+                "url": "resources/js/role.json"
             },
-            "customConfigs": [],
-            "expanded": true,
+            "designerId": "77dbf898-2584-41a5-8f21-6fc8123c1b36",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen10574",
                     "type": "jsonreader",
                     "reference": {
                         "name": "reader",
@@ -40,13 +34,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "MyJsonReader5",
                         "idProperty": "id",
                         "root": "role",
-                        "totalProperty": "totalCount",
-                        "designer|userClassName": "MyJsonReader5"
+                        "totalProperty": "totalCount"
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "aa2cd7d0-7b17-4961-9dba-227c95774386"
                 }
             ]
         }

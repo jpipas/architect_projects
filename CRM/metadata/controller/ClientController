@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen6749",
     "type": "controller",
     "reference": {
         "name": "items",
@@ -9,13 +8,10 @@
     "userConfig": {
         "designer|userClassName": "ClientController"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen6749",
     "designerId": "e4f5c676-6a36-4f1c-9c92-aa1296a7b78b",
-    "$viewOrder": 3,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen3841",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -23,6 +19,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onNewContactClick",
                 "fn": "onNewContactClick",
                 "designer|params": [
                     "target"
@@ -32,14 +29,11 @@
                 ],
                 "name": "click",
                 "scope": "me",
-                "designer|controlQuery": "clientrecord toolbar button[itemId=newcontact]",
-                "designer|userClassName": "onNewContactClick"
+                "designer|controlQuery": "clientrecord toolbar button[itemId=newcontact]"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "ce2cb34c-86a2-4658-8248-30aaa5db4dcc"
         },
         {
-            "id": "ExtBox1-ext-gen7765",
             "type": "fixedfunction",
             "reference": {
                 "name": "items",
@@ -47,6 +41,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "init",
                 "fn": "init",
                 "designer|params": [
                     "application"
@@ -64,15 +59,11 @@
                     "    scope:me",
                     "});",
                     ""
-                ],
-                "designer|userClassName": "init"
+                ]
             },
-            "customConfigs": [],
-            "iconCls": "icon-basic-function",
-            "expanded": true
+            "designerId": "285ac0ab-7679-491c-975e-f11f309c9d96"
         },
         {
-            "id": "ExtBox1-ext-gen8102",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -80,6 +71,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onActionColumnClick",
                 "fn": "onActionColumnClick",
                 "designer|params": [
                     "grid, col, row"
@@ -90,14 +82,11 @@
                 "name": "click",
                 "scope": "me",
                 "designer|targetType": null,
-                "designer|controlQuery": "clientgrid #actions",
-                "designer|userClassName": "onActionColumnClick"
+                "designer|controlQuery": "clientgrid #actions"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "5598cd62-89f2-4049-8ba7-30179ee41ac2"
         },
         {
-            "id": "ExtBox1-ext-gen13905",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -105,6 +94,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "addContact",
                 "fn": "addContact",
                 "implHandler": [
                     "if(!me.contactWindow){",
@@ -115,14 +105,11 @@
                     "    } else {",
                     "        me.contactWindow.show();",
                     "    }"
-                ],
-                "designer|userClassName": "addContact"
+                ]
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "110275da-a518-4b82-832f-01677ab6be32"
         },
         {
-            "id": "ExtBox1-ext-gen22004",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -130,6 +117,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "changeClientRecord",
                 "fn": "changeClientRecord",
                 "designer|params": [
                     "grid",
@@ -142,14 +130,11 @@
                     "var form = this.getClientRecord().getForm();",
                     "form.loadRecord(this.getClientGrid().getStore().getAt(row));",
                     "var contacts = this.getContactGrid().getStore().load();"
-                ],
-                "designer|userClassName": "changeClientRecord"
+                ]
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "9d3c82ab-4b41-47cc-b83a-71ef624c86a2"
         },
         {
-            "id": "ExtBox1-ext-gen7056",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -157,15 +142,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "clientGrid",
                 "ref": "clientGrid",
-                "selector": "clientgrid",
-                "designer|userClassName": "clientGrid"
+                "selector": "clientgrid"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "1eee1a8c-71e3-45e2-bf07-474b25ee5680"
         },
         {
-            "id": "ExtBox1-ext-gen24794",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -173,15 +156,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "contentCards",
                 "ref": "contentCards",
-                "selector": "contentCards",
-                "designer|userClassName": "contentCards"
+                "selector": "contentCards"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "46188af9-81ad-4b13-81fa-acc115d00df2"
         },
         {
-            "id": "ExtBox1-ext-gen3555",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -189,15 +170,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "clientRecord",
                 "ref": "clientRecord",
-                "selector": "clientrecord",
-                "designer|userClassName": "clientRecord"
+                "selector": "clientrecord"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "22a28541-5131-4f17-9cae-2490fd1c34e1"
         },
         {
-            "id": "ExtBox1-ext-gen12511",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -205,15 +184,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "contactWindow",
                 "ref": "contactWindow",
-                "selector": "contactwindow",
-                "designer|userClassName": "contactWindow"
+                "selector": "contactwindow"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "32be57cd-7398-4894-b550-10275acf993e"
         },
         {
-            "id": "ExtBox1-ext-gen48177",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -221,12 +198,11 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "contactGrid",
                 "ref": "contactGrid",
-                "selector": "contactgrid",
-                "designer|userClassName": "contactGrid"
+                "selector": "contactgrid"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "868ab583-5147-4183-b4ef-f8331f6a862e"
         }
     ]
 }

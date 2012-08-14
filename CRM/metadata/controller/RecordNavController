@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen23143",
     "type": "controller",
     "reference": {
         "name": "items",
@@ -9,13 +8,10 @@
     "userConfig": {
         "designer|userClassName": "RecordNavController"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen23143",
     "designerId": "0eb6c736-e4ce-4a98-a689-09a51d0b11b2",
-    "$viewOrder": 2,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen23348",
             "type": "fixedfunction",
             "reference": {
                 "name": "items",
@@ -23,21 +19,18 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "init",
                 "fn": "init",
                 "designer|params": [
                     "application"
                 ],
                 "implHandler": [
                     ""
-                ],
-                "designer|userClassName": "init"
+                ]
             },
-            "customConfigs": [],
-            "iconCls": "icon-basic-function",
-            "expanded": true
+            "designerId": "b1131b4d-3924-4c6e-be81-1d742a04e3ba"
         },
         {
-            "id": "ExtBox1-ext-gen23649",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -45,15 +38,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "recordNav",
                 "ref": "recordNav",
-                "selector": "recordnav",
-                "designer|userClassName": "recordNav"
+                "selector": "recordnav"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "4ec00650-4caa-4643-8380-c5862b3c4f9d"
         },
         {
-            "id": "ExtBox1-ext-gen23924",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -61,6 +52,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onRecordNavBtnClick",
                 "fn": "onRecordNavBtnClick",
                 "implHandler": [
                     "this.application.fireEvent('navigationChange',button.itemId);",
@@ -69,11 +61,9 @@
                 "name": "click",
                 "scope": "me",
                 "designer|targetType": "Ext.button.Button",
-                "designer|controlQuery": "recordnav button",
-                "designer|userClassName": "onRecordNavBtnClick"
+                "designer|controlQuery": "recordnav button"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "edaf258b-c13d-4437-9a1d-534ab7d2c718"
         }
     ]
 }

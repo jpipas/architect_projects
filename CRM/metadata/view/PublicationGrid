@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen4311",
     "type": "gridpanel",
     "reference": {
         "name": "items",
@@ -7,20 +6,17 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "PublicationGrid",
+        "designer|userAlias": "publicationgrid",
         "preventHeader": true,
         "title": "PublicationGrid",
         "forceFit": true,
-        "columnLines": false,
-        "designer|userClassName": "PublicationGrid",
-        "designer|userAlias": "publicationgrid"
+        "columnLines": false
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen4311",
     "designerId": "fb37bd9a-0d80-4f8a-bef6-38b3b6b7c8a0",
-    "$viewOrder": 14,
-    "expanded": true,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen5646",
             "type": "toolbar",
             "reference": {
                 "name": "dockedItems",
@@ -28,14 +24,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyToolbar8",
-                "dock": "top"
+                "dock": "top",
+                "designer|userClassName": "MyToolbar8"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "8cfffd87-9d0c-4327-8809-f7d9ecf36b5b"
         },
         {
-            "id": "ExtBox1-ext-gen4323",
             "type": "gridcolumn",
             "reference": {
                 "name": "columns",
@@ -43,15 +37,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyColumn28",
                 "dataIndex": "string",
-                "text": "String",
-                "designer|userClassName": "MyColumn28"
+                "text": "String"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "a80dd792-cd56-4d54-8609-5fab4878d43c"
         },
         {
-            "id": "ExtBox1-ext-gen4333",
             "type": "numbercolumn",
             "reference": {
                 "name": "columns",
@@ -59,15 +51,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyNumberColumn3",
                 "dataIndex": "number",
-                "text": "Number",
-                "designer|userClassName": "MyNumberColumn3"
+                "text": "Number"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "b7429ae9-ece1-40df-b488-61c7c4aad667"
         },
         {
-            "id": "ExtBox1-ext-gen4343",
             "type": "datecolumn",
             "reference": {
                 "name": "columns",
@@ -75,15 +65,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyDateColumn1",
                 "dataIndex": "date",
-                "text": "Date",
-                "designer|userClassName": "MyDateColumn1"
+                "text": "Date"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "991ae025-cead-4418-a4af-7f2a93e75401"
         },
         {
-            "id": "ExtBox1-ext-gen4353",
             "type": "booleancolumn",
             "reference": {
                 "name": "columns",
@@ -91,15 +79,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyBooleanColumn1",
                 "dataIndex": "bool",
-                "text": "Boolean",
-                "designer|userClassName": "MyBooleanColumn1"
+                "text": "Boolean"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "3d7f01cb-865d-4428-9ca0-9ce07b40434f"
         },
         {
-            "id": "ExtBox1-ext-gen4363",
             "type": "gridview",
             "reference": {
                 "name": "viewConfig",
@@ -109,8 +95,7 @@
             "userConfig": {
                 "designer|userClassName": "MyGridView6"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "d4dd16a1-8fad-4ec6-83f4-073c524b0a5f"
         }
     ]
 }

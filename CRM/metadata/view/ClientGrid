@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen19779",
     "type": "gridpanel",
     "reference": {
         "name": "items",
@@ -7,6 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "ClientGrid",
+        "designer|userAlias": "clientgrid",
         "height": 250,
         "itemId": "clientgrid",
         "width": 868,
@@ -16,17 +17,12 @@
         "scroll": "none",
         "scrollDelta": 150,
         "store": "ClientStore",
-        "columnLines": true,
-        "designer|userClassName": "ClientGrid",
-        "designer|userAlias": "clientgrid"
+        "columnLines": true
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen19779",
     "designerId": "342c2439-4433-4ebf-9f68-1eb5af16f9a6",
-    "$viewOrder": 4,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen26762",
             "type": "actioncolumn",
             "reference": {
                 "name": "columns",
@@ -34,6 +30,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyActionColumn",
                 "draggable": false,
                 "frame": false,
                 "id": null,
@@ -47,14 +44,11 @@
                 "hideable": false,
                 "locked": false,
                 "menuDisabled": true,
-                "altText": "Actions",
-                "designer|userClassName": "MyActionColumn"
+                "altText": "Actions"
             },
-            "customConfigs": [],
-            "expanded": true,
+            "designerId": "d788521b-a8b9-4e0d-86f7-4041ab25e0f5",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen26769",
                     "type": "actioncolumnitem",
                     "reference": {
                         "name": "items",
@@ -62,18 +56,16 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "MyActionColumnItem",
                         "altText": "Edit",
                         "disabled": false,
                         "icon": "resources/icons/user_edit.png",
                         "iconCls": null,
-                        "tooltip": "Edit",
-                        "designer|userClassName": "MyActionColumnItem"
+                        "tooltip": "Edit"
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "30a70645-c04b-4c78-8592-10fd8cda1706"
                 },
                 {
-                    "id": "ExtBox1-ext-gen27357",
                     "type": "actioncolumnitem",
                     "reference": {
                         "name": "items",
@@ -81,19 +73,17 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "MyActionColumnItem1",
                         "altText": "View",
                         "icon": "resources/icons/user.png",
                         "iconCls": null,
-                        "tooltip": "View",
-                        "designer|userClassName": "MyActionColumnItem1"
+                        "tooltip": "View"
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "978e8026-a0a8-4c31-be56-963ea0894626"
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen19796",
             "type": "numbercolumn",
             "reference": {
                 "name": "columns",
@@ -101,18 +91,16 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyNumberColumn",
                 "hidden": true,
                 "dataIndex": "id",
                 "flex": 1,
                 "text": "ID",
-                "format": "0",
-                "designer|userClassName": "MyNumberColumn"
+                "format": "0"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "94b4eb6c-6260-4182-8975-c9008b504f3a"
         },
         {
-            "id": "ExtBox1-ext-gen19787",
             "type": "gridcolumn",
             "reference": {
                 "name": "columns",
@@ -120,16 +108,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyColumn",
                 "dataIndex": "name",
                 "flex": 3,
-                "text": "Name",
-                "designer|userClassName": "MyColumn"
+                "text": "Name"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "4986f67f-a480-4967-aefd-1bdd8a3cb9e3"
         },
         {
-            "id": "ExtBox1-ext-gen22126",
             "type": "gridcolumn",
             "reference": {
                 "name": "columns",
@@ -137,16 +123,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyColumn1",
                 "dataIndex": "address1",
                 "flex": 3,
-                "text": "Address",
-                "designer|userClassName": "MyColumn1"
+                "text": "Address"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "ac89ea39-4c38-44c7-97fc-da8285137728"
         },
         {
-            "id": "ExtBox1-ext-gen22272",
             "type": "gridcolumn",
             "reference": {
                 "name": "columns",
@@ -154,17 +138,15 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyColumn2",
                 "hidden": true,
                 "dataIndex": "address2",
                 "flex": 1,
-                "text": "Address Line 2",
-                "designer|userClassName": "MyColumn2"
+                "text": "Address Line 2"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "1d2a7745-146f-448d-9107-b682e5e1b381"
         },
         {
-            "id": "ExtBox1-ext-gen22416",
             "type": "gridcolumn",
             "reference": {
                 "name": "columns",
@@ -172,16 +154,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyColumn3",
                 "dataIndex": "city",
                 "flex": 1,
-                "text": "City",
-                "designer|userClassName": "MyColumn3"
+                "text": "City"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "e8cddc92-2d1b-4341-87ad-24a52602ce26"
         },
         {
-            "id": "ExtBox1-ext-gen22559",
             "type": "gridcolumn",
             "reference": {
                 "name": "columns",
@@ -189,16 +169,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyColumn4",
                 "dataIndex": "state",
                 "flex": 1,
-                "text": "State",
-                "designer|userClassName": "MyColumn4"
+                "text": "State"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "2e75677d-82b3-4c54-afc1-c58b420c105d"
         },
         {
-            "id": "ExtBox1-ext-gen26072",
             "type": "gridcolumn",
             "reference": {
                 "name": "columns",
@@ -206,16 +184,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyColumn5",
                 "dataIndex": "zip",
                 "flex": 1,
-                "text": "Zip",
-                "designer|userClassName": "MyColumn5"
+                "text": "Zip"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "7bfc59da-4f99-4eca-9c31-3e0ef0552ff0"
         },
         {
-            "id": "ExtBox1-ext-gen27122",
             "type": "gridcolumn",
             "reference": {
                 "name": "columns",
@@ -223,15 +199,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyColumn6",
                 "dataIndex": "territory",
-                "text": "Territory",
-                "designer|userClassName": "MyColumn6"
+                "text": "Territory"
             },
-            "customConfigs": [],
-            "expanded": false,
+            "designerId": "7c9550f7-4b0d-42c0-9e07-f2034a6260f4",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen32234",
                     "type": "basicfunction",
                     "reference": {
                         "name": "items",
@@ -239,6 +213,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "getter",
                         "fn": "getter",
                         "designer|params": [
                             "record"
@@ -246,14 +221,11 @@
                         "implHandler": [
                             "var obj = record.get('territory');",
                             "return Ext.isObject( obj )  ? obj.name : obj;"
-                        ],
-                        "designer|userClassName": "getter"
+                        ]
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "6e186f8e-993e-4719-b328-31d34e148fb1"
                 },
                 {
-                    "id": "ExtBox1-ext-gen32961",
                     "type": "basicfunction",
                     "reference": {
                         "name": "items",
@@ -261,6 +233,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "setter",
                         "fn": "setter",
                         "designer|params": [
                             "record",
@@ -269,16 +242,13 @@
                         "implHandler": [
                             "var obj = record.get('obj') || {};",
                             "record.set('territory', Ext.apply(obj,{name: value}));"
-                        ],
-                        "designer|userClassName": "setter"
+                        ]
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "247d8037-c679-4d11-a2d1-7094d6f43a64"
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen19823",
             "type": "gridview",
             "reference": {
                 "name": "viewConfig",
@@ -286,15 +256,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyGridView",
                 "itemId": "ClientGridView",
-                "maintainFlex": true,
-                "designer|userClassName": "MyGridView"
+                "maintainFlex": true
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "aa2a60b7-1b45-404b-af4c-44076814218e"
         },
         {
-            "id": "ExtBox1-ext-gen39163",
             "type": "basiceventbinding",
             "reference": {
                 "name": "listeners",
@@ -302,19 +270,17 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onClientgridBeforeShow",
                 "fn": "onClientgridBeforeShow",
                 "implHandler": [
                     "abstractcomponent.getStore().load();"
                 ],
                 "name": "beforeshow",
-                "scope": "me",
-                "designer|userClassName": "onClientgridBeforeShow"
+                "scope": "me"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "efdaf133-ed4e-4241-b45a-1d16da4fab5d"
         },
         {
-            "id": "ExtBox1-ext-gen42095",
             "type": "pagingtoolbar",
             "reference": {
                 "name": "dockedItems",
@@ -322,18 +288,16 @@
             },
             "codeClass": null,
             "userConfig": {
+                "dock": "bottom",
+                "designer|userClassName": "MyPagingToolbar",
                 "itemId": "ClientPagingToolbar",
                 "width": null,
                 "displayInfo": true,
-                "store": "ClientStore",
-                "designer|userClassName": "MyPagingToolbar",
-                "dock": "bottom"
+                "store": "ClientStore"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "8ab976a3-88b8-4622-b914-4bb6429d7625"
         },
         {
-            "id": "ExtBox1-ext-gen42608",
             "type": "tool",
             "reference": {
                 "name": "tools",
@@ -341,12 +305,11 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyTool",
                 "itemId": "printTool",
-                "type": "print",
-                "designer|userClassName": "MyTool"
+                "type": "print"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "7ea647cb-d112-40a3-82b9-019b0c2158fc"
         }
     ]
 }

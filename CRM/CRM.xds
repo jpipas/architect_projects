@@ -3,20 +3,21 @@
     "settings": {
         "urlPrefix": "http://ncpub.sencha.dev",
         "spacesToIndent": 4,
-        "codeGenFormat": "Class",
         "exportPath": "/Users/jpipas/Projects/Sites/CRM",
-        "extPath": "/",
+        "lineEnding": "",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "codeGenFormat": "Class",
         "senchaIoKey": "",
         "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
-        "lineEnding": "",
         "instantiateStore": true,
-        "genTimestamps": false,
         "saveOnDeploy": false,
-        "appName": "MyApp",
-        "mapsAPI": "http://maps.google.com/maps/api/js?sensor=true"
+        "appName": "MyApp"
     },
-    "xdsVersion": "2.0.0",
-    "xdsBuild": "442",
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 584,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000495,
     "framework": "ext40",
     "topInstanceFileMap": {
         "4f38d399-06da-4634-ab46-aaf1dc55bf43": {
@@ -327,13 +328,67 @@
                 "app/model/Publication.js"
             ],
             "className": "Publication"
+        },
+        "ece10d09-aa9b-4499-b2e5-30a857604a0d": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
         }
     },
-    "expandedState": {
-        "data": true,
-        "model": true,
-        "component": true,
-        "controller": true,
-        "resource": false
+    "viewOrderMap": {
+        "view": [
+            "4659fb21-6ce9-4607-8352-836fc979683f",
+            "25a0aa4b-5554-4ce2-b493-236e4a722f7d",
+            "cc0d44dd-45b1-4cad-8147-eb8ba2aa0ee7",
+            "6d8a9363-f987-4060-ad3b-026c844039d4",
+            "342c2439-4433-4ebf-9f68-1eb5af16f9a6",
+            "baf37ff2-4d2a-4a53-87cf-808e86a2781e",
+            "2f153940-6b99-47aa-b001-7b2a320bbee5",
+            "fb37bd9a-0d80-4f8a-bef6-38b3b6b7c8a0",
+            "d4e4c957-4a2b-442c-b62c-8d97c9aa5b0f",
+            "6f87cb11-abbb-4fda-b382-8de430e74ead",
+            "4f38d399-06da-4634-ab46-aaf1dc55bf43",
+            "18a2b983-cf8e-4f1f-a843-99adba604087",
+            "d0cae4e8-c092-49dd-b560-e100ce4f1983",
+            "5bd74abd-0d33-4928-b7f9-11eeb811b12f",
+            "e1c76b77-7439-4a96-ae08-46cc49b8e2b1"
+        ],
+        "store": [
+            "1f1677aa-3114-4ff6-a517-fae4007e22b1",
+            "dbb7fd66-bdc8-4b79-befd-b2d51fb01e01",
+            "606f2c32-9319-4444-aae7-f80244f8e869",
+            "78a0add9-b5d9-4bcb-950a-7314049de2e3",
+            "e5a1badf-d740-4129-95a8-61a051fc7c0a",
+            "7ffcbb3d-13ec-4292-8a22-3bf819ddf31a",
+            "20e2d311-53d0-4785-b293-dcac6c21b282",
+            "2358c001-d1b1-4c73-98aa-6c621e739d8a",
+            "327f467f-1c73-417b-944e-bf359d1f907a"
+        ],
+        "controller": [
+            "e424c48f-6ef8-4b4d-bae4-bfe70fa1ae19",
+            "668141e1-a7c7-44bb-b837-faddb3cfcde8",
+            "0eb6c736-e4ce-4a98-a689-09a51d0b11b2",
+            "e4f5c676-6a36-4f1c-9c92-aa1296a7b78b"
+        ],
+        "model": [
+            "f5655e65-b0a6-4623-b5f2-282d11ae832d",
+            "cdd9dfd6-0295-4527-889b-3200fc27d51f",
+            "7f17324a-b543-4078-9c22-42d5ca66e40c",
+            "619627fa-f4e8-4e5a-a09a-fb47949da159",
+            "cb51cd2a-1101-4286-9579-102f4098acaa",
+            "419c63ad-5c12-43f1-83bf-7a03e83bd5be",
+            "c356f244-d188-433a-a5e0-b4f852725170",
+            "7dd9b4b1-62d4-491d-8dfb-8e6907c4ea47",
+            "a02d5a2a-33fa-46e1-86d1-9d2f503f9f7c"
+        ],
+        "resource": [
+            "ece10d09-aa9b-4499-b2e5-30a857604a0d",
+            "4ee4a079-d8dc-45ef-8d5b-03968fe3a0a9",
+            "88697d41-4203-4896-974f-2d172d0dd7b9"
+        ],
+        "app": [
+            "application"
+        ]
     }
 }

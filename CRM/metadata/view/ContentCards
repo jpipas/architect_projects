@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen10571",
     "type": "container",
     "reference": {
         "name": "items",
@@ -7,18 +6,14 @@
     },
     "codeClass": null,
     "userConfig": {
-        "activeItem": 0,
-        "layout": "card",
         "designer|userClassName": "ContentCards",
-        "designer|userAlias": "contentCards"
+        "designer|userAlias": "contentCards",
+        "layout": "card"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen10571",
     "designerId": "6f87cb11-abbb-4fda-b382-8de430e74ead",
-    "$viewOrder": 2,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen7546",
             "type": "linkedinstance",
             "reference": {
                 "name": "items",
@@ -28,13 +23,10 @@
             "userConfig": {
                 "itemId": "PortalPanel"
             },
-            "customConfigs": [],
-            "iconCls": "icon-linkedinstance",
-            "expanded": true,
+            "designerId": "7cb51cd3-e0e0-42a1-a160-f1bdff00fc24",
             "masterInstanceId": "ExtBox1-ext-gen63497"
         },
         {
-            "id": "ExtBox1-ext-gen33022",
             "type": "linkedinstance",
             "reference": {
                 "name": "items",
@@ -44,13 +36,10 @@
             "userConfig": {
                 "title": "ActivityPanel"
             },
-            "customConfigs": [],
-            "iconCls": "icon-linkedinstance",
-            "expanded": true,
+            "designerId": "2319d8ae-6235-4d3b-9c50-6ac2659974fb",
             "masterInstanceId": "ExtBox1-ext-gen10809"
         },
         {
-            "id": "ExtBox1-ext-gen29856",
             "type": "linkedinstance",
             "reference": {
                 "name": "items",
@@ -60,13 +49,10 @@
             "userConfig": {
                 "itemId": "ClientGrid"
             },
-            "customConfigs": [],
-            "iconCls": "icon-linkedinstance",
-            "expanded": true,
+            "designerId": "c6d494ad-60c1-46dd-968c-a965ba02feaf",
             "masterInstanceId": "ExtBox1-ext-gen19779"
         },
         {
-            "id": "ExtBox1-ext-gen21712",
             "type": "linkedinstance",
             "reference": {
                 "name": "items",
@@ -76,13 +62,10 @@
             "userConfig": {
                 "itemId": "TerritoryGrid"
             },
-            "customConfigs": [],
-            "iconCls": "icon-linkedinstance",
-            "expanded": true,
+            "designerId": "233fbb20-c66f-48aa-ac6b-bb9a2018f2aa",
             "masterInstanceId": "ExtBox1-ext-gen19436"
         },
         {
-            "id": "ExtBox1-ext-gen39387",
             "type": "linkedinstance",
             "reference": {
                 "name": "items",
@@ -92,9 +75,7 @@
             "userConfig": {
                 "itemId": "ClientRecord"
             },
-            "customConfigs": [],
-            "iconCls": "icon-linkedinstance",
-            "expanded": true,
+            "designerId": "4210d23d-1883-44eb-8973-2a1394da0b60",
             "masterInstanceId": "ExtBox1-ext-gen38987"
         }
     ]

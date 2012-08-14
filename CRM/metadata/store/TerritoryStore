@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen9062",
     "type": "jsonstore",
     "reference": {
         "name": "items",
@@ -7,12 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "TerritoryStore",
         "storeId": "TerritoryStore",
-        "model": "Territory",
-        "designer|userClassName": "TerritoryStore"
+        "model": "Territory"
     },
-    "customConfigs": [],
-    "designerId": "dbb7fd66-bdc8-4b79-befd-b2d51fb01e01",
-    "$viewOrder": 1,
-    "expanded": true
+    "id": "ExtBox1-ext-gen9062",
+    "designerId": "dbb7fd66-bdc8-4b79-befd-b2d51fb01e01"
 }

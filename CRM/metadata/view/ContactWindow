@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen4716",
     "type": "window",
     "reference": {
         "name": "items",
@@ -7,23 +6,20 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "ContactWindow",
+        "designer|userAlias": "contactwindow",
         "height": 250,
         "hidden": false,
         "itemId": null,
         "width": 400,
         "layout": "fit",
         "closeAction": "hide",
-        "title": "New Contact",
-        "designer|userClassName": "ContactWindow",
-        "designer|userAlias": "contactwindow"
+        "title": "New Contact"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen4716",
     "designerId": "18a2b983-cf8e-4f1f-a843-99adba604087",
-    "$viewOrder": 13,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen5059",
             "type": "form",
             "reference": {
                 "name": "items",
@@ -31,19 +27,17 @@
             },
             "codeClass": null,
             "userConfig": {
+                "dock": null,
+                "designer|userClassName": "MyForm4",
                 "itemId": "contactForm",
                 "layout": null,
                 "bodyPadding": 10,
                 "preventHeader": true,
-                "title": "My Form",
-                "designer|userClassName": "MyForm4",
-                "dock": null
+                "title": "My Form"
             },
-            "customConfigs": [],
-            "expanded": true,
+            "designerId": "edd5f170-9512-4371-a75b-78c2cab5b387",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen7631",
                     "type": "toolbar",
                     "reference": {
                         "name": "dockedItems",
@@ -51,14 +45,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyToolbar7",
-                        "dock": "top"
+                        "dock": "top",
+                        "designer|userClassName": "MyToolbar7"
                     },
-                    "customConfigs": [],
-                    "expanded": false,
+                    "designerId": "7b1a64bd-0677-4ade-ae39-25b5946ceffd",
                     "cn": [
                         {
-                            "id": "ExtBox1-ext-gen3851",
                             "type": "button",
                             "reference": {
                                 "name": "items",
@@ -66,16 +58,14 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "iconCls": "ui-silk ui-silk-disk",
-                                "text": "Save",
+                                "layout|flex": null,
                                 "designer|userClassName": "MyButton11",
-                                "layout|flex": null
+                                "iconCls": "ui-silk ui-silk-disk",
+                                "text": "Save"
                             },
-                            "customConfigs": [],
-                            "expanded": true
+                            "designerId": "8a3dcda4-2513-4230-9d93-d5cd2cd81e1f"
                         },
                         {
-                            "id": "ExtBox1-ext-gen4131",
                             "type": "button",
                             "reference": {
                                 "name": "items",
@@ -83,15 +73,13 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "text": "Cancel",
+                                "layout|flex": null,
                                 "designer|userClassName": "MyButton12",
-                                "layout|flex": null
+                                "text": "Cancel"
                             },
-                            "customConfigs": [],
-                            "expanded": false,
+                            "designerId": "e89c4f2d-5ac6-4665-af0a-7eea953458d3",
                             "cn": [
                                 {
-                                    "id": "ExtBox1-ext-gen5275",
                                     "type": "basiceventbinding",
                                     "reference": {
                                         "name": "listeners",
@@ -99,23 +87,21 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
+                                        "designer|userClassName": "onButtonClick",
                                         "fn": "onButtonClick",
                                         "implHandler": [
                                             "console.log(button);"
                                         ],
                                         "name": "click",
-                                        "scope": "me",
-                                        "designer|userClassName": "onButtonClick"
+                                        "scope": "me"
                                     },
-                                    "customConfigs": [],
-                                    "expanded": true
+                                    "designerId": "beec4e2f-f74b-40d3-8c40-c4f6edea1465"
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    "id": "ExtBox1-ext-gen8394",
                     "type": "textfield",
                     "reference": {
                         "name": "items",
@@ -123,17 +109,15 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField9",
                         "itemId": "name",
                         "name": "name",
-                        "fieldLabel": "Name",
-                        "designer|userClassName": "MyTextField9",
-                        "layout|anchor": "100%"
+                        "fieldLabel": "Name"
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "b5e86a5f-0193-4c8d-b2e0-afcda95481a8"
                 },
                 {
-                    "id": "ExtBox1-ext-gen8635",
                     "type": "textfield",
                     "reference": {
                         "name": "items",
@@ -141,17 +125,15 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField10",
                         "itemId": "email_address",
                         "name": "email_address",
-                        "fieldLabel": "Email Address",
-                        "designer|userClassName": "MyTextField10",
-                        "layout|anchor": "100%"
+                        "fieldLabel": "Email Address"
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "99365357-aa42-4248-8207-df68f37c28c0"
                 },
                 {
-                    "id": "ExtBox1-ext-gen9153",
                     "type": "textfield",
                     "reference": {
                         "name": "items",
@@ -159,17 +141,15 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField11",
                         "itemId": "cell_phone",
                         "name": "cell_phone",
-                        "fieldLabel": "Phone Number",
-                        "designer|userClassName": "MyTextField11",
-                        "layout|anchor": "100%"
+                        "fieldLabel": "Phone Number"
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "bcac7f95-10c3-47e7-ae44-c8980e25214e"
                 },
                 {
-                    "id": "ExtBox1-ext-gen9443",
                     "type": "combobox",
                     "reference": {
                         "name": "items",
@@ -177,16 +157,15 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyComboBox",
                         "itemId": "role",
                         "name": "role",
                         "fieldLabel": "Role",
                         "displayField": "description",
-                        "store": "ContactRoleStore",
-                        "designer|userClassName": "MyComboBox",
-                        "layout|anchor": "100%"
+                        "store": "ContactRoleStore"
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "e52b8f12-f018-4b14-ba21-7e5ccee58279"
                 }
             ]
         }

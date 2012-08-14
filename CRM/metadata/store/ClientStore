@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen18231",
     "type": "jsonstore",
     "reference": {
         "name": "items",
@@ -7,15 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "ClientStore",
         "autoLoad": null,
         "storeId": "ClientStore",
         "model": "Client",
         "sortRoot": null,
-        "pageSize": 45,
-        "designer|userClassName": "ClientStore"
+        "pageSize": 45
     },
-    "customConfigs": [],
-    "designerId": "1f1677aa-3114-4ff6-a517-fae4007e22b1",
-    "$viewOrder": 0,
-    "expanded": true
+    "id": "ExtBox1-ext-gen18231",
+    "designerId": "1f1677aa-3114-4ff6-a517-fae4007e22b1"
 }

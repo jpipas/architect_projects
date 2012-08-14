@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen22773",
     "type": "jsonstore",
     "reference": {
         "name": "items",
@@ -7,17 +6,14 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "ContactStore",
         "storeId": "ContactStore",
-        "model": "Contact",
-        "designer|userClassName": "ContactStore"
+        "model": "Contact"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen22773",
     "designerId": "78a0add9-b5d9-4bcb-950a-7314049de2e3",
-    "$viewOrder": 3,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen51546",
             "type": "sorter",
             "reference": {
                 "name": "sorters",
@@ -27,11 +23,9 @@
             "userConfig": {
                 "designer|userClassName": "MySorter"
             },
-            "customConfigs": [],
-            "expanded": true,
+            "designerId": "09b8f522-7602-400d-b409-f52416fc59ec",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen51659",
                     "type": "fixedfunction",
                     "reference": {
                         "name": "items",
@@ -39,6 +33,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "sorterFn",
                         "fn": "sorterFn",
                         "designer|params": [
                             "first",
@@ -48,12 +43,9 @@
                             "var vals = [first,second];",
                             "vals.sort();",
                             ""
-                        ],
-                        "designer|userClassName": "sorterFn"
+                        ]
                     },
-                    "customConfigs": [],
-                    "iconCls": "icon-basic-function",
-                    "expanded": true
+                    "designerId": "b1d55af7-0799-49e4-927f-f5eb6ef2359e"
                 }
             ]
         }

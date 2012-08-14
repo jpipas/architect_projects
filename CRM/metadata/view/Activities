@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen10809",
     "type": "form",
     "reference": {
         "name": "items",
@@ -7,6 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "Activities",
+        "designer|userAlias": "activities",
         "border": 0,
         "height": null,
         "itemId": "Activities",
@@ -14,17 +15,12 @@
         "layout": "fit",
         "bodyPadding": 10,
         "preventHeader": false,
-        "title": "Activities",
-        "designer|userClassName": "Activities",
-        "designer|userAlias": "activities"
+        "title": "Activities"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen10809",
     "designerId": "25a0aa4b-5554-4ce2-b493-236e4a722f7d",
-    "$viewOrder": 3,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen21534",
             "type": "linkedinstance",
             "reference": {
                 "name": "dockedItems",
@@ -35,9 +31,7 @@
                 "itemId": "RecordNavigation",
                 "dock": "top"
             },
-            "customConfigs": [],
-            "iconCls": "icon-linkedinstance",
-            "expanded": true,
+            "designerId": "4b4ac49c-9e0e-4585-9c5b-3af5379f6e2e",
             "masterInstanceId": "ExtBox1-ext-gen11518"
         }
     ]

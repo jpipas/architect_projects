@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen22118",
     "type": "jsonstore",
     "reference": {
         "name": "items",
@@ -7,12 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "UserNoteStore",
         "storeId": "MyJsonStore5",
-        "model": "UserNote",
-        "designer|userClassName": "UserNoteStore"
+        "model": "UserNote"
     },
-    "customConfigs": [],
-    "designerId": "7ffcbb3d-13ec-4292-8a22-3bf819ddf31a",
-    "$viewOrder": 5,
-    "expanded": true
+    "id": "ExtBox1-ext-gen22118",
+    "designerId": "7ffcbb3d-13ec-4292-8a22-3bf819ddf31a"
 }

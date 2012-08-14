@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen14470",
     "type": "datamodel",
     "reference": {
         "name": "items",
@@ -7,17 +6,14 @@
     },
     "codeClass": null,
     "userConfig": {
-        "idProperty": "id",
         "designer|userClassName": "Territory",
-        "designer|userAlias": "territory"
+        "designer|userAlias": "territory",
+        "idProperty": "id"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen14470",
     "designerId": "cdd9dfd6-0295-4527-889b-3200fc27d51f",
-    "$viewOrder": 1,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen14788",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -25,15 +21,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField7",
                 "name": "id",
-                "type": "int",
-                "designer|userClassName": "MyField7"
+                "type": "int"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "fa966cef-b0f3-4c84-a9eb-242042bfcb35"
         },
         {
-            "id": "ExtBox1-ext-gen14948",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -41,15 +35,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField8",
                 "name": "name",
-                "type": "string",
-                "designer|userClassName": "MyField8"
+                "type": "string"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "2ab0bd17-6009-4afa-9f27-6ea8d4180a78"
         },
         {
-            "id": "ExtBox1-ext-gen10337",
             "type": "ajaxproxy",
             "reference": {
                 "name": "proxy",
@@ -57,14 +49,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "resources/js/territory.json",
-                "designer|userClassName": "MyAjaxProxy1"
+                "designer|userClassName": "MyAjaxProxy1",
+                "url": "resources/js/territory.json"
             },
-            "customConfigs": [],
-            "expanded": false,
+            "designerId": "69c0e95d-089b-4168-90ac-b41e73b40155",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen10547",
                     "type": "jsonreader",
                     "reference": {
                         "name": "reader",
@@ -72,18 +62,16 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "MyJsonReader1",
                         "idProperty": "id",
                         "root": "territory",
-                        "totalProperty": "totalCount",
-                        "designer|userClassName": "MyJsonReader1"
+                        "totalProperty": "totalCount"
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "33063ccc-7ba5-46e7-9976-9e7486e7dc87"
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen37620",
             "type": "hasmanyassociation",
             "reference": {
                 "name": "hasMany",
@@ -91,12 +79,11 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyHasManyAssociation1",
                 "associationKey": "states",
-                "model": "State",
-                "designer|userClassName": "MyHasManyAssociation1"
+                "model": "State"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "9baeb7c2-f5f1-4d71-8c99-4de53ded5c66"
         }
     ]
 }

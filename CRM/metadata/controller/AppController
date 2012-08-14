@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen6166",
     "type": "controller",
     "reference": {
         "name": "items",
@@ -9,13 +8,10 @@
     "userConfig": {
         "designer|userClassName": "AppController"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen6166",
     "designerId": "e424c48f-6ef8-4b4d-bae4-bfe70fa1ae19",
-    "$viewOrder": 0,
-    "expanded": false,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen7166",
             "type": "fixedfunction",
             "reference": {
                 "name": "items",
@@ -23,6 +19,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "init",
                 "fn": "init",
                 "designer|params": [
                     "application"
@@ -36,15 +33,11 @@
                     "});",
                     "",
                     "Ext.state.Manager.setProvider(new Ext.state.CookieProvider());"
-                ],
-                "designer|userClassName": "init"
+                ]
             },
-            "customConfigs": [],
-            "iconCls": "icon-basic-function",
-            "expanded": true
+            "designerId": "bb84e479-1eba-4a1d-9489-73e9b8b76357"
         },
         {
-            "id": "ExtBox1-ext-gen41640",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -52,20 +45,18 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "navigationClick",
                 "fn": "navigationClick",
                 "designer|params": [
                     "itemId"
                 ],
                 "implHandler": [
                     "this.getContentCards().getLayout().setActiveItem(itemId);"
-                ],
-                "designer|userClassName": "navigationClick"
+                ]
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "d61f89ea-3c27-4ff1-a811-eb3d3a60d267"
         },
         {
-            "id": "ExtBox1-ext-gen7736",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -73,15 +64,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "activitiesPanel",
                 "ref": "activitiesPanel",
-                "selector": "activities",
-                "designer|userClassName": "activitiesPanel"
+                "selector": "activities"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "86881447-b3e2-43bc-b56b-c9f36c7b7787"
         },
         {
-            "id": "ExtBox1-ext-gen32157",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -89,15 +78,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "clientGrid",
                 "ref": "clientGrid",
-                "selector": "clientgrid",
-                "designer|userClassName": "clientGrid"
+                "selector": "clientgrid"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "e940e88d-959d-48db-8a12-e98b1bae50ec"
         },
         {
-            "id": "ExtBox1-ext-gen8196",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -105,12 +92,11 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "contentCards",
                 "ref": "contentCards",
-                "selector": "contentCards",
-                "designer|userClassName": "contentCards"
+                "selector": "contentCards"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "bbf1b64b-ccba-4af8-a7d3-2cf676590023"
         }
     ]
 }

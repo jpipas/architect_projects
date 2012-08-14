@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen10328",
     "type": "datamodel",
     "reference": {
         "name": "items",
@@ -9,13 +8,10 @@
     "userConfig": {
         "designer|userClassName": "Publication"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen10328",
     "designerId": "a02d5a2a-33fa-46e1-86d1-9d2f503f9f7c",
-    "$viewOrder": 8,
-    "expanded": true,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen10508",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -23,14 +19,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "id",
-                "designer|userClassName": "MyField37"
+                "designer|userClassName": "MyField37",
+                "name": "id"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "102dda95-4705-4b32-bbb5-873c37d51fed"
         },
         {
-            "id": "ExtBox1-ext-gen10676",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -38,14 +32,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "description",
-                "designer|userClassName": "MyField38"
+                "designer|userClassName": "MyField38",
+                "name": "description"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "dfabcd24-a4d8-482e-8a7b-b671eb70fc7b"
         },
         {
-            "id": "ExtBox1-ext-gen11024",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -53,14 +45,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "contact_email",
-                "designer|userClassName": "MyField40"
+                "designer|userClassName": "MyField40",
+                "name": "contact_email"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "e344a8ee-847e-426b-98f6-1b99256ee544"
         },
         {
-            "id": "ExtBox1-ext-gen11698",
             "type": "belongstoassociation",
             "reference": {
                 "name": "belongsTo",
@@ -68,16 +58,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyBelongsToAssociation1",
                 "associationKey": null,
                 "model": "Territory",
-                "foreignKey": "territory_id",
-                "designer|userClassName": "MyBelongsToAssociation1"
+                "foreignKey": "territory_id"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "42710ef1-a664-4a43-b4f5-06bec4b69f07"
         },
         {
-            "id": "ExtBox1-ext-gen12329",
             "type": "ajaxproxy",
             "reference": {
                 "name": "proxy",
@@ -87,11 +75,9 @@
             "userConfig": {
                 "designer|userClassName": "MyAjaxProxy7"
             },
-            "customConfigs": [],
-            "expanded": true,
+            "designerId": "61486aa4-5fde-4b79-be8f-fe2e794601ac",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen12458",
                     "type": "jsonreader",
                     "reference": {
                         "name": "reader",
@@ -101,8 +87,7 @@
                     "userConfig": {
                         "designer|userClassName": "MyJsonReader7"
                     },
-                    "customConfigs": [],
-                    "expanded": true
+                    "designerId": "f4410a6c-9c70-495f-98be-32e98c2de8b6"
                 }
             ]
         }
