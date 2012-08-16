@@ -43,7 +43,7 @@ Ext.application({
         'UserNoteStore',
         'ContactRoleStore',
         'ActivityTypeStore',
-        'PublicatoinStore'
+        'PublicationStore'
     ],
     views: [
         'AppViewport',

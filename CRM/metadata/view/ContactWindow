@@ -46,7 +46,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "dock": "top",
-                        "designer|userClassName": "MyToolbar7"
+                        "designer|userClassName": "MyToolbar7",
+                        "designer|displayName": "FormToolBar"
                     },
                     "designerId": "7b1a64bd-0677-4ade-ae39-25b5946ceffd",
                     "cn": [

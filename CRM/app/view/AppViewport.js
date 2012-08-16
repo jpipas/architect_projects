@@ -85,10 +85,12 @@ Ext.define('JavisERP.view.AppViewport', {
                     contentEl: 'footer',
                     height: 50,
                     maxHeight: 50,
+                    stateful: false,
                     layout: {
                         align: 'stretch',
                         type: 'vbox'
                     },
+                    animCollapse: false,
                     preventHeader: true,
                     title: 'Footer'
                 }

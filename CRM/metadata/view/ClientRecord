@@ -1152,7 +1152,8 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "itemId": "PublicationGrid"
+                                                "itemId": "PublicationGrid",
+                                                "dock": null
                                             },
                                             "designerId": "d71a47de-948f-422a-bcfa-fa671c7c4973",
                                             "masterInstanceId": "ExtBox1-ext-gen4311"

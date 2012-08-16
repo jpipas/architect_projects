@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "PublicatoinStore",
+        "designer|userClassName": "PublicationStore",
         "storeId": "PublicationStore",
         "model": "Publication"
     },

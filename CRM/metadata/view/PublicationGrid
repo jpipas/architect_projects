@@ -8,9 +8,11 @@
     "userConfig": {
         "designer|userClassName": "PublicationGrid",
         "designer|userAlias": "publicationgrid",
+        "width": 815,
         "preventHeader": true,
         "title": "PublicationGrid",
         "forceFit": true,
+        "store": "PublicationStore",
         "columnLines": false
     },
     "id": "ExtBox1-ext-gen4311",
@@ -30,62 +32,6 @@
             "designerId": "8cfffd87-9d0c-4327-8809-f7d9ecf36b5b"
         },
         {
-            "type": "gridcolumn",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyColumn28",
-                "dataIndex": "string",
-                "text": "String"
-            },
-            "designerId": "a80dd792-cd56-4d54-8609-5fab4878d43c"
-        },
-        {
-            "type": "numbercolumn",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyNumberColumn3",
-                "dataIndex": "number",
-                "text": "Number"
-            },
-            "designerId": "b7429ae9-ece1-40df-b488-61c7c4aad667"
-        },
-        {
-            "type": "datecolumn",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyDateColumn1",
-                "dataIndex": "date",
-                "text": "Date"
-            },
-            "designerId": "991ae025-cead-4418-a4af-7f2a93e75401"
-        },
-        {
-            "type": "booleancolumn",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyBooleanColumn1",
-                "dataIndex": "bool",
-                "text": "Boolean"
-            },
-            "designerId": "3d7f01cb-865d-4428-9ca0-9ce07b40434f"
-        },
-        {
             "type": "gridview",
             "reference": {
                 "name": "viewConfig",
@@ -96,6 +42,135 @@
                 "designer|userClassName": "MyGridView6"
             },
             "designerId": "d4dd16a1-8fad-4ec6-83f4-073c524b0a5f"
+        },
+        {
+            "type": "actioncolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyActionColumn4",
+                "designer|displayName": "Actions",
+                "maxWidth": 80,
+                "defaultWidth": 80
+            },
+            "designerId": "4aee014d-5651-4e1d-bfe9-32cdeb27ea0f",
+            "cn": [
+                {
+                    "type": "actioncolumnitem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyActionColumnItem5",
+                        "designer|displayName": "View",
+                        "icon": "resources/icons/newspaper.png",
+                        "iconCls": null,
+                        "tooltip": "View Publication"
+                    },
+                    "designerId": "63a2b6a0-3e69-4ac7-8dc8-d18ab005e7aa"
+                },
+                {
+                    "type": "actioncolumnitem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyActionColumnItem6",
+                        "designer|displayName": "Edit",
+                        "icon": "resources/icons/newspaper_go.png",
+                        "iconCls": null,
+                        "tooltip": "Edit Publication"
+                    },
+                    "designerId": "795b0d30-b2be-4fd6-84e1-3049cd0cf5f9"
+                }
+            ]
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn14",
+                "hidden": true,
+                "dataIndex": "id",
+                "text": "Id"
+            },
+            "designerId": "37e5d0dd-95a1-48d2-a025-0b55fe405ac7"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn32",
+                "dataIndex": "description",
+                "text": "Name"
+            },
+            "designerId": "8d94152a-7e02-433e-9545-8fe0fe8b4db7"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn33",
+                "dataIndex": "contact_email",
+                "text": "Contact Email"
+            },
+            "designerId": "4274c9d5-8e24-4783-ba7c-330cd542da20"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn34",
+                "dataIndex": "territory.name",
+                "text": "Territory"
+            },
+            "designerId": "34661b3b-ec4a-41cd-96bb-3cbb5ac363f8",
+            "cn": [
+                {
+                    "type": "basicfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "getter",
+                        "fn": "getter",
+                        "designer|params": [
+                            "record"
+                        ],
+                        "implHandler": [
+                            "var obj = record.get('territory');",
+                            "console.log(obj);",
+                            "return Ext.isObject( obj )  ? obj.name : obj;"
+                        ]
+                    },
+                    "designerId": "96cb4b69-0187-40a5-a68f-1dc6a96ed836"
+                }
+            ]
         }
     ]
 }

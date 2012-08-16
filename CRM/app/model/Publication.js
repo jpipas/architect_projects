@@ -22,25 +22,37 @@ Ext.define('JavisERP.model.Publication', {
 
     fields: [
         {
+            mapping: 'id',
             name: 'id'
         },
         {
+            mapping: 'description',
             name: 'description'
         },
         {
             name: 'contact_email'
+        },
+        {
+            mapping: 'territory.name',
+            name: 'territory'
         }
     ],
 
     belongsTo: {
+        associationKey: 'territory',
         model: 'JavisERP.model.Territory',
-        foreignKey: 'territory_id'
+        getterName: 'territory',
+        foreignKey: ''
     },
 
     proxy: {
         type: 'ajax',
+        url: 'resources/js/publication.json',
         reader: {
-            type: 'json'
+            type: 'json',
+            idProperty: 'id',
+            root: 'publication',
+            totalProperty: 'totalCount'
         }
     }
 });

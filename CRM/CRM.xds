@@ -315,11 +315,11 @@
         },
         "327f467f-1c73-417b-944e-bf359d1f907a": {
             "paths": [
-                "metadata/store/PublicatoinStore",
-                "app/store/override/PublicatoinStore.js",
-                "app/store/PublicatoinStore.js"
+                "metadata/store/PublicationStore",
+                "app/store/override/PublicationStore.js",
+                "app/store/PublicationStore.js"
             ],
-            "className": "PublicatoinStore"
+            "className": "PublicationStore"
         },
         "a02d5a2a-33fa-46e1-86d1-9d2f503f9f7c": {
             "paths": [

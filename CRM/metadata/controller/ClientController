@@ -129,7 +129,8 @@
                     "this.getContentCards().getLayout().setActiveItem('ClientRecord');",
                     "var form = this.getClientRecord().getForm();",
                     "form.loadRecord(this.getClientGrid().getStore().getAt(row));",
-                    "var contacts = this.getContactGrid().getStore().load();"
+                    "var contacts = this.getContactGrid().getStore().load();",
+                    "var publications = this.getPublicationGrid().getStore().load();"
                 ]
             },
             "designerId": "9d3c82ab-4b41-47cc-b83a-71ef624c86a2"
@@ -203,6 +204,20 @@
                 "selector": "contactgrid"
             },
             "designerId": "868ab583-5147-4183-b4ef-f8331f6a862e"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "publicationGrid",
+                "ref": "publicationGrid",
+                "selector": "publicationgrid"
+            },
+            "designerId": "c0ea9963-0531-4e5a-ac88-da66354371ab"
         }
     ]
 }

@@ -20,6 +20,7 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField37",
+                "mapping": "id",
                 "name": "id"
             },
             "designerId": "102dda95-4705-4b32-bbb5-873c37d51fed"
@@ -33,6 +34,7 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField38",
+                "mapping": "description",
                 "name": "description"
             },
             "designerId": "dfabcd24-a4d8-482e-8a7b-b671eb70fc7b"
@@ -59,9 +61,11 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyBelongsToAssociation1",
-                "associationKey": null,
+                "designer|displayName": "territory",
+                "associationKey": "territory",
                 "model": "Territory",
-                "foreignKey": "territory_id"
+                "getterName": "territory",
+                "foreignKey": ""
             },
             "designerId": "42710ef1-a664-4a43-b4f5-06bec4b69f07"
         },
@@ -73,7 +77,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyAjaxProxy7"
+                "designer|userClassName": "MyAjaxProxy7",
+                "designer|displayName": "PublicationAjaxProxy",
+                "url": "resources/js/publication.json"
             },
             "designerId": "61486aa4-5fde-4b79-be8f-fe2e794601ac",
             "cn": [
@@ -85,11 +91,29 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyJsonReader7"
+                        "designer|userClassName": "MyJsonReader7",
+                        "designer|displayName": "PublicationJsonReader",
+                        "idProperty": "id",
+                        "root": "publication",
+                        "totalProperty": "totalCount"
                     },
                     "designerId": "f4410a6c-9c70-495f-98be-32e98c2de8b6"
                 }
             ]
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField40",
+                "mapping": "territory.name",
+                "name": "territory"
+            },
+            "designerId": "428c92d7-96ac-4e6e-ae07-73a7f398c848"
         }
     ]
 }

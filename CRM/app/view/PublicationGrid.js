@@ -17,9 +17,11 @@ Ext.define('JavisERP.view.PublicationGrid', {
     extend: 'Ext.grid.Panel',
     alias: 'widget.publicationgrid',
 
+    width: 815,
     preventHeader: true,
     title: 'PublicationGrid',
     forceFit: true,
+    store: 'PublicationStore',
     columnLines: false,
 
     initComponent: function() {
@@ -32,31 +34,52 @@ Ext.define('JavisERP.view.PublicationGrid', {
                     dock: 'top'
                 }
             ],
-            columns: [
-                {
-                    xtype: 'gridcolumn',
-                    dataIndex: 'string',
-                    text: 'String'
-                },
-                {
-                    xtype: 'numbercolumn',
-                    dataIndex: 'number',
-                    text: 'Number'
-                },
-                {
-                    xtype: 'datecolumn',
-                    dataIndex: 'date',
-                    text: 'Date'
-                },
-                {
-                    xtype: 'booleancolumn',
-                    dataIndex: 'bool',
-                    text: 'Boolean'
-                }
-            ],
             viewConfig: {
 
-            }
+            },
+            columns: [
+                {
+                    xtype: 'actioncolumn',
+                    maxWidth: 80,
+                    defaultWidth: 80,
+                    items: [
+                        {
+                            icon: 'resources/icons/newspaper.png',
+                            tooltip: 'View Publication'
+                        },
+                        {
+                            icon: 'resources/icons/newspaper_go.png',
+                            tooltip: 'Edit Publication'
+                        }
+                    ]
+                },
+                {
+                    xtype: 'gridcolumn',
+                    hidden: true,
+                    dataIndex: 'id',
+                    text: 'Id'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    dataIndex: 'description',
+                    text: 'Name'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    dataIndex: 'contact_email',
+                    text: 'Contact Email'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    getter: function(record) {
+                        var obj = record.get('territory');
+                        console.log(obj);
+                        return Ext.isObject( obj )  ? obj.name : obj;
+                    },
+                    dataIndex: 'territory.name',
+                    text: 'Territory'
+                }
+            ]
         });
 
         me.callParent(arguments);

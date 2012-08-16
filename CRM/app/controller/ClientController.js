@@ -36,6 +36,10 @@ Ext.define('JavisERP.controller.ClientController', {
         {
             ref: 'contactGrid',
             selector: 'contactgrid'
+        },
+        {
+            ref: 'publicationGrid',
+            selector: 'publicationgrid'
         }
     ],
 
@@ -87,6 +91,7 @@ Ext.define('JavisERP.controller.ClientController', {
         var form = this.getClientRecord().getForm();
         form.loadRecord(this.getClientGrid().getStore().getAt(row));
         var contacts = this.getContactGrid().getStore().load();
+        var publications = this.getPublicationGrid().getStore().load();
     }
 
 });
