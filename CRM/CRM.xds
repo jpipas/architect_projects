@@ -15,7 +15,7 @@
         "appName": "MyApp"
     },
     "xdsVersion": "2.1.0",
-    "xdsBuild": 584,
+    "xdsBuild": 588,
     "schemaVersion": 1,
     "upgradeVersion": 210000000495,
     "framework": "ext40",

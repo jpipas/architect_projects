@@ -940,14 +940,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "container|align": "stretch",
-                        "container|padding": null,
                         "designer|userClassName": "MyPanel5",
                         "autoScroll": false,
                         "defaults": [
                             "{labelAlign:'right'}"
                         ],
-                        "layout": "vbox",
+                        "layout": "fit",
                         "bodyPadding": 5,
                         "title": "Sales"
                     },
@@ -976,7 +974,6 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "layout|flex": 1,
                                 "container|align": "stretch",
                                 "designer|userClassName": "MyContainer7",
                                 "height": 50,
@@ -1108,12 +1105,11 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "layout|flex": null,
                                 "dock": null,
                                 "designer|userClassName": "MyTabPanel2",
-                                "height": null,
+                                "height": 100,
                                 "itemId": "SalesSublistTabs",
-                                "width": 100,
+                                "width": null,
                                 "activeTab": 0,
                                 "plain": false
                             },
@@ -1128,6 +1124,7 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "designer|userClassName": "MyPanel14",
+                                        "layout": "fit",
                                         "title": "Publications"
                                     },
                                     "designerId": "b2d16c7e-fe99-4aa1-84d8-aa84c0a50e8b",

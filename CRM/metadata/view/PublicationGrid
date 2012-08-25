@@ -29,7 +29,24 @@
                 "dock": "top",
                 "designer|userClassName": "MyToolbar8"
             },
-            "designerId": "8cfffd87-9d0c-4327-8809-f7d9ecf36b5b"
+            "designerId": "8cfffd87-9d0c-4327-8809-f7d9ecf36b5b",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton13",
+                        "iconCls": "ui-silk ui-silk-newspaper-add",
+                        "text": "New Publication"
+                    },
+                    "designerId": "bad3c6a0-147e-4cb2-a78f-61a98134d198"
+                }
+            ]
         },
         {
             "type": "gridview",

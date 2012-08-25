@@ -397,15 +397,13 @@ Ext.define('JavisERP.view.ClientRecord', {
                                 labelAlign: 'right'
                             },
                             layout: {
-                                align: 'stretch',
-                                type: 'vbox'
+                                type: 'fit'
                             },
                             bodyPadding: 5,
                             title: 'Sales',
                             items: [
                                 {
                                     xtype: 'container',
-                                    flex: 1,
                                     height: 50,
                                     itemId: 'SalesSublistHeader',
                                     maxHeight: 80,
@@ -468,13 +466,16 @@ Ext.define('JavisERP.view.ClientRecord', {
                                 },
                                 {
                                     xtype: 'tabpanel',
+                                    height: 100,
                                     itemId: 'SalesSublistTabs',
-                                    width: 100,
                                     activeTab: 0,
                                     plain: false,
                                     items: [
                                         {
                                             xtype: 'panel',
+                                            layout: {
+                                                type: 'fit'
+                                            },
                                             title: 'Publications',
                                             items: [
                                                 {

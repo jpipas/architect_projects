@@ -31,7 +31,14 @@ Ext.define('JavisERP.view.PublicationGrid', {
             dockedItems: [
                 {
                     xtype: 'toolbar',
-                    dock: 'top'
+                    dock: 'top',
+                    items: [
+                        {
+                            xtype: 'button',
+                            iconCls: 'ui-silk ui-silk-newspaper-add',
+                            text: 'New Publication'
+                        }
+                    ]
                 }
             ],
             viewConfig: {
