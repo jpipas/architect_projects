@@ -6,7 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Activity"
+        "designer|userClassName": "Activity",
+        "designer|userAlias": "activity"
     },
     "id": "ExtBox1-ext-gen8125",
     "designerId": "419c63ad-5c12-43f1-83bf-7a03e83bd5be",

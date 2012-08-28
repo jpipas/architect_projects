@@ -10,12 +10,13 @@
             "Client",
             "Territory",
             "State",
-            "Payment",
+            "PaymentType",
             "Contact",
             "Activity",
             "UserNote",
             "Role",
-            "Publication"
+            "Publication",
+            "Contract"
         ],
         "stores": [
             "ClientStore",
@@ -26,7 +27,8 @@
             "UserNoteStore",
             "ContactRoleStore",
             "ActivityTypeStore",
-            "PublicationStore"
+            "PublicationStore",
+            "ContractStore"
         ],
         "views": [
             "AppViewport",
@@ -36,14 +38,14 @@
             "RecordNavigation",
             "ClientGrid",
             "TerritoryGrid",
-            "ClientRecord",
             "ContentPanel",
             "Portlet",
             "PortalPanel",
             "PortalColumn",
             "ContactGrid",
             "ContactWindow",
-            "PublicationGrid"
+            "PublicationGrid",
+            "ContractGrid"
         ],
         "autoCreateViewport": true,
         "name": "JavisERP",

@@ -15,6 +15,7 @@
 
 Ext.define('JavisERP.model.Activity', {
     extend: 'Ext.data.Model',
+    alias: 'model.activity',
 
     fields: [
         {

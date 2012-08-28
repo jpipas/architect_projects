@@ -20,7 +20,8 @@ Ext.define('JavisERP.view.ClientRecord', {
     requires: [
         'JavisERP.view.RecordNavigation',
         'JavisERP.view.ContactGrid',
-        'JavisERP.view.PublicationGrid'
+        'JavisERP.view.PublicationGrid',
+        'JavisERP.view.ContractGrid'
     ],
 
     id: 'clientrecord',
@@ -486,7 +487,12 @@ Ext.define('JavisERP.view.ClientRecord', {
                                         },
                                         {
                                             xtype: 'panel',
-                                            title: 'Contracts'
+                                            title: 'Contracts',
+                                            items: [
+                                                {
+                                                    xtype: 'contractgrid'
+                                                }
+                                            ]
                                         },
                                         {
                                             xtype: 'panel',

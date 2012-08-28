@@ -17,7 +17,7 @@ Ext.define('JavisERP.store.PaymentStore', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'JavisERP.model.Payment'
+        'JavisERP.model.PaymentType'
     ],
 
     constructor: function(cfg) {
@@ -25,7 +25,7 @@ Ext.define('JavisERP.store.PaymentStore', {
         cfg = cfg || {};
         me.callParent([Ext.apply({
             storeId: 'PaymentStore',
-            model: 'JavisERP.model.Payment'
+            model: 'JavisERP.model.PaymentType'
         }, cfg)]);
     }
 });

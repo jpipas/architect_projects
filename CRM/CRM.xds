@@ -173,11 +173,11 @@
         },
         "619627fa-f4e8-4e5a-a09a-fb47949da159": {
             "paths": [
-                "metadata/model/Payment",
-                "app/model/override/Payment.js",
-                "app/model/Payment.js"
+                "metadata/model/PaymentType",
+                "app/model/override/PaymentType.js",
+                "app/model/PaymentType.js"
             ],
-            "className": "Payment"
+            "className": "PaymentType"
         },
         "cb51cd2a-1101-4286-9579-102f4098acaa": {
             "paths": [
@@ -334,6 +334,30 @@
                 "metadata/resource/Library"
             ],
             "className": "Library"
+        },
+        "f8a4f573-a7f4-4e64-b2ef-0969154a0fba": {
+            "paths": [
+                "metadata/store/ContractStore",
+                "app/store/override/ContractStore.js",
+                "app/store/ContractStore.js"
+            ],
+            "className": "ContractStore"
+        },
+        "87f4bd71-24c2-4ee6-92a7-75b5fc41ec6a": {
+            "paths": [
+                "metadata/model/Contract",
+                "app/model/override/Contract.js",
+                "app/model/Contract.js"
+            ],
+            "className": "Contract"
+        },
+        "810c51e8-64d4-43cb-9e05-aafe00528ee3": {
+            "paths": [
+                "metadata/view/ContractGrid",
+                "app/view/override/ContractGrid.js",
+                "app/view/ContractGrid.js"
+            ],
+            "className": "ContractGrid"
         }
     },
     "viewOrderMap": {
@@ -352,7 +376,8 @@
             "18a2b983-cf8e-4f1f-a843-99adba604087",
             "d0cae4e8-c092-49dd-b560-e100ce4f1983",
             "5bd74abd-0d33-4928-b7f9-11eeb811b12f",
-            "e1c76b77-7439-4a96-ae08-46cc49b8e2b1"
+            "e1c76b77-7439-4a96-ae08-46cc49b8e2b1",
+            "810c51e8-64d4-43cb-9e05-aafe00528ee3"
         ],
         "store": [
             "1f1677aa-3114-4ff6-a517-fae4007e22b1",
@@ -363,7 +388,8 @@
             "7ffcbb3d-13ec-4292-8a22-3bf819ddf31a",
             "20e2d311-53d0-4785-b293-dcac6c21b282",
             "2358c001-d1b1-4c73-98aa-6c621e739d8a",
-            "327f467f-1c73-417b-944e-bf359d1f907a"
+            "327f467f-1c73-417b-944e-bf359d1f907a",
+            "f8a4f573-a7f4-4e64-b2ef-0969154a0fba"
         ],
         "controller": [
             "e424c48f-6ef8-4b4d-bae4-bfe70fa1ae19",
@@ -380,7 +406,8 @@
             "419c63ad-5c12-43f1-83bf-7a03e83bd5be",
             "c356f244-d188-433a-a5e0-b4f852725170",
             "7dd9b4b1-62d4-491d-8dfb-8e6907c4ea47",
-            "a02d5a2a-33fa-46e1-86d1-9d2f503f9f7c"
+            "a02d5a2a-33fa-46e1-86d1-9d2f503f9f7c",
+            "87f4bd71-24c2-4ee6-92a7-75b5fc41ec6a"
         ],
         "resource": [
             "ece10d09-aa9b-4499-b2e5-30a857604a0d",

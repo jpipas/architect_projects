@@ -8,7 +8,7 @@
     "userConfig": {
         "designer|userClassName": "PaymentStore",
         "storeId": "PaymentStore",
-        "model": "Payment"
+        "model": "PaymentType"
     },
     "id": "ExtBox1-ext-gen9616",
     "designerId": "606f2c32-9319-4444-aae7-f80244f8e869"

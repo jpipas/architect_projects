@@ -1181,6 +1181,19 @@
                                                 "designer|userClassName": "TabConfig7"
                                             },
                                             "designerId": "c8fbc726-fb5b-44ff-9c08-6c0538d9ffbb"
+                                        },
+                                        {
+                                            "type": "linkedinstance",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "ContractGrid"
+                                            },
+                                            "designerId": "4492630a-9b9b-45ac-b5f4-8ce86f7a9ae1",
+                                            "masterInstanceId": "ExtBox1-ext-gen3232"
                                         }
                                     ]
                                 },

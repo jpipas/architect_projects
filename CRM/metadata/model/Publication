@@ -6,7 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Publication"
+        "designer|userClassName": "Publication",
+        "designer|userAlias": "publication"
     },
     "id": "ExtBox1-ext-gen10328",
     "designerId": "a02d5a2a-33fa-46e1-86d1-9d2f503f9f7c",

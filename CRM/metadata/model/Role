@@ -6,7 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Role"
+        "designer|userClassName": "Role",
+        "designer|userAlias": "contactRole"
     },
     "id": "ExtBox1-ext-gen37685",
     "designerId": "7dd9b4b1-62d4-491d-8dfb-8e6907c4ea47",

@@ -6,7 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "State"
+        "designer|userClassName": "State",
+        "designer|userAlias": "state"
     },
     "id": "ExtBox1-ext-gen11337",
     "designerId": "7f17324a-b543-4078-9c22-42d5ca66e40c",
