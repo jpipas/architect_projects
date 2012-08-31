@@ -1,0 +1,148 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Contract",
+        "designer|userAlias": "contract",
+        "idProperty": "id"
+    },
+    "id": "ExtBox1-ext-gen4487",
+    "designerId": "87f4bd71-24c2-4ee6-92a7-75b5fc41ec6a",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField41",
+                "name": "id"
+            },
+            "designerId": "0e62a305-8255-476d-97d7-f562a733f3cc"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField42",
+                "name": "contract_number"
+            },
+            "designerId": "5bbcd516-7f9f-4a77-9ecb-b07068506696"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField43",
+                "mapping": "client.name",
+                "name": "client_name"
+            },
+            "designerId": "22747379-0852-4a15-8995-1cd3b47e4cc3"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField44",
+                "name": "total_sales"
+            },
+            "designerId": "2b4920c2-6b06-4889-92ab-9f7848b3e365"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField45",
+                "name": "discount"
+            },
+            "designerId": "e42c0dc6-a836-47d3-acac-6c1cda71767d"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField46",
+                "name": "subtotal"
+            },
+            "designerId": "6519f412-a4ea-409e-9809-9280fef6cfcc"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField47",
+                "name": "first_month_payment"
+            },
+            "designerId": "d36b2e0c-62c9-44f8-bb16-06ea11aacd51"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField48",
+                "name": "monthly_payment"
+            },
+            "designerId": "8775a386-6896-4564-bb76-9e9fbcabf6e1"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField49",
+                "name": "payment_type_id"
+            },
+            "designerId": "7930a9be-c8c0-4664-8d24-f8d22d9a39f8"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField50",
+                "name": "sale_date"
+            },
+            "designerId": "714b21c2-2c35-42ed-bbec-a3505db9e649"
+        }
+    ]
+}

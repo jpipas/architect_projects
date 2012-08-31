@@ -1,0 +1,244 @@
+{
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ContractGrid",
+        "designer|userAlias": "contractgrid",
+        "preventHeader": true,
+        "title": "ContractsGrid",
+        "forceFit": true,
+        "store": "ContractStore"
+    },
+    "id": "ExtBox1-ext-gen3232",
+    "designerId": "810c51e8-64d4-43cb-9e05-aafe00528ee3",
+    "cn": [
+        {
+            "type": "gridview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGridView7"
+            },
+            "designerId": "a5ca6832-5e7b-4f98-ac4f-9c9c4838db67"
+        },
+        {
+            "type": "actioncolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyActionColumn5"
+            },
+            "designerId": "b60922fb-c6bb-4bb0-8783-a592cd446f5d",
+            "cn": [
+                {
+                    "type": "actioncolumnitem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyActionColumnItem7",
+                        "designer|displayName": "Edit",
+                        "iconCls": "ui-silk ui-silk-folder-edit",
+                        "tooltip": "Edit Contract"
+                    },
+                    "designerId": "e681ac89-bc7b-4791-8241-aff920597672"
+                }
+            ]
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn34",
+                "hidden": true,
+                "dataIndex": "id",
+                "text": "Id"
+            },
+            "designerId": "85135d2a-a51b-4967-b14e-950ceba48df6"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn35",
+                "dataIndex": "contract_number",
+                "flex": 2,
+                "text": "Contract No."
+            },
+            "designerId": "7a6274f3-bb36-47c3-ae39-cf71b9a5ee0f"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn36",
+                "minWidth": null,
+                "width": null,
+                "defaultWidth": 160,
+                "dataIndex": "client_name",
+                "flex": 4,
+                "text": "Client Name"
+            },
+            "designerId": "d5b302d3-e66c-4065-ad55-7f218988e676"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn37",
+                "dataIndex": "total_sales",
+                "flex": 1,
+                "text": "Total Sales Amt."
+            },
+            "designerId": "4400d619-e2c7-4165-b196-2724c72b68ae"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn38",
+                "dataIndex": "discount",
+                "flex": 1,
+                "text": "Discount"
+            },
+            "designerId": "f807bd50-143e-483a-835d-be370573e48b"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn39",
+                "dataIndex": "subtotal",
+                "flex": 1,
+                "text": "Subtotal"
+            },
+            "designerId": "70cd67de-9830-4040-b4ba-16d651226b98"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn40",
+                "dataIndex": "first_month_payment",
+                "flex": 1,
+                "text": "First Months Payment"
+            },
+            "designerId": "686d6df3-ecec-4c82-ac28-9475efe4486e"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn41",
+                "dataIndex": "monthly_payment",
+                "flex": 1,
+                "text": "Monthly Payment"
+            },
+            "designerId": "940fc7bc-d10f-47cd-9bcb-1563e9a27cfc"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn42",
+                "dataIndex": "payment_type_id",
+                "flex": 2,
+                "text": "Payment Type"
+            },
+            "designerId": "e4d685da-fa37-4d64-837c-29ccccfc5c80"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn43",
+                "dataIndex": "sale_date",
+                "flex": 1,
+                "text": "Sale Date"
+            },
+            "designerId": "3562d8a9-1da7-4303-b5d0-a3bc5b027ed0"
+        },
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "designer|userClassName": "MyToolbar9"
+            },
+            "designerId": "42fd52d0-c605-4464-902a-a5331b686174",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton14",
+                        "icon": "resources/icon/folder_add.png",
+                        "text": "New Contract"
+                    },
+                    "designerId": "2b9c4421-8f3f-4de7-b746-6302638b41ba"
+                }
+            ]
+        }
+    ]
+}
