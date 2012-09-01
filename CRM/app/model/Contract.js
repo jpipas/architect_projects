@@ -31,7 +31,8 @@ Ext.define('JavisERP.model.Contract', {
             name: 'client_name'
         },
         {
-            name: 'total_sales'
+            name: 'total_sales',
+            type: 'float'
         },
         {
             name: 'discount'
@@ -40,16 +41,20 @@ Ext.define('JavisERP.model.Contract', {
             name: 'subtotal'
         },
         {
-            name: 'first_month_payment'
+            name: 'first_month_payment',
+            type: 'float'
         },
         {
-            name: 'monthly_payment'
+            name: 'monthly_payment',
+            type: 'float'
         },
         {
+            mapping: 'payment_type.type',
             name: 'payment_type_id'
         },
         {
-            name: 'sale_date'
+            name: 'sale_date',
+            type: 'date'
         }
     ]
 });

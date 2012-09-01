@@ -1,0 +1,294 @@
+{
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ActivityGrid",
+        "designer|userAlias": "activitygrid",
+        "border": 0,
+        "itemId": "ActivitiesGrid",
+        "preventHeader": true,
+        "title": "My Grid Panel",
+        "forceFit": true,
+        "store": "ActivityStore"
+    },
+    "id": "ExtBox1-ext-gen2179",
+    "designerId": "51472e6f-2c20-42f6-8104-300e9b39e19c",
+    "cn": [
+        {
+            "type": "gridview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGridView4"
+            },
+            "designerId": "35c6ca3e-63f3-4f8e-9655-d3fb6f01d170"
+        },
+        {
+            "type": "actioncolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyActionColumn2",
+                "maxWidth": 50,
+                "defaultWidth": 50
+            },
+            "designerId": "80eba757-b192-489e-a580-af65f1f029e6",
+            "cn": [
+                {
+                    "type": "actioncolumnitem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyActionColumnItem3"
+                    },
+                    "designerId": "e45450f7-2517-4d4d-a33c-f688bb280fdd"
+                }
+            ]
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn16",
+                "hidden": true,
+                "dataIndex": "id",
+                "text": "Id"
+            },
+            "designerId": "0be42946-9516-43f7-a609-61f73613f533"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn17",
+                "dataIndex": "title",
+                "text": "Title"
+            },
+            "designerId": "6cc4766c-722e-45ab-bb6f-3d684ca00639"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn18",
+                "dataIndex": "date",
+                "text": "Date"
+            },
+            "designerId": "eed63dca-d92f-4083-adf6-4a0f92e0b243"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn19",
+                "dataIndex": "time",
+                "text": "Time"
+            },
+            "designerId": "405ff484-f7c1-423f-b9d9-86ae4a862edd"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn20",
+                "dataIndex": "owner",
+                "text": "Owner"
+            },
+            "designerId": "38920028-d760-4dd0-ab1d-d67d15cc4716"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn21",
+                "dataIndex": "status",
+                "text": "Status"
+            },
+            "designerId": "bd62877a-b698-437e-a427-f5e0b4d22c48"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn22",
+                "dataIndex": "assigned_to",
+                "text": "Assigned To"
+            },
+            "designerId": "d26d82d7-7203-4f50-873f-988547f48cd5"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn23",
+                "dataIndex": "type",
+                "text": "Type"
+            },
+            "designerId": "d6496ce0-3ecf-4f54-9f69-7285e954fa9b"
+        },
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "designer|userClassName": "MyToolbar5"
+            },
+            "designerId": "da435e9f-83d8-4c08-b2c1-b33e3f78f4cc",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton7",
+                        "iconCls": "ui-silk ui-silk-clock-add",
+                        "text": "New Task"
+                    },
+                    "designerId": "2e7a822b-79d4-4d8b-936d-b9e7ad64d87e"
+                },
+                {
+                    "type": "tbseparator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MySeparator5"
+                    },
+                    "designerId": "13562ec7-e855-4522-8e00-0bcee1cc860b"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton7",
+                        "iconCls": "ui-silk ui-silk-telephone-add",
+                        "text": "New Phone Call"
+                    },
+                    "designerId": "72a06338-6c1d-4d7b-91ae-f00faacbe9d8"
+                },
+                {
+                    "type": "tbseparator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MySeparator6"
+                    },
+                    "designerId": "72017a2c-d67f-4509-afca-efa717568bff"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton7",
+                        "iconCls": "ui-silk ui-silk-date-add",
+                        "text": "New Event"
+                    },
+                    "designerId": "ea01f3a3-6d7a-4fd9-8718-4f01ca3644bb"
+                },
+                {
+                    "type": "tbseparator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MySeparator6"
+                    },
+                    "designerId": "8e287cff-ebfd-4194-a903-ab8b8b388cc2"
+                },
+                {
+                    "type": "combobox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyComboBox1",
+                        "itemId": "typeFilter",
+                        "fieldLabel": null,
+                        "hideLabel": true,
+                        "emptyText": "Filter Activity Type...",
+                        "displayField": "description",
+                        "queryMode": "local",
+                        "store": "ActivityTypeStore"
+                    },
+                    "designerId": "3ba50948-1d52-40cf-9025-77d7efe7139f"
+                }
+            ]
+        }
+    ]
+}

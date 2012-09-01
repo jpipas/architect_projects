@@ -130,7 +130,8 @@
                     "var form = this.getClientRecord().getForm();",
                     "form.loadRecord(this.getClientGrid().getStore().getAt(row));",
                     "var contacts = this.getContactGrid().getStore().load();",
-                    "var publications = this.getPublicationGrid().getStore().load();"
+                    "var publications = this.getPublicationGrid().getStore().load();",
+                    "var contracts = this.getContractGrid().getStore().load();"
                 ]
             },
             "designerId": "9d3c82ab-4b41-47cc-b83a-71ef624c86a2"
@@ -190,6 +191,20 @@
                 "selector": "contactwindow"
             },
             "designerId": "32be57cd-7398-4894-b550-10275acf993e"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "contractGrid",
+                "ref": "contractGrid",
+                "selector": "contractgrid"
+            },
+            "designerId": "86564b8f-f91a-447b-813a-915c692df9f0"
         },
         {
             "type": "controllerref",

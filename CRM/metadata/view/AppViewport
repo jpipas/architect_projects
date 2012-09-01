@@ -118,13 +118,20 @@
             "codeClass": null,
             "userConfig": {
                 "layout|flex": 1,
-                "container|align": "stretch",
                 "designer|userClassName": "MyPanel4",
-                "contentEl": "footer",
+                "autoRender": false,
+                "autoShow": false,
+                "border": null,
+                "cls": null,
+                "contentEl": null,
                 "height": 50,
+                "html": [
+                    "<div style=\"padding:10px;text-align:right;\">Javis ERP &copy; 2012<br/>v1.0</div>"
+                ],
                 "maxHeight": 50,
+                "padding": null,
                 "stateful": false,
-                "layout": "vbox",
+                "layout": "fit",
                 "animCollapse": false,
                 "preventHeader": true,
                 "title": "Footer"

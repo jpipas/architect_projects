@@ -1,0 +1,160 @@
+{
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "UserNoteGrid",
+        "designer|userAlias": "usernotegrid",
+        "border": 0,
+        "preventHeader": true,
+        "title": "User Notes",
+        "forceFit": true,
+        "store": "UserNoteStore"
+    },
+    "id": "ExtBox1-ext-gen2201",
+    "designerId": "cdbe8b64-d759-402d-99b5-59542af13551",
+    "cn": [
+        {
+            "type": "gridview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGridView5"
+            },
+            "designerId": "dbbf0a41-3c98-4033-aa56-e68754aba6fe"
+        },
+        {
+            "type": "actioncolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyActionColumn3"
+            },
+            "designerId": "9441aeac-f453-4429-9bf0-66661c55d6a1",
+            "cn": [
+                {
+                    "type": "actioncolumnitem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyActionColumnItem4"
+                    },
+                    "designerId": "6988e79b-17d8-4bf8-856a-f5923649140c"
+                }
+            ]
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn24",
+                "hidden": true,
+                "dataIndex": "id",
+                "text": "Id"
+            },
+            "designerId": "54ad1f8c-ca44-4c6e-9b4a-47e75bdf2c8a"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn25",
+                "dataIndex": "date",
+                "text": "Date"
+            },
+            "designerId": "8df125b8-86ac-4fad-adc3-f62de2636393"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn26",
+                "dataIndex": "author",
+                "text": "Author"
+            },
+            "designerId": "f3393b42-a53a-4fea-8676-ed434aa5582b"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn27",
+                "dataIndex": "title",
+                "text": "Title"
+            },
+            "designerId": "bcbe8dc5-c788-4794-9d0b-107501feb523"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn28",
+                "dataIndex": "memo",
+                "text": "Memo"
+            },
+            "designerId": "8570ac9c-86f5-4100-bc49-320e8527102b"
+        },
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "designer|userClassName": "MyToolbar6"
+            },
+            "designerId": "76cc7414-ecec-4b99-9013-2d9d29c0a815",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton10",
+                        "iconCls": "ui-silk ui-silk-note-add",
+                        "text": "New Note"
+                    },
+                    "designerId": "9e2f4f1e-ac5a-4986-b463-95568838f7f0"
+                }
+            ]
+        }
+    ]
+}

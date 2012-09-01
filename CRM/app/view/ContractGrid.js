@@ -32,6 +32,7 @@ Ext.define('JavisERP.view.ContractGrid', {
             columns: [
                 {
                     xtype: 'actioncolumn',
+                    flex: 1,
                     items: [
                         {
                             iconCls: 'ui-silk ui-silk-folder-edit',
@@ -108,7 +109,8 @@ Ext.define('JavisERP.view.ContractGrid', {
                     items: [
                         {
                             xtype: 'button',
-                            icon: 'resources/icon/folder_add.png',
+                            icon: '',
+                            iconCls: 'ui-silk ui-silk-table-add',
                             text: 'New Contract'
                         }
                     ]

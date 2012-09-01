@@ -62,7 +62,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField44",
-                "name": "total_sales"
+                "name": "total_sales",
+                "type": "float"
             },
             "designerId": "2b4920c2-6b06-4889-92ab-9f7848b3e365"
         },
@@ -101,7 +102,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField47",
-                "name": "first_month_payment"
+                "name": "first_month_payment",
+                "type": "float"
             },
             "designerId": "d36b2e0c-62c9-44f8-bb16-06ea11aacd51"
         },
@@ -114,7 +116,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField48",
-                "name": "monthly_payment"
+                "name": "monthly_payment",
+                "type": "float"
             },
             "designerId": "8775a386-6896-4564-bb76-9e9fbcabf6e1"
         },
@@ -127,6 +130,7 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField49",
+                "mapping": "payment_type.type",
                 "name": "payment_type_id"
             },
             "designerId": "7930a9be-c8c0-4664-8d24-f8d22d9a39f8"
@@ -140,7 +144,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField50",
-                "name": "sale_date"
+                "name": "sale_date",
+                "type": "date"
             },
             "designerId": "714b21c2-2c35-42ed-bbec-a3505db9e649"
         }

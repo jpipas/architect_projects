@@ -36,7 +36,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyActionColumn5"
+                "designer|userClassName": "MyActionColumn5",
+                "flex": 1
             },
             "designerId": "b60922fb-c6bb-4bb0-8783-a592cd446f5d",
             "cn": [
@@ -233,7 +234,8 @@
                     "userConfig": {
                         "layout|flex": null,
                         "designer|userClassName": "MyButton14",
-                        "icon": "resources/icon/folder_add.png",
+                        "icon": "",
+                        "iconCls": "ui-silk ui-silk-table-add",
                         "text": "New Contract"
                     },
                     "designerId": "2b9c4421-8f3f-4de7-b746-6302638b41ba"
