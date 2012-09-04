@@ -685,8 +685,9 @@
                                 "designer|userClassName": "MyTabPanel2",
                                 "height": 100,
                                 "itemId": "SalesSublistTabs",
+                                "maxHeight": 350,
                                 "width": null,
-                                "bodyPadding": 5,
+                                "bodyPadding": null,
                                 "activeTab": 0,
                                 "plain": false
                             },
@@ -726,11 +727,32 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
+                                                "border": 0,
                                                 "itemId": "PublicationGrid",
                                                 "dock": null
                                             },
                                             "designerId": "d71a47de-948f-422a-bcfa-fa671c7c4973",
-                                            "masterInstanceId": "ExtBox1-ext-gen4311"
+                                            "masterInstanceId": "ExtBox1-ext-gen4311",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|userClassName": "onGridpanelBeforeRender",
+                                                        "fn": "onGridpanelBeforeRender",
+                                                        "implHandler": [
+                                                            "abstractcomponent.getDockedItems('toolbar[dock=\"bottom\"]')[0].hide();"
+                                                        ],
+                                                        "name": "beforerender",
+                                                        "scope": "me"
+                                                    },
+                                                    "designerId": "d72b5515-c54d-4b2f-9d38-81dbadce5d8b"
+                                                }
+                                            ]
                                         }
                                     ]
                                 },

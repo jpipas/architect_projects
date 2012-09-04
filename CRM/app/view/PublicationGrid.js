@@ -39,6 +39,16 @@ Ext.define('JavisERP.view.PublicationGrid', {
                             text: 'New Publication'
                         }
                     ]
+                },
+                {
+                    xtype: 'pagingtoolbar',
+                    dock: 'bottom',
+                    hidden: false,
+                    itemId: 'pubToolbar',
+                    width: 360,
+                    displayInfo: true,
+                    emptyMsg: 'No publications to display',
+                    store: 'PublicationStore'
                 }
             ],
             viewConfig: {

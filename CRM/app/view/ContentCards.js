@@ -22,7 +22,9 @@ Ext.define('JavisERP.view.ContentCards', {
         'JavisERP.view.Activities',
         'JavisERP.view.ClientGrid',
         'JavisERP.view.TerritoryGrid',
-        'JavisERP.view.ClientRecord'
+        'JavisERP.view.ClientRecord',
+        'JavisERP.view.PublicationGrid',
+        'JavisERP.view.ContractGrid'
     ],
 
     layout: {
@@ -53,6 +55,14 @@ Ext.define('JavisERP.view.ContentCards', {
                 {
                     xtype: 'clientrecord',
                     itemId: 'ClientRecord'
+                },
+                {
+                    xtype: 'publicationgrid',
+                    itemId: 'PublicationGrid'
+                },
+                {
+                    xtype: 'contractgrid',
+                    itemId: 'ContractGrid'
                 }
             ]
         });

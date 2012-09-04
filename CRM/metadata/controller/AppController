@@ -51,7 +51,13 @@
                     "itemId"
                 ],
                 "implHandler": [
-                    "this.getContentCards().getLayout().setActiveItem(itemId);"
+                    "this.getContentCards().getLayout().setActiveItem(itemId);",
+                    "",
+                    "var xtype = this.getContentCards().getLayout().getActiveItem().getXType();",
+                    "",
+                    "if(xtype.indexOf(\"grid\") != -1){",
+                    "    this.getContentCards().getLayout().getActiveItem().getStore().load();",
+                    "}"
                 ]
             },
             "designerId": "d61f89ea-3c27-4ff1-a811-eb3d3a60d267"

@@ -77,6 +77,34 @@
             },
             "designerId": "4210d23d-1883-44eb-8973-2a1394da0b60",
             "masterInstanceId": "ExtBox1-ext-gen38987"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "PublicationGrid",
+                "itemId": "PublicationGrid"
+            },
+            "designerId": "91087369-5ec7-4123-ad08-edad81ca782c",
+            "masterInstanceId": "ExtBox1-ext-gen4311"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "ContractGrid",
+                "itemId": "ContractGrid"
+            },
+            "designerId": "35380701-31ae-4b1d-bc58-24f106517517",
+            "masterInstanceId": "ExtBox1-ext-gen3232"
         }
     ]
 }

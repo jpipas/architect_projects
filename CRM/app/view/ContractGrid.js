@@ -114,6 +114,14 @@ Ext.define('JavisERP.view.ContractGrid', {
                             text: 'New Contract'
                         }
                     ]
+                },
+                {
+                    xtype: 'pagingtoolbar',
+                    dock: 'bottom',
+                    itemId: 'contractPageToolBar',
+                    width: 360,
+                    displayInfo: true,
+                    store: 'ContractStore'
                 }
             ]
         });

@@ -188,6 +188,26 @@
                     "designerId": "96cb4b69-0187-40a5-a68f-1dc6a96ed836"
                 }
             ]
+        },
+        {
+            "type": "pagingtoolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "bottom",
+                "designer|userClassName": "MyPagingToolbar2",
+                "designer|displayName": "publicationToolBar",
+                "hidden": false,
+                "itemId": "pubToolbar",
+                "width": 360,
+                "displayInfo": true,
+                "emptyMsg": "No publications to display",
+                "store": "PublicationStore"
+            },
+            "designerId": "e057bc4d-a5e2-4008-9bce-0807d3964fc1"
         }
     ]
 }

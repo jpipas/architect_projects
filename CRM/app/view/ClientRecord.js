@@ -311,7 +311,7 @@ Ext.define('JavisERP.view.ClientRecord', {
                                     xtype: 'tabpanel',
                                     height: 100,
                                     itemId: 'SalesSublistTabs',
-                                    bodyPadding: 5,
+                                    maxHeight: 350,
                                     activeTab: 0,
                                     plain: false,
                                     items: [
@@ -324,7 +324,14 @@ Ext.define('JavisERP.view.ClientRecord', {
                                             items: [
                                                 {
                                                     xtype: 'publicationgrid',
-                                                    itemId: 'PublicationGrid'
+                                                    border: 0,
+                                                    itemId: 'PublicationGrid',
+                                                    listeners: {
+                                                        beforerender: {
+                                                            fn: me.onGridpanelBeforeRender,
+                                                            scope: me
+                                                        }
+                                                    }
                                                 }
                                             ]
                                         },
@@ -463,6 +470,10 @@ Ext.define('JavisERP.view.ClientRecord', {
         });
 
         me.callParent(arguments);
+    },
+
+    onGridpanelBeforeRender: function(abstractcomponent, options) {
+        abstractcomponent.getDockedItems('toolbar[dock="bottom"]')[0].hide();
     }
 
 });

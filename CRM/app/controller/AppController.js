@@ -44,6 +44,12 @@ Ext.define('JavisERP.controller.AppController', {
 
     navigationClick: function(itemId) {
         this.getContentCards().getLayout().setActiveItem(itemId);
+
+        var xtype = this.getContentCards().getLayout().getActiveItem().getXType();
+
+        if(xtype.indexOf("grid") != -1){
+            this.getContentCards().getLayout().getActiveItem().getStore().load();
+        }
     }
 
 });

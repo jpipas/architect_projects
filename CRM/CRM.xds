@@ -1,7 +1,7 @@
 {
     "name": "CRM",
     "settings": {
-        "urlPrefix": "http://ncpub.sencha.dev",
+        "urlPrefix": "http://ncpub.sencha.dev:8000",
         "spacesToIndent": 4,
         "exportPath": "/Users/jpipas/Projects/Sites/CRM",
         "lineEnding": "",
@@ -379,7 +379,6 @@
     "viewOrderMap": {
         "view": [
             "4f38d399-06da-4634-ab46-aaf1dc55bf43",
-            "810c51e8-64d4-43cb-9e05-aafe00528ee3",
             "4659fb21-6ce9-4607-8352-836fc979683f",
             "25a0aa4b-5554-4ce2-b493-236e4a722f7d",
             "cc0d44dd-45b1-4cad-8147-eb8ba2aa0ee7",
@@ -390,6 +389,7 @@
             "fb37bd9a-0d80-4f8a-bef6-38b3b6b7c8a0",
             "d4e4c957-4a2b-442c-b62c-8d97c9aa5b0f",
             "6f87cb11-abbb-4fda-b382-8de430e74ead",
+            "810c51e8-64d4-43cb-9e05-aafe00528ee3",
             "18a2b983-cf8e-4f1f-a843-99adba604087",
             "d0cae4e8-c092-49dd-b560-e100ce4f1983",
             "5bd74abd-0d33-4928-b7f9-11eeb811b12f",

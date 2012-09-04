@@ -241,6 +241,24 @@
                     "designerId": "2b9c4421-8f3f-4de7-b746-6302638b41ba"
                 }
             ]
+        },
+        {
+            "type": "pagingtoolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "bottom",
+                "designer|userClassName": "MyPagingToolbar3",
+                "designer|displayName": "contractPageToolBar",
+                "itemId": "contractPageToolBar",
+                "width": 360,
+                "displayInfo": true,
+                "store": "ContractStore"
+            },
+            "designerId": "6e3ab63f-143f-4a85-b756-10580ecfdb17"
         }
     ]
 }
