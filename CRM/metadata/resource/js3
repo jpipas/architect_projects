@@ -1,0 +1,13 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "/app/view/PortalPanel.js"
+    },
+    "id": "ExtBox1-ext-gen4296",
+    "designerId": "b4989cea-ff8e-42c3-808d-08d75e80fccb"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "/app/util/Constants.js"
+    },
+    "id": "ExtBox1-ext-gen8006",
+    "designerId": "5458bf16-0d90-4cac-962d-cbfe18fd84bd"
+}

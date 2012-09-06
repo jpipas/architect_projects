@@ -1,0 +1,110 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Portal",
+        "views": [
+            "ClientPortlet",
+            "ActivityPortlet"
+        ]
+    },
+    "id": "ExtBox1-ext-gen6509",
+    "designerId": "5ee0fbc3-e4b4-48f7-ae1d-98a8df0fbd68",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "init",
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    "this.control({",
+                    "            'clientportlet': {",
+                    "                close: this.onPortletClose",
+                    "            },",
+                    "            'portlet': {",
+                    "                close: this.onPortletClose",
+                    "            }",
+                    "        }); "
+                ]
+            },
+            "designerId": "67c3db9b-8775-4622-b8c1-cd80cd56baf0"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onPortletClose",
+                "fn": "onPortletClose",
+                "designer|params": [
+                    "portlet"
+                ],
+                "implHandler": [
+                    "console.log(portlet.title);",
+                    "this.showMsg('\"' + portlet.title + '\" was removed');"
+                ]
+            },
+            "designerId": "e89966de-7e6c-48ed-ad50-e78efb814508"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "showMsg",
+                "fn": "showMsg",
+                "designer|params": [
+                    "msg"
+                ],
+                "implHandler": [
+                    "    var el = Ext.get('app-msg'),",
+                    "    msgId = Ext.id();",
+                    "    this.msgId = msgId;",
+                    "    el.update(msg).show();",
+                    "    Ext.defer(this.clearMsg, 3000, this, [msgId]);",
+                    ""
+                ]
+            },
+            "designerId": "f0b8fd28-ff0a-4966-9174-47ff6504b71b"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "clearMsg",
+                "fn": "clearMsg",
+                "designer|params": [
+                    "msgId"
+                ],
+                "implHandler": [
+                    "if (msgId === this.msgId) {",
+                    "    Ext.get('app-msg').hide();",
+                    "}"
+                ]
+            },
+            "designerId": "425d69bf-1b24-461c-8d38-25f2538ec9de"
+        }
+    ]
+}
