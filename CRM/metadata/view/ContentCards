@@ -21,19 +21,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "itemId": "PortalPanel"
-            },
-            "designerId": "7cb51cd3-e0e0-42a1-a160-f1bdff00fc24",
-            "masterInstanceId": "ExtBox1-ext-gen63497"
-        },
-        {
-            "type": "linkedinstance",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
                 "title": "ActivityPanel"
             },
             "designerId": "2319d8ae-6235-4d3b-9c50-6ac2659974fb",
@@ -50,7 +37,7 @@
                 "itemId": "ClientGrid"
             },
             "designerId": "c6d494ad-60c1-46dd-968c-a965ba02feaf",
-            "masterInstanceId": "ExtBox1-ext-gen19779"
+            "masterInstanceId": "ucmpClientGrid"
         },
         {
             "type": "linkedinstance",

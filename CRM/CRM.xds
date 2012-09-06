@@ -15,10 +15,10 @@
         "appName": "MyApp"
     },
     "xdsVersion": "2.1.0",
-    "xdsBuild": 588,
+    "xdsBuild": 609,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000495,
-    "framework": "ext40",
+    "upgradeVersion": 210000000497,
+    "framework": "ext41",
     "topInstanceFileMap": {
         "4f38d399-06da-4634-ab46-aaf1dc55bf43": {
             "paths": [
@@ -193,38 +193,6 @@
             ],
             "className": "js"
         },
-        "6d8a9363-f987-4060-ad3b-026c844039d4": {
-            "paths": [
-                "metadata/view/ContentPanel",
-                "app/view/override/ContentPanel.js",
-                "app/view/ContentPanel.js"
-            ],
-            "className": "ContentPanel"
-        },
-        "e1c76b77-7439-4a96-ae08-46cc49b8e2b1": {
-            "paths": [
-                "metadata/view/Portlet",
-                "app/view/override/Portlet.js",
-                "app/view/Portlet.js"
-            ],
-            "className": "Portlet"
-        },
-        "5bd74abd-0d33-4928-b7f9-11eeb811b12f": {
-            "paths": [
-                "metadata/view/PortalPanel",
-                "app/view/override/PortalPanel.js",
-                "app/view/PortalPanel.js"
-            ],
-            "className": "PortalPanel"
-        },
-        "d0cae4e8-c092-49dd-b560-e100ce4f1983": {
-            "paths": [
-                "metadata/view/PortalColumn",
-                "app/view/override/PortalColumn.js",
-                "app/view/PortalColumn.js"
-            ],
-            "className": "PortalColumn"
-        },
         "2f153940-6b99-47aa-b001-7b2a320bbee5": {
             "paths": [
                 "metadata/view/ContactGrid",
@@ -374,6 +342,60 @@
                 "app/view/UserNoteGrid.js"
             ],
             "className": "UserNoteGrid"
+        },
+        "5458bf16-0d90-4cac-962d-cbfe18fd84bd": {
+            "paths": [
+                "metadata/resource/js1"
+            ],
+            "className": "js1"
+        },
+        "458977af-707b-4c4a-98c0-e8e58b7221e4": {
+            "paths": [
+                "metadata/resource/js2"
+            ],
+            "className": "js2"
+        },
+        "b4989cea-ff8e-42c3-808d-08d75e80fccb": {
+            "paths": [
+                "metadata/resource/js3"
+            ],
+            "className": "js3"
+        },
+        "1f15242c-62e4-462b-96a7-f91215c3fcbc": {
+            "paths": [
+                "metadata/resource/js4"
+            ],
+            "className": "js4"
+        },
+        "5ee0fbc3-e4b4-48f7-ae1d-98a8df0fbd68": {
+            "paths": [
+                "metadata/controller/Portal",
+                "app/controller/override/Portal.js",
+                "app/controller/Portal.js"
+            ],
+            "className": "Portal"
+        },
+        "80dd2673-81d2-46ae-adae-0d6c3bf136c6": {
+            "paths": [
+                "metadata/resource/js5"
+            ],
+            "className": "js5"
+        },
+        "610a9588-647a-41d3-8d7e-58b837d2340e": {
+            "paths": [
+                "metadata/view/ClientPortlet",
+                "app/view/override/ClientPortlet.js",
+                "app/view/ClientPortlet.js"
+            ],
+            "className": "ClientPortlet"
+        },
+        "11273236-0aed-45b3-98eb-f60aec3509a3": {
+            "paths": [
+                "metadata/view/ActivityPortlet",
+                "app/view/override/ActivityPortlet.js",
+                "app/view/ActivityPortlet.js"
+            ],
+            "className": "ActivityPortlet"
         }
     },
     "viewOrderMap": {
@@ -382,7 +404,6 @@
             "4659fb21-6ce9-4607-8352-836fc979683f",
             "25a0aa4b-5554-4ce2-b493-236e4a722f7d",
             "cc0d44dd-45b1-4cad-8147-eb8ba2aa0ee7",
-            "6d8a9363-f987-4060-ad3b-026c844039d4",
             "342c2439-4433-4ebf-9f68-1eb5af16f9a6",
             "baf37ff2-4d2a-4a53-87cf-808e86a2781e",
             "2f153940-6b99-47aa-b001-7b2a320bbee5",
@@ -391,11 +412,10 @@
             "6f87cb11-abbb-4fda-b382-8de430e74ead",
             "810c51e8-64d4-43cb-9e05-aafe00528ee3",
             "18a2b983-cf8e-4f1f-a843-99adba604087",
-            "d0cae4e8-c092-49dd-b560-e100ce4f1983",
-            "5bd74abd-0d33-4928-b7f9-11eeb811b12f",
-            "e1c76b77-7439-4a96-ae08-46cc49b8e2b1",
             "51472e6f-2c20-42f6-8104-300e9b39e19c",
-            "cdbe8b64-d759-402d-99b5-59542af13551"
+            "cdbe8b64-d759-402d-99b5-59542af13551",
+            "610a9588-647a-41d3-8d7e-58b837d2340e",
+            "11273236-0aed-45b3-98eb-f60aec3509a3"
         ],
         "store": [
             "f8a4f573-a7f4-4e64-b2ef-0969154a0fba",
@@ -413,7 +433,8 @@
             "e424c48f-6ef8-4b4d-bae4-bfe70fa1ae19",
             "668141e1-a7c7-44bb-b837-faddb3cfcde8",
             "0eb6c736-e4ce-4a98-a689-09a51d0b11b2",
-            "e4f5c676-6a36-4f1c-9c92-aa1296a7b78b"
+            "e4f5c676-6a36-4f1c-9c92-aa1296a7b78b",
+            "5ee0fbc3-e4b4-48f7-ae1d-98a8df0fbd68"
         ],
         "model": [
             "87f4bd71-24c2-4ee6-92a7-75b5fc41ec6a",
@@ -430,7 +451,12 @@
         "resource": [
             "ece10d09-aa9b-4499-b2e5-30a857604a0d",
             "4ee4a079-d8dc-45ef-8d5b-03968fe3a0a9",
-            "88697d41-4203-4896-974f-2d172d0dd7b9"
+            "88697d41-4203-4896-974f-2d172d0dd7b9",
+            "5458bf16-0d90-4cac-962d-cbfe18fd84bd",
+            "458977af-707b-4c4a-98c0-e8e58b7221e4",
+            "b4989cea-ff8e-42c3-808d-08d75e80fccb",
+            "1f15242c-62e4-462b-96a7-f91215c3fcbc",
+            "80dd2673-81d2-46ae-adae-0d6c3bf136c6"
         ],
         "app": [
             "application"

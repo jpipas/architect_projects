@@ -8,6 +8,13 @@
     "userConfig": {
         "container|align": "stretch",
         "designer|userClassName": "AppViewport",
+        "uses": [
+            "JavisERP.view.PortalPanel",
+            "JavisERP.view.PortalColumn",
+            "JavisERP.view.PortletPanel",
+            "JavisERP.view.ClientPortlet",
+            "JavisERP.util.Constants"
+        ],
         "designer|initialView": true,
         "border": 0,
         "layout": "vbox"
@@ -32,7 +39,7 @@
                 "autoScroll": false,
                 "layout": "vbox",
                 "frameHeader": false,
-                "preventHeader": true,
+                "header": false,
                 "title": "Header",
                 "titleCollapse": false
             },
@@ -57,8 +64,7 @@
                         "shadow": [
                             "false"
                         ],
-                        "maintainFlex": true,
-                        "src": "/resources/images/NCLogo.jpg"
+                        "src": "resources/images/NCLogo.jpg"
                     },
                     "designerId": "b6cb4e1b-21ac-41d1-aef4-ff613a3838db"
                 },
@@ -87,7 +93,7 @@
             "codeClass": null,
             "userConfig": {
                 "border": null,
-                "preventHeader": true,
+                "header": false,
                 "title": "Navigation",
                 "layout|flex": 1
             },
@@ -130,10 +136,9 @@
                 ],
                 "maxHeight": 50,
                 "padding": null,
-                "stateful": false,
                 "layout": "fit",
                 "animCollapse": false,
-                "preventHeader": true,
+                "header": false,
                 "title": "Footer"
             },
             "designerId": "325bcaf2-44c0-4524-bfb3-d2703d187cc5"

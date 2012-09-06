@@ -10,12 +10,11 @@
         "designer|userAlias": "activitygrid",
         "border": 0,
         "itemId": "ActivitiesGrid",
-        "preventHeader": true,
         "title": "My Grid Panel",
         "forceFit": true,
         "store": "ActivityStore"
     },
-    "id": "ExtBox1-ext-gen2179",
+    "id": "ucmpActivityGrid",
     "designerId": "51472e6f-2c20-42f6-8104-300e9b39e19c",
     "cn": [
         {

@@ -73,8 +73,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField16",
-                "mapping": "role.description",
                 "name": "role",
+                "mapping": "role.description",
                 "sortType": "asText"
             },
             "designerId": "13c44e3d-159f-49bb-9735-295aabb2a623"

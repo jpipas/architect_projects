@@ -14,7 +14,6 @@
         "width": null,
         "layout": "fit",
         "bodyPadding": 10,
-        "preventHeader": false,
         "title": "Activities"
     },
     "id": "ExtBox1-ext-gen10809",

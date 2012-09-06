@@ -32,7 +32,6 @@
                 "itemId": "contactForm",
                 "layout": null,
                 "bodyPadding": 10,
-                "preventHeader": true,
                 "title": "My Form"
             },
             "designerId": "edd5f170-9512-4371-a75b-78c2cab5b387",

@@ -92,7 +92,6 @@
                             "userConfig": {
                                 "designer|userClassName": "MyMenu",
                                 "width": 120,
-                                "preventHeader": true,
                                 "title": "HomeMenu"
                             },
                             "designerId": "6790d6bf-be4f-4dc0-9bf2-07641486a7cc",
@@ -168,7 +167,6 @@
                             "userConfig": {
                                 "designer|userClassName": "MyMenu1",
                                 "width": 120,
-                                "preventHeader": true,
                                 "title": "ActivitiesMenu"
                             },
                             "designerId": "95c0a4fb-f245-437e-8dd9-5cb642c79700",
@@ -391,7 +389,6 @@
                             "userConfig": {
                                 "designer|userClassName": "MyMenu2",
                                 "width": 120,
-                                "preventHeader": true,
                                 "title": "ListMenu"
                             },
                             "designerId": "e376c19f-e8f9-4274-8532-21d085957f89",
@@ -527,7 +524,6 @@
                             "userConfig": {
                                 "designer|userClassName": "MyMenu3",
                                 "width": 120,
-                                "preventHeader": true,
                                 "title": "ReportsMenu"
                             },
                             "designerId": "f52d1b38-e4a7-45e5-88a4-b401a7a13a77",

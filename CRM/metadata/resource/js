@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "url": "app/view/PortalDropZone.js"
+        "url": "/app/view/PortalDropZone.js"
     },
     "id": "ExtBox1-ext-gen5895",
     "designerId": "88697d41-4203-4896-974f-2d172d0dd7b9"

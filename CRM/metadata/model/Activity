@@ -115,6 +115,36 @@
                 "name": "type"
             },
             "designerId": "a5a80a1c-be0b-4ba0-a193-8600c52e476a"
+        },
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy9",
+                "url": "resources/js/activity.json"
+            },
+            "designerId": "a45f1ffb-394b-4fcf-8a90-34f7bd363e49",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader9",
+                        "idProperty": "id",
+                        "root": "activity",
+                        "totalProperty": "totalCount"
+                    },
+                    "designerId": "d237d918-7926-4437-b754-17654bb51cbb"
+                }
+            ]
         }
     ]
 }

@@ -9,11 +9,10 @@
         "designer|userClassName": "PublicationGrid",
         "designer|userAlias": "publicationgrid",
         "width": 815,
-        "preventHeader": true,
         "title": "PublicationGrid",
+        "columnLines": false,
         "forceFit": true,
-        "store": "PublicationStore",
-        "columnLines": false
+        "store": "PublicationStore"
     },
     "id": "ExtBox1-ext-gen4311",
     "designerId": "fb37bd9a-0d80-4f8a-bef6-38b3b6b7c8a0",

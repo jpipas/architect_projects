@@ -9,7 +9,6 @@
         "designer|userClassName": "UserNoteGrid",
         "designer|userAlias": "usernotegrid",
         "border": 0,
-        "preventHeader": true,
         "title": "User Notes",
         "forceFit": true,
         "store": "UserNoteStore"

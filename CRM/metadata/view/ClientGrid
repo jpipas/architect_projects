@@ -13,13 +13,12 @@
         "width": 868,
         "autoScroll": false,
         "title": "List: Clients",
+        "columnLines": true,
         "forceFit": true,
         "scroll": "none",
-        "scrollDelta": 150,
-        "store": "ClientStore",
-        "columnLines": true
+        "store": "ClientStore"
     },
-    "id": "ExtBox1-ext-gen19779",
+    "id": "ucmpClientGrid",
     "designerId": "342c2439-4433-4ebf-9f68-1eb5af16f9a6",
     "cn": [
         {
@@ -42,7 +41,6 @@
                 "align": "center",
                 "flex": 1,
                 "hideable": false,
-                "locked": false,
                 "menuDisabled": true,
                 "altText": "Actions"
             },
@@ -201,6 +199,7 @@
             "userConfig": {
                 "designer|userClassName": "MyColumn6",
                 "dataIndex": "territory",
+                "flex": 1,
                 "text": "Territory"
             },
             "designerId": "7c9550f7-4b0d-42c0-9e07-f2034a6260f4",
@@ -257,8 +256,7 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyGridView",
-                "itemId": "ClientGridView",
-                "maintainFlex": true
+                "itemId": "ClientGridView"
             },
             "designerId": "aa2a60b7-1b45-404b-af4c-44076814218e"
         },

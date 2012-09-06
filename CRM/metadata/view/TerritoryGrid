@@ -12,12 +12,11 @@
         "itemId": "clientgrid",
         "width": 868,
         "autoScroll": false,
-        "title": "List: Clients",
+        "title": "List: Territory",
+        "columnLines": true,
         "forceFit": true,
         "scroll": "none",
-        "scrollDelta": 150,
-        "store": "TerritoryStore",
-        "columnLines": true
+        "store": "TerritoryStore"
     },
     "id": "ExtBox1-ext-gen19436",
     "designerId": "baf37ff2-4d2a-4a53-87cf-808e86a2781e",
@@ -31,8 +30,7 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyGridView",
-                "itemId": "TerritoryGridView",
-                "maintainFlex": true
+                "itemId": "TerritoryGridView"
             },
             "designerId": "6fff7f58-9363-4cf7-aeb6-32c91438030f"
         },

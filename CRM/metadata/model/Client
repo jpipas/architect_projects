@@ -223,8 +223,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField7",
-                "mapping": "territory.name",
-                "name": "territory"
+                "name": "territory",
+                "mapping": "territory.name"
             },
             "designerId": "13840921-ac2d-4294-9a23-e40eb6afeaad"
         }

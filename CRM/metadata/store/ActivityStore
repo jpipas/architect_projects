@@ -8,7 +8,7 @@
     "userConfig": {
         "designer|userClassName": "ActivityStore",
         "designer|userAlias": "activitystore",
-        "storeId": "MyJsonStore4",
+        "storeId": "ActivityStore",
         "model": "Activity"
     },
     "id": "ExtBox1-ext-gen7548",

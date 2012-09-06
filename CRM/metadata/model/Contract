@@ -48,8 +48,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField43",
-                "mapping": "client.name",
-                "name": "client_name"
+                "name": "client_name",
+                "mapping": "client.name"
             },
             "designerId": "22747379-0852-4a15-8995-1cd3b47e4cc3"
         },
@@ -130,8 +130,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField49",
-                "mapping": "payment_type.type",
-                "name": "payment_type_id"
+                "name": "payment_type_id",
+                "mapping": "payment_type.type"
             },
             "designerId": "7930a9be-c8c0-4664-8d24-f8d22d9a39f8"
         },

@@ -9,11 +9,10 @@
         "designer|userClassName": "ContactGrid",
         "designer|userAlias": "contactgrid",
         "border": 0,
-        "preventHeader": true,
         "title": "Contact List",
+        "columnLines": false,
         "forceFit": true,
-        "store": "ContactStore",
-        "columnLines": false
+        "store": "ContactStore"
     },
     "id": "ExtBox1-ext-gen23604",
     "designerId": "2f153940-6b99-47aa-b001-7b2a320bbee5",

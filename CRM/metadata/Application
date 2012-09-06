@@ -36,17 +36,12 @@
             "ContentCards",
             "Activities",
             "RecordNavigation",
-            "ClientGrid",
+            "ClientPortlet",
             "TerritoryGrid",
-            "ContentPanel",
-            "Portlet",
-            "PortalPanel",
-            "PortalColumn",
             "ContactGrid",
             "ContactWindow",
             "PublicationGrid",
-            "ContractGrid",
-            "ActivityGrid"
+            "ContractGrid"
         ],
         "autoCreateViewport": true,
         "name": "JavisERP",
@@ -54,7 +49,8 @@
             "AppController",
             "MainNavController",
             "RecordNavController",
-            "ClientController"
+            "ClientController",
+            "Portal"
         ]
     },
     "id": "ExtBox1-ext-gen15782",

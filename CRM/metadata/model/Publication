@@ -21,8 +21,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField37",
-                "mapping": "id",
-                "name": "id"
+                "name": "id",
+                "mapping": "id"
             },
             "designerId": "102dda95-4705-4b32-bbb5-873c37d51fed"
         },
@@ -35,8 +35,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField38",
-                "mapping": "description",
-                "name": "description"
+                "name": "description",
+                "mapping": "description"
             },
             "designerId": "dfabcd24-a4d8-482e-8a7b-b671eb70fc7b"
         },
@@ -111,8 +111,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField40",
-                "mapping": "territory.name",
-                "name": "territory"
+                "name": "territory",
+                "mapping": "territory.name"
             },
             "designerId": "428c92d7-96ac-4e6e-ae07-73a7f398c848"
         }

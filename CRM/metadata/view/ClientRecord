@@ -51,7 +51,6 @@
                 "itemId": "RecordHeader",
                 "maxHeight": null,
                 "minHeight": 100,
-                "maintainFlex": false,
                 "defaultType": null,
                 "defaults": [
                     "{labelAlign:'right'}"
@@ -71,7 +70,7 @@
                         "layout|flex": 1,
                         "formBind": null,
                         "designer|userClassName": "MyFieldContainer3",
-                        "border": false,
+                        "border": "false",
                         "itemId": "Column1",
                         "defaultType": "textfield",
                         "defaults": [
@@ -168,7 +167,7 @@
                     "userConfig": {
                         "layout|flex": 1,
                         "designer|userClassName": "MyFieldContainer4",
-                        "border": false,
+                        "border": "false",
                         "height": null,
                         "itemId": "Column2",
                         "width": null,
@@ -359,7 +358,9 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "itemId": "ContactGrid"
+                                                "itemId": "ContactGrid",
+                                                "header": false,
+                                                "hideHeaders": false
                                             },
                                             "designerId": "d27ab01b-2464-4625-8fdd-3b6cb657d8f3",
                                             "masterInstanceId": "ExtBox1-ext-gen23604"
@@ -430,10 +431,11 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "designer|displayName": "ActivityGrid"
+                                                "designer|displayName": "ActivityGrid",
+                                                "header": false
                                             },
                                             "designerId": "8f94d5dd-0414-4717-b87c-ae9173dd015d",
-                                            "masterInstanceId": "ExtBox1-ext-gen2179"
+                                            "masterInstanceId": "ucmpActivityGrid"
                                         }
                                     ]
                                 },
@@ -470,7 +472,8 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "designer|displayName": "UserNotesGrid"
+                                                "designer|displayName": "UserNotesGrid",
+                                                "header": false
                                             },
                                             "designerId": "52376fcd-bcd8-4db4-ae38-9589a09a41a7",
                                             "masterInstanceId": "ExtBox1-ext-gen2201"
@@ -729,6 +732,7 @@
                                             "userConfig": {
                                                 "border": 0,
                                                 "itemId": "PublicationGrid",
+                                                "header": false,
                                                 "dock": null
                                             },
                                             "designerId": "d71a47de-948f-422a-bcfa-fa671c7c4973",
@@ -818,7 +822,7 @@
                                             "codeClass": null,
                                             "userConfig": {
                                                 "designer|displayName": "ContractGrid",
-                                                "maintainFlex": true
+                                                "header": false
                                             },
                                             "designerId": "eb30eb58-5db4-4754-8eba-08a95b502901",
                                             "masterInstanceId": "ExtBox1-ext-gen3232"
@@ -854,8 +858,7 @@
                             "codeClass": null,
                             "userConfig": {
                                 "layout|flex": null,
-                                "designer|userClassName": "TabConfig2",
-                                "autoWidth": false
+                                "designer|userClassName": "TabConfig2"
                             },
                             "designerId": "0cc1577b-e1a6-4370-9696-d96a0ece78b4"
                         },
@@ -1021,8 +1024,7 @@
                                 "padding": "10 0",
                                 "autoScroll": true,
                                 "bodyBorder": false,
-                                "preventHeader": true,
-                                "title": "PaymentsGrid",
+                                "title": "Transactions",
                                 "titleCollapse": true,
                                 "store": "PaymentStore"
                             },

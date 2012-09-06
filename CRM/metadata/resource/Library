@@ -5,6 +5,9 @@
         "type": "array"
     },
     "codeClass": null,
+    "userConfig": {
+        "debug": true
+    },
     "id": "ExtBox1-ext-gen1968",
     "designerId": "ece10d09-aa9b-4499-b2e5-30a857604a0d"
 }
