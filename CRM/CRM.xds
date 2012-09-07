@@ -1,7 +1,7 @@
 {
     "name": "CRM",
     "settings": {
-        "urlPrefix": "http://ncpub.sencha.dev:8000",
+        "urlPrefix": "http://ncpub.sencha.dev",
         "spacesToIndent": 4,
         "exportPath": "/Users/jpipas/Projects/Sites/CRM",
         "lineEnding": "",

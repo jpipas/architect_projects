@@ -19,6 +19,7 @@ Ext.define('JavisERP.view.ActivityPortlet', {
     border: 0,
     height: 250,
     itemId: 'activityportlet',
+    minHeight: 250,
     header: false,
     forceFit: true,
     store: 'ActivityStore',

@@ -18,6 +18,7 @@ Ext.define('JavisERP.view.ClientPortlet', {
 
     height: 250,
     itemId: 'clientportlet',
+    minHeight: 300,
     width: 868,
     autoScroll: false,
     header: false,
