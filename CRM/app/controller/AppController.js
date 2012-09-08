@@ -47,8 +47,6 @@ Ext.define('JavisERP.controller.AppController', {
     },
 
     navigationClick: function(itemId) {
-        console.log(itemId);
-        console.log(this.getContentCards());
         this.getContentCards().getLayout().setActiveItem(itemId);
 
         var xtype = this.getContentCards().getLayout().getActiveItem().getXType();

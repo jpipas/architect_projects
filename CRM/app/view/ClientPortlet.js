@@ -146,7 +146,6 @@ Ext.define('JavisERP.view.ClientPortlet', {
     },
 
     onClientPortletBeforeRender: function(abstractcomponent, options) {
-        console.log(abstractcomponent);
         abstractcomponent.getStore().load();
     }
 

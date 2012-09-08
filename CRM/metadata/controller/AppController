@@ -54,8 +54,6 @@
                     "itemId"
                 ],
                 "implHandler": [
-                    "console.log(itemId);",
-                    "console.log(this.getContentCards());",
                     "this.getContentCards().getLayout().setActiveItem(itemId);",
                     "",
                     "var xtype = this.getContentCards().getLayout().getActiveItem().getXType();",

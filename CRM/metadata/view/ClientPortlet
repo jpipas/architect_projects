@@ -272,7 +272,6 @@
                 "designer|userClassName": "onClientPortletBeforeRender",
                 "fn": "onClientPortletBeforeRender",
                 "implHandler": [
-                    "console.log(abstractcomponent);",
                     "abstractcomponent.getStore().load();"
                 ],
                 "name": "beforerender",
