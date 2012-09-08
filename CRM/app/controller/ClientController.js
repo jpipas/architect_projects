@@ -44,6 +44,10 @@ Ext.define('JavisERP.controller.ClientController', {
         {
             ref: 'publicationGrid',
             selector: 'publicationgrid'
+        },
+        {
+            ref: 'clientPortlet',
+            selector: 'clientportlet'
         }
     ],
 
@@ -73,7 +77,7 @@ Ext.define('JavisERP.controller.ClientController', {
             "clientrecord toolbar button[itemId=newcontact]": {
                 click: this.onNewContactClick
             },
-            "clientgrid #actions": {
+            "clientgrid #actions, clientportlet #actions": {
                 click: this.onActionColumnClick
             }
         });

@@ -82,7 +82,7 @@
                 "name": "click",
                 "scope": "me",
                 "designer|targetType": null,
-                "designer|controlQuery": "clientgrid #actions"
+                "designer|controlQuery": "clientgrid #actions, clientportlet #actions"
             },
             "designerId": "5598cd62-89f2-4049-8ba7-30179ee41ac2"
         },
@@ -233,6 +233,20 @@
                 "selector": "publicationgrid"
             },
             "designerId": "c0ea9963-0531-4e5a-ac88-da66354371ab"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "clientPortlet",
+                "ref": "clientPortlet",
+                "selector": "clientportlet"
+            },
+            "designerId": "76089185-3b0f-48df-9519-db3cc2d27d93"
         }
     ]
 }
