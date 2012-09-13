@@ -396,6 +396,20 @@
                 "app/view/ActivityPortlet.js"
             ],
             "className": "ActivityPortlet"
+        },
+        "6b459518-e2c7-4191-b857-9ca840d4b7e0": {
+            "paths": [
+                "metadata/view/ContractWindow",
+                "app/view/override/ContractWindow.js",
+                "app/view/ContractWindow.js"
+            ],
+            "className": "ContractWindow"
+        },
+        "ede89c55-68aa-4ff6-a7d7-f3d423d83152": {
+            "paths": [
+                "metadata/resource/ComboFieldBox"
+            ],
+            "className": "ComboFieldBox"
         }
     },
     "viewOrderMap": {
@@ -415,7 +429,8 @@
             "51472e6f-2c20-42f6-8104-300e9b39e19c",
             "cdbe8b64-d759-402d-99b5-59542af13551",
             "610a9588-647a-41d3-8d7e-58b837d2340e",
-            "11273236-0aed-45b3-98eb-f60aec3509a3"
+            "11273236-0aed-45b3-98eb-f60aec3509a3",
+            "6b459518-e2c7-4191-b857-9ca840d4b7e0"
         ],
         "store": [
             "f8a4f573-a7f4-4e64-b2ef-0969154a0fba",
@@ -456,7 +471,8 @@
             "458977af-707b-4c4a-98c0-e8e58b7221e4",
             "b4989cea-ff8e-42c3-808d-08d75e80fccb",
             "1f15242c-62e4-462b-96a7-f91215c3fcbc",
-            "80dd2673-81d2-46ae-adae-0d6c3bf136c6"
+            "80dd2673-81d2-46ae-adae-0d6c3bf136c6",
+            "ede89c55-68aa-4ff6-a7d7-f3d423d83152"
         ],
         "app": [
             "application"

@@ -33,9 +33,9 @@ Ext.define('JavisERP.view.ContactWindow', {
             items: [
                 {
                     xtype: 'form',
-                    itemId: 'contactForm',
+                    itemId: 'ContactForm',
                     bodyPadding: 10,
-                    title: 'My Form',
+                    title: '',
                     dockedItems: [
                         {
                             xtype: 'toolbar',

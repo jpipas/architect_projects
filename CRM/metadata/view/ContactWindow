@@ -29,10 +29,10 @@
             "userConfig": {
                 "dock": null,
                 "designer|userClassName": "MyForm4",
-                "itemId": "contactForm",
+                "itemId": "ContactForm",
                 "layout": null,
                 "bodyPadding": 10,
-                "title": "My Form"
+                "title": ""
             },
             "designerId": "edd5f170-9512-4371-a75b-78c2cab5b387",
             "cn": [

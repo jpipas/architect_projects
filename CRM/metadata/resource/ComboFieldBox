@@ -1,0 +1,13 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "/app/view/ComboFieldBox.js"
+    },
+    "id": "ExtBox1-ext-gen3588",
+    "designerId": "ede89c55-68aa-4ff6-a7d7-f3d423d83152"
+}

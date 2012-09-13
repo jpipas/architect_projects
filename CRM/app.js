@@ -53,7 +53,8 @@ Ext.application({
         'ContactGrid',
         'ContactWindow',
         'PublicationGrid',
-        'ContractGrid'
+        'ContractGrid',
+        'ContractWindow'
     ],
     autoCreateViewport: true,
     name: 'JavisERP',

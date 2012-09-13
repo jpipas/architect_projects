@@ -1,0 +1,286 @@
+{
+    "type": "window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ContractWindow",
+        "designer|userAlias": "contractwindow",
+        "height": 300,
+        "width": 750,
+        "layout": "fit",
+        "title": "Contract"
+    },
+    "id": "ExtBox1-ext-gen4042",
+    "designerId": "6b459518-e2c7-4191-b857-9ca840d4b7e0",
+    "cn": [
+        {
+            "type": "form",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyForm3",
+                "designer|displayName": "ContractForm",
+                "height": 204,
+                "itemId": "ContractForm",
+                "layout": "fit",
+                "bodyPadding": 5,
+                "title": null
+            },
+            "designerId": "bf14bc64-028b-414e-9311-f836e797148a",
+            "cn": [
+                {
+                    "type": "toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top",
+                        "designer|userClassName": "MyToolbar7",
+                        "designer|displayName": "FormToolBar"
+                    },
+                    "designerId": "3677c442-1b67-4618-9049-e5bb0afa5f84",
+                    "cn": [
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "designer|userClassName": "MyButton11",
+                                "iconCls": "ui-silk ui-silk-disk",
+                                "text": "Save"
+                            },
+                            "designerId": "ffcb7025-509d-4ca2-98bd-1cdd38a70cd7"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "designer|userClassName": "MyButton12",
+                                "text": "Cancel"
+                            },
+                            "designerId": "cde2f531-f5ab-4278-b92b-9686fe8ddc65",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "onButtonClick1",
+                                        "fn": "onButtonClick1",
+                                        "implHandler": [
+                                            "console.log(button);"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "7d96afb0-b4b8-41c7-b10c-cbff42d33bca"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "fieldcontainer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "designer|userClassName": "MyFieldContainer7",
+                        "designer|displayName": "FormContainer",
+                        "height": null,
+                        "layout": "hbox",
+                        "fieldLabel": null
+                    },
+                    "designerId": "2598b5fe-a6b3-49b7-a642-bfd1bf386817",
+                    "cn": [
+                        {
+                            "type": "fieldcontainer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "designer|userClassName": "MyFieldContainer5",
+                                "designer|displayName": "Column1",
+                                "height": 120,
+                                "layout": "anchor",
+                                "fieldLabel": null
+                            },
+                            "designerId": "18e6f827-66c7-4330-9065-d591cea7ec09",
+                            "cn": [
+                                {
+                                    "type": "numberfield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|anchor": "95%",
+                                        "designer|userClassName": "MyNumberField",
+                                        "designer|displayName": "contract_number",
+                                        "fieldLabel": "Contract Number"
+                                    },
+                                    "designerId": "aaff276f-e3b6-4f30-a1bd-fffeda2c675d"
+                                },
+                                {
+                                    "type": "combobox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|anchor": "95%",
+                                        "designer|userClassName": "MyComboBox3",
+                                        "designer|displayName": "client_name",
+                                        "fieldLabel": "Client"
+                                    },
+                                    "designerId": "dc267fde-ca47-48cf-973a-e85a7caeba37"
+                                },
+                                {
+                                    "type": "numberfield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|anchor": "100%",
+                                        "designer|userClassName": "MyNumberField1",
+                                        "designer|displayName": "total_sales_amt",
+                                        "fieldLabel": "Total Sales Amount"
+                                    },
+                                    "designerId": "8d4547ae-091a-408d-b36e-520014c3fe0d"
+                                },
+                                {
+                                    "type": "numberfield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|anchor": "100%",
+                                        "designer|userClassName": "MyNumberField7",
+                                        "fieldLabel": "Discount (%)"
+                                    },
+                                    "designerId": "9384a014-54d2-4c3f-b496-650b59f2da9c"
+                                },
+                                {
+                                    "type": "numberfield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|anchor": "100%",
+                                        "designer|userClassName": "MyNumberField3",
+                                        "fieldLabel": "Design Fee"
+                                    },
+                                    "designerId": "03636658-a9c9-4867-af17-dd030226cb0a"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "fieldcontainer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "designer|userClassName": "MyFieldContainer6",
+                                "designer|displayName": "Column2",
+                                "height": 120,
+                                "fieldLabel": null
+                            },
+                            "designerId": "92c15c97-c232-4858-ac22-010d23aa4f96",
+                            "cn": [
+                                {
+                                    "type": "numberfield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberField2",
+                                        "fieldLabel": "Subtotal"
+                                    },
+                                    "designerId": "6f01dee6-e746-4cd8-885a-c1d56eba1c45"
+                                },
+                                {
+                                    "type": "numberfield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberField4",
+                                        "fieldLabel": "Total Amount"
+                                    },
+                                    "designerId": "d3f23acb-8232-4066-9543-c87efc0b1dc1"
+                                },
+                                {
+                                    "type": "numberfield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberField5",
+                                        "fieldLabel": "First Months Payment"
+                                    },
+                                    "designerId": "6d8f12c7-6df1-4f94-bce7-1e4ed1537dce"
+                                },
+                                {
+                                    "type": "numberfield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberField6",
+                                        "fieldLabel": "Montly Payment"
+                                    },
+                                    "designerId": "0a8f2429-7e3f-4de6-939e-acdccc14e66e"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
