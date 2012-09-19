@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "url": "/app/util/Constants.js"
+        "url": "/app/view/PortalDropZone.js"
     },
-    "id": "ExtBox1-ext-gen8006",
-    "designerId": "5458bf16-0d90-4cac-962d-cbfe18fd84bd"
+    "id": "ExtBox1-ext-gen5895",
+    "designerId": "88697d41-4203-4896-974f-2d172d0dd7b9"
 }

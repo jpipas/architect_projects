@@ -33,9 +33,6 @@ Ext.define('JavisERP.view.ContractWindow', {
                     xtype: 'form',
                     height: 204,
                     itemId: 'ContractForm',
-                    layout: {
-                        type: 'fit'
-                    },
                     bodyPadding: 5,
                     dockedItems: [
                         {
@@ -70,59 +67,85 @@ Ext.define('JavisERP.view.ContractWindow', {
                             items: [
                                 {
                                     xtype: 'fieldcontainer',
-                                    flex: 1,
-                                    height: 120,
+                                    flex: 3,
                                     layout: {
                                         type: 'anchor'
                                     },
+                                    labelAlign: 'right',
                                     items: [
                                         {
                                             xtype: 'numberfield',
                                             anchor: '95%',
-                                            fieldLabel: 'Contract Number'
+                                            fieldLabel: 'Contract Number',
+                                            labelAlign: 'right'
                                         },
                                         {
                                             xtype: 'combobox',
                                             anchor: '95%',
-                                            fieldLabel: 'Client'
+                                            fieldLabel: 'Client',
+                                            labelAlign: 'right'
+                                        },
+                                        {
+                                            xtype: 'combobox',
+                                            anchor: '95%',
+                                            fieldLabel: 'Payment Type',
+                                            labelAlign: 'right'
                                         },
                                         {
                                             xtype: 'numberfield',
-                                            anchor: '100%',
-                                            fieldLabel: 'Total Sales Amount'
+                                            anchor: '95%',
+                                            fieldLabel: 'Total Sales Amount',
+                                            labelAlign: 'right',
+                                            minValue: 0
                                         },
                                         {
                                             xtype: 'numberfield',
-                                            anchor: '100%',
-                                            fieldLabel: 'Discount (%)'
+                                            anchor: '95%',
+                                            fieldLabel: 'Discount (%)',
+                                            labelAlign: 'right'
                                         },
                                         {
                                             xtype: 'numberfield',
-                                            anchor: '100%',
-                                            fieldLabel: 'Design Fee'
+                                            anchor: '95%',
+                                            fieldLabel: 'Design Fee',
+                                            labelAlign: 'right'
                                         }
                                     ]
                                 },
                                 {
                                     xtype: 'fieldcontainer',
                                     flex: 1,
-                                    height: 120,
+                                    border: 1,
+                                    width: 150,
+                                    layout: {
+                                        type: 'anchor'
+                                    },
+                                    combineLabels: false,
+                                    labelAlign: 'right',
                                     items: [
                                         {
-                                            xtype: 'numberfield',
-                                            fieldLabel: 'Subtotal'
+                                            xtype: 'displayfield',
+                                            anchor: '95%',
+                                            fieldLabel: 'Subtotal',
+                                            labelAlign: 'right'
+                                        },
+                                        {
+                                            xtype: 'displayfield',
+                                            anchor: '95%',
+                                            fieldLabel: 'Total Amount',
+                                            labelAlign: 'right'
                                         },
                                         {
                                             xtype: 'numberfield',
-                                            fieldLabel: 'Total Amount'
+                                            anchor: '95%',
+                                            fieldLabel: 'First Months Payment',
+                                            labelAlign: 'right'
                                         },
                                         {
-                                            xtype: 'numberfield',
-                                            fieldLabel: 'First Months Payment'
-                                        },
-                                        {
-                                            xtype: 'numberfield',
-                                            fieldLabel: 'Montly Payment'
+                                            xtype: 'displayfield',
+                                            anchor: '95%',
+                                            fieldLabel: 'Montly Payment',
+                                            labelAlign: 'right'
                                         }
                                     ]
                                 }
