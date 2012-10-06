@@ -96,19 +96,39 @@ Ext.define('JavisERP.view.ContractWindow', {
                                             anchor: '95%',
                                             fieldLabel: 'Total Sales Amount',
                                             labelAlign: 'right',
-                                            minValue: 0
+                                            minValue: 0,
+                                            listeners: {
+                                                change: {
+                                                    fn: me.onSalesAmountChange,
+                                                    scope: me
+                                                }
+                                            }
                                         },
                                         {
                                             xtype: 'numberfield',
                                             anchor: '95%',
                                             fieldLabel: 'Discount (%)',
-                                            labelAlign: 'right'
+                                            labelAlign: 'right',
+                                            maxValue: 1,
+                                            minValue: 0,
+                                            listeners: {
+                                                change: {
+                                                    fn: me.onDiscountChange,
+                                                    scope: me
+                                                }
+                                            }
                                         },
                                         {
                                             xtype: 'numberfield',
                                             anchor: '95%',
                                             fieldLabel: 'Design Fee',
-                                            labelAlign: 'right'
+                                            labelAlign: 'right',
+                                            listeners: {
+                                                change: {
+                                                    fn: me.onDesignFeeChange,
+                                                    scope: me
+                                                }
+                                            }
                                         }
                                     ]
                                 },
@@ -139,7 +159,13 @@ Ext.define('JavisERP.view.ContractWindow', {
                                             xtype: 'numberfield',
                                             anchor: '95%',
                                             fieldLabel: 'First Months Payment',
-                                            labelAlign: 'right'
+                                            labelAlign: 'right',
+                                            listeners: {
+                                                change: {
+                                                    fn: me.onFirstMonthsPaymentChange,
+                                                    scope: me
+                                                }
+                                            }
                                         },
                                         {
                                             xtype: 'displayfield',
@@ -161,6 +187,53 @@ Ext.define('JavisERP.view.ContractWindow', {
 
     onButtonClick1: function(button, e, options) {
         console.log(button);
+    },
+
+    onSalesAmountChange: function(field, newValue, oldValue, options) {
+        this.runCalculations();
+    },
+
+    onDiscountChange: function(field, newValue, oldValue, options) {
+        this.runCalculations();
+    },
+
+    onDesignFeeChange: function(field, newValue, oldValue, options) {
+        this.runCalculations();
+    },
+
+    onFirstMonthsPaymentChange: function(field, newValue, oldValue, options) {
+        this.paymentCalculations();
+    },
+
+    runCalculations: function() {
+        var total_sales_amt = Ext.getCmp("total_sales_amount").getValue();
+        var discount = Ext.getCmp("discount").getValue();
+        var subtotal = Ext.getCmp("subtotal").getValue();
+        var design_fee = Ext.getCmp("design_fee").getValue();
+
+        var sub_total_calc = (total_sales_amt*(1-discount)).toFixed(2);
+        Ext.getCmp("subtotal").setValue(sub_total_calc);
+
+        var total_calc = parseFloat(sub_total_calc) + design_fee;
+        Ext.getCmp("total_amount").setValue(total_calc.toFixed(2));
+
+        this.paymentCalcuations();
+    },
+
+    paymentCalculations: function() {
+        var subtotal = Ext.getCmp("subtotal").getValue();
+        var design_fee = Ext.getCmp("design_fee").getValue();
+        var durations = Ext.getCmp("ad_duration").getValue();
+
+        var dur_array = durations.split(",");
+        var duration = dur_array.length;
+        if(duration===0){
+            duration=1;
+        }
+        var first_month_calc = (subtotal/duration)+design_fee;
+        var month_payment = (subtotal/duration);
+        Ext.getCmp("first_month_payment").setValue(first_month_calc.toFixed(2));
+        Ext.getCmp("monthly_payment").setValue(month_payment.toFixed(2));
     }
 
 });

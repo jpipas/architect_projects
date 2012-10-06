@@ -28,7 +28,10 @@ Ext.application({
         'UserNote',
         'Role',
         'Publication',
-        'Contract'
+        'Contract',
+        'Advertisement',
+        'AdvertisementType',
+        'AdvertisementSize'
     ],
     stores: [
         'ClientStore',
@@ -40,7 +43,8 @@ Ext.application({
         'ContactRoleStore',
         'ActivityTypeStore',
         'PublicationStore',
-        'ContractStore'
+        'ContractStore',
+        'AdvertisementStore'
     ],
     views: [
         'AppViewport',
@@ -54,7 +58,8 @@ Ext.application({
         'ContactWindow',
         'PublicationGrid',
         'ContractGrid',
-        'ContractWindow'
+        'ContractWindow',
+        'AdvertisementGrid'
     ],
     autoCreateViewport: true,
     name: 'JavisERP',

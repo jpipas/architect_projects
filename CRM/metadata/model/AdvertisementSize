@@ -1,0 +1,41 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AdvertisementSize"
+    },
+    "id": "ExtBox1-ext-gen9386",
+    "designerId": "7f4d16dc-ef7f-4827-a7b4-45cd70fb54b0",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field56",
+                "name": "id"
+            },
+            "designerId": "ff7e316c-00df-475b-91b9-e7c7898bc8b5"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field57",
+                "name": "size"
+            },
+            "designerId": "952e2f9f-69c8-4dda-86bd-1d3e50838a03"
+        }
+    ]
+}

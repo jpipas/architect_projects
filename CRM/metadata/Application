@@ -16,7 +16,10 @@
             "UserNote",
             "Role",
             "Publication",
-            "Contract"
+            "Contract",
+            "Advertisement",
+            "AdvertisementType",
+            "AdvertisementSize"
         ],
         "stores": [
             "ClientStore",
@@ -28,7 +31,8 @@
             "ContactRoleStore",
             "ActivityTypeStore",
             "PublicationStore",
-            "ContractStore"
+            "ContractStore",
+            "AdvertisementStore"
         ],
         "views": [
             "AppViewport",
@@ -42,7 +46,8 @@
             "ContactWindow",
             "PublicationGrid",
             "ContractGrid",
-            "ContractWindow"
+            "ContractWindow",
+            "AdvertisementGrid"
         ],
         "autoCreateViewport": true,
         "name": "JavisERP",

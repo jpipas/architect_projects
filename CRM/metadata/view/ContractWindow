@@ -195,7 +195,27 @@
                                         "labelAlign": "right",
                                         "minValue": 0
                                     },
-                                    "designerId": "8d4547ae-091a-408d-b36e-520014c3fe0d"
+                                    "designerId": "8d4547ae-091a-408d-b36e-520014c3fe0d",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "onSalesAmountChange",
+                                                "fn": "onSalesAmountChange",
+                                                "implHandler": [
+                                                    "this.runCalculations();"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "designerId": "35950291-52ea-4dd6-a74f-55880dd4ef6f"
+                                        }
+                                    ]
                                 },
                                 {
                                     "type": "numberfield",
@@ -209,9 +229,31 @@
                                         "designer|userClassName": "MyNumberField7",
                                         "designer|displayName": "discount",
                                         "fieldLabel": "Discount (%)",
-                                        "labelAlign": "right"
+                                        "labelAlign": "right",
+                                        "maxValue": 1,
+                                        "minValue": 0
                                     },
-                                    "designerId": "9384a014-54d2-4c3f-b496-650b59f2da9c"
+                                    "designerId": "9384a014-54d2-4c3f-b496-650b59f2da9c",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "onDiscountChange",
+                                                "fn": "onDiscountChange",
+                                                "implHandler": [
+                                                    "this.runCalculations();"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "designerId": "3164f420-0151-42cc-afd0-6b5a809f8179"
+                                        }
+                                    ]
                                 },
                                 {
                                     "type": "numberfield",
@@ -227,7 +269,27 @@
                                         "fieldLabel": "Design Fee",
                                         "labelAlign": "right"
                                     },
-                                    "designerId": "03636658-a9c9-4867-af17-dd030226cb0a"
+                                    "designerId": "03636658-a9c9-4867-af17-dd030226cb0a",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "onDesignFeeChange",
+                                                "fn": "onDesignFeeChange",
+                                                "implHandler": [
+                                                    "this.runCalculations();"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "designerId": "8237877e-d059-4e35-9d0a-928112b384b1"
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -297,7 +359,27 @@
                                         "fieldLabel": "First Months Payment",
                                         "labelAlign": "right"
                                     },
-                                    "designerId": "6d8f12c7-6df1-4f94-bce7-1e4ed1537dce"
+                                    "designerId": "6d8f12c7-6df1-4f94-bce7-1e4ed1537dce",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "onFirstMonthsPaymentChange",
+                                                "fn": "onFirstMonthsPaymentChange",
+                                                "implHandler": [
+                                                    "this.paymentCalculations();"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "designerId": "f813a50f-af23-4162-a671-85fd55be2a22"
+                                        }
+                                    ]
                                 },
                                 {
                                     "type": "displayfield",
@@ -320,6 +402,61 @@
                     ]
                 }
             ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "runCalculations",
+                "fn": "runCalculations",
+                "implHandler": [
+                    "var total_sales_amt = Ext.getCmp(\"total_sales_amount\").getValue();",
+                    "var discount = Ext.getCmp(\"discount\").getValue();",
+                    "var subtotal = Ext.getCmp(\"subtotal\").getValue();",
+                    "var design_fee = Ext.getCmp(\"design_fee\").getValue();",
+                    "",
+                    "var sub_total_calc = (total_sales_amt*(1-discount)).toFixed(2);",
+                    "Ext.getCmp(\"subtotal\").setValue(sub_total_calc);",
+                    "",
+                    "var total_calc = parseFloat(sub_total_calc) + design_fee;",
+                    "Ext.getCmp(\"total_amount\").setValue(total_calc.toFixed(2));",
+                    "",
+                    "this.paymentCalcuations();"
+                ]
+            },
+            "designerId": "0f503491-6460-4c7e-ab77-ae22f02c61b8"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "paymentCalculations",
+                "fn": "paymentCalculations",
+                "implHandler": [
+                    "var subtotal = Ext.getCmp(\"subtotal\").getValue();",
+                    "var design_fee = Ext.getCmp(\"design_fee\").getValue();",
+                    "var durations = Ext.getCmp(\"ad_duration\").getValue();",
+                    "",
+                    "var dur_array = durations.split(\",\");",
+                    "var duration = dur_array.length;",
+                    "if(duration===0){",
+                    "    duration=1;",
+                    "}",
+                    "var first_month_calc = (subtotal/duration)+design_fee;",
+                    "var month_payment = (subtotal/duration);",
+                    "Ext.getCmp(\"first_month_payment\").setValue(first_month_calc.toFixed(2));",
+                    "Ext.getCmp(\"monthly_payment\").setValue(month_payment.toFixed(2));"
+                ]
+            },
+            "designerId": "3edcd541-8ca2-4aaf-888e-bdd362c2813c"
         }
     ]
 }

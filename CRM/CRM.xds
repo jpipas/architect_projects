@@ -15,9 +15,9 @@
         "appName": "MyApp"
     },
     "xdsVersion": "2.1.0",
-    "xdsBuild": 613,
+    "xdsBuild": 640,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000497,
+    "upgradeVersion": 210000000498,
     "framework": "ext41",
     "topInstanceFileMap": {
         "4f38d399-06da-4634-ab46-aaf1dc55bf43": {
@@ -410,6 +410,46 @@
                 "metadata/resource/js7"
             ],
             "className": "js7"
+        },
+        "3aa80e14-0e22-4317-a40e-73af035c9706": {
+            "paths": [
+                "metadata/view/AdvertisementGrid",
+                "app/view/override/AdvertisementGrid.js",
+                "app/view/AdvertisementGrid.js"
+            ],
+            "className": "AdvertisementGrid"
+        },
+        "a71ee388-f76d-443b-a4d4-7b98575b5111": {
+            "paths": [
+                "metadata/store/AdvertisementStore",
+                "app/store/override/AdvertisementStore.js",
+                "app/store/AdvertisementStore.js"
+            ],
+            "className": "AdvertisementStore"
+        },
+        "0adad6b7-ddb0-42ec-bd38-0ece5141b296": {
+            "paths": [
+                "metadata/model/Advertisement",
+                "app/model/override/Advertisement.js",
+                "app/model/Advertisement.js"
+            ],
+            "className": "Advertisement"
+        },
+        "e965ce14-bf28-4810-96d6-a167270fca74": {
+            "paths": [
+                "metadata/model/AdvertisementType",
+                "app/model/override/AdvertisementType.js",
+                "app/model/AdvertisementType.js"
+            ],
+            "className": "AdvertisementType"
+        },
+        "7f4d16dc-ef7f-4827-a7b4-45cd70fb54b0": {
+            "paths": [
+                "metadata/model/AdvertisementSize",
+                "app/model/override/AdvertisementSize.js",
+                "app/model/AdvertisementSize.js"
+            ],
+            "className": "AdvertisementSize"
         }
     },
     "viewOrderMap": {
@@ -430,7 +470,8 @@
             "cdbe8b64-d759-402d-99b5-59542af13551",
             "610a9588-647a-41d3-8d7e-58b837d2340e",
             "11273236-0aed-45b3-98eb-f60aec3509a3",
-            "6b459518-e2c7-4191-b857-9ca840d4b7e0"
+            "6b459518-e2c7-4191-b857-9ca840d4b7e0",
+            "3aa80e14-0e22-4317-a40e-73af035c9706"
         ],
         "store": [
             "f8a4f573-a7f4-4e64-b2ef-0969154a0fba",
@@ -442,7 +483,8 @@
             "7ffcbb3d-13ec-4292-8a22-3bf819ddf31a",
             "20e2d311-53d0-4785-b293-dcac6c21b282",
             "2358c001-d1b1-4c73-98aa-6c621e739d8a",
-            "327f467f-1c73-417b-944e-bf359d1f907a"
+            "327f467f-1c73-417b-944e-bf359d1f907a",
+            "a71ee388-f76d-443b-a4d4-7b98575b5111"
         ],
         "controller": [
             "e424c48f-6ef8-4b4d-bae4-bfe70fa1ae19",
@@ -461,7 +503,10 @@
             "419c63ad-5c12-43f1-83bf-7a03e83bd5be",
             "c356f244-d188-433a-a5e0-b4f852725170",
             "7dd9b4b1-62d4-491d-8dfb-8e6907c4ea47",
-            "a02d5a2a-33fa-46e1-86d1-9d2f503f9f7c"
+            "a02d5a2a-33fa-46e1-86d1-9d2f503f9f7c",
+            "0adad6b7-ddb0-42ec-bd38-0ece5141b296",
+            "e965ce14-bf28-4810-96d6-a167270fca74",
+            "7f4d16dc-ef7f-4827-a7b4-45cd70fb54b0"
         ],
         "resource": [
             "ece10d09-aa9b-4499-b2e5-30a857604a0d",

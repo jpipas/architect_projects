@@ -70,7 +70,7 @@
                         "layout|flex": 1,
                         "formBind": null,
                         "designer|userClassName": "MyFieldContainer3",
-                        "border": "false",
+                        "border": false,
                         "itemId": "Column1",
                         "defaultType": "textfield",
                         "defaults": [
@@ -167,7 +167,7 @@
                     "userConfig": {
                         "layout|flex": 1,
                         "designer|userClassName": "MyFieldContainer4",
-                        "border": "false",
+                        "border": false,
                         "height": null,
                         "itemId": "Column2",
                         "width": null,
@@ -591,7 +591,7 @@
                                     ],
                                     "cn": [
                                         {
-                                            "type": "textfield",
+                                            "type": "displayfield",
                                             "reference": {
                                                 "name": "items",
                                                 "type": "array"
@@ -599,7 +599,8 @@
                                             "codeClass": null,
                                             "userConfig": {
                                                 "layout|anchor": "95%",
-                                                "designer|userClassName": "MyTextField4",
+                                                "designer|userClassName": "MyDisplayField13",
+                                                "designer|displayName": "AssignedSalesRep",
                                                 "fieldLabel": "Assigned Sales Rep",
                                                 "labelAlign": null,
                                                 "labelWidth": 150
@@ -607,7 +608,7 @@
                                             "designerId": "a7ae50b0-5df9-4427-9f34-11bbb4210d4a"
                                         },
                                         {
-                                            "type": "textfield",
+                                            "type": "displayfield",
                                             "reference": {
                                                 "name": "items",
                                                 "type": "array"
@@ -615,12 +616,12 @@
                                             "codeClass": null,
                                             "userConfig": {
                                                 "layout|anchor": "95%",
-                                                "designer|userClassName": "MyTextField5",
-                                                "fieldLabel": "Label",
-                                                "labelAlign": null,
+                                                "designer|userClassName": "MyDisplayField16",
+                                                "designer|displayName": "Remaining Months",
+                                                "fieldLabel": "Remaining Months",
                                                 "labelWidth": 150
                                             },
-                                            "designerId": "2099be0a-3c4e-4755-9232-1653ffeede1e"
+                                            "designerId": "fe3f73ee-d361-4c5f-af16-dfa7c60e9b75"
                                         }
                                     ]
                                 },
@@ -645,7 +646,7 @@
                                     "designerId": "56eb8a64-2c76-4e3d-be51-cfd06b7f7c4c",
                                     "cn": [
                                         {
-                                            "type": "textfield",
+                                            "type": "displayfield",
                                             "reference": {
                                                 "name": "items",
                                                 "type": "array"
@@ -653,13 +654,14 @@
                                             "codeClass": null,
                                             "userConfig": {
                                                 "layout|anchor": "95%",
-                                                "designer|userClassName": "MyTextField6",
+                                                "designer|userClassName": "MyDisplayField14",
+                                                "designer|displayName": "OverdueBalance",
                                                 "fieldLabel": "Overdue Balance"
                                             },
                                             "designerId": "15dd4598-f785-4b26-97d4-c11dc82321b6"
                                         },
                                         {
-                                            "type": "textfield",
+                                            "type": "displayfield",
                                             "reference": {
                                                 "name": "items",
                                                 "type": "array"
@@ -667,8 +669,9 @@
                                             "codeClass": null,
                                             "userConfig": {
                                                 "layout|anchor": "95%",
-                                                "designer|userClassName": "MyTextField7",
-                                                "fieldLabel": "Label"
+                                                "designer|userClassName": "MyDisplayField15",
+                                                "designer|displayName": "Balance",
+                                                "fieldLabel": "Balance"
                                             },
                                             "designerId": "75e14799-f5b9-494f-ab02-accb7ffa2d67"
                                         }
@@ -696,70 +699,6 @@
                             },
                             "designerId": "23e2a761-e09a-4bae-8e10-a464f83989ba",
                             "cn": [
-                                {
-                                    "type": "panel",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "MyPanel14",
-                                        "layout": "fit",
-                                        "title": "Publications"
-                                    },
-                                    "designerId": "b2d16c7e-fe99-4aa1-84d8-aa84c0a50e8b",
-                                    "cn": [
-                                        {
-                                            "type": "tab",
-                                            "reference": {
-                                                "name": "tabConfig",
-                                                "type": "object"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "TabConfig9"
-                                            },
-                                            "designerId": "654c1db1-bdbf-4dd9-af1d-44b747098da7"
-                                        },
-                                        {
-                                            "type": "linkedinstance",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "border": 0,
-                                                "itemId": "PublicationGrid",
-                                                "header": false,
-                                                "dock": null
-                                            },
-                                            "designerId": "d71a47de-948f-422a-bcfa-fa671c7c4973",
-                                            "masterInstanceId": "ExtBox1-ext-gen4311",
-                                            "cn": [
-                                                {
-                                                    "type": "basiceventbinding",
-                                                    "reference": {
-                                                        "name": "listeners",
-                                                        "type": "array"
-                                                    },
-                                                    "codeClass": null,
-                                                    "userConfig": {
-                                                        "designer|userClassName": "onGridpanelBeforeRender",
-                                                        "fn": "onGridpanelBeforeRender",
-                                                        "implHandler": [
-                                                            "abstractcomponent.getDockedItems('toolbar[dock=\"bottom\"]')[0].hide();"
-                                                        ],
-                                                        "name": "beforerender",
-                                                        "scope": "me"
-                                                    },
-                                                    "designerId": "d72b5515-c54d-4b2f-9d38-81dbadce5d8b"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
                                 {
                                     "type": "panel",
                                     "reference": {
@@ -826,6 +765,70 @@
                                             },
                                             "designerId": "eb30eb58-5db4-4754-8eba-08a95b502901",
                                             "masterInstanceId": "ExtBox1-ext-gen3232"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyPanel14",
+                                        "layout": "fit",
+                                        "title": "Publications"
+                                    },
+                                    "designerId": "b2d16c7e-fe99-4aa1-84d8-aa84c0a50e8b",
+                                    "cn": [
+                                        {
+                                            "type": "tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "TabConfig9"
+                                            },
+                                            "designerId": "654c1db1-bdbf-4dd9-af1d-44b747098da7"
+                                        },
+                                        {
+                                            "type": "linkedinstance",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "border": 0,
+                                                "itemId": "PublicationGrid",
+                                                "header": false,
+                                                "dock": null
+                                            },
+                                            "designerId": "d71a47de-948f-422a-bcfa-fa671c7c4973",
+                                            "masterInstanceId": "ExtBox1-ext-gen4311",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|userClassName": "onGridpanelBeforeRender",
+                                                        "fn": "onGridpanelBeforeRender",
+                                                        "implHandler": [
+                                                            "abstractcomponent.getDockedItems('toolbar[dock=\"bottom\"]')[0].hide();"
+                                                        ],
+                                                        "name": "beforerender",
+                                                        "scope": "me"
+                                                    },
+                                                    "designerId": "d72b5515-c54d-4b2f-9d38-81dbadce5d8b"
+                                                }
+                                            ]
                                         }
                                     ]
                                 }

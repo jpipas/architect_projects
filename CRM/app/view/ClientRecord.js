@@ -22,8 +22,8 @@ Ext.define('JavisERP.view.ClientRecord', {
         'JavisERP.view.ContactGrid',
         'JavisERP.view.ActivityGrid',
         'JavisERP.view.UserNoteGrid',
-        'JavisERP.view.PublicationGrid',
-        'JavisERP.view.ContractGrid'
+        'JavisERP.view.ContractGrid',
+        'JavisERP.view.PublicationGrid'
     ],
 
     id: 'clientrecord',
@@ -68,7 +68,7 @@ Ext.define('JavisERP.view.ClientRecord', {
                         {
                             xtype: 'fieldcontainer',
                             flex: 1,
-                            border: 'false',
+                            border: false,
                             itemId: 'Column1',
                             defaultType: 'textfield',
                             defaults: {
@@ -114,7 +114,7 @@ Ext.define('JavisERP.view.ClientRecord', {
                         {
                             xtype: 'fieldcontainer',
                             flex: 1,
-                            border: 'false',
+                            border: false,
                             itemId: 'Column2',
                             defaults: {
                                 labelAlign: 'right',
@@ -271,15 +271,15 @@ Ext.define('JavisERP.view.ClientRecord', {
                                             },
                                             items: [
                                                 {
-                                                    xtype: 'textfield',
+                                                    xtype: 'displayfield',
                                                     anchor: '95%',
                                                     fieldLabel: 'Assigned Sales Rep',
                                                     labelWidth: 150
                                                 },
                                                 {
-                                                    xtype: 'textfield',
+                                                    xtype: 'displayfield',
                                                     anchor: '95%',
-                                                    fieldLabel: 'Label',
+                                                    fieldLabel: 'Remaining Months',
                                                     labelWidth: 150
                                                 }
                                             ]
@@ -297,14 +297,14 @@ Ext.define('JavisERP.view.ClientRecord', {
                                             },
                                             items: [
                                                 {
-                                                    xtype: 'textfield',
+                                                    xtype: 'displayfield',
                                                     anchor: '95%',
                                                     fieldLabel: 'Overdue Balance'
                                                 },
                                                 {
-                                                    xtype: 'textfield',
+                                                    xtype: 'displayfield',
                                                     anchor: '95%',
-                                                    fieldLabel: 'Label'
+                                                    fieldLabel: 'Balance'
                                                 }
                                             ]
                                         }
@@ -318,6 +318,23 @@ Ext.define('JavisERP.view.ClientRecord', {
                                     activeTab: 0,
                                     plain: false,
                                     items: [
+                                        {
+                                            xtype: 'panel',
+                                            title: 'Advertisements'
+                                        },
+                                        {
+                                            xtype: 'panel',
+                                            layout: {
+                                                type: 'fit'
+                                            },
+                                            title: 'Contracts',
+                                            items: [
+                                                {
+                                                    xtype: 'contractgrid',
+                                                    header: false
+                                                }
+                                            ]
+                                        },
                                         {
                                             xtype: 'panel',
                                             layout: {
@@ -336,23 +353,6 @@ Ext.define('JavisERP.view.ClientRecord', {
                                                             scope: me
                                                         }
                                                     }
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            xtype: 'panel',
-                                            title: 'Advertisements'
-                                        },
-                                        {
-                                            xtype: 'panel',
-                                            layout: {
-                                                type: 'fit'
-                                            },
-                                            title: 'Contracts',
-                                            items: [
-                                                {
-                                                    xtype: 'contractgrid',
-                                                    header: false
                                                 }
                                             ]
                                         }
