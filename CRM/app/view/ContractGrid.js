@@ -17,7 +17,6 @@ Ext.define('JavisERP.view.ContractGrid', {
     extend: 'Ext.grid.Panel',
     alias: 'widget.contractgrid',
 
-    border: 0,
     title: 'ContractsGrid',
     forceFit: true,
     store: 'ContractStore',

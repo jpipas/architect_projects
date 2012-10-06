@@ -44,7 +44,8 @@ Ext.application({
         'ActivityTypeStore',
         'PublicationStore',
         'ContractStore',
-        'AdvertisementStore'
+        'AdvertisementStore',
+        'PaymentTypeStore'
     ],
     views: [
         'AppViewport',

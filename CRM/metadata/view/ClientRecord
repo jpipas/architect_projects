@@ -708,6 +708,9 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "designer|userClassName": "MyPanel13",
+                                        "border": 0,
+                                        "layout": "fit",
+                                        "header": null,
                                         "title": "Advertisements"
                                     },
                                     "designerId": "88eb658e-f416-4c0f-a82d-8bb7c2f37974",
@@ -723,6 +726,21 @@
                                                 "designer|userClassName": "TabConfig8"
                                             },
                                             "designerId": "fc4f7154-4ba3-4d0b-b7f5-06d9fd3de944"
+                                        },
+                                        {
+                                            "type": "linkedinstance",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "AdvertisementGrid",
+                                                "border": 0,
+                                                "header": false
+                                            },
+                                            "designerId": "9d67b84b-a673-44d9-b8a4-9ef3ad08f3d5",
+                                            "masterInstanceId": "ExtBox1-ext-gen6258"
                                         }
                                     ]
                                 },
@@ -735,6 +753,7 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "designer|userClassName": "MyPanel12",
+                                        "border": 0,
                                         "layout": "fit",
                                         "title": "Contracts"
                                     },
@@ -748,7 +767,8 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "designer|userClassName": "TabConfig7"
+                                                "designer|userClassName": "TabConfig7",
+                                                "border": null
                                             },
                                             "designerId": "c8fbc726-fb5b-44ff-9c08-6c0538d9ffbb"
                                         },
@@ -761,6 +781,7 @@
                                             "codeClass": null,
                                             "userConfig": {
                                                 "designer|displayName": "ContractGrid",
+                                                "border": 0,
                                                 "header": false
                                             },
                                             "designerId": "eb30eb58-5db4-4754-8eba-08a95b502901",
@@ -777,6 +798,7 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "designer|userClassName": "MyPanel14",
+                                        "border": 0,
                                         "layout": "fit",
                                         "title": "Publications"
                                     },
@@ -821,7 +843,7 @@
                                                         "designer|userClassName": "onGridpanelBeforeRender",
                                                         "fn": "onGridpanelBeforeRender",
                                                         "implHandler": [
-                                                            "abstractcomponent.getDockedItems('toolbar[dock=\"bottom\"]')[0].hide();"
+                                                            "//abstractcomponent.getDockedItems('toolbar[dock=\"bottom\"]')[0].hide();"
                                                         ],
                                                         "name": "beforerender",
                                                         "scope": "me"

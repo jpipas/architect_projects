@@ -450,6 +450,14 @@
                 "app/model/AdvertisementSize.js"
             ],
             "className": "AdvertisementSize"
+        },
+        "8dd499f3-30f6-4fc5-9da2-950fa1891c17": {
+            "paths": [
+                "metadata/store/PaymentTypeStore",
+                "app/store/override/PaymentTypeStore.js",
+                "app/store/PaymentTypeStore.js"
+            ],
+            "className": "PaymentTypeStore"
         }
     },
     "viewOrderMap": {
@@ -484,7 +492,8 @@
             "20e2d311-53d0-4785-b293-dcac6c21b282",
             "2358c001-d1b1-4c73-98aa-6c621e739d8a",
             "327f467f-1c73-417b-944e-bf359d1f907a",
-            "a71ee388-f76d-443b-a4d4-7b98575b5111"
+            "a71ee388-f76d-443b-a4d4-7b98575b5111",
+            "8dd499f3-30f6-4fc5-9da2-950fa1891c17"
         ],
         "controller": [
             "e424c48f-6ef8-4b4d-bae4-bfe70fa1ae19",

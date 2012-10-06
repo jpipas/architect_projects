@@ -22,6 +22,7 @@ Ext.define('JavisERP.view.ClientRecord', {
         'JavisERP.view.ContactGrid',
         'JavisERP.view.ActivityGrid',
         'JavisERP.view.UserNoteGrid',
+        'JavisERP.view.AdvertisementGrid',
         'JavisERP.view.ContractGrid',
         'JavisERP.view.PublicationGrid'
     ],
@@ -320,10 +321,22 @@ Ext.define('JavisERP.view.ClientRecord', {
                                     items: [
                                         {
                                             xtype: 'panel',
-                                            title: 'Advertisements'
+                                            border: 0,
+                                            layout: {
+                                                type: 'fit'
+                                            },
+                                            title: 'Advertisements',
+                                            items: [
+                                                {
+                                                    xtype: 'advertisementgrid',
+                                                    border: 0,
+                                                    header: false
+                                                }
+                                            ]
                                         },
                                         {
                                             xtype: 'panel',
+                                            border: 0,
                                             layout: {
                                                 type: 'fit'
                                             },
@@ -331,12 +344,14 @@ Ext.define('JavisERP.view.ClientRecord', {
                                             items: [
                                                 {
                                                     xtype: 'contractgrid',
+                                                    border: 0,
                                                     header: false
                                                 }
                                             ]
                                         },
                                         {
                                             xtype: 'panel',
+                                            border: 0,
                                             layout: {
                                                 type: 'fit'
                                             },
@@ -472,7 +487,7 @@ Ext.define('JavisERP.view.ClientRecord', {
     },
 
     onGridpanelBeforeRender: function(abstractcomponent, options) {
-        abstractcomponent.getDockedItems('toolbar[dock="bottom"]')[0].hide();
+        //abstractcomponent.getDockedItems('toolbar[dock="bottom"]')[0].hide();
     }
 
 });

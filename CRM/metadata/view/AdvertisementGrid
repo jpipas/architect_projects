@@ -9,68 +9,17 @@
         "designer|userClassName": "AdvertisementGrid",
         "designer|userAlias": "advertisementgrid",
         "height": 250,
-        "width": 400,
-        "title": "My Grid Panel"
+        "width": null,
+        "autoScroll": true,
+        "title": null,
+        "titleCollapse": false,
+        "forceFit": true,
+        "hideHeaders": false,
+        "store": "AdvertisementStore"
     },
     "id": "ExtBox1-ext-gen6258",
     "designerId": "3aa80e14-0e22-4317-a40e-73af035c9706",
     "cn": [
-        {
-            "type": "gridcolumn",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyColumn57",
-                "dataIndex": "string",
-                "text": "String"
-            },
-            "designerId": "d632f7e3-436a-4361-95b3-58586aa96319"
-        },
-        {
-            "type": "numbercolumn",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyNumberColumn4",
-                "dataIndex": "number",
-                "text": "Number"
-            },
-            "designerId": "17a99b99-ce86-4fb8-8022-71d657e0cb70"
-        },
-        {
-            "type": "datecolumn",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyDateColumn1",
-                "dataIndex": "date",
-                "text": "Date"
-            },
-            "designerId": "10779f8c-0bc9-4a0b-b2a6-8c7e2b33d2d6"
-        },
-        {
-            "type": "booleancolumn",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyBooleanColumn1",
-                "dataIndex": "bool",
-                "text": "Boolean"
-            },
-            "designerId": "c623749c-4b18-4cd2-9e04-4247d941265d"
-        },
         {
             "type": "gridview",
             "reference": {
@@ -82,6 +31,123 @@
                 "designer|userClassName": "MyGridView10"
             },
             "designerId": "ad14d173-0a7f-44e6-846b-7f80fb560099"
+        },
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "designer|userClassName": "MyToolbar10",
+                "designer|displayName": "AdvertisementToolbar"
+            },
+            "designerId": "ef7cb923-e3e5-41c2-ac40-433b247586c5",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton7",
+                        "iconCls": "ui-silk ui-silk-page-white-add",
+                        "text": "New Advertisement"
+                    },
+                    "designerId": "46c3f1d2-02d1-472d-8f14-e925ae1b62e3"
+                }
+            ]
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn58",
+                "dataIndex": "id",
+                "text": "ID"
+            },
+            "designerId": "741df871-0835-4aa4-a1f7-e6e328334952"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn61",
+                "dataIndex": "publication.name",
+                "text": "Publication"
+            },
+            "designerId": "83700444-e574-4080-bc6f-e8ba55bf5668"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn59",
+                "dataIndex": "adType.name",
+                "text": "Ad Type"
+            },
+            "designerId": "b3c3bc60-1317-4265-9c93-7ceb117225fb"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn60",
+                "dataIndex": "adSize.name",
+                "text": "Ad Size"
+            },
+            "designerId": "73c64846-e4e8-4cdc-baa0-acc9e287df0e"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn62",
+                "dataIndex": "created_at",
+                "text": "Created On"
+            },
+            "designerId": "a740e88a-0ab7-4662-aca2-69629b4f2e7d"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn63",
+                "hidden": true,
+                "dataIndex": "modified_at",
+                "hideable": false,
+                "text": "Last Modified"
+            },
+            "designerId": "36c3d828-5163-4a56-8bee-d9f148fc7289"
         }
     ]
 }

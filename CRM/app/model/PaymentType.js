@@ -15,5 +15,14 @@
 
 Ext.define('JavisERP.model.PaymentType', {
     extend: 'Ext.data.Model',
-    alias: 'model.paymentType'
+    alias: 'model.paymentType',
+
+    fields: [
+        {
+            name: 'id'
+        },
+        {
+            name: 'name'
+        }
+    ]
 });

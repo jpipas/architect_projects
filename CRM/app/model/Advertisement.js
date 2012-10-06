@@ -16,6 +16,12 @@
 Ext.define('JavisERP.model.Advertisement', {
     extend: 'Ext.data.Model',
 
+    uses: [
+        'JavisERP.model.AdvertisementType',
+        'JavisERP.model.AdvertisementSize',
+        'JavisERP.model.Publication'
+    ],
+
     idProperty: 'advertisement',
 
     fields: [
@@ -27,6 +33,41 @@ Ext.define('JavisERP.model.Advertisement', {
         },
         {
             name: 'ad_size_id'
+        },
+        {
+            name: 'publication_id'
+        },
+        {
+            name: 'created_at'
+        },
+        {
+            name: 'modified_at'
         }
-    ]
+    ],
+
+    hasOne: [
+        {
+            associationKey: 'ad_type_id',
+            model: 'JavisERP.model.AdvertisementType'
+        },
+        {
+            associationKey: 'ad_size_id',
+            model: 'JavisERP.model.AdvertisementSize'
+        },
+        {
+            associationKey: 'publication_id',
+            model: 'JavisERP.model.Publication'
+        }
+    ],
+
+    proxy: {
+        type: 'ajax',
+        url: '/resources/js/advertisement.json',
+        reader: {
+            type: 'json',
+            idProperty: 'id',
+            root: 'advertisement',
+            totalProperty: 'totalCount'
+        }
+    }
 });

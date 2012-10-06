@@ -8,7 +8,7 @@
     "userConfig": {
         "designer|userClassName": "ContractGrid",
         "designer|userAlias": "contractgrid",
-        "border": 0,
+        "border": null,
         "title": "ContractsGrid",
         "forceFit": true,
         "store": "ContractStore"

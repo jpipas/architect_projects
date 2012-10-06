@@ -160,7 +160,8 @@
                                         "designer|userClassName": "MyComboBox3",
                                         "designer|displayName": "client_name",
                                         "fieldLabel": "Client",
-                                        "labelAlign": "right"
+                                        "labelAlign": "right",
+                                        "store": "ClientStore"
                                     },
                                     "designerId": "dc267fde-ca47-48cf-973a-e85a7caeba37"
                                 },
@@ -176,7 +177,8 @@
                                         "designer|userClassName": "MyComboBox4",
                                         "designer|displayName": "payment_type",
                                         "fieldLabel": "Payment Type",
-                                        "labelAlign": "right"
+                                        "labelAlign": "right",
+                                        "store": "PaymentTypeStore"
                                     },
                                     "designerId": "b2ee4acc-b6d8-4707-8208-de3dc1a9d819"
                                 },

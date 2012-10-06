@@ -10,5 +10,33 @@
         "designer|userAlias": "paymentType"
     },
     "id": "ExtBox1-ext-gen10269",
-    "designerId": "619627fa-f4e8-4e5a-a09a-fb47949da159"
+    "designerId": "619627fa-f4e8-4e5a-a09a-fb47949da159",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field61",
+                "name": "id"
+            },
+            "designerId": "feb00a15-c97e-4bf5-a4b8-830d8a545649"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field62",
+                "name": "name"
+            },
+            "designerId": "dd541c92-45ca-4fa5-8cfd-ee5962625449"
+        }
+    ]
 }

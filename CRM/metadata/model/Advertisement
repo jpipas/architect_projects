@@ -50,6 +50,122 @@
                 "name": "ad_size_id"
             },
             "designerId": "7bfc603c-d96d-404a-879f-e3a1e51947e1"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field58",
+                "name": "publication_id"
+            },
+            "designerId": "27974e6e-daaf-45e4-8d45-869696956bac"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field59",
+                "name": "created_at"
+            },
+            "designerId": "9bc933cc-750e-4517-9232-75ebcabe1d02"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field60",
+                "name": "modified_at"
+            },
+            "designerId": "33bca199-159d-4e19-914c-843afbd15217"
+        },
+        {
+            "type": "hasoneassociation",
+            "reference": {
+                "name": "hasOne",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyHasOneAssociation",
+                "designer|displayName": "ad_type",
+                "associationKey": "ad_type_id",
+                "model": "AdvertisementType"
+            },
+            "designerId": "469f8693-a318-4335-8c87-61c67392caa2"
+        },
+        {
+            "type": "hasoneassociation",
+            "reference": {
+                "name": "hasOne",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyHasOneAssociation1",
+                "designer|displayName": "ad_size",
+                "associationKey": "ad_size_id",
+                "model": "AdvertisementSize"
+            },
+            "designerId": "8744d5a3-e0a0-4f79-b0ac-471583b80242"
+        },
+        {
+            "type": "hasoneassociation",
+            "reference": {
+                "name": "hasOne",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyHasOneAssociation2",
+                "designer|displayName": "publication",
+                "associationKey": "publication_id",
+                "model": "Publication"
+            },
+            "designerId": "15271d40-8764-467a-af1b-7844b0a76f79"
+        },
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy10",
+                "designer|displayName": "AdvertisementAjaxProxy",
+                "url": "/resources/js/advertisement.json"
+            },
+            "designerId": "833749d4-aec7-4666-a143-e83876467bb3",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader10",
+                        "designer|displayName": "AdJsonReader",
+                        "idProperty": "id",
+                        "root": "advertisement",
+                        "totalProperty": "totalCount"
+                    },
+                    "designerId": "7b517cd0-707e-49c1-a5fb-023f0eb436fa"
+                }
+            ]
         }
     ]
 }

@@ -1,0 +1,15 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "PaymentTypeStore",
+        "storeId": "MyJsonStore11",
+        "model": "PaymentType"
+    },
+    "id": "ExtBox1-ext-gen21565",
+    "designerId": "8dd499f3-30f6-4fc5-9da2-950fa1891c17"
+}

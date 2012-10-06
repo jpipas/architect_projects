@@ -17,6 +17,11 @@ Ext.define('JavisERP.model.Contract', {
     extend: 'Ext.data.Model',
     alias: 'model.contract',
 
+    uses: [
+        'JavisERP.model.Client',
+        'JavisERP.model.PaymentType'
+    ],
+
     idProperty: 'id',
 
     fields: [
@@ -50,11 +55,22 @@ Ext.define('JavisERP.model.Contract', {
         },
         {
             name: 'payment_type_id',
-            mapping: 'payment_type.type'
+            mapping: 'payment_type.name'
         },
         {
             name: 'sale_date',
             type: 'date'
+        }
+    ],
+
+    hasOne: [
+        {
+            associationKey: 'client_id',
+            model: 'JavisERP.model.Client'
+        },
+        {
+            associationKey: 'payment_type_id',
+            model: 'JavisERP.model.PaymentType'
         }
     ]
 });

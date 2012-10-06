@@ -131,7 +131,7 @@
             "userConfig": {
                 "designer|userClassName": "MyField49",
                 "name": "payment_type_id",
-                "mapping": "payment_type.type"
+                "mapping": "payment_type.name"
             },
             "designerId": "7930a9be-c8c0-4664-8d24-f8d22d9a39f8"
         },
@@ -148,6 +148,36 @@
                 "type": "date"
             },
             "designerId": "714b21c2-2c35-42ed-bbec-a3505db9e649"
+        },
+        {
+            "type": "hasoneassociation",
+            "reference": {
+                "name": "hasOne",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyHasOneAssociation3",
+                "designer|displayName": "client",
+                "associationKey": "client_id",
+                "model": "Client"
+            },
+            "designerId": "314ad07e-1872-42df-90e4-5c6de29bd385"
+        },
+        {
+            "type": "hasoneassociation",
+            "reference": {
+                "name": "hasOne",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyHasOneAssociation4",
+                "designer|displayName": "paymentType",
+                "associationKey": "payment_type_id",
+                "model": "PaymentType"
+            },
+            "designerId": "afe7b945-2acf-46df-9428-edb183edc253"
         }
     ]
 }

@@ -18,38 +18,66 @@ Ext.define('JavisERP.view.AdvertisementGrid', {
     alias: 'widget.advertisementgrid',
 
     height: 250,
-    width: 400,
-    title: 'My Grid Panel',
+    autoScroll: true,
+    titleCollapse: false,
+    forceFit: true,
+    hideHeaders: false,
+    store: 'AdvertisementStore',
 
     initComponent: function() {
         var me = this;
 
         Ext.applyIf(me, {
+            viewConfig: {
+
+            },
+            dockedItems: [
+                {
+                    xtype: 'toolbar',
+                    dock: 'top',
+                    items: [
+                        {
+                            xtype: 'button',
+                            iconCls: 'ui-silk ui-silk-page-white-add',
+                            text: 'New Advertisement'
+                        }
+                    ]
+                }
+            ],
             columns: [
                 {
                     xtype: 'gridcolumn',
-                    dataIndex: 'string',
-                    text: 'String'
+                    dataIndex: 'id',
+                    text: 'ID'
                 },
                 {
-                    xtype: 'numbercolumn',
-                    dataIndex: 'number',
-                    text: 'Number'
+                    xtype: 'gridcolumn',
+                    dataIndex: 'publication.name',
+                    text: 'Publication'
                 },
                 {
-                    xtype: 'datecolumn',
-                    dataIndex: 'date',
-                    text: 'Date'
+                    xtype: 'gridcolumn',
+                    dataIndex: 'adType.name',
+                    text: 'Ad Type'
                 },
                 {
-                    xtype: 'booleancolumn',
-                    dataIndex: 'bool',
-                    text: 'Boolean'
+                    xtype: 'gridcolumn',
+                    dataIndex: 'adSize.name',
+                    text: 'Ad Size'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    dataIndex: 'created_at',
+                    text: 'Created On'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    hidden: true,
+                    dataIndex: 'modified_at',
+                    hideable: false,
+                    text: 'Last Modified'
                 }
-            ],
-            viewConfig: {
-
-            }
+            ]
         });
 
         me.callParent(arguments);

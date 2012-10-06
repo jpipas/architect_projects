@@ -7,7 +7,8 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "AdvertisementStore",
-        "storeId": "MyJsonStore10"
+        "storeId": "MyJsonStore10",
+        "model": "Advertisement"
     },
     "id": "ExtBox1-ext-gen7434",
     "designerId": "a71ee388-f76d-443b-a4d4-7b98575b5111"

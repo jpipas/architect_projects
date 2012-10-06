@@ -83,13 +83,15 @@ Ext.define('JavisERP.view.ContractWindow', {
                                             xtype: 'combobox',
                                             anchor: '95%',
                                             fieldLabel: 'Client',
-                                            labelAlign: 'right'
+                                            labelAlign: 'right',
+                                            store: 'ClientStore'
                                         },
                                         {
                                             xtype: 'combobox',
                                             anchor: '95%',
                                             fieldLabel: 'Payment Type',
-                                            labelAlign: 'right'
+                                            labelAlign: 'right',
+                                            store: 'PaymentTypeStore'
                                         },
                                         {
                                             xtype: 'numberfield',
