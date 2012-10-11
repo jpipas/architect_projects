@@ -694,56 +694,11 @@
                                 "maxHeight": 350,
                                 "width": null,
                                 "bodyPadding": null,
-                                "activeTab": 0,
+                                "activeTab": 1,
                                 "plain": false
                             },
                             "designerId": "23e2a761-e09a-4bae-8e10-a464f83989ba",
                             "cn": [
-                                {
-                                    "type": "panel",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "MyPanel13",
-                                        "border": 0,
-                                        "layout": "fit",
-                                        "header": null,
-                                        "title": "Advertisements"
-                                    },
-                                    "designerId": "88eb658e-f416-4c0f-a82d-8bb7c2f37974",
-                                    "cn": [
-                                        {
-                                            "type": "tab",
-                                            "reference": {
-                                                "name": "tabConfig",
-                                                "type": "object"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "TabConfig8"
-                                            },
-                                            "designerId": "fc4f7154-4ba3-4d0b-b7f5-06d9fd3de944"
-                                        },
-                                        {
-                                            "type": "linkedinstance",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|displayName": "AdvertisementGrid",
-                                                "border": 0,
-                                                "header": false
-                                            },
-                                            "designerId": "9d67b84b-a673-44d9-b8a4-9ef3ad08f3d5",
-                                            "masterInstanceId": "ExtBox1-ext-gen6258"
-                                        }
-                                    ]
-                                },
                                 {
                                     "type": "panel",
                                     "reference": {
@@ -786,6 +741,71 @@
                                             },
                                             "designerId": "eb30eb58-5db4-4754-8eba-08a95b502901",
                                             "masterInstanceId": "ExtBox1-ext-gen3232"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyPanel13",
+                                        "border": 0,
+                                        "layout": "fit",
+                                        "header": null,
+                                        "title": "Advertisements"
+                                    },
+                                    "designerId": "88eb658e-f416-4c0f-a82d-8bb7c2f37974",
+                                    "cn": [
+                                        {
+                                            "type": "tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "TabConfig8"
+                                            },
+                                            "designerId": "fc4f7154-4ba3-4d0b-b7f5-06d9fd3de944"
+                                        },
+                                        {
+                                            "type": "linkedinstance",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "AdvertisementGrid",
+                                                "border": 0,
+                                                "header": false
+                                            },
+                                            "designerId": "9d67b84b-a673-44d9-b8a4-9ef3ad08f3d5",
+                                            "masterInstanceId": "ExtBox1-ext-gen6258",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|userClassName": "onAdvertisementGridBeforeRender",
+                                                        "fn": "onAdvertisementGridBeforeRender",
+                                                        "implHandler": [
+                                                            "abstractcomponent.getDockedItems('toolbar[dock=\"top\"]')[0].getComponent('newAdvertisement').hide();"
+                                                        ],
+                                                        "name": "beforerender",
+                                                        "scope": "me"
+                                                    },
+                                                    "designerId": "5b69f1a1-1f27-4ab2-8be2-5c86cae92af1"
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
@@ -840,10 +860,11 @@
                                                     },
                                                     "codeClass": null,
                                                     "userConfig": {
-                                                        "designer|userClassName": "onGridpanelBeforeRender",
-                                                        "fn": "onGridpanelBeforeRender",
+                                                        "designer|userClassName": "onPublicationGridBeforeRender",
+                                                        "fn": "onPublicationGridBeforeRender",
                                                         "implHandler": [
-                                                            "//abstractcomponent.getDockedItems('toolbar[dock=\"bottom\"]')[0].hide();"
+                                                            "abstractcomponent.getDockedItems('toolbar[dock=\"bottom\"]')[0].hide();",
+                                                            "//console.log(abstractcomponent.getDockedItems());"
                                                         ],
                                                         "name": "beforerender",
                                                         "scope": "me"

@@ -22,8 +22,8 @@ Ext.define('JavisERP.view.ClientRecord', {
         'JavisERP.view.ContactGrid',
         'JavisERP.view.ActivityGrid',
         'JavisERP.view.UserNoteGrid',
-        'JavisERP.view.AdvertisementGrid',
         'JavisERP.view.ContractGrid',
+        'JavisERP.view.AdvertisementGrid',
         'JavisERP.view.PublicationGrid'
     ],
 
@@ -316,24 +316,9 @@ Ext.define('JavisERP.view.ClientRecord', {
                                     height: 100,
                                     itemId: 'SalesSublistTabs',
                                     maxHeight: 350,
-                                    activeTab: 0,
+                                    activeTab: 1,
                                     plain: false,
                                     items: [
-                                        {
-                                            xtype: 'panel',
-                                            border: 0,
-                                            layout: {
-                                                type: 'fit'
-                                            },
-                                            title: 'Advertisements',
-                                            items: [
-                                                {
-                                                    xtype: 'advertisementgrid',
-                                                    border: 0,
-                                                    header: false
-                                                }
-                                            ]
-                                        },
                                         {
                                             xtype: 'panel',
                                             border: 0,
@@ -355,6 +340,27 @@ Ext.define('JavisERP.view.ClientRecord', {
                                             layout: {
                                                 type: 'fit'
                                             },
+                                            title: 'Advertisements',
+                                            items: [
+                                                {
+                                                    xtype: 'advertisementgrid',
+                                                    border: 0,
+                                                    header: false,
+                                                    listeners: {
+                                                        beforerender: {
+                                                            fn: me.onAdvertisementGridBeforeRender,
+                                                            scope: me
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            xtype: 'panel',
+                                            border: 0,
+                                            layout: {
+                                                type: 'fit'
+                                            },
                                             title: 'Publications',
                                             items: [
                                                 {
@@ -364,7 +370,7 @@ Ext.define('JavisERP.view.ClientRecord', {
                                                     header: false,
                                                     listeners: {
                                                         beforerender: {
-                                                            fn: me.onGridpanelBeforeRender,
+                                                            fn: me.onPublicationGridBeforeRender,
                                                             scope: me
                                                         }
                                                     }
@@ -486,8 +492,13 @@ Ext.define('JavisERP.view.ClientRecord', {
         me.callParent(arguments);
     },
 
-    onGridpanelBeforeRender: function(abstractcomponent, options) {
-        //abstractcomponent.getDockedItems('toolbar[dock="bottom"]')[0].hide();
+    onAdvertisementGridBeforeRender: function(abstractcomponent, options) {
+        abstractcomponent.getDockedItems('toolbar[dock="top"]')[0].getComponent('newAdvertisement').hide();
+    },
+
+    onPublicationGridBeforeRender: function(abstractcomponent, options) {
+        abstractcomponent.getDockedItems('toolbar[dock="bottom"]')[0].hide();
+        //console.log(abstractcomponent.getDockedItems());
     }
 
 });

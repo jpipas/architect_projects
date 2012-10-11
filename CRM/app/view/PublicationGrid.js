@@ -89,7 +89,7 @@ Ext.define('JavisERP.view.PublicationGrid', {
                     xtype: 'gridcolumn',
                     getter: function(record) {
                         var obj = record.get('territory');
-                        console.log(obj);
+                        //console.log(obj);
                         return Ext.isObject( obj )  ? obj.name : obj;
                     },
                     dataIndex: 'territory.name',
