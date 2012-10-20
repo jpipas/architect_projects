@@ -87,6 +87,20 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|displayName": "AdvertisementGrid",
+                "itemId": "AdvertisementGrid"
+            },
+            "designerId": "368e9e70-6727-4a72-9978-1562bfd1969f",
+            "masterInstanceId": "ExtBox1-ext-gen6258"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
                 "designer|displayName": "ContractGrid",
                 "itemId": "ContractGrid"
             },

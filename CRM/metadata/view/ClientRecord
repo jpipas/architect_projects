@@ -798,7 +798,7 @@
                                                         "designer|userClassName": "onAdvertisementGridBeforeRender",
                                                         "fn": "onAdvertisementGridBeforeRender",
                                                         "implHandler": [
-                                                            "abstractcomponent.getDockedItems('toolbar[dock=\"top\"]')[0].getComponent('newAdvertisement').hide();"
+                                                            "abstractcomponent.getDockedItems('toolbar[dock=\"top\"]')[0].hide();"
                                                         ],
                                                         "name": "beforerender",
                                                         "scope": "me"

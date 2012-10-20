@@ -493,7 +493,7 @@ Ext.define('JavisERP.view.ClientRecord', {
     },
 
     onAdvertisementGridBeforeRender: function(abstractcomponent, options) {
-        abstractcomponent.getDockedItems('toolbar[dock="top"]')[0].getComponent('newAdvertisement').hide();
+        abstractcomponent.getDockedItems('toolbar[dock="top"]')[0].hide();
     },
 
     onPublicationGridBeforeRender: function(abstractcomponent, options) {
