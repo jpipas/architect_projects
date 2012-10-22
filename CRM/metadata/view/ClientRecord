@@ -694,7 +694,7 @@
                                 "maxHeight": 350,
                                 "width": null,
                                 "bodyPadding": null,
-                                "activeTab": 1,
+                                "activeTab": 0,
                                 "plain": false
                             },
                             "designerId": "23e2a761-e09a-4bae-8e10-a464f83989ba",
@@ -740,7 +740,27 @@
                                                 "header": false
                                             },
                                             "designerId": "eb30eb58-5db4-4754-8eba-08a95b502901",
-                                            "masterInstanceId": "ExtBox1-ext-gen3232"
+                                            "masterInstanceId": "ExtBox1-ext-gen3232",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|userClassName": "onGridpanelBeforeRender",
+                                                        "fn": "onGridpanelBeforeRender",
+                                                        "implHandler": [
+                                                            "abstractcomponent.getDockedItems('toolbar[dock=\"bottom\"]')[0].hide();"
+                                                        ],
+                                                        "name": "beforerender",
+                                                        "scope": "me"
+                                                    },
+                                                    "designerId": "c8e8f15b-ae9d-485a-9551-322dc7fa8c32"
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
@@ -864,7 +884,7 @@
                                                         "fn": "onPublicationGridBeforeRender",
                                                         "implHandler": [
                                                             "abstractcomponent.getDockedItems('toolbar[dock=\"bottom\"]')[0].hide();",
-                                                            "//console.log(abstractcomponent.getDockedItems());"
+                                                            "abstractcomponent.getDockedItems('toolbar[dock=\"top\"]')[0].hide();"
                                                         ],
                                                         "name": "beforerender",
                                                         "scope": "me"

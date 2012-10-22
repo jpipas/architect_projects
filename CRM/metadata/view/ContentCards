@@ -101,8 +101,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|displayName": "ContractGrid",
-                "itemId": "ContractGrid"
+                "designer|displayName": "ContractGrid"
             },
             "designerId": "35380701-31ae-4b1d-bc58-24f106517517",
             "masterInstanceId": "ExtBox1-ext-gen3232"

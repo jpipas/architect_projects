@@ -9,6 +9,7 @@
         "designer|userClassName": "ContractGrid",
         "designer|userAlias": "contractgrid",
         "border": null,
+        "itemId": "ContractGrid",
         "title": "ContractsGrid",
         "forceFit": true,
         "store": "ContractStore"
@@ -234,6 +235,7 @@
                     "userConfig": {
                         "layout|flex": null,
                         "designer|userClassName": "MyButton14",
+                        "itemId": "newcontract",
                         "icon": "",
                         "iconCls": "ui-silk ui-silk-table-add",
                         "text": "New Contract"

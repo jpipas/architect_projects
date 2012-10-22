@@ -48,6 +48,14 @@ Ext.define('JavisERP.controller.ClientController', {
         {
             ref: 'clientPortlet',
             selector: 'clientportlet'
+        },
+        {
+            ref: 'contractWindow',
+            selector: 'contractwindow'
+        },
+        {
+            ref: 'contractGrid',
+            selector: 'contractgrid'
         }
     ],
 
@@ -59,9 +67,14 @@ Ext.define('JavisERP.controller.ClientController', {
         this.application.fireEvent('clientRecordChange',grid,col,row);
     },
 
+    onNewContractClick: function(target) {
+        this.application.fireEvent("addContract",target);
+    },
+
     init: function(application) {
         me = this;
         me.contactWindow = null;
+        me.contractWindow = null;
         me.application.on({
             clientRecordChange: me.changeClientRecord,
             scope: me
@@ -72,6 +85,10 @@ Ext.define('JavisERP.controller.ClientController', {
             scope:me
         });
 
+        me.application.on({
+            addContract: me.addContract,
+            scope:me
+        });
 
         this.control({
             "clientrecord toolbar button[itemId=newcontact]": {
@@ -79,6 +96,9 @@ Ext.define('JavisERP.controller.ClientController', {
             },
             "clientgrid #actions, clientportlet #actions": {
                 click: this.onActionColumnClick
+            },
+            "clientrecord toolbar button[itemId=newcontract]": {
+                click: this.onNewContractClick
             }
         });
     },
@@ -101,6 +121,17 @@ Ext.define('JavisERP.controller.ClientController', {
         var contacts = this.getContactGrid().getStore().load();
         var publications = this.getPublicationGrid().getStore().load();
         var contracts = this.getContractGrid().getStore().load();
+    },
+
+    addContract: function() {
+        if(!me.contractWindow){
+            me.contractWindow = new JavisERP.view.ContractWindow();
+        }
+        if(me.contractWindow.isVisible()){
+            me.contractWindow.hide();
+        } else {
+            me.contractWindow.show();
+        }
     }
 
 });

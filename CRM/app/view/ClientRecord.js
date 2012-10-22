@@ -316,7 +316,7 @@ Ext.define('JavisERP.view.ClientRecord', {
                                     height: 100,
                                     itemId: 'SalesSublistTabs',
                                     maxHeight: 350,
-                                    activeTab: 1,
+                                    activeTab: 0,
                                     plain: false,
                                     items: [
                                         {
@@ -330,7 +330,13 @@ Ext.define('JavisERP.view.ClientRecord', {
                                                 {
                                                     xtype: 'contractgrid',
                                                     border: 0,
-                                                    header: false
+                                                    header: false,
+                                                    listeners: {
+                                                        beforerender: {
+                                                            fn: me.onGridpanelBeforeRender,
+                                                            scope: me
+                                                        }
+                                                    }
                                                 }
                                             ]
                                         },
@@ -492,13 +498,17 @@ Ext.define('JavisERP.view.ClientRecord', {
         me.callParent(arguments);
     },
 
+    onGridpanelBeforeRender: function(abstractcomponent, options) {
+        abstractcomponent.getDockedItems('toolbar[dock="bottom"]')[0].hide();
+    },
+
     onAdvertisementGridBeforeRender: function(abstractcomponent, options) {
         abstractcomponent.getDockedItems('toolbar[dock="top"]')[0].hide();
     },
 
     onPublicationGridBeforeRender: function(abstractcomponent, options) {
         abstractcomponent.getDockedItems('toolbar[dock="bottom"]')[0].hide();
-        //console.log(abstractcomponent.getDockedItems());
+        abstractcomponent.getDockedItems('toolbar[dock="top"]')[0].hide();
     }
 
 });

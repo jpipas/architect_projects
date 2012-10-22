@@ -49,6 +49,7 @@
                 "implHandler": [
                     "me = this;",
                     "me.contactWindow = null;",
+                    "me.contractWindow = null;",
                     "me.application.on({",
                     "    clientRecordChange: me.changeClientRecord,",
                     "    scope: me",
@@ -58,7 +59,11 @@
                     "    addContact: me.addContact,",
                     "    scope:me",
                     "});",
-                    ""
+                    "",
+                    "me.application.on({",
+                    "    addContract: me.addContract,",
+                    "    scope:me",
+                    "});"
                 ]
             },
             "designerId": "285ac0ab-7679-491c-975e-f11f309c9d96"
@@ -100,11 +105,11 @@
                     "if(!me.contactWindow){",
                     "    me.contactWindow = new JavisERP.view.ContactWindow();",
                     "}",
-                    "    if(me.contactWindow.isVisible()){",
-                    "        me.contactWindow.hide();",
-                    "    } else {",
-                    "        me.contactWindow.show();",
-                    "    }"
+                    "if(me.contactWindow.isVisible()){",
+                    "    me.contactWindow.hide();",
+                    "} else {",
+                    "    me.contactWindow.show();",
+                    "}"
                 ]
             },
             "designerId": "110275da-a518-4b82-832f-01677ab6be32"
@@ -247,6 +252,79 @@
                 "selector": "clientportlet"
             },
             "designerId": "76089185-3b0f-48df-9519-db3cc2d27d93"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "addContract",
+                "fn": "addContract",
+                "implHandler": [
+                    "if(!me.contractWindow){",
+                    "    me.contractWindow = new JavisERP.view.ContractWindow();",
+                    "}",
+                    "if(me.contractWindow.isVisible()){",
+                    "    me.contractWindow.hide();",
+                    "} else {",
+                    "    me.contractWindow.show();",
+                    "}"
+                ]
+            },
+            "designerId": "a7a629da-12ea-4d84-9307-e7583e23d2e8"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "contractWindow",
+                "ref": "contractWindow",
+                "selector": "contractwindow"
+            },
+            "designerId": "f688bafd-c933-4090-8bf9-a8e551601820"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "contractGrid",
+                "ref": "contractGrid",
+                "selector": "contractgrid"
+            },
+            "designerId": "851d0d84-fd78-4083-9dbf-dc7c08f05bb3"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onNewContractClick",
+                "fn": "onNewContractClick",
+                "designer|params": [
+                    "target"
+                ],
+                "implHandler": [
+                    "this.application.fireEvent(\"addContract\",target);"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|controlQuery": "clientrecord toolbar button[itemId=newcontract]"
+            },
+            "designerId": "a692a5e7-edab-42e8-a3ec-fe17adc90c70"
         }
     ]
 }
