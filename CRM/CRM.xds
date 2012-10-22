@@ -189,9 +189,9 @@
         },
         "88697d41-4203-4896-974f-2d172d0dd7b9": {
             "paths": [
-                "metadata/resource/js1"
+                "metadata/resource/js"
             ],
-            "className": "js1"
+            "className": "js"
         },
         "2f153940-6b99-47aa-b001-7b2a320bbee5": {
             "paths": [
@@ -345,27 +345,27 @@
         },
         "5458bf16-0d90-4cac-962d-cbfe18fd84bd": {
             "paths": [
+                "metadata/resource/js1"
+            ],
+            "className": "js1"
+        },
+        "458977af-707b-4c4a-98c0-e8e58b7221e4": {
+            "paths": [
                 "metadata/resource/js2"
             ],
             "className": "js2"
         },
-        "458977af-707b-4c4a-98c0-e8e58b7221e4": {
+        "b4989cea-ff8e-42c3-808d-08d75e80fccb": {
             "paths": [
                 "metadata/resource/js3"
             ],
             "className": "js3"
         },
-        "b4989cea-ff8e-42c3-808d-08d75e80fccb": {
+        "1f15242c-62e4-462b-96a7-f91215c3fcbc": {
             "paths": [
                 "metadata/resource/js4"
             ],
             "className": "js4"
-        },
-        "1f15242c-62e4-462b-96a7-f91215c3fcbc": {
-            "paths": [
-                "metadata/resource/js5"
-            ],
-            "className": "js5"
         },
         "5ee0fbc3-e4b4-48f7-ae1d-98a8df0fbd68": {
             "paths": [
@@ -377,9 +377,9 @@
         },
         "80dd2673-81d2-46ae-adae-0d6c3bf136c6": {
             "paths": [
-                "metadata/resource/js6"
+                "metadata/resource/js5"
             ],
-            "className": "js6"
+            "className": "js5"
         },
         "610a9588-647a-41d3-8d7e-58b837d2340e": {
             "paths": [
@@ -407,9 +407,9 @@
         },
         "ede89c55-68aa-4ff6-a7d7-f3d423d83152": {
             "paths": [
-                "metadata/resource/js7"
+                "metadata/resource/js6"
             ],
-            "className": "js7"
+            "className": "js6"
         },
         "3aa80e14-0e22-4317-a40e-73af035c9706": {
             "paths": [

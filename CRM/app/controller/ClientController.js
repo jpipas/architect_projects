@@ -75,6 +75,7 @@ Ext.define('JavisERP.controller.ClientController', {
         me = this;
         me.contactWindow = null;
         me.contractWindow = null;
+
         me.application.on({
             clientRecordChange: me.changeClientRecord,
             scope: me
@@ -106,6 +107,7 @@ Ext.define('JavisERP.controller.ClientController', {
     addContact: function() {
         if(!me.contactWindow){
             me.contactWindow = new JavisERP.view.ContactWindow();
+            console.log("Need a new window!");
         }
         if(me.contactWindow.isVisible()){
             me.contactWindow.hide();
@@ -126,8 +128,9 @@ Ext.define('JavisERP.controller.ClientController', {
     addContract: function() {
         if(!me.contractWindow){
             me.contractWindow = new JavisERP.view.ContractWindow();
+            console.log("Need a new window!");
         }
-        if(me.contractWindow.isVisible()){
+        if(me.contractWindow.isVisible(true)){
             me.contractWindow.hide();
         } else {
             me.contractWindow.show();

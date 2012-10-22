@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "url": "/app/util/Constants.js"
+        "url": "/app/view/PortalColumn.js"
     },
-    "id": "ExtBox1-ext-gen8006",
-    "designerId": "5458bf16-0d90-4cac-962d-cbfe18fd84bd"
+    "id": "ExtBox1-ext-gen4171",
+    "designerId": "458977af-707b-4c4a-98c0-e8e58b7221e4"
 }
