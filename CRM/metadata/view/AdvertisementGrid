@@ -57,7 +57,7 @@
                         "layout|flex": null,
                         "designer|userClassName": "MyButton7",
                         "itemId": "newAdvertisement",
-                        "iconCls": "ui-silk ui-silk-page-white-add",
+                        "iconCls": "ui-silk ui-silk-layout-add",
                         "text": "New Advertisement"
                     },
                     "designerId": "46c3f1d2-02d1-472d-8f14-e925ae1b62e3"

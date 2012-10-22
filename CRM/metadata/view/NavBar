@@ -448,7 +448,7 @@
                                     "userConfig": {
                                         "designer|userClassName": "MyMenuItem7",
                                         "itemId": "AdvertisementGrid",
-                                        "iconCls": "ui-silk ui-silk-page-white-picture",
+                                        "iconCls": "ui-silk ui-silk-layout",
                                         "text": "Advertisements"
                                     },
                                     "designerId": "9beafbb6-ffe1-4bcb-82f8-5fbc8231e322"

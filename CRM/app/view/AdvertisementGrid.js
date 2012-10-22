@@ -39,7 +39,7 @@ Ext.define('JavisERP.view.AdvertisementGrid', {
                         {
                             xtype: 'button',
                             itemId: 'newAdvertisement',
-                            iconCls: 'ui-silk ui-silk-page-white-add',
+                            iconCls: 'ui-silk ui-silk-layout-add',
                             text: 'New Advertisement'
                         }
                     ]

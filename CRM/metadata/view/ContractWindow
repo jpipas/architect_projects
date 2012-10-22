@@ -8,11 +8,14 @@
     "userConfig": {
         "designer|userClassName": "ContractWindow",
         "designer|userAlias": "contractwindow",
-        "height": 300,
+        "height": null,
+        "minHeight": null,
         "width": 750,
+        "overflowY": "auto",
         "layout": "fit",
         "closeAction": "hide",
-        "title": "Contract"
+        "title": "Contract",
+        "maximized": false
     },
     "id": "ExtBox1-ext-gen4042",
     "designerId": "6b459518-e2c7-4191-b857-9ca840d4b7e0",
@@ -27,8 +30,10 @@
             "userConfig": {
                 "designer|userClassName": "MyForm3",
                 "designer|displayName": "ContractForm",
-                "height": 204,
+                "height": null,
                 "itemId": "ContractForm",
+                "minHeight": 300,
+                "layout": "auto",
                 "bodyPadding": 5,
                 "title": null
             },
@@ -107,11 +112,11 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "container|align": "stretch",
                         "designer|userClassName": "MyFieldContainer7",
                         "designer|displayName": "FormContainer",
                         "height": null,
-                        "layout": "hbox",
+                        "padding": "0px 0px 10px 0px",
+                        "layout": "column",
                         "fieldLabel": null
                     },
                     "designerId": "2598b5fe-a6b3-49b7-a642-bfd1bf386817",
@@ -124,25 +129,27 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "layout|flex": 3,
+                                "layout|columnWidth": 0.5,
                                 "designer|userClassName": "MyFieldContainer5",
                                 "designer|displayName": "Column1",
-                                "layout": "anchor",
+                                "defaults": [
+                                    "{padding:'5px 0px 0px 0px'}"
+                                ],
+                                "layout": "column",
                                 "fieldLabel": null,
                                 "labelAlign": "right"
                             },
                             "designerId": "18e6f827-66c7-4330-9065-d591cea7ec09",
                             "cn": [
                                 {
-                                    "type": "numberfield",
+                                    "type": "textfield",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "layout|anchor": "95%",
-                                        "designer|userClassName": "MyNumberField",
+                                        "designer|userClassName": "MyTextField10",
                                         "designer|displayName": "contract_number",
                                         "fieldLabel": "Contract Number",
                                         "labelAlign": "right"
@@ -157,7 +164,6 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "layout|anchor": "95%",
                                         "designer|userClassName": "MyComboBox3",
                                         "designer|displayName": "client_name",
                                         "fieldLabel": "Client",
@@ -174,7 +180,6 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "layout|anchor": "95%",
                                         "designer|userClassName": "MyComboBox4",
                                         "designer|displayName": "payment_type",
                                         "fieldLabel": "Payment Type",
@@ -191,7 +196,6 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "layout|anchor": "95%",
                                         "designer|userClassName": "MyNumberField1",
                                         "designer|displayName": "total_sales_amt",
                                         "fieldLabel": "Total Sales Amount",
@@ -228,13 +232,13 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "layout|anchor": "95%",
                                         "designer|userClassName": "MyNumberField7",
                                         "designer|displayName": "discount",
                                         "fieldLabel": "Discount (%)",
                                         "labelAlign": "right",
                                         "maxValue": 1,
-                                        "minValue": 0
+                                        "minValue": 0,
+                                        "step": 0.05
                                     },
                                     "designerId": "9384a014-54d2-4c3f-b496-650b59f2da9c",
                                     "cn": [
@@ -266,11 +270,11 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "layout|anchor": "95%",
                                         "designer|userClassName": "MyNumberField3",
                                         "designer|displayName": "design_fee",
                                         "fieldLabel": "Design Fee",
-                                        "labelAlign": "right"
+                                        "labelAlign": "right",
+                                        "step": 5
                                     },
                                     "designerId": "03636658-a9c9-4867-af17-dd030226cb0a",
                                     "cn": [
@@ -304,12 +308,16 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "layout|flex": 1,
+                                "layout|columnWidth": 0.5,
                                 "designer|userClassName": "MyFieldContainer6",
                                 "designer|displayName": "Column2",
                                 "border": 1,
-                                "width": 150,
-                                "layout": "anchor",
+                                "padding": null,
+                                "width": null,
+                                "defaults": [
+                                    "{padding: '5px 0px'}"
+                                ],
+                                "layout": "column",
                                 "combineLabels": false,
                                 "fieldLabel": null,
                                 "labelAlign": "right"
@@ -317,32 +325,32 @@
                             "designerId": "92c15c97-c232-4858-ac22-010d23aa4f96",
                             "cn": [
                                 {
-                                    "type": "displayfield",
+                                    "type": "textfield",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "layout|anchor": "95%",
-                                        "designer|userClassName": "MyDisplayField10",
+                                        "designer|userClassName": "MyTextField8",
                                         "designer|displayName": "subtotal",
+                                        "disabled": true,
                                         "fieldLabel": "Subtotal",
                                         "labelAlign": "right"
                                     },
                                     "designerId": "6f01dee6-e746-4cd8-885a-c1d56eba1c45"
                                 },
                                 {
-                                    "type": "displayfield",
+                                    "type": "textfield",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "layout|anchor": "95%",
-                                        "designer|userClassName": "MyDisplayField11",
+                                        "designer|userClassName": "MyTextField9",
                                         "designer|displayName": "total_amt",
+                                        "padding": "",
                                         "fieldLabel": "Total Amount",
                                         "labelAlign": "right"
                                     },
@@ -356,11 +364,13 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "layout|anchor": "95%",
                                         "designer|userClassName": "MyNumberField5",
                                         "designer|displayName": "first_months_payment",
-                                        "fieldLabel": "First Months Payment",
-                                        "labelAlign": "right"
+                                        "fieldLabel": "1st Mon. Payment",
+                                        "labelAlign": "right",
+                                        "labelPad": null,
+                                        "labelWidth": null,
+                                        "autoStripChars": false
                                     },
                                     "designerId": "6d8f12c7-6df1-4f94-bce7-1e4ed1537dce",
                                     "cn": [
@@ -385,24 +395,66 @@
                                     ]
                                 },
                                 {
-                                    "type": "displayfield",
+                                    "type": "textfield",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "layout|anchor": "95%",
-                                        "designer|userClassName": "MyDisplayField12",
+                                        "designer|userClassName": "MyTextField11",
                                         "designer|displayName": "monthly_payment",
                                         "fieldLabel": "Montly Payment",
                                         "labelAlign": "right"
                                     },
                                     "designerId": "0a8f2429-7e3f-4de6-939e-acdccc14e66e"
+                                },
+                                {
+                                    "type": "hiddenfield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyHiddenField",
+                                        "name": "client_id",
+                                        "fieldLabel": null
+                                    },
+                                    "designerId": "c1b5b8e0-1f57-4e91-b4d3-007de2b87064"
+                                },
+                                {
+                                    "type": "hiddenfield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyHiddenField1",
+                                        "name": "contract_id",
+                                        "fieldLabel": "Label"
+                                    },
+                                    "designerId": "f7cd334e-83b0-4f7c-906c-cc95ccaf4814"
                                 }
                             ]
                         }
                     ]
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "ContractAdvertisementGrid",
+                        "height": 150,
+                        "padding": "10px 0px"
+                    },
+                    "designerId": "d1f7b7a8-caeb-4910-9a9d-92ee0c214327",
+                    "masterInstanceId": "ExtBox1-ext-gen6258"
                 }
             ]
         },

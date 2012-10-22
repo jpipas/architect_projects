@@ -177,7 +177,7 @@ Ext.define('JavisERP.view.NavBar', {
                                     {
                                         xtype: 'menuitem',
                                         itemId: 'AdvertisementGrid',
-                                        iconCls: 'ui-silk ui-silk-page-white-picture',
+                                        iconCls: 'ui-silk ui-silk-layout',
                                         text: 'Advertisements'
                                     },
                                     {
