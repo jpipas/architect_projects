@@ -166,9 +166,12 @@
                                     "userConfig": {
                                         "designer|userClassName": "MyComboBox3",
                                         "designer|displayName": "client_name",
+                                        "name": "client_id",
                                         "fieldLabel": "Client",
                                         "labelAlign": "right",
-                                        "store": "ClientStore"
+                                        "displayField": "name",
+                                        "store": "ClientStore",
+                                        "valueField": "id"
                                     },
                                     "designerId": "dc267fde-ca47-48cf-973a-e85a7caeba37"
                                 },
@@ -182,9 +185,12 @@
                                     "userConfig": {
                                         "designer|userClassName": "MyComboBox4",
                                         "designer|displayName": "payment_type",
+                                        "name": "payment_type_id",
                                         "fieldLabel": "Payment Type",
                                         "labelAlign": "right",
-                                        "store": "PaymentTypeStore"
+                                        "displayField": "name",
+                                        "store": "PaymentTypeStore",
+                                        "valueField": "id"
                                     },
                                     "designerId": "b2ee4acc-b6d8-4707-8208-de3dc1a9d819"
                                 },

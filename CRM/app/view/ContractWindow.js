@@ -92,15 +92,21 @@ Ext.define('JavisERP.view.ContractWindow', {
                                         },
                                         {
                                             xtype: 'combobox',
+                                            name: 'client_id',
                                             fieldLabel: 'Client',
                                             labelAlign: 'right',
-                                            store: 'ClientStore'
+                                            displayField: 'name',
+                                            store: 'ClientStore',
+                                            valueField: 'id'
                                         },
                                         {
                                             xtype: 'combobox',
+                                            name: 'payment_type_id',
                                             fieldLabel: 'Payment Type',
                                             labelAlign: 'right',
-                                            store: 'PaymentTypeStore'
+                                            displayField: 'name',
+                                            store: 'PaymentTypeStore',
+                                            valueField: 'id'
                                         },
                                         {
                                             xtype: 'numberfield',
