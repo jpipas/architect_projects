@@ -4,7 +4,7 @@
         "model": false,
         "component": true,
         "controller": true,
-        "resource": false,
+        "resource": true,
         "4f38d399-06da-4634-ab46-aaf1dc55bf43": {
             "id": "4f38d399-06da-4634-ab46-aaf1dc55bf43",
             "expanded": false,
@@ -1053,7 +1053,6 @@
         },
         "6b459518-e2c7-4191-b857-9ca840d4b7e0": {
             "id": "6b459518-e2c7-4191-b857-9ca840d4b7e0",
-            "expanded": false,
             "cn": [
                 {
                     "id": "bf14bc64-028b-414e-9311-f836e797148a",
