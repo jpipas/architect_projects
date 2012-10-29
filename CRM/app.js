@@ -60,7 +60,8 @@ Ext.application({
         'PublicationGrid',
         'ContractGrid',
         'ContractWindow',
-        'AdvertisementGrid'
+        'AdvertisementGrid',
+        'AdvertisementWindow'
     ],
     autoCreateViewport: true,
     name: 'JavisERP',
