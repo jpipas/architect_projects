@@ -1,0 +1,223 @@
+{
+    "type": "window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AdvertisementWindow",
+        "height": null,
+        "width": 750,
+        "layout": "fit",
+        "title": "Advertisement"
+    },
+    "id": "ExtBox1-ext-gen2944",
+    "designerId": "019abab4-49a9-4895-b3e5-4884b8c48504",
+    "cn": [
+        {
+            "type": "form",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyForm4",
+                "designer|displayName": "AdvertisementForm",
+                "itemId": "AdvertisementForm",
+                "bodyPadding": 10,
+                "title": null
+            },
+            "designerId": "815b2b6d-f4e9-412d-b657-6dab9dd724a1",
+            "cn": [
+                {
+                    "type": "toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top",
+                        "designer|userClassName": "MyToolbar7",
+                        "designer|displayName": "FormToolBar"
+                    },
+                    "designerId": "c3bbd139-3db8-4915-a170-2bc9a228041f",
+                    "cn": [
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "designer|userClassName": "MyButton11",
+                                "iconCls": "ui-silk ui-silk-disk",
+                                "text": "Save"
+                            },
+                            "designerId": "42fd6693-dcc6-48e2-b025-0da6f14562ff"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "designer|userClassName": "MyButton12",
+                                "text": "Cancel"
+                            },
+                            "designerId": "06909902-ffac-4483-a02b-df165ec323c6",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "onButtonClick11",
+                                        "fn": "onButtonClick11",
+                                        "implHandler": [
+                                            "console.log(button);"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "5221f7e6-db89-44f4-87ba-1964bd1cc710"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "fieldcontainer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyFieldContainer7",
+                        "designer|displayName": "FormContainer",
+                        "height": null,
+                        "padding": "0px 0px 10px 0px",
+                        "layout": "column",
+                        "fieldLabel": null
+                    },
+                    "designerId": "911eb032-c357-42bc-b49f-98199eb8c079",
+                    "cn": [
+                        {
+                            "type": "fieldcontainer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|columnWidth": 0.5,
+                                "designer|userClassName": "MyFieldContainer5",
+                                "designer|displayName": "Column1",
+                                "defaults": [
+                                    "{padding:'5px 0px 0px 0px'}"
+                                ],
+                                "layout": "column",
+                                "fieldLabel": null,
+                                "labelAlign": "right"
+                            },
+                            "designerId": "d9074593-ca65-4929-8827-54525a9d9317"
+                        },
+                        {
+                            "type": "fieldcontainer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|columnWidth": 0.5,
+                                "designer|userClassName": "MyFieldContainer6",
+                                "designer|displayName": "Column2",
+                                "border": 1,
+                                "padding": null,
+                                "width": null,
+                                "defaults": [
+                                    "{padding: '5px 0px'}"
+                                ],
+                                "layout": "column",
+                                "combineLabels": false,
+                                "fieldLabel": null,
+                                "labelAlign": "right"
+                            },
+                            "designerId": "fd1968c8-f4f7-4930-98a6-7c7f94c22fe7",
+                            "cn": [
+                                {
+                                    "type": "hiddenfield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyHiddenField",
+                                        "name": "client_id",
+                                        "fieldLabel": null
+                                    },
+                                    "designerId": "658eb9d1-8811-47e2-85d6-625a9c722d47"
+                                },
+                                {
+                                    "type": "hiddenfield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyHiddenField1",
+                                        "name": "contract_id",
+                                        "fieldLabel": "Label"
+                                    },
+                                    "designerId": "66ee7d0a-510e-4b4f-99ea-55d33bcb2beb"
+                                },
+                                {
+                                    "type": "combobox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyComboBox5",
+                                        "name": "ad_type_id",
+                                        "fieldLabel": "Ad Type"
+                                    },
+                                    "designerId": "622110df-625f-4e3b-aca3-cfa69aae0a68"
+                                },
+                                {
+                                    "type": "combobox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyComboBox6",
+                                        "name": "ad_size_id",
+                                        "fieldLabel": "Ad Size"
+                                    },
+                                    "designerId": "dce49764-b8ef-4cb9-9fb4-a581c008e050"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
