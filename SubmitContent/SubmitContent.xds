@@ -1,0 +1,93 @@
+{
+    "name": "SubmitContent",
+    "settings": {
+        "urlPrefix": "http://content.ncpub.dev",
+        "spacesToIndent": 4,
+        "exportPath": "/Users/jpipas/Projects/Sites/SubmitContent",
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 676,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "cd53e325-5369-4f9b-b827-0c55ff9b25e2": {
+            "paths": [
+                "metadata/view/SubmitContent",
+                "app/view/override/SubmitContent.js",
+                "app/view/SubmitContent.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "SubmitContent"
+        },
+        "26ac63e0-2077-48c3-994e-6ecaed20e1bb": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "245d00b9-4e21-46e2-850b-45199d7902fe": {
+            "paths": [
+                "metadata/model/SubmitContent",
+                "app/model/override/SubmitContent.js",
+                "app/model/SubmitContent.js"
+            ],
+            "className": "SubmitContent"
+        },
+        "8558ecb1-8567-4964-94e5-741e33817aac": {
+            "paths": [
+                "metadata/controller/Main",
+                "app/controller/override/Main.js",
+                "app/controller/Main.js"
+            ],
+            "className": "Main"
+        },
+        "48ccf885-9c52-49f2-8478-e7873c22e952": {
+            "paths": [
+                "metadata/resource/js1"
+            ],
+            "className": "js1"
+        },
+        "7c2a21c2-6852-407d-9f64-2c8bd0c1ad2a": {
+            "paths": [
+                "metadata/view/ClassifiedContent",
+                "app/view/override/ClassifiedContent.js",
+                "app/view/ClassifiedContent.js"
+            ],
+            "className": "ClassifiedContent"
+        },
+        "0e78f4b8-830e-49e1-9cd7-0e5196ce2b36": {
+            "paths": [
+                "metadata/view/OtherContent",
+                "app/view/override/OtherContent.js",
+                "app/view/OtherContent.js"
+            ],
+            "className": "OtherContent"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "cd53e325-5369-4f9b-b827-0c55ff9b25e2",
+            "7c2a21c2-6852-407d-9f64-2c8bd0c1ad2a",
+            "0e78f4b8-830e-49e1-9cd7-0e5196ce2b36"
+        ],
+        "store": [],
+        "controller": [
+            "8558ecb1-8567-4964-94e5-741e33817aac"
+        ],
+        "model": [
+            "245d00b9-4e21-46e2-850b-45199d7902fe"
+        ],
+        "resource": [
+            "26ac63e0-2077-48c3-994e-6ecaed20e1bb",
+            "48ccf885-9c52-49f2-8478-e7873c22e952"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

@@ -1,0 +1,376 @@
+{
+    "type": "form",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "SubmitContent",
+        "designer|userAlias": "contentForm",
+        "designer|initialView": true,
+        "height": 250,
+        "id": "contentForm",
+        "itemId": "contentForm",
+        "minHeight": 500,
+        "width": 600,
+        "autoScroll": true,
+        "autoDestroy": false,
+        "defaults": [
+            "{",
+            "    labelAlign:'top',",
+            "    padding:10",
+            "}"
+        ],
+        "bodyPadding": 10,
+        "title": "Submit New Content"
+    },
+    "id": "ExtBox1-ext-gen1902",
+    "designerId": "cd53e325-5369-4f9b-b827-0c55ff9b25e2",
+    "cn": [
+        {
+            "type": "fieldset",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "designer|userClassName": "MyFieldSet",
+                "width": null,
+                "defaults": [
+                    "{",
+                    "    labelAlign: 'top',",
+                    "    padding: 10",
+                    "}"
+                ],
+                "layout": "vbox",
+                "title": "Information"
+            },
+            "designerId": "6755cf15-f9d2-4c72-87d9-81753db2006c",
+            "cn": [
+                {
+                    "type": "fieldcontainer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "layout|margins": "0",
+                        "designer|userClassName": "MyFieldContainer",
+                        "designer|displayName": "nameRow",
+                        "height": null,
+                        "margin": 0,
+                        "padding": "0 10",
+                        "width": null,
+                        "defaults": [
+                            "{",
+                            "    labelAlign: 'top',",
+                            "    padding:10",
+                            "}"
+                        ],
+                        "layout": "column",
+                        "fieldLabel": "Label",
+                        "hideLabel": true,
+                        "labelAlign": "top"
+                    },
+                    "designerId": "46d0f7e3-2a80-4756-9008-08e6e204b066",
+                    "cn": [
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|columnWidth": 0.5,
+                                "designer|userClassName": "MyTextField",
+                                "componentLayout": null,
+                                "itemId": "first_name",
+                                "name": "first_name",
+                                "fieldLabel": "First Name",
+                                "labelAlign": "top",
+                                "labelStyle": "color:#FF7F44"
+                            },
+                            "designerId": "d3201514-314c-4415-bc3c-7ec59c8c776e"
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|columnWidth": 0.5,
+                                "designer|userClassName": "MyTextField1",
+                                "itemId": "last_name",
+                                "name": "last_name",
+                                "fieldLabel": "Last Name",
+                                "labelAlign": "top",
+                                "labelStyle": "color:#FF7F44"
+                            },
+                            "designerId": "0219f135-7979-43b7-9b0e-f9c5bebf8d86"
+                        }
+                    ]
+                },
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "designer|userClassName": "MyTextField2",
+                        "itemId": "address1",
+                        "margin": "0 10",
+                        "name": "address1",
+                        "fieldLabel": "Address"
+                    },
+                    "designerId": "c8deeb28-13cc-45b2-9df2-90d685a0ea71"
+                },
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "designer|userClassName": "MyTextField2",
+                        "itemId": "address2",
+                        "name": "address2",
+                        "fieldLabel": "Address",
+                        "hideLabel": true
+                    },
+                    "designerId": "b61a2dba-f4bc-435e-a312-24426dfa7f26"
+                },
+                {
+                    "type": "fieldcontainer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "designer|userClassName": "MyFieldContainer1",
+                        "designer|displayName": "city_state_zip",
+                        "height": null,
+                        "width": 565,
+                        "defaults": [
+                            "{",
+                            "    labelAlign:'top',",
+                            "    padding:10",
+                            "}"
+                        ],
+                        "layout": "column",
+                        "fieldLabel": "Label",
+                        "hideLabel": true
+                    },
+                    "designerId": "b2bab9a3-62bb-4cac-956c-72e1e95cba58",
+                    "cn": [
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|columnWidth": 0.36,
+                                "designer|userClassName": "MyTextField4",
+                                "itemId": "city",
+                                "name": "city",
+                                "fieldLabel": "City",
+                                "labelAlign": null
+                            },
+                            "designerId": "74124a90-2026-4215-80a3-16babd8deb12"
+                        },
+                        {
+                            "type": "combobox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|columnWidth": 0.36,
+                                "designer|userClassName": "MyComboBox",
+                                "itemId": "state_id",
+                                "name": "state_id",
+                                "fieldLabel": "State",
+                                "hiddenName": "state_id"
+                            },
+                            "designerId": "b8175416-3a2a-41dd-9545-4a7db105c138"
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|columnWidth": 0.25,
+                                "designer|userClassName": "MyTextField4",
+                                "itemId": "postal_code",
+                                "name": "postal_code",
+                                "fieldLabel": "Zip Code",
+                                "labelAlign": "top",
+                                "labelStyle": "color:#FF7F44"
+                            },
+                            "designerId": "f0497a4c-9144-4df1-9e45-b2451db85235"
+                        }
+                    ]
+                },
+                {
+                    "type": "fieldcontainer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "layout|margins": "0",
+                        "designer|userClassName": "MyFieldContainer",
+                        "designer|displayName": "email_phone",
+                        "height": null,
+                        "margin": 0,
+                        "padding": "0 10",
+                        "width": null,
+                        "defaults": [
+                            "{",
+                            "    labelAlign: 'top',",
+                            "    padding:10",
+                            "}"
+                        ],
+                        "layout": "column",
+                        "fieldLabel": "Label",
+                        "hideLabel": true,
+                        "labelAlign": "top"
+                    },
+                    "designerId": "0d702915-2fc3-4b86-b3ae-daed3378a361",
+                    "cn": [
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|columnWidth": 0.5,
+                                "designer|userClassName": "MyTextField",
+                                "componentLayout": null,
+                                "itemId": "email_address",
+                                "name": "email_address",
+                                "fieldLabel": "Email Address",
+                                "labelAlign": "top",
+                                "labelStyle": "color:#FF7F44",
+                                "vtype": "email",
+                                "vtypeText": "Invalid email.  Please put in the form of user@domain.com"
+                            },
+                            "designerId": "7e893100-fd76-4912-807b-d8ae50d7d219"
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|columnWidth": 0.5,
+                                "designer|userClassName": "MyTextField1",
+                                "id": "phone_number",
+                                "itemId": "phone_number",
+                                "name": "phone_number",
+                                "fieldLabel": "Phone Number",
+                                "labelAlign": "top",
+                                "labelStyle": "color:#FF7F44"
+                            },
+                            "designerId": "872b15b9-966d-4c47-8092-1e98ade5aad5"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "fieldset",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyFieldSet1",
+                "designer|displayName": "ContentInformation",
+                "title": "Content Information"
+            },
+            "designerId": "6cacc793-cc18-4f04-bff3-7437098af7f5",
+            "cn": [
+                {
+                    "type": "radiogroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "formBind": null,
+                        "designer|userClassName": "MyRadioGroup",
+                        "designer|displayName": "typeOfConent",
+                        "fieldLabel": "Type of Content",
+                        "allowBlank": false
+                    },
+                    "designerId": "f15d161a-8854-497e-badd-c6843870e1fc",
+                    "cn": [
+                        {
+                            "type": "radiofield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyRadio",
+                                "itemId": "classifieds",
+                                "name": "contentType",
+                                "fieldLabel": null,
+                                "boxLabel": "Classified Ads & Job Postings",
+                                "inputValue": "classified"
+                            },
+                            "designerId": "0eff3ed2-9373-4a30-81e6-2dd004b07986"
+                        },
+                        {
+                            "type": "radiofield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyRadio1",
+                                "itemId": "other_content",
+                                "name": "contentType",
+                                "fieldLabel": null,
+                                "boxLabel": "All other Content & Photos",
+                                "inputValue": "other"
+                            },
+                            "designerId": "481810ed-a6da-4119-8354-1e34b8ad2368"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

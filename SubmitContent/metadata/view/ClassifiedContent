@@ -1,0 +1,226 @@
+{
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userClassName": "ClassifiedContent",
+        "designer|userAlias": "classifiedContent",
+        "hidden": null,
+        "itemId": "classifiedpanel",
+        "margin": 0,
+        "autoScroll": true,
+        "autoDestroy": false,
+        "defaults": [
+            "{",
+            "    labelAlign:'top',",
+            "    padding:10",
+            "}"
+        ],
+        "layout": "vbox",
+        "suspendLayout": true,
+        "bodyPadding": 0,
+        "title": "Classified Ads & Job Postings"
+    },
+    "id": "ExtBox1-ext-gen23358",
+    "designerId": "7c2a21c2-6852-407d-9f64-2c8bd0c1ad2a",
+    "cn": [
+        {
+            "type": "combobox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyComboBox1",
+                "itemId": "class_publication_id",
+                "width": null,
+                "fieldLabel": "Choose Your Publication",
+                "labelStyle": "font-weight:bold",
+                "emptyText": "Select a Publication..."
+            },
+            "designerId": "a9dbf9c0-98f0-4b8d-97e4-bd986d86efe4"
+        },
+        {
+            "type": "label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyLabel",
+                "margin": "0 10",
+                "padding": 10,
+                "style": [
+                    "{",
+                    "    font-weight:bold",
+                    "}"
+                ],
+                "text": "Select Type of Classified(s):"
+            },
+            "designerId": "c686f0df-2f79-430a-997e-ff7f964c0914"
+        },
+        {
+            "type": "checkboxgroup",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "dock": null,
+                "container|align": "stretch",
+                "container|padding": null,
+                "designer|userClassName": "MyCheckboxGroup",
+                "designer|displayName": "Residents",
+                "margin": "0 0 0 10",
+                "padding": null,
+                "width": null,
+                "layout": "vbox",
+                "fieldLabel": "Residents",
+                "labelStyle": "text-decoration:underline"
+            },
+            "designerId": "b0217653-594c-48ab-beb6-733a13798a76",
+            "cn": [
+                {
+                    "type": "checkboxfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyCheckbox",
+                        "fieldLabel": null,
+                        "boxLabel": "Selling an item (e.g. my grand piano, furniture, '96 Corolla)"
+                    },
+                    "designerId": "5cf26213-b206-4eb3-a6bf-32abd10df5bc"
+                },
+                {
+                    "type": "checkboxfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyCheckbox1",
+                        "fieldLabel": null,
+                        "boxLabel": "Posting a job (e.g. need help with yard work, shovelling snow, babysitting)"
+                    },
+                    "designerId": "63b0107c-a672-413d-bdd6-eae3d7b122db"
+                },
+                {
+                    "type": "checkboxfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyCheckbox1",
+                        "fieldLabel": null,
+                        "boxLabel": "Youth classifieds (e.g. looking for work: tutoring, raking leaves, pet-walking after school)"
+                    },
+                    "designerId": "a3200be8-f3ab-48a5-a9dc-89144b775b8b"
+                }
+            ]
+        },
+        {
+            "type": "checkboxgroup",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "dock": null,
+                "container|align": "stretch",
+                "container|padding": null,
+                "designer|userClassName": "MyCheckboxGroup",
+                "designer|displayName": "Businesses",
+                "margin": "0 0 0 10",
+                "padding": null,
+                "width": null,
+                "layout": "vbox",
+                "fieldLabel": "Businesses",
+                "labelStyle": "text-decoration:underline"
+            },
+            "designerId": "98a4c786-ee94-46a7-a5ad-ef19288087b9",
+            "cn": [
+                {
+                    "type": "checkboxfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyCheckbox",
+                        "fieldLabel": null,
+                        "boxLabel": "Posting a job for teens (14+)"
+                    },
+                    "designerId": "c6bce36e-bb58-463e-ac87-57ae1ca0b5dd"
+                },
+                {
+                    "type": "checkboxfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyCheckbox1",
+                        "fieldLabel": null,
+                        "boxLabel": "Posting a job for teens (18+)"
+                    },
+                    "designerId": "d7a6553a-9324-4ff6-b88a-488a212a2340"
+                }
+            ]
+        },
+        {
+            "type": "label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyLabel2",
+                "designer|displayName": "classified_disclaimer",
+                "html": "<div class='message_box'>For Free Classifieds, listings must be 40 words or less and  must not be business-related, except for youth offering services. Youth classifieds will be confirmed with a call to receive parental permission to run the ad. All ad submissions will receive email confirmation. Please see your newsletter for deadline information.</div>",
+                "margin": "0 10",
+                "text": null
+            },
+            "designerId": "bc96f4f6-2ccd-4a57-a44f-d3a60ceb7abc"
+        },
+        {
+            "type": "textareafield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyTextArea",
+                "height": 140,
+                "itemId": "classified_text",
+                "margin": 10,
+                "padding": "0 10",
+                "fieldLabel": "Classified Ad(s)"
+            },
+            "designerId": "2ea1b1b3-56ee-468f-a1bb-1d685b39a292"
+        }
+    ]
+}

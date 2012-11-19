@@ -1,0 +1,14 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "custom_vtype.js",
+        "id": "custom_vtypes"
+    },
+    "id": "ExtBox1-ext-gen52128",
+    "designerId": "48ccf885-9c52-49f2-8478-e7873c22e952"
+}

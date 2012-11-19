@@ -1,0 +1,383 @@
+{
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userClassName": "OtherContent",
+        "designer|userAlias": "otherContent",
+        "hidden": null,
+        "itemId": "othercontentpanel",
+        "autoDestroy": false,
+        "defaults": [
+            "{",
+            "    labelAlign:'top',",
+            "    padding:10",
+            "}"
+        ],
+        "layout": "vbox",
+        "title": "All other Content & Photos"
+    },
+    "id": "ExtBox1-ext-gen23779",
+    "designerId": "0e78f4b8-830e-49e1-9cd7-0e5196ce2b36",
+    "cn": [
+        {
+            "type": "combobox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyComboBox1",
+                "itemId": "class_publication_id",
+                "width": null,
+                "fieldLabel": "Choose Your Publication",
+                "labelStyle": "font-weight:bold",
+                "emptyText": "Select a Publication..."
+            },
+            "designerId": "9176a8f3-83c9-4282-8f37-a9c95918e61f"
+        },
+        {
+            "type": "label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyLabel",
+                "margin": "0 10",
+                "padding": 10,
+                "style": [
+                    "{",
+                    "    font-weight:bold",
+                    "}"
+                ],
+                "text": "Select Type of Classified(s):"
+            },
+            "designerId": "888812cf-50c7-4be7-a1c0-a26d7c761f6e"
+        },
+        {
+            "type": "fieldcontainer",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyFieldContainer3",
+                "designer|displayName": "ResidentHomeowner",
+                "height": 120,
+                "width": 400,
+                "defaults": [
+                    "{",
+                    "    labelAlign:'top',",
+                    "    padding:10",
+                    "}"
+                ],
+                "layout": "column",
+                "fieldLabel": null
+            },
+            "designerId": "141f3078-cbc0-405e-8c0b-c88aa434c2b3",
+            "cn": [
+                {
+                    "type": "checkboxgroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|columnWidth": 0.5,
+                        "container|align": "stretch",
+                        "container|padding": null,
+                        "designer|userClassName": "MyCheckboxGroup",
+                        "designer|displayName": "Residents",
+                        "margin": "0 0 0 10",
+                        "padding": null,
+                        "width": null,
+                        "layout": "vbox",
+                        "fieldLabel": "Resident Features",
+                        "labelStyle": "text-decoration:underline"
+                    },
+                    "designerId": "11abe236-5f3a-48ad-b958-04644c47bad5",
+                    "cn": [
+                        {
+                            "type": "checkboxfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyCheckbox",
+                                "fieldLabel": null,
+                                "boxLabel": "Business Feature"
+                            },
+                            "designerId": "880742db-74e7-4440-a511-82f462c27d78"
+                        },
+                        {
+                            "type": "checkboxfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyCheckbox1",
+                                "fieldLabel": null,
+                                "boxLabel": "Family Feature"
+                            },
+                            "designerId": "b193ab3b-3044-4787-8040-05aad667c42a"
+                        },
+                        {
+                            "type": "checkboxfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyCheckbox1",
+                                "fieldLabel": null,
+                                "boxLabel": "Pet Feature"
+                            },
+                            "designerId": "7dc4c7af-daa0-4d7f-93d1-6c940fd91ef7"
+                        },
+                        {
+                            "type": "checkboxfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyCheckbox1",
+                                "fieldLabel": null,
+                                "boxLabel": "Welcome to the Neighborhood Feature"
+                            },
+                            "designerId": "5107e21a-faa6-43f1-8f2b-f55189ff6530"
+                        }
+                    ]
+                },
+                {
+                    "type": "checkboxgroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|columnWidth": 0.5,
+                        "container|align": "stretch",
+                        "container|padding": null,
+                        "designer|userClassName": "MyCheckboxGroup",
+                        "designer|displayName": "Homeowners",
+                        "margin": "0 0 0 10",
+                        "padding": null,
+                        "width": null,
+                        "layout": "vbox",
+                        "fieldLabel": "Homeowner Association",
+                        "labelStyle": "text-decoration:underline"
+                    },
+                    "designerId": "9bd52906-7259-4505-afad-aaa0acc7ba30",
+                    "cn": [
+                        {
+                            "type": "checkboxfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyCheckbox",
+                                "fieldLabel": null,
+                                "boxLabel": "President & Committee Letters"
+                            },
+                            "designerId": "ea04bb22-8030-4d0a-a6a2-b98009c388b7"
+                        },
+                        {
+                            "type": "checkboxfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyCheckbox1",
+                                "fieldLabel": null,
+                                "boxLabel": "News & Special Dates/Events"
+                            },
+                            "designerId": "3aaa9e36-ef51-46a8-8cba-1af5253cf777"
+                        },
+                        {
+                            "type": "checkboxfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyCheckbox1",
+                                "fieldLabel": null,
+                                "boxLabel": "Important Notices & Covenant Reminders"
+                            },
+                            "designerId": "951b7dae-5029-43ff-b365-f4f6f2e7fd43"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "checkboxgroup",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "container|align": "stretch",
+                "container|padding": null,
+                "designer|userClassName": "MyCheckboxGroup",
+                "designer|displayName": "Other",
+                "margin": "0 0 0 10",
+                "padding": null,
+                "width": null,
+                "layout": "vbox",
+                "fieldLabel": "Other Article, Photos or Postings Submissions",
+                "labelStyle": "text-decoration:underline"
+            },
+            "designerId": "029d61e5-06ab-4fed-b7b7-4a969ab290e9",
+            "cn": [
+                {
+                    "type": "checkboxfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyCheckbox",
+                        "fieldLabel": null,
+                        "boxLabel": "Vacation, Wedding Photos & Announcements"
+                    },
+                    "designerId": "0a36bec5-dd00-45fb-83c3-aa005bed8785"
+                },
+                {
+                    "type": "checkboxfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyCheckbox1",
+                        "fieldLabel": null,
+                        "boxLabel": "Subdivision Groups: Book Club, Bunko, Women's Group, etc."
+                    },
+                    "designerId": "6117cccc-fb24-45ca-8c86-77049e332346"
+                },
+                {
+                    "type": "checkboxfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyCheckbox1",
+                        "fieldLabel": null,
+                        "boxLabel": "Events: School, Charities, Community & Organizations"
+                    },
+                    "designerId": "74236f35-4916-4702-a7ea-e53b4fd81098"
+                },
+                {
+                    "type": "checkboxfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyCheckbox1",
+                        "fieldLabel": null,
+                        "boxLabel": "Accomplishments: School, Sports & Extracurricular Activities"
+                    },
+                    "designerId": "f308a2a7-21b8-4ffb-80e1-55e27ff4d688"
+                },
+                {
+                    "type": "checkboxfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyCheckbox1",
+                        "fieldLabel": null,
+                        "boxLabel": "Miscellaneous"
+                    },
+                    "designerId": "684497df-15ce-4c10-872a-5a9313d98fe4"
+                }
+            ]
+        },
+        {
+            "type": "label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyLabel2",
+                "designer|displayName": "classified_disclaimer",
+                "hidden": true,
+                "html": "<div class='message_box'>NOTE: Added your file(s) first by clicking on the 'Add' button.  Then select your file to upload. Repeat for each file you wish to submit. Finally, when you've added all your file(s), click on the 'Upload' button to send your file(s) to Neighborhood Communications.</div>",
+                "margin": "0 10",
+                "text": null
+            },
+            "designerId": "c9425fb8-3e9c-4c8a-919f-413f656c9703"
+        },
+        {
+            "type": "filefield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyFileUpload",
+                "fieldLabel": "Upload File"
+            },
+            "designerId": "662c26a0-7eda-4b32-b9a9-5f4102cae4fd"
+        },
+        {
+            "type": "textareafield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyTextArea",
+                "height": 140,
+                "itemId": "special_instructions",
+                "margin": 10,
+                "padding": "0 10",
+                "fieldLabel": "Special Instructions"
+            },
+            "designerId": "98c581fe-0820-4860-90f2-7b13d41154f9"
+        }
+    ]
+}

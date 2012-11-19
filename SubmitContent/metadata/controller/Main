@@ -1,0 +1,138 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main",
+        "views": [
+            "SubmitContent",
+            "ClassifiedContent",
+            "OtherContent"
+        ]
+    },
+    "id": "ExtBox1-ext-gen52378",
+    "designerId": "8558ecb1-8567-4964-94e5-741e33817aac",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "contentForm",
+                "ref": "contentForm",
+                "selector": "contentForm",
+                "xtype": null
+            },
+            "designerId": "40f45a10-c536-4cff-80c6-e0497a4b4d77"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onRadiofieldChange",
+                "fn": "onRadiofieldChange",
+                "implHandler": [
+                    "if(field.itemId == \"classifieds\"){",
+                    "",
+                    "    if(newValue){",
+                    "        this.getContentForm().remove(me.otherPanel);",
+                    "        this.getContentForm().add(me.classifiedPanel);",
+                    "    } ",
+                    "    ",
+                    "    this.getContentForm().doLayout();    ",
+                    "} else if(field.itemId == \"other_content\"){",
+                    "",
+                    "",
+                    "    if(newValue){",
+                    "        this.getContentForm().remove(me.classifiedPanel);",
+                    "        this.getContentForm().add(me.otherPanel);",
+                    "    }",
+                    "",
+                    "    this.getContentForm().doLayout();",
+                    "}"
+                ],
+                "name": "change",
+                "scope": "me",
+                "designer|targetType": "Ext.form.field.Radio",
+                "designer|controlQuery": "radiofield"
+            },
+            "designerId": "84136489-a1c2-4bf1-a33f-e9f13565a127"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "classifiedPanel",
+                "ref": "classifiedPanel",
+                "selector": "classifiedpanel"
+            },
+            "designerId": "67f1ed91-b450-474e-af99-7c5809b9e11e"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "otherContentPanel",
+                "ref": "otherContentPanel",
+                "selector": "othercontentpanel"
+            },
+            "designerId": "63f29153-1112-4108-a2f0-f0136f4b7091"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onLaunch",
+                "fn": "onLaunch",
+                "implHandler": [
+                    "var form = Ext.getCmp('contentForm').form;",
+                    "form.findField('phone_number').vtype=\"phoneNumber\";"
+                ]
+            },
+            "designerId": "5976869b-d5fe-4d24-ba11-871f46f105ea"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "init",
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    "me = this;",
+                    "me.classifiedPanel = new SubmitContent.view.ClassifiedContent();",
+                    "me.otherPanel = new SubmitContent.view.OtherContent();"
+                ]
+            },
+            "designerId": "c24a2253-8f6c-4678-8eb1-59b7f8ffe20b"
+        }
+    ]
+}
