@@ -17,6 +17,7 @@ Ext.define('SubmitContent.view.OtherContent', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.otherContent',
 
+    id: 'other_content_panel',
     itemId: 'othercontentpanel',
     autoDestroy: false,
     layout: {
@@ -37,10 +38,15 @@ Ext.define('SubmitContent.view.OtherContent', {
                 {
                     xtype: 'combobox',
                     flex: 1,
-                    itemId: 'class_publication_id',
+                    id: 'publication_id',
+                    itemId: 'publication_id',
+                    name: 'publication_id',
                     fieldLabel: 'Choose Your Publication',
                     labelStyle: 'font-weight:bold',
-                    emptyText: 'Select a Publication...'
+                    emptyText: 'Select a Publication...',
+                    displayField: 'name',
+                    store: 'Publication',
+                    valueField: 'id'
                 },
                 {
                     xtype: 'label',
@@ -76,19 +82,27 @@ Ext.define('SubmitContent.view.OtherContent', {
                             items: [
                                 {
                                     xtype: 'checkboxfield',
-                                    boxLabel: 'Business Feature'
+                                    name: 'business_feature',
+                                    boxLabel: 'Business Feature',
+                                    uncheckedValue: 'off'
                                 },
                                 {
                                     xtype: 'checkboxfield',
-                                    boxLabel: 'Family Feature'
+                                    name: 'family_feature',
+                                    boxLabel: 'Family Feature',
+                                    uncheckedValue: 'off'
                                 },
                                 {
                                     xtype: 'checkboxfield',
-                                    boxLabel: 'Pet Feature'
+                                    name: 'pet_feature',
+                                    boxLabel: 'Pet Feature',
+                                    uncheckedValue: 'off'
                                 },
                                 {
                                     xtype: 'checkboxfield',
-                                    boxLabel: 'Welcome to the Neighborhood Feature'
+                                    name: 'neighborhood_welcome',
+                                    boxLabel: 'Welcome to the Neighborhood Feature',
+                                    uncheckedValue: 'off'
                                 }
                             ]
                         },
@@ -105,15 +119,21 @@ Ext.define('SubmitContent.view.OtherContent', {
                             items: [
                                 {
                                     xtype: 'checkboxfield',
-                                    boxLabel: 'President & Committee Letters'
+                                    name: 'ceo_letters',
+                                    boxLabel: 'President & Committee Letters',
+                                    uncheckedValue: 'off'
                                 },
                                 {
                                     xtype: 'checkboxfield',
-                                    boxLabel: 'News & Special Dates/Events'
+                                    name: 'news_events',
+                                    boxLabel: 'News & Special Dates/Events',
+                                    uncheckedValue: 'off'
                                 },
                                 {
                                     xtype: 'checkboxfield',
-                                    boxLabel: 'Important Notices & Covenant Reminders'
+                                    name: 'notices_reminders',
+                                    boxLabel: 'Important Notices & Covenant Reminders',
+                                    uncheckedValue: 'off'
                                 }
                             ]
                         }
@@ -132,23 +152,33 @@ Ext.define('SubmitContent.view.OtherContent', {
                     items: [
                         {
                             xtype: 'checkboxfield',
-                            boxLabel: 'Vacation, Wedding Photos & Announcements'
+                            name: 'vacation',
+                            boxLabel: 'Vacation, Wedding Photos & Announcements',
+                            uncheckedValue: 'off'
                         },
                         {
                             xtype: 'checkboxfield',
-                            boxLabel: 'Subdivision Groups: Book Club, Bunko, Women\'s Group, etc.'
+                            name: 'groups',
+                            boxLabel: 'Subdivision Groups: Book Club, Bunko, Women\'s Group, etc.',
+                            uncheckedValue: 'off'
                         },
                         {
                             xtype: 'checkboxfield',
-                            boxLabel: 'Events: School, Charities, Community & Organizations'
+                            name: 'events',
+                            boxLabel: 'Events: School, Charities, Community & Organizations',
+                            uncheckedValue: 'off'
                         },
                         {
                             xtype: 'checkboxfield',
-                            boxLabel: 'Accomplishments: School, Sports & Extracurricular Activities'
+                            name: 'accomplishments',
+                            boxLabel: 'Accomplishments: School, Sports & Extracurricular Activities',
+                            uncheckedValue: 'off'
                         },
                         {
                             xtype: 'checkboxfield',
-                            boxLabel: 'Miscellaneous'
+                            name: 'miscellaneous',
+                            boxLabel: 'Miscellaneous',
+                            uncheckedValue: 'off'
                         }
                     ]
                 },
@@ -160,9 +190,13 @@ Ext.define('SubmitContent.view.OtherContent', {
                     margin: '0 10'
                 },
                 {
-                    xtype: 'filefield',
+                    xtype: 'fieldcontainer',
                     flex: 1,
-                    fieldLabel: 'Upload File'
+                    height: 10,
+                    id: 'file_upload',
+                    itemId: 'file_upload',
+                    margin: 10,
+                    padding: 10
                 },
                 {
                     xtype: 'textareafield',
@@ -171,6 +205,7 @@ Ext.define('SubmitContent.view.OtherContent', {
                     itemId: 'special_instructions',
                     margin: 10,
                     padding: '0 10',
+                    name: 'special_instructions',
                     fieldLabel: 'Special Instructions'
                 }
             ]

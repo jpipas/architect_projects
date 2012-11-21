@@ -6,8 +6,22 @@
     },
     "codeClass": null,
     "userConfig": {
+        "requires": [
+            "Ext.ux.upload.Button",
+            "Ext.ux.upload.plugin.Window",
+            "Ext.grid.*",
+            "Ext.util.*",
+            "Ext.state.*",
+            "Ext.data.*"
+        ],
         "models": [
-            "SubmitContent"
+            "SubmitContent",
+            "State",
+            "Publication"
+        ],
+        "stores": [
+            "StateStore",
+            "PublicationStore"
         ],
         "autoCreateViewport": true,
         "name": "SubmitContent",
@@ -16,5 +30,28 @@
         ]
     },
     "id": "ExtBox1-ext-gen1597",
-    "designerId": "application"
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "loader",
+            "reference": {
+                "name": "loader",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "Loader140",
+                "designer|displayName": "Loader",
+                "enabled": true,
+                "paths": [
+                    "{",
+                    "    \"Ext\":\".\",",
+                    "    \"Ext.ux\":\"http://extjs.cachefly.net/extjs-4.1.1-gpl/examples/ux/\",",
+                    "    \"Ext.ux.upload\":\"/ux/upload/\"",
+                    "}"
+                ]
+            },
+            "designerId": "3587e65e-bf23-4161-bd04-69a474df3842"
+        }
+    ]
 }

@@ -67,6 +67,38 @@
                 "app/view/OtherContent.js"
             ],
             "className": "OtherContent"
+        },
+        "5bbb9893-ba8f-48c4-ad76-4a7b750ce8e1": {
+            "paths": [
+                "metadata/store/State",
+                "app/store/override/State.js",
+                "app/store/State.js"
+            ],
+            "className": "State"
+        },
+        "27de692f-b4f9-4b74-be9d-b391bc58751f": {
+            "paths": [
+                "metadata/model/State",
+                "app/model/override/State.js",
+                "app/model/State.js"
+            ],
+            "className": "State"
+        },
+        "13ebb460-06f9-4d04-931a-162d5ddf19fe": {
+            "paths": [
+                "metadata/store/Publication",
+                "app/store/override/Publication.js",
+                "app/store/Publication.js"
+            ],
+            "className": "Publication"
+        },
+        "b696bcb9-608b-4b95-9cae-d3254d1ae43e": {
+            "paths": [
+                "metadata/model/Publication",
+                "app/model/override/Publication.js",
+                "app/model/Publication.js"
+            ],
+            "className": "Publication"
         }
     },
     "viewOrderMap": {
@@ -75,12 +107,17 @@
             "7c2a21c2-6852-407d-9f64-2c8bd0c1ad2a",
             "0e78f4b8-830e-49e1-9cd7-0e5196ce2b36"
         ],
-        "store": [],
+        "store": [
+            "5bbb9893-ba8f-48c4-ad76-4a7b750ce8e1",
+            "13ebb460-06f9-4d04-931a-162d5ddf19fe"
+        ],
         "controller": [
             "8558ecb1-8567-4964-94e5-741e33817aac"
         ],
         "model": [
-            "245d00b9-4e21-46e2-850b-45199d7902fe"
+            "245d00b9-4e21-46e2-850b-45199d7902fe",
+            "27de692f-b4f9-4b74-be9d-b391bc58751f",
+            "b696bcb9-608b-4b95-9cae-d3254d1ae43e"
         ],
         "resource": [
             "26ac63e0-2077-48c3-994e-6ecaed20e1bb",

@@ -25,15 +25,23 @@ Ext.define('SubmitContent.controller.Main', {
     refs: [
         {
             ref: 'contentForm',
-            selector: 'contentForm'
+            selector: '#contentForm'
         },
         {
-            ref: 'classifiedPanel',
-            selector: 'classifiedpanel'
+            ref: 'submitButton',
+            selector: 'submitcontent'
         },
         {
-            ref: 'otherContentPanel',
-            selector: 'othercontentpanel'
+            ref: 'publicationSelect',
+            selector: '#publication_id'
+        },
+        {
+            ref: 'fileUpload',
+            selector: '#file_upload'
+        },
+        {
+            ref: 'postalCode',
+            selector: '#postal_code'
         }
     ],
 
@@ -45,22 +53,60 @@ Ext.define('SubmitContent.controller.Main', {
                 this.getContentForm().add(me.classifiedPanel);
             } 
 
+            if(oldValue){
+                me.classifiedPanel = new SubmitContent.view.ClassifiedContent();
+            }
+
             this.getContentForm().doLayout();    
         } else if(field.itemId == "other_content"){
-
 
             if(newValue){
                 this.getContentForm().remove(me.classifiedPanel);
                 this.getContentForm().add(me.otherPanel);
+                this.getFileUpload().add(me.fileUploadButton);
+            }
+
+            if(oldValue){
+                me.otherPanel = new SubmitContent.view.OtherContent();
             }
 
             this.getContentForm().doLayout();
         }
     },
 
+    onSubmitButtonClick: function(button, e, options) {
+        this.getPostalCode().enable();
+        button.up('contentForm').form.submit();
+    },
+
+    onPostalCodeBlur: function(field, options) {
+        this.application.getPublicationStore().load(
+        {
+            params:{'zip':field.getValue()},
+            callback:function(r,options,success){
+                if(!success){
+                    Ext.MessageBox.alert('Zip-Code Invalid', 'We don\'t recognize this zip.  Please try another, or stop here, and contact us directly at pete@ncpublishers.com');
+                    field.markInvalid("Please try another zip.");
+                    //Ext.getCmp('content_radio_group').disable();
+                } else {
+                    field.disable();
+                    //Ext.getCmp('content_radio_group').enable();
+                }
+            }
+        });
+    },
+
+    onPublicationChange: function(field, newValue, oldValue, options) {
+        var pub = this.application.getPublicationStore().getById(newValue);
+        console.log(pub);
+        me.getContentForm().getForm().findField('content_coordinator').setValue(pub.data.contact_email);
+        me.getContentForm().getForm().findField('publication_name').setValue(pub.data.name);
+    },
+
     onLaunch: function() {
         var form = Ext.getCmp('contentForm').form;
         form.findField('phone_number').vtype="phoneNumber";
+
     },
 
     init: function(application) {
@@ -68,9 +114,73 @@ Ext.define('SubmitContent.controller.Main', {
         me.classifiedPanel = new SubmitContent.view.ClassifiedContent();
         me.otherPanel = new SubmitContent.view.OtherContent();
 
+
+        me.fileUploadButton = new Ext.ux.upload.Button({
+            //renderTo: Ext.getBody(),
+            text: 'Select files',
+            //singleFile: true,
+            plugins: [{
+                ptype: 'ux.upload.window',
+                title: 'Upload File(s)',
+                width: 520,
+                height: 350
+            }
+            ],
+            uploader: 
+            {
+                url: 'server/web/index.php/upload',
+                //uploadpath: '/Root/files',
+                autoStart: false,
+                max_file_size: '2020mb',
+                //drop_element: 'dragload',
+                statusQueuedText: 'Ready to upload',
+                statusUploadingText: 'Uploading ({0}%)',
+                statusFailedText: '<span style="color: red">Error</span>',
+                statusDoneText: '<span style="color: green">Complete</span>',
+                statusInvalidSizeText: 'File too large',
+                statusInvalidExtensionText: 'Invalid file type'
+            },
+            listeners: 
+            {
+                filesadded: function(uploader, files)								
+                {
+                    //console.log('filesadded');
+                    return true;
+                },
+
+                beforeupload: function(uploader, file)								
+                {
+                    //console.log('beforeupload');			
+                },
+
+                fileuploaded: function(uploader, file, resp)								
+                {
+                    var filesField = me.getContentForm().getForm().findField('uploadedFiles');
+                    filesField.setRawValue(filesField.getValue()+',{"filename":"'+resp.filename+'","path":"'+resp.path+'"}');
+                },
+
+                uploadcomplete: function(uploader, success, failed)								
+                {
+                    if(success){
+                        Ext.Msg.alert("Success!","Your files have been uploaded successfully!");
+                    }
+                    //console.log('uploadcomplete');				
+                }
+            }	
+        });
+
         this.control({
             "radiofield": {
                 change: this.onRadiofieldChange
+            },
+            "#submitcontent": {
+                click: this.onSubmitButtonClick
+            },
+            "#postal_code": {
+                blur: this.onPostalCodeBlur
+            },
+            "#publication_id": {
+                change: this.onPublicationChange
             }
         });
     }

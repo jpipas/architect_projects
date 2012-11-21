@@ -23,12 +23,18 @@ Ext.define('SubmitContent.view.SubmitContent', {
     minHeight: 500,
     width: 600,
     autoScroll: true,
-    autoDestroy: false,
     bodyPadding: 10,
     title: 'Submit New Content',
+    standardSubmit: true,
+    url: 'server/web/index.php/submitcontent',
 
     initComponent: function() {
         var me = this;
+
+        me.initialConfig = Ext.apply({
+            standardSubmit: true,
+            url: 'server/web/index.php/submitcontent'
+        }, me.initialConfig);
 
         Ext.applyIf(me, {
             defaults: {
@@ -128,11 +134,15 @@ Ext.define('SubmitContent.view.SubmitContent', {
                                     itemId: 'state_id',
                                     name: 'state_id',
                                     fieldLabel: 'State',
-                                    hiddenName: 'state_id'
+                                    displayField: 'name',
+                                    hiddenName: 'state_id',
+                                    store: 'State',
+                                    valueField: 'name'
                                 },
                                 {
                                     xtype: 'textfield',
                                     columnWidth: 0.25,
+                                    id: 'postal_code',
                                     itemId: 'postal_code',
                                     name: 'postal_code',
                                     fieldLabel: 'Zip Code',
@@ -185,6 +195,7 @@ Ext.define('SubmitContent.view.SubmitContent', {
                 },
                 {
                     xtype: 'fieldset',
+                    itemId: 'contentPane',
                     title: 'Content Information',
                     items: [
                         {
@@ -207,6 +218,51 @@ Ext.define('SubmitContent.view.SubmitContent', {
                                     inputValue: 'other'
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    xtype: 'textfield',
+                    anchor: '100%',
+                    hidden: true,
+                    name: 'content_coordinator'
+                },
+                {
+                    xtype: 'textfield',
+                    anchor: '100%',
+                    hidden: true,
+                    id: 'publication_name',
+                    itemId: 'publication_name',
+                    name: 'publication_name'
+                },
+                {
+                    xtype: 'textareafield',
+                    anchor: '100%',
+                    hidden: true,
+                    name: 'uploadedFiles'
+                }
+            ],
+            dockedItems: [
+                {
+                    xtype: 'toolbar',
+                    dock: 'bottom',
+                    items: [
+                        {
+                            xtype: 'tbseparator',
+                            flex: 4
+                        },
+                        {
+                            xtype: 'button',
+                            formBind: true,
+                            flex: 1,
+                            id: 'submitcontent',
+                            itemId: 'submitcontent',
+                            text: 'Submit  Content'
+                        },
+                        {
+                            xtype: 'button',
+                            flex: 1,
+                            text: 'Clear'
                         }
                     ]
                 }

@@ -10,6 +10,7 @@
         "designer|userClassName": "OtherContent",
         "designer|userAlias": "otherContent",
         "hidden": null,
+        "id": "other_content_panel",
         "itemId": "othercontentpanel",
         "autoDestroy": false,
         "defaults": [
@@ -34,11 +35,16 @@
             "userConfig": {
                 "layout|flex": 1,
                 "designer|userClassName": "MyComboBox1",
-                "itemId": "class_publication_id",
+                "id": "publication_id",
+                "itemId": "publication_id",
                 "width": null,
+                "name": "publication_id",
                 "fieldLabel": "Choose Your Publication",
                 "labelStyle": "font-weight:bold",
-                "emptyText": "Select a Publication..."
+                "emptyText": "Select a Publication...",
+                "displayField": "name",
+                "store": "Publication",
+                "valueField": "id"
             },
             "designerId": "9176a8f3-83c9-4282-8f37-a9c95918e61f"
         },
@@ -118,8 +124,10 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyCheckbox",
+                                "name": "business_feature",
                                 "fieldLabel": null,
-                                "boxLabel": "Business Feature"
+                                "boxLabel": "Business Feature",
+                                "uncheckedValue": "off"
                             },
                             "designerId": "880742db-74e7-4440-a511-82f462c27d78"
                         },
@@ -132,8 +140,10 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyCheckbox1",
+                                "name": "family_feature",
                                 "fieldLabel": null,
-                                "boxLabel": "Family Feature"
+                                "boxLabel": "Family Feature",
+                                "uncheckedValue": "off"
                             },
                             "designerId": "b193ab3b-3044-4787-8040-05aad667c42a"
                         },
@@ -146,8 +156,10 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyCheckbox1",
+                                "name": "pet_feature",
                                 "fieldLabel": null,
-                                "boxLabel": "Pet Feature"
+                                "boxLabel": "Pet Feature",
+                                "uncheckedValue": "off"
                             },
                             "designerId": "7dc4c7af-daa0-4d7f-93d1-6c940fd91ef7"
                         },
@@ -160,8 +172,10 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyCheckbox1",
+                                "name": "neighborhood_welcome",
                                 "fieldLabel": null,
-                                "boxLabel": "Welcome to the Neighborhood Feature"
+                                "boxLabel": "Welcome to the Neighborhood Feature",
+                                "uncheckedValue": "off"
                             },
                             "designerId": "5107e21a-faa6-43f1-8f2b-f55189ff6530"
                         }
@@ -198,8 +212,10 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyCheckbox",
+                                "name": "ceo_letters",
                                 "fieldLabel": null,
-                                "boxLabel": "President & Committee Letters"
+                                "boxLabel": "President & Committee Letters",
+                                "uncheckedValue": "off"
                             },
                             "designerId": "ea04bb22-8030-4d0a-a6a2-b98009c388b7"
                         },
@@ -212,8 +228,10 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyCheckbox1",
+                                "name": "news_events",
                                 "fieldLabel": null,
-                                "boxLabel": "News & Special Dates/Events"
+                                "boxLabel": "News & Special Dates/Events",
+                                "uncheckedValue": "off"
                             },
                             "designerId": "3aaa9e36-ef51-46a8-8cba-1af5253cf777"
                         },
@@ -226,8 +244,10 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyCheckbox1",
+                                "name": "notices_reminders",
                                 "fieldLabel": null,
-                                "boxLabel": "Important Notices & Covenant Reminders"
+                                "boxLabel": "Important Notices & Covenant Reminders",
+                                "uncheckedValue": "off"
                             },
                             "designerId": "951b7dae-5029-43ff-b365-f4f6f2e7fd43"
                         }
@@ -266,8 +286,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyCheckbox",
+                        "name": "vacation",
                         "fieldLabel": null,
-                        "boxLabel": "Vacation, Wedding Photos & Announcements"
+                        "boxLabel": "Vacation, Wedding Photos & Announcements",
+                        "uncheckedValue": "off"
                     },
                     "designerId": "0a36bec5-dd00-45fb-83c3-aa005bed8785"
                 },
@@ -280,8 +302,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyCheckbox1",
+                        "name": "groups",
                         "fieldLabel": null,
-                        "boxLabel": "Subdivision Groups: Book Club, Bunko, Women's Group, etc."
+                        "boxLabel": "Subdivision Groups: Book Club, Bunko, Women's Group, etc.",
+                        "uncheckedValue": "off"
                     },
                     "designerId": "6117cccc-fb24-45ca-8c86-77049e332346"
                 },
@@ -294,8 +318,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyCheckbox1",
+                        "name": "events",
                         "fieldLabel": null,
-                        "boxLabel": "Events: School, Charities, Community & Organizations"
+                        "boxLabel": "Events: School, Charities, Community & Organizations",
+                        "uncheckedValue": "off"
                     },
                     "designerId": "74236f35-4916-4702-a7ea-e53b4fd81098"
                 },
@@ -308,8 +334,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyCheckbox1",
+                        "name": "accomplishments",
                         "fieldLabel": null,
-                        "boxLabel": "Accomplishments: School, Sports & Extracurricular Activities"
+                        "boxLabel": "Accomplishments: School, Sports & Extracurricular Activities",
+                        "uncheckedValue": "off"
                     },
                     "designerId": "f308a2a7-21b8-4ffb-80e1-55e27ff4d688"
                 },
@@ -322,8 +350,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyCheckbox1",
+                        "name": "miscellaneous",
                         "fieldLabel": null,
-                        "boxLabel": "Miscellaneous"
+                        "boxLabel": "Miscellaneous",
+                        "uncheckedValue": "off"
                     },
                     "designerId": "684497df-15ce-4c10-872a-5a9313d98fe4"
                 }
@@ -348,7 +378,7 @@
             "designerId": "c9425fb8-3e9c-4c8a-919f-413f656c9703"
         },
         {
-            "type": "filefield",
+            "type": "fieldcontainer",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -356,10 +386,16 @@
             "codeClass": null,
             "userConfig": {
                 "layout|flex": 1,
-                "designer|userClassName": "MyFileUpload",
-                "fieldLabel": "Upload File"
+                "designer|userClassName": "MyFieldContainer4",
+                "height": 10,
+                "id": "file_upload",
+                "itemId": "file_upload",
+                "margin": 10,
+                "padding": 10,
+                "width": null,
+                "fieldLabel": null
             },
-            "designerId": "662c26a0-7eda-4b32-b9a9-5f4102cae4fd"
+            "designerId": "38081790-adfd-49c8-b329-18b8217e3172"
         },
         {
             "type": "textareafield",
@@ -375,6 +411,7 @@
                 "itemId": "special_instructions",
                 "margin": 10,
                 "padding": "0 10",
+                "name": "special_instructions",
                 "fieldLabel": "Special Instructions"
             },
             "designerId": "98c581fe-0820-4860-90f2-7b13d41154f9"

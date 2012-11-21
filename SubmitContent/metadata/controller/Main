@@ -26,7 +26,7 @@
             "userConfig": {
                 "designer|userClassName": "contentForm",
                 "ref": "contentForm",
-                "selector": "contentForm",
+                "selector": "#contentForm",
                 "xtype": null
             },
             "designerId": "40f45a10-c536-4cff-80c6-e0497a4b4d77"
@@ -48,14 +48,22 @@
                     "        this.getContentForm().remove(me.otherPanel);",
                     "        this.getContentForm().add(me.classifiedPanel);",
                     "    } ",
-                    "    ",
+                    "",
+                    "    if(oldValue){",
+                    "        me.classifiedPanel = new SubmitContent.view.ClassifiedContent();",
+                    "    }",
+                    "",
                     "    this.getContentForm().doLayout();    ",
                     "} else if(field.itemId == \"other_content\"){",
-                    "",
                     "",
                     "    if(newValue){",
                     "        this.getContentForm().remove(me.classifiedPanel);",
                     "        this.getContentForm().add(me.otherPanel);",
+                    "        this.getFileUpload().add(me.fileUploadButton);",
+                    "    }",
+                    "",
+                    "    if(oldValue){",
+                    "        me.otherPanel = new SubmitContent.view.OtherContent();",
                     "    }",
                     "",
                     "    this.getContentForm().doLayout();",
@@ -76,11 +84,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "classifiedPanel",
-                "ref": "classifiedPanel",
-                "selector": "classifiedpanel"
+                "designer|userClassName": "submitButton",
+                "ref": "submitButton",
+                "selector": "submitcontent"
             },
-            "designerId": "67f1ed91-b450-474e-af99-7c5809b9e11e"
+            "designerId": "164b64bf-7f3e-4a74-bed6-80adeda2e9e7"
         },
         {
             "type": "controllerref",
@@ -90,11 +98,39 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "otherContentPanel",
-                "ref": "otherContentPanel",
-                "selector": "othercontentpanel"
+                "designer|userClassName": "publicationSelect",
+                "ref": "publicationSelect",
+                "selector": "#publication_id"
             },
-            "designerId": "63f29153-1112-4108-a2f0-f0136f4b7091"
+            "designerId": "029a56d4-12a5-4113-b0b7-58f1885b8b34"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "fileUpload",
+                "ref": "fileUpload",
+                "selector": "#file_upload"
+            },
+            "designerId": "6d96c75c-e190-4e7a-a727-0183e2e95e42"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "postalCode",
+                "ref": "postalCode",
+                "selector": "#postal_code"
+            },
+            "designerId": "eac2dd6b-a7d8-4418-b558-006102db1d43"
         },
         {
             "type": "fixedfunction",
@@ -108,7 +144,8 @@
                 "fn": "onLaunch",
                 "implHandler": [
                     "var form = Ext.getCmp('contentForm').form;",
-                    "form.findField('phone_number').vtype=\"phoneNumber\";"
+                    "form.findField('phone_number').vtype=\"phoneNumber\";",
+                    ""
                 ]
             },
             "designerId": "5976869b-d5fe-4d24-ba11-871f46f105ea"
@@ -129,10 +166,142 @@
                 "implHandler": [
                     "me = this;",
                     "me.classifiedPanel = new SubmitContent.view.ClassifiedContent();",
-                    "me.otherPanel = new SubmitContent.view.OtherContent();"
+                    "me.otherPanel = new SubmitContent.view.OtherContent();",
+                    "",
+                    "",
+                    "me.fileUploadButton = new Ext.ux.upload.Button({",
+                    "    //renderTo: Ext.getBody(),",
+                    "    text: 'Select files',",
+                    "    //singleFile: true,",
+                    "    plugins: [{",
+                    "        ptype: 'ux.upload.window',",
+                    "        title: 'Upload File(s)',",
+                    "        width: 520,",
+                    "        height: 350",
+                    "    }",
+                    "    ],",
+                    "    uploader: ",
+                    "    {",
+                    "        url: 'server/web/index.php/upload',",
+                    "        //uploadpath: '/Root/files',",
+                    "        autoStart: false,",
+                    "        max_file_size: '2020mb',",
+                    "        //drop_element: 'dragload',",
+                    "        statusQueuedText: 'Ready to upload',",
+                    "        statusUploadingText: 'Uploading ({0}%)',",
+                    "        statusFailedText: '<span style=\"color: red\">Error</span>',",
+                    "        statusDoneText: '<span style=\"color: green\">Complete</span>',",
+                    "        statusInvalidSizeText: 'File too large',",
+                    "        statusInvalidExtensionText: 'Invalid file type'",
+                    "    },",
+                    "    listeners: ",
+                    "    {",
+                    "        filesadded: function(uploader, files)\t\t\t\t\t\t\t\t",
+                    "        {",
+                    "            //console.log('filesadded');",
+                    "            return true;",
+                    "        },",
+                    "",
+                    "        beforeupload: function(uploader, file)\t\t\t\t\t\t\t\t",
+                    "        {",
+                    "            //console.log('beforeupload');\t\t\t",
+                    "        },",
+                    "",
+                    "        fileuploaded: function(uploader, file, resp)\t\t\t\t\t\t\t\t",
+                    "        {",
+                    "            var filesField = me.getContentForm().getForm().findField('uploadedFiles');",
+                    "            filesField.setRawValue(filesField.getValue()+',{\"filename\":\"'+resp.filename+'\",\"path\":\"'+resp.path+'\"}');",
+                    "        },",
+                    "",
+                    "        uploadcomplete: function(uploader, success, failed)\t\t\t\t\t\t\t\t",
+                    "        {",
+                    "            if(success){",
+                    "                Ext.Msg.alert(\"Success!\",\"Your files have been uploaded successfully!\");",
+                    "            }",
+                    "            //console.log('uploadcomplete');\t\t\t\t",
+                    "        }",
+                    "    }\t",
+                    "});"
                 ]
             },
             "designerId": "c24a2253-8f6c-4678-8eb1-59b7f8ffe20b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onSubmitButtonClick",
+                "fn": "onSubmitButtonClick",
+                "implHandler": [
+                    "this.getPostalCode().enable();",
+                    "button.up('contentForm').form.submit();"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#submitcontent"
+            },
+            "designerId": "d8fa90f4-992f-4c7c-9d04-55b74aa6b0cf"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onPostalCodeBlur",
+                "fn": "onPostalCodeBlur",
+                "implHandler": [
+                    "this.application.getPublicationStore().load(",
+                    "{",
+                    "    params:{'zip':field.getValue()},",
+                    "    callback:function(r,options,success){",
+                    "        if(!success){",
+                    "            Ext.MessageBox.alert('Zip-Code Invalid', 'We don\\'t recognize this zip.  Please try another, or stop here, and contact us directly at pete@ncpublishers.com');",
+                    "            field.markInvalid(\"Please try another zip.\");",
+                    "            //Ext.getCmp('content_radio_group').disable();",
+                    "        } else {",
+                    "            field.disable();",
+                    "            //Ext.getCmp('content_radio_group').enable();",
+                    "        }",
+                    "    }",
+                    "});"
+                ],
+                "name": "blur",
+                "scope": "me",
+                "designer|targetType": "Ext.form.field.Text",
+                "designer|controlQuery": "#postal_code"
+            },
+            "designerId": "1a35addc-8259-452c-bad5-d5f73f195664"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onPublicationChange",
+                "fn": "onPublicationChange",
+                "implHandler": [
+                    "var pub = this.application.getPublicationStore().getById(newValue);",
+                    "console.log(pub);",
+                    "me.getContentForm().getForm().findField('content_coordinator').setValue(pub.data.contact_email);",
+                    "me.getContentForm().getForm().findField('publication_name').setValue(pub.data.name);"
+                ],
+                "name": "change",
+                "scope": "me",
+                "designer|targetType": "Ext.form.field.ComboBox",
+                "designer|controlQuery": "#publication_id"
+            },
+            "designerId": "4f4f6f19-9587-4284-861e-49dd1cdd5ec6"
         }
     ]
 }

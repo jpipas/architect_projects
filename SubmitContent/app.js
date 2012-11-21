@@ -14,12 +14,32 @@
  */
 
 Ext.Loader.setConfig({
-    enabled: true
+    enabled: true,
+    paths: {
+        Ext: '.',
+        'Ext.ux': 'http://extjs.cachefly.net/extjs-4.1.1-gpl/examples/ux/',
+        'Ext.ux.upload': '/ux/upload/'
+    }
 });
 
 Ext.application({
+
+    requires: [
+        'Ext.ux.upload.Button',
+        'Ext.ux.upload.plugin.Window',
+        'Ext.grid.*',
+        'Ext.util.*',
+        'Ext.state.*',
+        'Ext.data.*'
+    ],
     models: [
-        'SubmitContent'
+        'SubmitContent',
+        'State',
+        'Publication'
+    ],
+    stores: [
+        'State',
+        'Publication'
     ],
     autoCreateViewport: true,
     name: 'SubmitContent',

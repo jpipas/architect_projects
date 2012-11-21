@@ -38,11 +38,16 @@
             "userConfig": {
                 "layout|flex": 1,
                 "designer|userClassName": "MyComboBox1",
-                "itemId": "class_publication_id",
+                "id": "publication_id",
+                "itemId": "publication_id",
                 "width": null,
+                "name": "publication_id",
                 "fieldLabel": "Choose Your Publication",
                 "labelStyle": "font-weight:bold",
-                "emptyText": "Select a Publication..."
+                "emptyText": "Select a Publication...",
+                "displayField": "name",
+                "store": "Publication",
+                "valueField": "id"
             },
             "designerId": "a9dbf9c0-98f0-4b8d-97e4-bd986d86efe4"
         },
@@ -99,8 +104,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyCheckbox",
+                        "name": "selling_item",
                         "fieldLabel": null,
-                        "boxLabel": "Selling an item (e.g. my grand piano, furniture, '96 Corolla)"
+                        "boxLabel": "Selling an item (e.g. my grand piano, furniture, '96 Corolla)",
+                        "uncheckedValue": "off"
                     },
                     "designerId": "5cf26213-b206-4eb3-a6bf-32abd10df5bc"
                 },
@@ -113,8 +120,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyCheckbox1",
+                        "name": "posting_job",
                         "fieldLabel": null,
-                        "boxLabel": "Posting a job (e.g. need help with yard work, shovelling snow, babysitting)"
+                        "boxLabel": "Posting a job (e.g. need help with yard work, shovelling snow, babysitting)",
+                        "uncheckedValue": "off"
                     },
                     "designerId": "63b0107c-a672-413d-bdd6-eae3d7b122db"
                 },
@@ -127,8 +136,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyCheckbox1",
+                        "name": "youth_classifieds",
                         "fieldLabel": null,
-                        "boxLabel": "Youth classifieds (e.g. looking for work: tutoring, raking leaves, pet-walking after school)"
+                        "boxLabel": "Youth classifieds (e.g. looking for work: tutoring, raking leaves, pet-walking after school)",
+                        "uncheckedValue": "off"
                     },
                     "designerId": "a3200be8-f3ab-48a5-a9dc-89144b775b8b"
                 }
@@ -166,8 +177,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyCheckbox",
+                        "name": "job_14",
                         "fieldLabel": null,
-                        "boxLabel": "Posting a job for teens (14+)"
+                        "boxLabel": "Posting a job for teens (14+)",
+                        "uncheckedValue": "off"
                     },
                     "designerId": "c6bce36e-bb58-463e-ac87-57ae1ca0b5dd"
                 },
@@ -180,8 +193,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyCheckbox1",
+                        "name": "job_18",
                         "fieldLabel": null,
-                        "boxLabel": "Posting a job for teens (18+)"
+                        "boxLabel": "Posting a job for teens (18+)",
+                        "uncheckedValue": "off"
                     },
                     "designerId": "d7a6553a-9324-4ff6-b88a-488a212a2340"
                 }
@@ -218,6 +233,7 @@
                 "itemId": "classified_text",
                 "margin": 10,
                 "padding": "0 10",
+                "name": "classified_text",
                 "fieldLabel": "Classified Ad(s)"
             },
             "designerId": "2ea1b1b3-56ee-468f-a1bb-1d685b39a292"

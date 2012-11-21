@@ -41,10 +41,15 @@ Ext.define('SubmitContent.view.ClassifiedContent', {
                 {
                     xtype: 'combobox',
                     flex: 1,
-                    itemId: 'class_publication_id',
+                    id: 'publication_id',
+                    itemId: 'publication_id',
+                    name: 'publication_id',
                     fieldLabel: 'Choose Your Publication',
                     labelStyle: 'font-weight:bold',
-                    emptyText: 'Select a Publication...'
+                    emptyText: 'Select a Publication...',
+                    displayField: 'name',
+                    store: 'Publication',
+                    valueField: 'id'
                 },
                 {
                     xtype: 'label',
@@ -67,15 +72,21 @@ Ext.define('SubmitContent.view.ClassifiedContent', {
                     items: [
                         {
                             xtype: 'checkboxfield',
-                            boxLabel: 'Selling an item (e.g. my grand piano, furniture, \'96 Corolla)'
+                            name: 'selling_item',
+                            boxLabel: 'Selling an item (e.g. my grand piano, furniture, \'96 Corolla)',
+                            uncheckedValue: 'off'
                         },
                         {
                             xtype: 'checkboxfield',
-                            boxLabel: 'Posting a job (e.g. need help with yard work, shovelling snow, babysitting)'
+                            name: 'posting_job',
+                            boxLabel: 'Posting a job (e.g. need help with yard work, shovelling snow, babysitting)',
+                            uncheckedValue: 'off'
                         },
                         {
                             xtype: 'checkboxfield',
-                            boxLabel: 'Youth classifieds (e.g. looking for work: tutoring, raking leaves, pet-walking after school)'
+                            name: 'youth_classifieds',
+                            boxLabel: 'Youth classifieds (e.g. looking for work: tutoring, raking leaves, pet-walking after school)',
+                            uncheckedValue: 'off'
                         }
                     ]
                 },
@@ -92,11 +103,15 @@ Ext.define('SubmitContent.view.ClassifiedContent', {
                     items: [
                         {
                             xtype: 'checkboxfield',
-                            boxLabel: 'Posting a job for teens (14+)'
+                            name: 'job_14',
+                            boxLabel: 'Posting a job for teens (14+)',
+                            uncheckedValue: 'off'
                         },
                         {
                             xtype: 'checkboxfield',
-                            boxLabel: 'Posting a job for teens (18+)'
+                            name: 'job_18',
+                            boxLabel: 'Posting a job for teens (18+)',
+                            uncheckedValue: 'off'
                         }
                     ]
                 },
@@ -113,6 +128,7 @@ Ext.define('SubmitContent.view.ClassifiedContent', {
                     itemId: 'classified_text',
                     margin: 10,
                     padding: '0 10',
+                    name: 'classified_text',
                     fieldLabel: 'Classified Ad(s)'
                 }
             ]

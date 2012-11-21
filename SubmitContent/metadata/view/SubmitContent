@@ -15,7 +15,6 @@
         "minHeight": 500,
         "width": 600,
         "autoScroll": true,
-        "autoDestroy": false,
         "defaults": [
             "{",
             "    labelAlign:'top',",
@@ -23,7 +22,9 @@
             "}"
         ],
         "bodyPadding": 10,
-        "title": "Submit New Content"
+        "title": "Submit New Content",
+        "standardSubmit": true,
+        "url": "server/web/index.php/submitcontent"
     },
     "id": "ExtBox1-ext-gen1902",
     "designerId": "cd53e325-5369-4f9b-b827-0c55ff9b25e2",
@@ -207,7 +208,10 @@
                                 "itemId": "state_id",
                                 "name": "state_id",
                                 "fieldLabel": "State",
-                                "hiddenName": "state_id"
+                                "displayField": "name",
+                                "hiddenName": "state_id",
+                                "store": "State",
+                                "valueField": "name"
                             },
                             "designerId": "b8175416-3a2a-41dd-9545-4a7db105c138"
                         },
@@ -221,6 +225,7 @@
                             "userConfig": {
                                 "layout|columnWidth": 0.25,
                                 "designer|userClassName": "MyTextField4",
+                                "id": "postal_code",
                                 "itemId": "postal_code",
                                 "name": "postal_code",
                                 "fieldLabel": "Zip Code",
@@ -314,6 +319,7 @@
             "userConfig": {
                 "designer|userClassName": "MyFieldSet1",
                 "designer|displayName": "ContentInformation",
+                "itemId": "contentPane",
                 "title": "Content Information"
             },
             "designerId": "6cacc793-cc18-4f04-bff3-7437098af7f5",
@@ -369,6 +375,117 @@
                             "designerId": "481810ed-a6da-4119-8354-1e34b8ad2368"
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "type": "textfield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "designer|userClassName": "MyTextField8",
+                "hidden": true,
+                "name": "content_coordinator",
+                "fieldLabel": null
+            },
+            "designerId": "9f82b400-2dec-4bad-8205-84c90f6655e5"
+        },
+        {
+            "type": "textfield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "designer|userClassName": "MyTextField9",
+                "hidden": true,
+                "id": "publication_name",
+                "itemId": "publication_name",
+                "name": "publication_name",
+                "fieldLabel": null
+            },
+            "designerId": "a524c319-7f66-4d82-9b68-17027c819e3f"
+        },
+        {
+            "type": "textareafield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": "100%",
+                "designer|userClassName": "MyTextArea2",
+                "hidden": true,
+                "name": "uploadedFiles",
+                "fieldLabel": null
+            },
+            "designerId": "85c8ab98-a890-4da9-a504-1b283ef498ef"
+        },
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "bottom",
+                "designer|userClassName": "MyToolbar",
+                "designer|displayName": "Buttons"
+            },
+            "designerId": "6d36967c-70a8-46c8-8577-30e891574121",
+            "cn": [
+                {
+                    "type": "tbseparator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 4,
+                        "designer|userClassName": "MySeparator"
+                    },
+                    "designerId": "104b1b74-6911-42a4-8eb5-5d6dc9a0f0be"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "formBind": true,
+                        "layout|flex": 1,
+                        "designer|userClassName": "MyButton",
+                        "border": null,
+                        "id": "submitcontent",
+                        "itemId": "submitcontent",
+                        "text": "Submit  Content"
+                    },
+                    "designerId": "965a4dc9-8bdc-4a32-bb69-4483096f8124"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "designer|userClassName": "MyButton1",
+                        "text": "Clear"
+                    },
+                    "designerId": "ea8966b8-61ed-4fb1-8762-6fa1dd53f8fa"
                 }
             ]
         }

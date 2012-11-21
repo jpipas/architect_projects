@@ -1,0 +1,47 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "State",
+        "autoLoad": true,
+        "storeId": "State",
+        "model": "State"
+    },
+    "id": "ExtBox1-ext-gen11892",
+    "designerId": "5bbb9893-ba8f-48c4-ad76-4a7b750ce8e1",
+    "cn": [
+        {
+            "type": "jsonpproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyJsonPProxy",
+                "url": "http://ncpublishers.jeffpipas.com/admin.php/state/get"
+            },
+            "designerId": "620ec521-0c12-4bf6-a2a6-e44dc5af0347",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader",
+                        "idProperty": "id",
+                        "root": "states"
+                    },
+                    "designerId": "b1673cce-dcd1-4271-8e81-ca894f6c3b06"
+                }
+            ]
+        }
+    ]
+}
