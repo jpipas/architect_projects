@@ -78,7 +78,8 @@ Ext.define('SubmitContent.view.SubmitContent', {
                                     name: 'first_name',
                                     fieldLabel: 'First Name',
                                     labelAlign: 'top',
-                                    labelStyle: 'color:#FF7F44'
+                                    labelStyle: 'color:#FF7F44',
+                                    allowBlank: false
                                 },
                                 {
                                     xtype: 'textfield',
@@ -87,7 +88,8 @@ Ext.define('SubmitContent.view.SubmitContent', {
                                     name: 'last_name',
                                     fieldLabel: 'Last Name',
                                     labelAlign: 'top',
-                                    labelStyle: 'color:#FF7F44'
+                                    labelStyle: 'color:#FF7F44',
+                                    allowBlank: false
                                 }
                             ]
                         },
@@ -147,7 +149,10 @@ Ext.define('SubmitContent.view.SubmitContent', {
                                     name: 'postal_code',
                                     fieldLabel: 'Zip Code',
                                     labelAlign: 'top',
-                                    labelStyle: 'color:#FF7F44'
+                                    labelStyle: 'color:#FF7F44',
+                                    allowBlank: false,
+                                    maxLength: 5,
+                                    minLength: 5
                                 }
                             ]
                         },
@@ -176,6 +181,7 @@ Ext.define('SubmitContent.view.SubmitContent', {
                                     fieldLabel: 'Email Address',
                                     labelAlign: 'top',
                                     labelStyle: 'color:#FF7F44',
+                                    allowBlank: false,
                                     vtype: 'email',
                                     vtypeText: 'Invalid email.  Please put in the form of user@domain.com'
                                 },
@@ -187,7 +193,8 @@ Ext.define('SubmitContent.view.SubmitContent', {
                                     name: 'phone_number',
                                     fieldLabel: 'Phone Number',
                                     labelAlign: 'top',
-                                    labelStyle: 'color:#FF7F44'
+                                    labelStyle: 'color:#FF7F44',
+                                    allowBlank: false
                                 }
                             ]
                         }
@@ -200,6 +207,8 @@ Ext.define('SubmitContent.view.SubmitContent', {
                     items: [
                         {
                             xtype: 'radiogroup',
+                            disabled: true,
+                            id: 'contentType',
                             fieldLabel: 'Type of Content',
                             allowBlank: false,
                             items: [
@@ -253,8 +262,8 @@ Ext.define('SubmitContent.view.SubmitContent', {
                         },
                         {
                             xtype: 'button',
-                            formBind: true,
                             flex: 1,
+                            formBind: true,
                             id: 'submitcontent',
                             itemId: 'submitcontent',
                             text: 'Submit  Content'

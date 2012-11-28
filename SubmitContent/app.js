@@ -38,8 +38,8 @@ Ext.application({
         'Publication'
     ],
     stores: [
-        'State',
-        'Publication'
+        'StateStore',
+        'PublicationStore'
     ],
     autoCreateViewport: true,
     name: 'SubmitContent',

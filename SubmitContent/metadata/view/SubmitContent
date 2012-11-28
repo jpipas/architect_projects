@@ -95,7 +95,9 @@
                                 "name": "first_name",
                                 "fieldLabel": "First Name",
                                 "labelAlign": "top",
-                                "labelStyle": "color:#FF7F44"
+                                "labelStyle": "color:#FF7F44",
+                                "allowBlank": false,
+                                "vtype": null
                             },
                             "designerId": "d3201514-314c-4415-bc3c-7ec59c8c776e"
                         },
@@ -113,7 +115,8 @@
                                 "name": "last_name",
                                 "fieldLabel": "Last Name",
                                 "labelAlign": "top",
-                                "labelStyle": "color:#FF7F44"
+                                "labelStyle": "color:#FF7F44",
+                                "allowBlank": false
                             },
                             "designerId": "0219f135-7979-43b7-9b0e-f9c5bebf8d86"
                         }
@@ -230,7 +233,10 @@
                                 "name": "postal_code",
                                 "fieldLabel": "Zip Code",
                                 "labelAlign": "top",
-                                "labelStyle": "color:#FF7F44"
+                                "labelStyle": "color:#FF7F44",
+                                "allowBlank": false,
+                                "maxLength": 5,
+                                "minLength": 5
                             },
                             "designerId": "f0497a4c-9144-4df1-9e45-b2451db85235"
                         }
@@ -281,6 +287,7 @@
                                 "fieldLabel": "Email Address",
                                 "labelAlign": "top",
                                 "labelStyle": "color:#FF7F44",
+                                "allowBlank": false,
                                 "vtype": "email",
                                 "vtypeText": "Invalid email.  Please put in the form of user@domain.com"
                             },
@@ -301,7 +308,8 @@
                                 "name": "phone_number",
                                 "fieldLabel": "Phone Number",
                                 "labelAlign": "top",
-                                "labelStyle": "color:#FF7F44"
+                                "labelStyle": "color:#FF7F44",
+                                "allowBlank": false
                             },
                             "designerId": "872b15b9-966d-4c47-8092-1e98ade5aad5"
                         }
@@ -335,6 +343,8 @@
                         "formBind": null,
                         "designer|userClassName": "MyRadioGroup",
                         "designer|displayName": "typeOfConent",
+                        "disabled": true,
+                        "id": "contentType",
                         "fieldLabel": "Type of Content",
                         "allowBlank": false
                     },
@@ -463,8 +473,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "formBind": true,
                         "layout|flex": 1,
+                        "formBind": true,
                         "designer|userClassName": "MyButton",
                         "border": null,
                         "id": "submitcontent",
