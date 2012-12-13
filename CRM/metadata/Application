@@ -62,5 +62,24 @@
         ]
     },
     "id": "ExtBox1-ext-gen15782",
-    "designerId": "application"
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "launch",
+                "fn": "launch",
+                "implHandler": [
+                    "// can now be used to reference the application from anywhere!!",
+                    "_myAppGlobal = this;"
+                ]
+            },
+            "designerId": "2ace21d9-e3ff-46f8-92bd-70e65565f632"
+        }
+    ]
 }

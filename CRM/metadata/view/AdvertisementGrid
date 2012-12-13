@@ -42,7 +42,7 @@
             "userConfig": {
                 "dock": "top",
                 "designer|userClassName": "MyToolbar10",
-                "designer|displayName": "AdvertisementToolbar"
+                "designer|displayName": "FormToolBar"
             },
             "designerId": "ef7cb923-e3e5-41c2-ac40-433b247586c5",
             "cn": [
@@ -55,12 +55,34 @@
                     "codeClass": null,
                     "userConfig": {
                         "layout|flex": null,
-                        "designer|userClassName": "MyButton7",
-                        "itemId": "newAdvertisement",
+                        "designer|userClassName": "MyButton11",
+                        "id": "newAdButton",
+                        "itemId": "newAdvertisementButton",
                         "iconCls": "ui-silk ui-silk-layout-add",
                         "text": "New Advertisement"
                     },
-                    "designerId": "46c3f1d2-02d1-472d-8f14-e925ae1b62e3"
+                    "designerId": "d3beeab1-aa39-4094-beb8-26d79aedde34",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onNewAdButtonClick",
+                                "fn": "onNewAdButtonClick",
+                                "implHandler": [
+                                    "var clientRecordCtrl = JavisERP.app.getController('clientController');",
+                                    "clientRecordCtrl.fireEvent('addAdvertisement',button);"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "designerId": "dae3b1a2-4633-4ae8-b181-938389b6cf8f"
+                        }
+                    ]
                 }
             ]
         },

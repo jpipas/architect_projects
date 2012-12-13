@@ -43,6 +43,7 @@ Ext.define('SubmitContent.view.OtherContent', {
                     name: 'publication_id',
                     fieldLabel: 'Choose Your Publication',
                     labelStyle: 'font-weight:bold',
+                    allowBlank: false,
                     emptyText: 'Select a Publication...',
                     displayField: 'name',
                     store: 'Publication',

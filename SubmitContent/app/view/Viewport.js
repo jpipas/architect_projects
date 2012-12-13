@@ -14,10 +14,10 @@
  */
 
 Ext.define('SubmitContent.view.Viewport', {
-    extend: 'SubmitContent.view.SubmitContent',
+    extend: 'SubmitContent.view.hrw3',
     renderTo: Ext.getBody(),
     requires: [
-        'SubmitContent.view.SubmitContent',
+        'SubmitContent.view.hrw3',
         'SubmitContent.view.ClassifiedContent',
         'SubmitContent.view.OtherContent'
     ]

@@ -65,18 +65,28 @@ Ext.define('JavisERP.view.AdvertisementWindow', {
                                 {
                                     xtype: 'fieldcontainer',
                                     columnWidth: 0.5,
+                                    id: 'adform_column1',
                                     defaults: {
                                         padding: '5px 0px 0px 0px'
                                     },
                                     layout: {
                                         type: 'column'
                                     },
-                                    labelAlign: 'right'
+                                    labelAlign: 'right',
+                                    items: [
+                                        {
+                                            xtype: 'combobox',
+                                            name: 'client',
+                                            fieldLabel: 'Client',
+                                            displayField: 'name',
+                                            store: 'ClientStore',
+                                            valueField: 'id'
+                                        }
+                                    ]
                                 },
                                 {
                                     xtype: 'fieldcontainer',
                                     columnWidth: 0.5,
-                                    border: 1,
                                     defaults: {
                                         padding: '5px 0px'
                                     },
@@ -87,6 +97,18 @@ Ext.define('JavisERP.view.AdvertisementWindow', {
                                     labelAlign: 'right',
                                     items: [
                                         {
+                                            xtype: 'combobox',
+                                            name: 'ad_type_id',
+                                            fieldLabel: 'Ad Type',
+                                            store: 'AdvertisementStore'
+                                        },
+                                        {
+                                            xtype: 'combobox',
+                                            name: 'ad_size_id',
+                                            fieldLabel: 'Ad Size',
+                                            store: 'ActivityTypeStore'
+                                        },
+                                        {
                                             xtype: 'hiddenfield',
                                             name: 'client_id'
                                         },
@@ -94,16 +116,6 @@ Ext.define('JavisERP.view.AdvertisementWindow', {
                                             xtype: 'hiddenfield',
                                             name: 'contract_id',
                                             fieldLabel: 'Label'
-                                        },
-                                        {
-                                            xtype: 'combobox',
-                                            name: 'ad_type_id',
-                                            fieldLabel: 'Ad Type'
-                                        },
-                                        {
-                                            xtype: 'combobox',
-                                            name: 'ad_size_id',
-                                            fieldLabel: 'Ad Size'
                                         }
                                     ]
                                 }

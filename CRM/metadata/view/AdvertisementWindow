@@ -124,6 +124,7 @@
                                 "layout|columnWidth": 0.5,
                                 "designer|userClassName": "MyFieldContainer5",
                                 "designer|displayName": "Column1",
+                                "id": "adform_column1",
                                 "defaults": [
                                     "{padding:'5px 0px 0px 0px'}"
                                 ],
@@ -131,7 +132,26 @@
                                 "fieldLabel": null,
                                 "labelAlign": "right"
                             },
-                            "designerId": "d9074593-ca65-4929-8827-54525a9d9317"
+                            "designerId": "d9074593-ca65-4929-8827-54525a9d9317",
+                            "cn": [
+                                {
+                                    "type": "combobox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyComboBox7",
+                                        "name": "client",
+                                        "fieldLabel": "Client",
+                                        "displayField": "name",
+                                        "store": "ClientStore",
+                                        "valueField": "id"
+                                    },
+                                    "designerId": "24fa23e6-85f2-46b5-bce8-5ce2a109c4c5"
+                                }
+                            ]
                         },
                         {
                             "type": "fieldcontainer",
@@ -144,7 +164,7 @@
                                 "layout|columnWidth": 0.5,
                                 "designer|userClassName": "MyFieldContainer6",
                                 "designer|displayName": "Column2",
-                                "border": 1,
+                                "border": null,
                                 "padding": null,
                                 "width": null,
                                 "defaults": [
@@ -157,6 +177,36 @@
                             },
                             "designerId": "fd1968c8-f4f7-4930-98a6-7c7f94c22fe7",
                             "cn": [
+                                {
+                                    "type": "combobox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyComboBox5",
+                                        "name": "ad_type_id",
+                                        "fieldLabel": "Ad Type",
+                                        "store": "AdvertisementStore"
+                                    },
+                                    "designerId": "622110df-625f-4e3b-aca3-cfa69aae0a68"
+                                },
+                                {
+                                    "type": "combobox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyComboBox6",
+                                        "name": "ad_size_id",
+                                        "fieldLabel": "Ad Size",
+                                        "store": "ActivityTypeStore"
+                                    },
+                                    "designerId": "dce49764-b8ef-4cb9-9fb4-a581c008e050"
+                                },
                                 {
                                     "type": "hiddenfield",
                                     "reference": {
@@ -184,34 +234,6 @@
                                         "fieldLabel": "Label"
                                     },
                                     "designerId": "66ee7d0a-510e-4b4f-99ea-55d33bcb2beb"
-                                },
-                                {
-                                    "type": "combobox",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "MyComboBox5",
-                                        "name": "ad_type_id",
-                                        "fieldLabel": "Ad Type"
-                                    },
-                                    "designerId": "622110df-625f-4e3b-aca3-cfa69aae0a68"
-                                },
-                                {
-                                    "type": "combobox",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "MyComboBox6",
-                                        "name": "ad_size_id",
-                                        "fieldLabel": "Ad Size"
-                                    },
-                                    "designerId": "dce49764-b8ef-4cb9-9fb4-a581c008e050"
                                 }
                             ]
                         }

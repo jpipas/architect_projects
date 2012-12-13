@@ -15,6 +15,9 @@
 
 Ext.define('JavisERP.controller.ClientController', {
     extend: 'Ext.app.Controller',
+    alias: 'controller.clientController',
+
+    id: 'clientcontroller',
 
     refs: [
         {
@@ -56,6 +59,10 @@ Ext.define('JavisERP.controller.ClientController', {
         {
             ref: 'contractGrid',
             selector: 'contractgrid'
+        },
+        {
+            ref: 'advertisementButton',
+            selector: 'clientrecord toolbar button[itemId=newAdvertisementButton]'
         }
     ],
 
@@ -69,12 +76,14 @@ Ext.define('JavisERP.controller.ClientController', {
 
     onNewContractClick: function(target) {
         this.application.fireEvent("addContract",target);
+
     },
 
     init: function(application) {
         me = this;
         me.contactWindow = null;
         me.contractWindow = null;
+        me.adWindow = null;
 
         me.application.on({
             clientRecordChange: me.changeClientRecord,
@@ -91,6 +100,11 @@ Ext.define('JavisERP.controller.ClientController', {
             scope:me
         });
 
+        me.application.on({
+            addAdvertisement: me.addAdvertisement,
+            scope:me
+        });
+
         this.control({
             "clientrecord toolbar button[itemId=newcontact]": {
                 click: this.onNewContactClick
@@ -102,18 +116,6 @@ Ext.define('JavisERP.controller.ClientController', {
                 click: this.onNewContractClick
             }
         });
-    },
-
-    addContact: function() {
-        if(!me.contactWindow){
-            me.contactWindow = new JavisERP.view.ContactWindow();
-            console.log("Need a new window!");
-        }
-        if(me.contactWindow.isVisible()){
-            me.contactWindow.hide();
-        } else {
-            me.contactWindow.show();
-        }
     },
 
     changeClientRecord: function(grid, col, row, record) {
@@ -128,12 +130,39 @@ Ext.define('JavisERP.controller.ClientController', {
     addContract: function() {
         if(!me.contractWindow){
             me.contractWindow = new JavisERP.view.ContractWindow();
-            console.log("Need a new window!");
+            console.log("Creating Contract Window");
+            //me.adWindow = new JavisERP.view.AdvertisementWindow();
+            //console.log(this.getAdvertisementButton());
+            this.getAdvertisementButton().on("click",addAdvertisement);
         }
         if(me.contractWindow.isVisible(true)){
             me.contractWindow.hide();
         } else {
             me.contractWindow.show();
+        }
+    },
+
+    addContact: function() {
+        if(!me.contactWindow){
+            me.contactWindow = new JavisERP.view.ContactWindow();
+            console.log("Need a new window!");
+        }
+        if(me.contactWindow.isVisible()){
+            me.contactWindow.hide();
+        } else {
+            me.contactWindow.show();
+        }
+    },
+
+    addAdvertisement: function() {
+        console.log("HERE!");
+        if(!me.adWindow){
+            me.adWindow = new JavisERP.view.AdvertisementWindow();
+        }
+        if(me.adWindow.isVisible()){
+            me.adWindow.hide();
+        } else {
+            me.adWindow.show();
         }
     }
 

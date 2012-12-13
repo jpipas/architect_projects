@@ -17,12 +17,12 @@
     "topInstanceFileMap": {
         "cd53e325-5369-4f9b-b827-0c55ff9b25e2": {
             "paths": [
-                "metadata/view/SubmitContent",
-                "app/view/override/SubmitContent.js",
-                "app/view/SubmitContent.js",
+                "metadata/view/hrw3",
+                "app/view/override/hrw3.js",
+                "app/view/hrw3.js",
                 "app/view/Viewport.js"
             ],
-            "className": "SubmitContent"
+            "className": "hrw3"
         },
         "26ac63e0-2077-48c3-994e-6ecaed20e1bb": {
             "paths": [

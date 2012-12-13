@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "url": "/app/view/ComboFieldBox.js"
+        "url": "/app/view/PortletPanel.js"
     },
-    "id": "ExtBox1-ext-gen3588",
-    "designerId": "ede89c55-68aa-4ff6-a7d7-f3d423d83152"
+    "id": "ExtBox1-ext-gen18252",
+    "designerId": "80dd2673-81d2-46ae-adae-0d6c3bf136c6"
 }

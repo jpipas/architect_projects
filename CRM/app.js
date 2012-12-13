@@ -71,5 +71,11 @@ Ext.application({
         'RecordNavController',
         'ClientController',
         'Portal'
-    ]
+    ],
+
+    launch: function() {
+        // can now be used to reference the application from anywhere!!
+        _myAppGlobal = this;
+    }
+
 });

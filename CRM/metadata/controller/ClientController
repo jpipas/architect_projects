@@ -6,10 +6,19 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "ClientController"
+        "id": "clientcontroller",
+        "designer|userClassName": "ClientController",
+        "designer|userAlias": "clientController"
     },
     "id": "ExtBox1-ext-gen6749",
     "designerId": "e4f5c676-6a36-4f1c-9c92-aa1296a7b78b",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "id",
+            "type": "string"
+        }
+    ],
     "cn": [
         {
             "type": "controlleraction",
@@ -50,6 +59,7 @@
                     "me = this;",
                     "me.contactWindow = null;",
                     "me.contractWindow = null;",
+                    "me.adWindow = null;",
                     "",
                     "me.application.on({",
                     "    clientRecordChange: me.changeClientRecord,",
@@ -63,6 +73,11 @@
                     "",
                     "me.application.on({",
                     "    addContract: me.addContract,",
+                    "    scope:me",
+                    "});",
+                    "",
+                    "me.application.on({",
+                    "    addAdvertisement: me.addAdvertisement,",
                     "    scope:me",
                     "});"
                 ]
@@ -100,6 +115,60 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "changeClientRecord",
+                "fn": "changeClientRecord",
+                "designer|params": [
+                    "grid",
+                    "col",
+                    "row",
+                    "record"
+                ],
+                "implHandler": [
+                    "this.getContentCards().getLayout().setActiveItem('ClientRecord');",
+                    "var form = this.getClientRecord().getForm();",
+                    "form.loadRecord(this.getClientGrid().getStore().getAt(row));",
+                    "var contacts = this.getContactGrid().getStore().load();",
+                    "var publications = this.getPublicationGrid().getStore().load();",
+                    "var contracts = this.getContractGrid().getStore().load();"
+                ]
+            },
+            "designerId": "9d3c82ab-4b41-47cc-b83a-71ef624c86a2"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "addContract",
+                "fn": "addContract",
+                "implHandler": [
+                    "if(!me.contractWindow){",
+                    "    me.contractWindow = new JavisERP.view.ContractWindow();",
+                    "    console.log(\"Creating Contract Window\");",
+                    "    //me.adWindow = new JavisERP.view.AdvertisementWindow();",
+                    "    //console.log(this.getAdvertisementButton());",
+                    "    this.getAdvertisementButton().on(\"click\",addAdvertisement);",
+                    "}",
+                    "if(me.contractWindow.isVisible(true)){",
+                    "    me.contractWindow.hide();",
+                    "} else {",
+                    "    me.contractWindow.show();",
+                    "}"
+                ]
+            },
+            "designerId": "a7a629da-12ea-4d84-9307-e7583e23d2e8"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
                 "designer|userClassName": "addContact",
                 "fn": "addContact",
                 "implHandler": [
@@ -124,24 +193,21 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "changeClientRecord",
-                "fn": "changeClientRecord",
-                "designer|params": [
-                    "grid",
-                    "col",
-                    "row",
-                    "record"
-                ],
+                "designer|userClassName": "addAdvertisement",
+                "fn": "addAdvertisement",
                 "implHandler": [
-                    "this.getContentCards().getLayout().setActiveItem('ClientRecord');",
-                    "var form = this.getClientRecord().getForm();",
-                    "form.loadRecord(this.getClientGrid().getStore().getAt(row));",
-                    "var contacts = this.getContactGrid().getStore().load();",
-                    "var publications = this.getPublicationGrid().getStore().load();",
-                    "var contracts = this.getContractGrid().getStore().load();"
+                    "console.log(\"HERE!\");",
+                    "if(!me.adWindow){",
+                    "    me.adWindow = new JavisERP.view.AdvertisementWindow();",
+                    "}",
+                    "if(me.adWindow.isVisible()){",
+                    "    me.adWindow.hide();",
+                    "} else {",
+                    "    me.adWindow.show();",
+                    "}"
                 ]
             },
-            "designerId": "9d3c82ab-4b41-47cc-b83a-71ef624c86a2"
+            "designerId": "98addf6d-4a5d-45cd-b43f-9622b91588f9"
         },
         {
             "type": "controllerref",
@@ -256,30 +322,6 @@
             "designerId": "76089185-3b0f-48df-9519-db3cc2d27d93"
         },
         {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "addContract",
-                "fn": "addContract",
-                "implHandler": [
-                    "if(!me.contractWindow){",
-                    "    me.contractWindow = new JavisERP.view.ContractWindow();",
-                    "    console.log(\"Need a new window!\");",
-                    "}",
-                    "if(me.contractWindow.isVisible(true)){",
-                    "    me.contractWindow.hide();",
-                    "} else {",
-                    "    me.contractWindow.show();",
-                    "}"
-                ]
-            },
-            "designerId": "a7a629da-12ea-4d84-9307-e7583e23d2e8"
-        },
-        {
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -321,13 +363,29 @@
                     "target"
                 ],
                 "implHandler": [
-                    "this.application.fireEvent(\"addContract\",target);"
+                    "this.application.fireEvent(\"addContract\",target);",
+                    ""
                 ],
                 "name": "click",
                 "scope": "me",
                 "designer|controlQuery": "clientrecord toolbar button[itemId=newcontract]"
             },
             "designerId": "a692a5e7-edab-42e8-a3ec-fe17adc90c70"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "advertisementButton",
+                "designer|displayName": "newAdButton",
+                "ref": "advertisementButton",
+                "selector": "clientrecord toolbar button[itemId=newAdvertisementButton]"
+            },
+            "designerId": "61907bfc-24e3-4f8a-bb8d-d5b2adc90880"
         }
     ]
 }

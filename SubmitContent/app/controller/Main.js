@@ -17,7 +17,7 @@ Ext.define('SubmitContent.controller.Main', {
     extend: 'Ext.app.Controller',
 
     views: [
-        'SubmitContent',
+        'hrw3',
         'ClassifiedContent',
         'OtherContent'
     ],
@@ -98,9 +98,23 @@ Ext.define('SubmitContent.controller.Main', {
 
     onPublicationChange: function(field, newValue, oldValue, options) {
         var pub = this.application.getPublicationStore().getById(newValue);
-        console.log(pub);
+        //console.log(pub);
         me.getContentForm().getForm().findField('content_coordinator').setValue(pub.data.contact_email);
         me.getContentForm().getForm().findField('publication_name').setValue(pub.data.name);
+    },
+
+    onClearFormButtonClick: function(button, e, options) {
+        button.up('contentForm').form.reset();
+        this.getPostalCode().enable();
+        try{
+            this.getContentForm().remove(me.classifiedPanel);
+            this.getContentForm().remove(me.otherPanel);
+            Ext.getCmp('contentType').disable();
+        } catch(err) {
+            // do nothing
+            Ext.getCmp('contentType').enable();
+        }
+
     },
 
     onLaunch: function() {
@@ -181,6 +195,9 @@ Ext.define('SubmitContent.controller.Main', {
             },
             "#publication_id": {
                 change: this.onPublicationChange
+            },
+            "button": {
+                click: this.onClearFormButtonClick
             }
         });
     }

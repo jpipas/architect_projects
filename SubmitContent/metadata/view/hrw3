@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "SubmitContent",
+        "designer|userClassName": "hrw3",
         "designer|userAlias": "contentForm",
         "designer|initialView": true,
-        "height": 250,
+        "height": 600,
         "id": "contentForm",
         "itemId": "contentForm",
         "minHeight": 500,
@@ -214,6 +214,7 @@
                                 "displayField": "name",
                                 "hiddenName": "state_id",
                                 "store": "State",
+                                "typeAhead": true,
                                 "valueField": "name"
                             },
                             "designerId": "b8175416-3a2a-41dd-9545-4a7db105c138"
@@ -333,6 +334,20 @@
             "designerId": "6cacc793-cc18-4f04-bff3-7437098af7f5",
             "cn": [
                 {
+                    "type": "label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyLabel4",
+                        "margin": null,
+                        "text": "Please select the type of content and then scroll down and continue filling out this form."
+                    },
+                    "designerId": "e3643609-cb65-493d-8d7a-68e0b7ad0d45"
+                },
+                {
                     "type": "radiogroup",
                     "reference": {
                         "name": "items",
@@ -345,6 +360,7 @@
                         "designer|displayName": "typeOfConent",
                         "disabled": true,
                         "id": "contentType",
+                        "margin": "10 0",
                         "fieldLabel": "Type of Content",
                         "allowBlank": false
                     },
@@ -493,6 +509,8 @@
                     "userConfig": {
                         "layout|flex": 1,
                         "designer|userClassName": "MyButton1",
+                        "id": "clearForm",
+                        "itemId": "clearForm",
                         "text": "Clear"
                     },
                     "designerId": "ea8966b8-61ed-4fb1-8762-6fa1dd53f8fa"
