@@ -15,7 +15,8 @@
         "layout": "fit",
         "closeAction": "hide",
         "title": "Contract",
-        "maximized": false
+        "maximized": false,
+        "modal": true
     },
     "id": "ExtBox1-ext-gen4042",
     "designerId": "6b459518-e2c7-4191-b857-9ca840d4b7e0",

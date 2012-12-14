@@ -59,10 +59,6 @@ Ext.define('JavisERP.controller.ClientController', {
         {
             ref: 'contractGrid',
             selector: 'contractgrid'
-        },
-        {
-            ref: 'advertisementButton',
-            selector: 'clientrecord toolbar button[itemId=newAdvertisementButton]'
         }
     ],
 
@@ -130,10 +126,6 @@ Ext.define('JavisERP.controller.ClientController', {
     addContract: function() {
         if(!me.contractWindow){
             me.contractWindow = new JavisERP.view.ContractWindow();
-            console.log("Creating Contract Window");
-            //me.adWindow = new JavisERP.view.AdvertisementWindow();
-            //console.log(this.getAdvertisementButton());
-            this.getAdvertisementButton().on("click",addAdvertisement);
         }
         if(me.contractWindow.isVisible(true)){
             me.contractWindow.hide();

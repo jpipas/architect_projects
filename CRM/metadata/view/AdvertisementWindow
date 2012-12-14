@@ -10,7 +10,8 @@
         "height": null,
         "width": 750,
         "layout": "fit",
-        "title": "Advertisement"
+        "title": "Advertisement",
+        "modal": true
     },
     "id": "ExtBox1-ext-gen2944",
     "designerId": "019abab4-49a9-4895-b3e5-4884b8c48504",

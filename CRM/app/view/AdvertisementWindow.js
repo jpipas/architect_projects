@@ -21,6 +21,7 @@ Ext.define('JavisERP.view.AdvertisementWindow', {
         type: 'fit'
     },
     title: 'Advertisement',
+    modal: true,
 
     initComponent: function() {
         var me = this;

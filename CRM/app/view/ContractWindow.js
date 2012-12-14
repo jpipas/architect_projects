@@ -29,6 +29,7 @@ Ext.define('JavisERP.view.ContractWindow', {
     closeAction: 'hide',
     title: 'Contract',
     maximized: false,
+    modal: true,
 
     initComponent: function() {
         var me = this;

@@ -38,13 +38,11 @@ Ext.define('JavisERP.view.AdvertisementGrid', {
                     items: [
                         {
                             xtype: 'button',
-                            id: 'newAdButton',
-                            itemId: 'newAdvertisementButton',
                             iconCls: 'ui-silk ui-silk-layout-add',
                             text: 'New Advertisement',
                             listeners: {
                                 click: {
-                                    fn: me.onNewAdButtonClick,
+                                    fn: me.onButtonClick,
                                     scope: me
                                 }
                             }
@@ -91,9 +89,10 @@ Ext.define('JavisERP.view.AdvertisementGrid', {
         me.callParent(arguments);
     },
 
-    onNewAdButtonClick: function(button, e, options) {
-        var clientRecordCtrl = JavisERP.app.getController('clientController');
-        clientRecordCtrl.fireEvent('addAdvertisement',button);
+    onButtonClick: function(button, e, options) {
+        console.log("here!");
+        var adWindow = new JavisERP.view.AdvertisementWindow();
+        adWindow.show();
     }
 
 });

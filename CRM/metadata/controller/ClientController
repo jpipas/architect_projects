@@ -147,10 +147,6 @@
                 "implHandler": [
                     "if(!me.contractWindow){",
                     "    me.contractWindow = new JavisERP.view.ContractWindow();",
-                    "    console.log(\"Creating Contract Window\");",
-                    "    //me.adWindow = new JavisERP.view.AdvertisementWindow();",
-                    "    //console.log(this.getAdvertisementButton());",
-                    "    this.getAdvertisementButton().on(\"click\",addAdvertisement);",
                     "}",
                     "if(me.contractWindow.isVisible(true)){",
                     "    me.contractWindow.hide();",
@@ -371,21 +367,6 @@
                 "designer|controlQuery": "clientrecord toolbar button[itemId=newcontract]"
             },
             "designerId": "a692a5e7-edab-42e8-a3ec-fe17adc90c70"
-        },
-        {
-            "type": "controllerref",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "advertisementButton",
-                "designer|displayName": "newAdButton",
-                "ref": "advertisementButton",
-                "selector": "clientrecord toolbar button[itemId=newAdvertisementButton]"
-            },
-            "designerId": "61907bfc-24e3-4f8a-bb8d-d5b2adc90880"
         }
     ]
 }

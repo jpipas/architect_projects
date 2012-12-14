@@ -55,13 +55,11 @@
                     "codeClass": null,
                     "userConfig": {
                         "layout|flex": null,
-                        "designer|userClassName": "MyButton11",
-                        "id": "newAdButton",
-                        "itemId": "newAdvertisementButton",
+                        "designer|userClassName": "MyButton23",
                         "iconCls": "ui-silk ui-silk-layout-add",
                         "text": "New Advertisement"
                     },
-                    "designerId": "d3beeab1-aa39-4094-beb8-26d79aedde34",
+                    "designerId": "5e7e8591-9248-4bc1-a97f-5113a2214991",
                     "cn": [
                         {
                             "type": "basiceventbinding",
@@ -71,16 +69,17 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "onNewAdButtonClick",
-                                "fn": "onNewAdButtonClick",
+                                "designer|userClassName": "onButtonClick",
+                                "fn": "onButtonClick",
                                 "implHandler": [
-                                    "var clientRecordCtrl = JavisERP.app.getController('clientController');",
-                                    "clientRecordCtrl.fireEvent('addAdvertisement',button);"
+                                    "console.log(\"here!\");",
+                                    "var adWindow = new JavisERP.view.AdvertisementWindow();",
+                                    "adWindow.show();"
                                 ],
                                 "name": "click",
                                 "scope": "me"
                             },
-                            "designerId": "dae3b1a2-4633-4ae8-b181-938389b6cf8f"
+                            "designerId": "d5f6da4e-2035-4b60-8ea5-4c355c871c55"
                         }
                     ]
                 }

@@ -14,7 +14,8 @@
         "width": 400,
         "layout": "fit",
         "closeAction": "hide",
-        "title": "New Contact"
+        "title": "New Contact",
+        "modal": true
     },
     "id": "ExtBox1-ext-gen4716",
     "designerId": "18a2b983-cf8e-4f1f-a843-99adba604087",
