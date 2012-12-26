@@ -7,8 +7,16 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "AdvertisementWindow",
+        "designer|userAlias": "adwindow",
+        "requires": [
+            "JavisERP.view.ComboView",
+            "JavisERP.view.ComboFieldBox"
+        ],
         "height": null,
+        "id": "adWindow",
+        "itemId": "adwindow",
         "width": 750,
+        "autoDestroy": false,
         "layout": "fit",
         "title": "Advertisement",
         "modal": true
@@ -26,9 +34,12 @@
             "userConfig": {
                 "designer|userClassName": "MyForm4",
                 "designer|displayName": "AdvertisementForm",
-                "itemId": "AdvertisementForm",
+                "cls": "adForm",
+                "id": "adform",
+                "itemId": "adform",
                 "bodyPadding": 10,
-                "title": null
+                "title": null,
+                "url": "server/web/index.php/advertisement/create"
             },
             "designerId": "815b2b6d-f4e9-412d-b657-6dab9dd724a1",
             "cn": [
@@ -42,7 +53,9 @@
                     "userConfig": {
                         "dock": "top",
                         "designer|userClassName": "MyToolbar7",
-                        "designer|displayName": "FormToolBar"
+                        "designer|displayName": "AdWindowToolBar",
+                        "cls": "adWindowToolBar",
+                        "itemId": "adwindowtoolbar"
                     },
                     "designerId": "c3bbd139-3db8-4915-a170-2bc9a228041f",
                     "cn": [
@@ -56,6 +69,10 @@
                             "userConfig": {
                                 "layout|flex": null,
                                 "designer|userClassName": "MyButton11",
+                                "designer|displayName": "Save",
+                                "cls": "savebutton",
+                                "id": "savebutton",
+                                "itemId": "savebutton",
                                 "iconCls": "ui-silk ui-silk-disk",
                                 "text": "Save"
                             },
@@ -71,29 +88,10 @@
                             "userConfig": {
                                 "layout|flex": null,
                                 "designer|userClassName": "MyButton12",
+                                "cls": "cancelbutton",
                                 "text": "Cancel"
                             },
-                            "designerId": "06909902-ffac-4483-a02b-df165ec323c6",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onButtonClick11",
-                                        "fn": "onButtonClick11",
-                                        "implHandler": [
-                                            "console.log(button);"
-                                        ],
-                                        "name": "click",
-                                        "scope": "me"
-                                    },
-                                    "designerId": "5221f7e6-db89-44f4-87ba-1964bd1cc710"
-                                }
-                            ]
+                            "designerId": "06909902-ffac-4483-a02b-df165ec323c6"
                         }
                     ]
                 },
@@ -105,11 +103,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "container|align": "stretch",
                         "designer|userClassName": "MyFieldContainer7",
                         "designer|displayName": "FormContainer",
                         "height": null,
                         "padding": "0px 0px 10px 0px",
-                        "layout": "column",
+                        "layout": "hbox",
                         "fieldLabel": null
                     },
                     "designerId": "911eb032-c357-42bc-b49f-98199eb8c079",
@@ -122,33 +121,31 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "layout|columnWidth": 0.5,
+                                "layout|flex": 1,
                                 "designer|userClassName": "MyFieldContainer5",
                                 "designer|displayName": "Column1",
                                 "id": "adform_column1",
+                                "itemId": "adwindow_col1",
                                 "defaults": [
                                     "{padding:'5px 0px 0px 0px'}"
                                 ],
-                                "layout": "column",
+                                "layout": "anchor",
                                 "fieldLabel": null,
                                 "labelAlign": "right"
                             },
                             "designerId": "d9074593-ca65-4929-8827-54525a9d9317",
                             "cn": [
                                 {
-                                    "type": "combobox",
+                                    "type": "displayfield",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "designer|userClassName": "MyComboBox7",
+                                        "designer|userClassName": "MyDisplayField14",
                                         "name": "client",
-                                        "fieldLabel": "Client",
-                                        "displayField": "name",
-                                        "store": "ClientStore",
-                                        "valueField": "id"
+                                        "fieldLabel": "Client"
                                     },
                                     "designerId": "24fa23e6-85f2-46b5-bce8-5ce2a109c4c5"
                                 }
@@ -162,7 +159,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "layout|columnWidth": 0.5,
+                                "layout|flex": 1,
                                 "designer|userClassName": "MyFieldContainer6",
                                 "designer|displayName": "Column2",
                                 "border": null,
@@ -171,7 +168,7 @@
                                 "defaults": [
                                     "{padding: '5px 0px'}"
                                 ],
-                                "layout": "column",
+                                "layout": "anchor",
                                 "combineLabels": false,
                                 "fieldLabel": null,
                                 "labelAlign": "right"
@@ -189,7 +186,9 @@
                                         "designer|userClassName": "MyComboBox5",
                                         "name": "ad_type_id",
                                         "fieldLabel": "Ad Type",
-                                        "store": "AdvertisementStore"
+                                        "displayField": "name",
+                                        "store": "AdTypeStore",
+                                        "valueField": "id"
                                     },
                                     "designerId": "622110df-625f-4e3b-aca3-cfa69aae0a68"
                                 },
@@ -202,11 +201,79 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "designer|userClassName": "MyComboBox6",
+                                        "id": "ad_size_id",
                                         "name": "ad_size_id",
                                         "fieldLabel": "Ad Size",
-                                        "store": "ActivityTypeStore"
+                                        "displayField": "name",
+                                        "store": "AdSizeStore",
+                                        "valueField": "id"
                                     },
                                     "designerId": "dce49764-b8ef-4cb9-9fb4-a581c008e050"
+                                },
+                                {
+                                    "type": "checkboxgroup",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyCheckboxGroup",
+                                        "fieldLabel": null
+                                    },
+                                    "designerId": "818d344d-061f-4b2b-b0fa-854c1cb07446",
+                                    "cn": [
+                                        {
+                                            "type": "checkboxfield",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyCheckbox1",
+                                                "designer|displayName": "EmailDesigner",
+                                                "name": "emailDesigner",
+                                                "fieldLabel": "Label",
+                                                "hideLabel": true,
+                                                "boxLabel": "Notify Designer"
+                                            },
+                                            "designerId": "2a47baad-ce4a-4b3a-af5c-3c30f096a4c7"
+                                        },
+                                        {
+                                            "type": "checkboxfield",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyCheckbox2",
+                                                "designer|displayName": "EmailClient",
+                                                "margin": "0 10",
+                                                "name": "emailClient",
+                                                "fieldLabel": "Label",
+                                                "hideLabel": true,
+                                                "boxLabel": "Notify Client"
+                                            },
+                                            "designerId": "9978ff64-0680-4c45-ae8d-f2af93d8ba6a"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "datefield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyDateField",
+                                        "designer|displayName": "ExpirationDate",
+                                        "name": "exp_date",
+                                        "fieldLabel": "Expiration Date"
+                                    },
+                                    "designerId": "e85a8f52-14fe-44ae-9a0f-a3153e462beb"
                                 },
                                 {
                                     "type": "hiddenfield",

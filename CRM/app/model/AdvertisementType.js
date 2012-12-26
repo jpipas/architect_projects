@@ -23,5 +23,15 @@ Ext.define('JavisERP.model.AdvertisementType', {
         {
             name: 'name'
         }
-    ]
+    ],
+
+    proxy: {
+        type: 'ajax',
+        url: 'resources/js/adType.json',
+        reader: {
+            type: 'json',
+            root: 'adType',
+            totalProperty: 'totalCount'
+        }
+    }
 });

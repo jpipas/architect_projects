@@ -30,13 +30,13 @@
                 ],
                 "implHandler": [
                     "this.control({",
-                    "            'clientportlet': {",
-                    "                close: this.onPortletClose",
-                    "            },",
-                    "            'portlet': {",
-                    "                close: this.onPortletClose",
-                    "            }",
-                    "        }); "
+                    "    'clientportlet': {",
+                    "        close: this.onPortletClose",
+                    "    },",
+                    "    'portlet': {",
+                    "        close: this.onPortletClose",
+                    "    }",
+                    "}); "
                 ]
             },
             "designerId": "67c3db9b-8775-4622-b8c1-cd80cd56baf0"
@@ -75,11 +75,11 @@
                     "msg"
                 ],
                 "implHandler": [
-                    "    var el = Ext.get('app-msg'),",
+                    "var el = Ext.get('app-msg'),",
                     "    msgId = Ext.id();",
-                    "    this.msgId = msgId;",
-                    "    el.update(msg).show();",
-                    "    Ext.defer(this.clearMsg, 3000, this, [msgId]);",
+                    "this.msgId = msgId;",
+                    "el.update(msg).show();",
+                    "Ext.defer(this.clearMsg, 3000, this, [msgId]);",
                     ""
                 ]
             },

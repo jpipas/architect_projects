@@ -15,8 +15,17 @@
 
 Ext.define('JavisERP.view.AdvertisementWindow', {
     extend: 'Ext.window.Window',
+    alias: 'widget.adwindow',
 
+    requires: [
+        'JavisERP.view.ComboView',
+        'JavisERP.view.ComboFieldBox'
+    ],
+
+    id: 'adWindow',
+    itemId: 'adwindow',
     width: 750,
+    autoDestroy: false,
     layout: {
         type: 'fit'
     },
@@ -30,27 +39,30 @@ Ext.define('JavisERP.view.AdvertisementWindow', {
             items: [
                 {
                     xtype: 'form',
-                    itemId: 'AdvertisementForm',
+                    cls: 'adForm',
+                    id: 'adform',
+                    itemId: 'adform',
                     bodyPadding: 10,
+                    url: 'server/web/index.php/advertisement/create',
                     dockedItems: [
                         {
                             xtype: 'toolbar',
                             dock: 'top',
+                            cls: 'adWindowToolBar',
+                            itemId: 'adwindowtoolbar',
                             items: [
                                 {
                                     xtype: 'button',
+                                    cls: 'savebutton',
+                                    id: 'savebutton',
+                                    itemId: 'savebutton',
                                     iconCls: 'ui-silk ui-silk-disk',
                                     text: 'Save'
                                 },
                                 {
                                     xtype: 'button',
-                                    text: 'Cancel',
-                                    listeners: {
-                                        click: {
-                                            fn: me.onButtonClick11,
-                                            scope: me
-                                        }
-                                    }
+                                    cls: 'cancelbutton',
+                                    text: 'Cancel'
                                 }
                             ]
                         }
@@ -60,39 +72,38 @@ Ext.define('JavisERP.view.AdvertisementWindow', {
                             xtype: 'fieldcontainer',
                             padding: '0px 0px 10px 0px',
                             layout: {
-                                type: 'column'
+                                align: 'stretch',
+                                type: 'hbox'
                             },
                             items: [
                                 {
                                     xtype: 'fieldcontainer',
-                                    columnWidth: 0.5,
+                                    flex: 1,
                                     id: 'adform_column1',
+                                    itemId: 'adwindow_col1',
                                     defaults: {
                                         padding: '5px 0px 0px 0px'
                                     },
                                     layout: {
-                                        type: 'column'
+                                        type: 'anchor'
                                     },
                                     labelAlign: 'right',
                                     items: [
                                         {
-                                            xtype: 'combobox',
+                                            xtype: 'displayfield',
                                             name: 'client',
-                                            fieldLabel: 'Client',
-                                            displayField: 'name',
-                                            store: 'ClientStore',
-                                            valueField: 'id'
+                                            fieldLabel: 'Client'
                                         }
                                     ]
                                 },
                                 {
                                     xtype: 'fieldcontainer',
-                                    columnWidth: 0.5,
+                                    flex: 1,
                                     defaults: {
                                         padding: '5px 0px'
                                     },
                                     layout: {
-                                        type: 'column'
+                                        type: 'anchor'
                                     },
                                     combineLabels: false,
                                     labelAlign: 'right',
@@ -101,13 +112,43 @@ Ext.define('JavisERP.view.AdvertisementWindow', {
                                             xtype: 'combobox',
                                             name: 'ad_type_id',
                                             fieldLabel: 'Ad Type',
-                                            store: 'AdvertisementStore'
+                                            displayField: 'name',
+                                            store: 'AdTypeStore',
+                                            valueField: 'id'
                                         },
                                         {
                                             xtype: 'combobox',
+                                            id: 'ad_size_id',
                                             name: 'ad_size_id',
                                             fieldLabel: 'Ad Size',
-                                            store: 'ActivityTypeStore'
+                                            displayField: 'name',
+                                            store: 'AdSizeStore',
+                                            valueField: 'id'
+                                        },
+                                        {
+                                            xtype: 'checkboxgroup',
+                                            items: [
+                                                {
+                                                    xtype: 'checkboxfield',
+                                                    name: 'emailDesigner',
+                                                    fieldLabel: 'Label',
+                                                    hideLabel: true,
+                                                    boxLabel: 'Notify Designer'
+                                                },
+                                                {
+                                                    xtype: 'checkboxfield',
+                                                    margin: '0 10',
+                                                    name: 'emailClient',
+                                                    fieldLabel: 'Label',
+                                                    hideLabel: true,
+                                                    boxLabel: 'Notify Client'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            xtype: 'datefield',
+                                            name: 'exp_date',
+                                            fieldLabel: 'Expiration Date'
                                         },
                                         {
                                             xtype: 'hiddenfield',
@@ -128,10 +169,6 @@ Ext.define('JavisERP.view.AdvertisementWindow', {
         });
 
         me.callParent(arguments);
-    },
-
-    onButtonClick11: function(button, e, options) {
-        console.log(button);
     }
 
 });

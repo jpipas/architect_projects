@@ -28,10 +28,7 @@ Ext.application({
         'UserNote',
         'Role',
         'Publication',
-        'Contract',
-        'Advertisement',
-        'AdvertisementType',
-        'AdvertisementSize'
+        'Contract'
     ],
     stores: [
         'ClientStore',
@@ -44,7 +41,6 @@ Ext.application({
         'ActivityTypeStore',
         'PublicationStore',
         'ContractStore',
-        'AdvertisementStore',
         'PaymentTypeStore'
     ],
     views: [
@@ -70,7 +66,8 @@ Ext.application({
         'MainNavController',
         'RecordNavController',
         'ClientController',
-        'Portal'
+        'Portal',
+        'AdWindowController'
     ],
 
     launch: function() {

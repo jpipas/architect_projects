@@ -33,9 +33,54 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "field57",
-                "name": "size"
+                "name": "name"
             },
             "designerId": "952e2f9f-69c8-4dda-86bd-1d3e50838a03"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field63",
+                "name": "ad_type_id"
+            },
+            "designerId": "47475f01-9027-4f3f-8d40-599f37fefbfc"
+        },
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy12",
+                "designer|displayName": "adSizeProxy",
+                "url": "resources/js/adSize.json"
+            },
+            "designerId": "66bca2be-c240-4a06-a008-5c1e294c2716",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader12",
+                        "designer|displayName": "adSizeReader",
+                        "idProperty": "id",
+                        "root": "adSize",
+                        "totalProperty": "totalCount"
+                    },
+                    "designerId": "9e1b495c-f817-47e6-a282-1f003c47a861"
+                }
+            ]
         }
     ]
 }

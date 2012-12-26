@@ -1,0 +1,17 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AdTypeStore",
+        "autoLoad": true,
+        "storeId": "AdType",
+        "model": "AdvertisementType",
+        "data": null
+    },
+    "id": "ExtBox1-ext-gen4312",
+    "designerId": "43fa6f67-12fb-4a9f-8c34-8837a6be7e1b"
+}

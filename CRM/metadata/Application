@@ -16,10 +16,7 @@
             "UserNote",
             "Role",
             "Publication",
-            "Contract",
-            "Advertisement",
-            "AdvertisementType",
-            "AdvertisementSize"
+            "Contract"
         ],
         "stores": [
             "ClientStore",
@@ -32,7 +29,6 @@
             "ActivityTypeStore",
             "PublicationStore",
             "ContractStore",
-            "AdvertisementStore",
             "PaymentTypeStore"
         ],
         "views": [
@@ -58,7 +54,8 @@
             "MainNavController",
             "RecordNavController",
             "ClientController",
-            "Portal"
+            "Portal",
+            "AdWindowController"
         ]
     },
     "id": "ExtBox1-ext-gen15782",

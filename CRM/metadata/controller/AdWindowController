@@ -1,0 +1,137 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AdWindowController",
+        "models": [
+            "AdvertisementType",
+            "Advertisement",
+            "AdvertisementSize",
+            "Publication"
+        ],
+        "stores": [
+            "AdSizeStore",
+            "AdTypeStore",
+            "AdvertisementStore"
+        ],
+        "views": [
+            "AdvertisementWindow",
+            "AdvertisementGrid"
+        ]
+    },
+    "id": "ExtBox1-ext-gen3074",
+    "designerId": "0835951a-553e-4951-8e9a-38b80a20724d",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "adWindow",
+                "designer|displayName": "adWindow",
+                "ref": "adWindow",
+                "selector": "adwindow",
+                "xtype": null
+            },
+            "designerId": "01832e45-c708-4f70-b96e-c30da5c79c17"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "adSaveButton",
+                "designer|displayName": "adSaveButton",
+                "ref": "adSaveButton",
+                "selector": "toolbar[cls=adWindowToolBar] > button[cls=savebutton]",
+                "xtype": "toolbar"
+            },
+            "designerId": "38155b35-af57-4a8a-9eb7-eeba90af8eac"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "adForm",
+                "designer|displayName": "adForm",
+                "ref": "adForm",
+                "selector": "form[cls=adForm]",
+                "xtype": "form"
+            },
+            "designerId": "b175a91e-a49f-4316-9298-dc34914cc6b0"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "init",
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    "console.log(\"AdWindowControler init\");"
+                ]
+            },
+            "designerId": "618a42d1-d83a-4c5d-8833-8876883bbbab"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onWindowAfterRender",
+                "fn": "onWindowAfterRender",
+                "implHandler": [
+                    "console.log(\"hooked in\");"
+                ],
+                "name": "afterrender",
+                "scope": "me",
+                "designer|targetType": "Ext.window.Window",
+                "designer|controlQuery": "adwindow"
+            },
+            "designerId": "f8f69f2f-1121-4e2d-b1f1-9051d77f7594"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onSaveClick",
+                "fn": "onSaveClick",
+                "implHandler": [
+                    "this.getAdForm().form.submit();"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "toolbar[cls=adWindowToolBar] > button[cls=savebutton]"
+            },
+            "designerId": "a0799c7f-a635-4964-94b2-ee62a2db9cad"
+        }
+    ]
+}

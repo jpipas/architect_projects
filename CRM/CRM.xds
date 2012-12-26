@@ -467,6 +467,30 @@
                 "metadata/resource/js7"
             ],
             "className": "js7"
+        },
+        "64777d68-b471-4f09-98e0-903979d78892": {
+            "paths": [
+                "metadata/store/AdSizeStore",
+                "app/store/override/AdSizeStore.js",
+                "app/store/AdSizeStore.js"
+            ],
+            "className": "AdSizeStore"
+        },
+        "43fa6f67-12fb-4a9f-8c34-8837a6be7e1b": {
+            "paths": [
+                "metadata/store/AdTypeStore",
+                "app/store/override/AdTypeStore.js",
+                "app/store/AdTypeStore.js"
+            ],
+            "className": "AdTypeStore"
+        },
+        "0835951a-553e-4951-8e9a-38b80a20724d": {
+            "paths": [
+                "metadata/controller/AdWindowController",
+                "app/controller/override/AdWindowController.js",
+                "app/controller/AdWindowController.js"
+            ],
+            "className": "AdWindowController"
         }
     },
     "viewOrderMap": {
@@ -503,14 +527,17 @@
             "2358c001-d1b1-4c73-98aa-6c621e739d8a",
             "327f467f-1c73-417b-944e-bf359d1f907a",
             "a71ee388-f76d-443b-a4d4-7b98575b5111",
-            "8dd499f3-30f6-4fc5-9da2-950fa1891c17"
+            "8dd499f3-30f6-4fc5-9da2-950fa1891c17",
+            "64777d68-b471-4f09-98e0-903979d78892",
+            "43fa6f67-12fb-4a9f-8c34-8837a6be7e1b"
         ],
         "controller": [
             "e424c48f-6ef8-4b4d-bae4-bfe70fa1ae19",
             "668141e1-a7c7-44bb-b837-faddb3cfcde8",
             "0eb6c736-e4ce-4a98-a689-09a51d0b11b2",
             "e4f5c676-6a36-4f1c-9c92-aa1296a7b78b",
-            "5ee0fbc3-e4b4-48f7-ae1d-98a8df0fbd68"
+            "5ee0fbc3-e4b4-48f7-ae1d-98a8df0fbd68",
+            "0835951a-553e-4951-8e9a-38b80a20724d"
         ],
         "model": [
             "87f4bd71-24c2-4ee6-92a7-75b5fc41ec6a",
