@@ -184,6 +184,8 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "designer|userClassName": "MyComboBox5",
+                                        "cls": "adType",
+                                        "itemId": "adtypeid",
                                         "name": "ad_type_id",
                                         "fieldLabel": "Ad Type",
                                         "displayField": "name",
@@ -201,7 +203,9 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "designer|userClassName": "MyComboBox6",
+                                        "cls": "adSize",
                                         "id": "ad_size_id",
+                                        "itemId": "adsizeid",
                                         "name": "ad_size_id",
                                         "fieldLabel": "Ad Size",
                                         "displayField": "name",

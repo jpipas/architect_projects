@@ -1,0 +1,13 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ContractController"
+    },
+    "id": "ExtBox1-ext-gen8428",
+    "designerId": "237c69f3-3a94-4236-a37c-651613cb3657"
+}

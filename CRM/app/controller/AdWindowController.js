@@ -46,6 +46,16 @@ Ext.define('JavisERP.controller.AdWindowController', {
             ref: 'adForm',
             selector: 'form[cls=adForm]',
             xtype: 'form'
+        },
+        {
+            ref: 'adTypeCombo',
+            selector: 'combobox[cls=adType]',
+            xtype: 'combobox'
+        },
+        {
+            ref: 'adSizeCombo',
+            selector: 'combobox[cls=adSize]',
+            xtype: 'combobox'
         }
     ],
 
@@ -57,6 +67,11 @@ Ext.define('JavisERP.controller.AdWindowController', {
         this.getAdForm().form.submit();
     },
 
+    onAdTypeChange: function(field, newValue, oldValue, options) {
+        this.getAdSizeCombo().getStore().clearFilter(true);
+        this.getAdSizeCombo().getStore().filter("ad_type_id",newValue);
+    },
+
     init: function(application) {
         console.log("AdWindowControler init");
 
@@ -66,6 +81,9 @@ Ext.define('JavisERP.controller.AdWindowController', {
             },
             "toolbar[cls=adWindowToolBar] > button[cls=savebutton]": {
                 click: this.onSaveClick
+            },
+            "combobox[cls=adType]": {
+                change: this.onAdTypeChange
             }
         });
     }

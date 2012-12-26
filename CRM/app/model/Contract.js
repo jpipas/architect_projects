@@ -19,7 +19,8 @@ Ext.define('JavisERP.model.Contract', {
 
     uses: [
         'JavisERP.model.Client',
-        'JavisERP.model.PaymentType'
+        'JavisERP.model.PaymentType',
+        'JavisERP.model.Advertisement'
     ],
 
     idProperty: 'id',
@@ -65,12 +66,34 @@ Ext.define('JavisERP.model.Contract', {
 
     hasOne: [
         {
-            associationKey: 'client_id',
-            model: 'JavisERP.model.Client'
+            associationKey: 'id',
+            model: 'JavisERP.model.Client',
+            foreignKey: 'client_id'
         },
         {
-            associationKey: 'payment_type_id',
-            model: 'JavisERP.model.PaymentType'
+            associationKey: 'id',
+            model: 'JavisERP.model.PaymentType',
+            foreignKey: 'payment_type_id'
         }
-    ]
+    ],
+
+    hasMany: {
+        associationKey: 'id',
+        model: 'JavisERP.model.Advertisement',
+        primaryKey: 'advertisement',
+        foreignKey: 'advertisement_id',
+        name: 'advertisements'
+    },
+
+    proxy: {
+        type: 'ajax',
+        api: '//http://docs.sencha.com/ext-js/4-1/#!/api/Ext.data.proxy.Server-cfg-api\ncreate: \'/server/web/index.php/contract/new\',\nread: \'/server/web/index.php/contract/load\',\nupdate: \'/server/web/index.php/contract/update\',\ndestory: \'/server/web/index.php/contract/delete\'',
+        url: 'resources/js/contract.json',
+        reader: {
+            type: 'json',
+            idProperty: 'id',
+            root: 'contract',
+            totalProperty: 'totalCount'
+        }
+    }
 });

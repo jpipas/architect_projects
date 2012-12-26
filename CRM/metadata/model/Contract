@@ -159,8 +159,9 @@
             "userConfig": {
                 "designer|userClassName": "MyHasOneAssociation3",
                 "designer|displayName": "client",
-                "associationKey": "client_id",
-                "model": "Client"
+                "associationKey": "id",
+                "model": "Client",
+                "foreignKey": "client_id"
             },
             "designerId": "314ad07e-1872-42df-90e4-5c6de29bd385"
         },
@@ -174,10 +175,68 @@
             "userConfig": {
                 "designer|userClassName": "MyHasOneAssociation4",
                 "designer|displayName": "paymentType",
-                "associationKey": "payment_type_id",
-                "model": "PaymentType"
+                "associationKey": "id",
+                "model": "PaymentType",
+                "foreignKey": "payment_type_id"
             },
             "designerId": "afe7b945-2acf-46df-9428-edb183edc253"
+        },
+        {
+            "type": "hasmanyassociation",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyHasManyAssociation4",
+                "designer|displayName": "advertisement",
+                "associationKey": "id",
+                "model": "Advertisement",
+                "primaryKey": "advertisement",
+                "foreignKey": "advertisement_id",
+                "name": "advertisements"
+            },
+            "designerId": "bd5152d4-b7e1-49aa-b3d6-06862b4e8943"
+        },
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy8",
+                "designer|displayName": "contractProxy",
+                "api": [
+                    "//http://docs.sencha.com/ext-js/4-1/#!/api/Ext.data.proxy.Server-cfg-api",
+                    "create: '/server/web/index.php/contract/new',",
+                    "read: '/server/web/index.php/contract/load',",
+                    "update: '/server/web/index.php/contract/update',",
+                    "destory: '/server/web/index.php/contract/delete'"
+                ],
+                "url": "resources/js/contract.json"
+            },
+            "designerId": "8a52a43a-29db-47a9-89ba-6b0ce0e8235f",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader8",
+                        "designer|displayName": "contractJsonReader",
+                        "idProperty": "id",
+                        "root": "contract",
+                        "totalProperty": "totalCount"
+                    },
+                    "designerId": "8bcd24a2-6183-46ff-afb2-02e683669659"
+                }
+            ]
         }
     ]
 }

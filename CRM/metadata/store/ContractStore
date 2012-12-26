@@ -11,39 +11,5 @@
         "model": "Contract"
     },
     "id": "ExtBox1-ext-gen8972",
-    "designerId": "f8a4f573-a7f4-4e64-b2ef-0969154a0fba",
-    "cn": [
-        {
-            "type": "ajaxproxy",
-            "reference": {
-                "name": "proxy",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyAjaxProxy8",
-                "designer|displayName": "contractProxy",
-                "url": "resources/js/contract.json"
-            },
-            "designerId": "8a52a43a-29db-47a9-89ba-6b0ce0e8235f",
-            "cn": [
-                {
-                    "type": "jsonreader",
-                    "reference": {
-                        "name": "reader",
-                        "type": "object"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyJsonReader8",
-                        "designer|displayName": "contractJsonReader",
-                        "idProperty": "id",
-                        "root": "contract",
-                        "totalProperty": "totalCount"
-                    },
-                    "designerId": "8bcd24a2-6183-46ff-afb2-02e683669659"
-                }
-            ]
-        }
-    ]
+    "designerId": "f8a4f573-a7f4-4e64-b2ef-0969154a0fba"
 }

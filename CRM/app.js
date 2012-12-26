@@ -67,7 +67,8 @@ Ext.application({
         'RecordNavController',
         'ClientController',
         'Portal',
-        'AdWindowController'
+        'AdWindowController',
+        'ContractController'
     ],
 
     launch: function() {

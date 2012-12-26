@@ -75,6 +75,36 @@
             "designerId": "b175a91e-a49f-4316-9298-dc34914cc6b0"
         },
         {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "adTypeCombo",
+                "ref": "adTypeCombo",
+                "selector": "combobox[cls=adType]",
+                "xtype": "combobox"
+            },
+            "designerId": "17e5caba-c81e-4115-8fe7-f979e64b2200"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "adSizeCombo",
+                "ref": "adSizeCombo",
+                "selector": "combobox[cls=adSize]",
+                "xtype": "combobox"
+            },
+            "designerId": "af5d3a9b-0578-4e7b-a607-13e28018431d"
+        },
+        {
             "type": "fixedfunction",
             "reference": {
                 "name": "items",
@@ -132,6 +162,27 @@
                 "designer|controlQuery": "toolbar[cls=adWindowToolBar] > button[cls=savebutton]"
             },
             "designerId": "a0799c7f-a635-4964-94b2-ee62a2db9cad"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onAdTypeChange",
+                "fn": "onAdTypeChange",
+                "implHandler": [
+                    "this.getAdSizeCombo().getStore().clearFilter(true);",
+                    "this.getAdSizeCombo().getStore().filter(\"ad_type_id\",newValue);"
+                ],
+                "name": "change",
+                "scope": "me",
+                "designer|targetType": "Ext.form.field.ComboBox",
+                "designer|controlQuery": "combobox[cls=adType]"
+            },
+            "designerId": "a24a10b2-8419-4f41-8691-ea4640e2383d"
         }
     ]
 }

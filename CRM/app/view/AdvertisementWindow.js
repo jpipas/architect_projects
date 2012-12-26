@@ -110,6 +110,8 @@ Ext.define('JavisERP.view.AdvertisementWindow', {
                                     items: [
                                         {
                                             xtype: 'combobox',
+                                            cls: 'adType',
+                                            itemId: 'adtypeid',
                                             name: 'ad_type_id',
                                             fieldLabel: 'Ad Type',
                                             displayField: 'name',
@@ -118,7 +120,9 @@ Ext.define('JavisERP.view.AdvertisementWindow', {
                                         },
                                         {
                                             xtype: 'combobox',
+                                            cls: 'adSize',
                                             id: 'ad_size_id',
+                                            itemId: 'adsizeid',
                                             name: 'ad_size_id',
                                             fieldLabel: 'Ad Size',
                                             displayField: 'name',

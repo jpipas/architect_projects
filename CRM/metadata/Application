@@ -55,7 +55,8 @@
             "RecordNavController",
             "ClientController",
             "Portal",
-            "AdWindowController"
+            "AdWindowController",
+            "ContractController"
         ]
     },
     "id": "ExtBox1-ext-gen15782",

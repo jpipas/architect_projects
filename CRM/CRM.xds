@@ -491,6 +491,14 @@
                 "app/controller/AdWindowController.js"
             ],
             "className": "AdWindowController"
+        },
+        "237c69f3-3a94-4236-a37c-651613cb3657": {
+            "paths": [
+                "metadata/controller/ContractController",
+                "app/controller/override/ContractController.js",
+                "app/controller/ContractController.js"
+            ],
+            "className": "ContractController"
         }
     },
     "viewOrderMap": {
@@ -537,7 +545,8 @@
             "0eb6c736-e4ce-4a98-a689-09a51d0b11b2",
             "e4f5c676-6a36-4f1c-9c92-aa1296a7b78b",
             "5ee0fbc3-e4b4-48f7-ae1d-98a8df0fbd68",
-            "0835951a-553e-4951-8e9a-38b80a20724d"
+            "0835951a-553e-4951-8e9a-38b80a20724d",
+            "237c69f3-3a94-4236-a37c-651613cb3657"
         ],
         "model": [
             "87f4bd71-24c2-4ee6-92a7-75b5fc41ec6a",
